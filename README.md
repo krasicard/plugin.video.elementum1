@@ -6,6 +6,8 @@
 
 What it is
 ----------
+
+[![Join the chat at https://gitter.im/ElementumApp/Lobby](https://badges.gitter.im/ElementumApp/Lobby.svg)](https://gitter.im/ElementumApp/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately. They are normal Kodi add-ons, and thus can be installed/updated/distributed just like any other add-on.
 
 This project is a fork of the well known, but no longer maintained Pulsar project from [steeve](https://github.com/steeve/plugin.video.pulsar).
