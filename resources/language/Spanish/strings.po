@@ -337,7 +337,7 @@ msgstr "Episodios Recientes"
 
 msgctxt "#30239"
 msgid "Providers"
-msgstr "Proovedores"
+msgstr "Proveedores"
 
 msgctxt "#30240"
 msgid "Enable"
