@@ -1225,7 +1225,7 @@ msgstr ""
 
 #~ msgctxt "#30001"
 #~ msgid "Download path (not FAT32)"
-#~ msgstr "Lokacija skidanja (ne FAT32)"
+#~ msgstr "Lokacija preuzimanja (ne FAT32)"
 
 #~ msgctxt "#30021"
 #~ msgid "Enable pagination"
@@ -1233,15 +1233,15 @@ msgstr ""
 
 #~ msgctxt "#30025"
 #~ msgid "Limit rates after buffering only"
-#~ msgstr "Ograniči brzinu nakon što se napuni buffer"
+#~ msgstr "Ograniči brzinu nakon završetka međuspremanja"
 
 #~ msgctxt "#30028"
 #~ msgid "Background handling of torrents"
-#~ msgstr "Pozadinski rad torrenta"
+#~ msgstr "Pozadinsko rukovanje torrentima"
 
 #~ msgctxt "#30115"
 #~ msgid "TV scraper used by library"
-#~ msgstr "TV scraper koji koristi library"
+#~ msgstr "TV sakupljač koji koristi videoteka"
 
 #~ msgctxt "#30075"
 #~ msgid "Default from libtorrent (acceptable)"
@@ -1249,12 +1249,12 @@ msgstr ""
 
 #~ msgctxt "#30103"
 #~ msgid "Unable to find Elementum binary"
-#~ msgstr "Ne može se naći Elementumov binary"
+#~ msgstr "Nemoguć pronalazak Elementumove binarne datoteke"
 
 #~ msgctxt "#30219"
 #~ msgid "Add/Remove from library"
-#~ msgstr "Dodaj/Ukloni iz library-a"
+#~ msgstr "Dodaj/Ukloni iz videoteke"
 
 #~ msgctxt "#30230"
 #~ msgid "Play/resume torrent"
-#~ msgstr "Pokreni/nastavi torrent"
+#~ msgstr "Gledaj/nastavi torrent"
