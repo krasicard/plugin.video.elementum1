@@ -523,7 +523,7 @@ msgstr "Nastavi preuzimanje?"
 
 msgctxt "#30147"
 msgid "Caches are still warming up, give it a minute or two..."
-msgstr "Predmemorije se još uvijek pripremaju, dajte im minutu ili dvije..."
+msgstr "Predmemorije se još uvijek pripremaju, pričekajte minutu ili dvije..."
 
 msgctxt "#30148"
 msgid "Caches warmed up"
