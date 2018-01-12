@@ -1232,7 +1232,7 @@ msgid ""
 "Could not start Torrent client. Please report to github with the Kodi log "
 "file!"
 msgstr ""
-"Nemoguće pokretanje torrent klijenta. Ovo prijavite na github  s datotekom "
+"Nemoguće pokretanje torrent klijenta. Ovo prijavite na github s datotekom "
 "Kodi zapisa!"
 
 msgctxt "#30355"
