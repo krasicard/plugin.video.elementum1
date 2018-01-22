@@ -489,11 +489,11 @@ msgstr "Eliminar los torrents y los archivos"
 
 msgctxt "#30277"
 msgid "%s added to library, do you want to rescan it?[CR]You can later use Kodi's 'Update library' feature instead."
-msgstr "%s añadidos a la biblioteca, ¿quieres volver a escanearla?[CR]Puedes utilizar más tarde la función "Actualizar la biblioteca" de Kodi en su lugar."
+msgstr "%s añadidos a la biblioteca, ¿quieres volver a escanearla?[CR]Puedes utilizar más tarde la función 'Actualizar la biblioteca' de Kodi en su lugar."
 
 msgctxt "#30278"
 msgid "%s removed from library, do you want to clean it?[CR]You can later use Kodi's 'Clean library' feature instead."
-msgstr "%s eliminado de la biblioteca, ¿quieres limpiarla?[CR]Puedes utilizar más tarde la función "Limpiar biblioteca" de Kodi."
+msgstr "%s eliminado de la biblioteca, ¿quieres limpiarla?[CR]Puedes utilizar más tarde la función 'Limpiar biblioteca' de Kodi."
 
 msgctxt "#30279"
 msgid "Watchlist added to library"
