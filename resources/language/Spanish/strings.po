@@ -525,7 +525,7 @@ msgstr "Mostrar episodios inéditos"
 
 msgctxt "#30286"
 msgid "%s merged to library, do you want to rescan it?[CR]You can later use Kodi's 'Update library' feature instead."
-msgstr "%s fusionados en la biblioteca, ¿quieres volver a escanearla?[CR]Puedes utilizar más tarde la función "Actualizar biblioteca" de Kodi."
+msgstr "%s fusionados en la biblioteca, ¿quieres volver a escanearla?[CR]Se puede utilizar más tarde la función 'Actualizar biblioteca' de Kodi."
 
 msgctxt "#30287"
 msgid "%s already in library"
@@ -533,7 +533,7 @@ msgstr "ya está en la librería"
 
 msgctxt "#30288"
 msgid "Library updated, do you want to rescan it?[CR]You can later use Kodi's 'Update library' feature instead."
-msgstr "Actualización de la librería, ¿quieres volver a escanearla?[CR]Puede utilizar más tarde la función "Actualizar biblioteca" de Kodi."
+msgstr "Actualización de la librería, ¿quieres volver a escanearla?[CR]Se puede utilizar más tarde la función 'Actualizar biblioteca' de Kodi."
 
 msgctxt "#30289"
 msgid "Genres"
