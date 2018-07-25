@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.elementum" name="Elementum" version="0.0.54" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.57" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="xbmc.python" version="2.24.0" />
@@ -31,8 +31,8 @@
         <assets>
             <icon>icon.png</icon>
             <fanart></fanart>
-            <screenshot>resources/screenshots/home.jpg</screenshot>
-            <screenshot>resources/screenshots/movies.jpg</screenshot>
+            <screenshot>resources/screenshots/home.png</screenshot>
+            <screenshot>resources/screenshots/movies.png</screenshot>
             <screenshot>resources/screenshots/webui.png</screenshot>
         </assets>
     </extension>
