@@ -1537,6 +1537,13 @@ msgctxt "#30450"
 msgid "Remove from Trakt, when show is deleted from Kodi library"
 msgstr "Eliminar de Trakt, cuando la serie es borrada de la biblioteca Kodi"
 
+msgctxt "#30451"
+msgid "Torrent files path"
+msgstr "Ruta para archivos torrent"
+
+msgctxt "#30452"
+msgid "Reset all paths"
+msgstr "Restablecer todas las rutas"
 #~ msgctxt "#30001"
 #~ msgid "Download path (not FAT32)"
 #~ msgstr "Ruta para descargar (NO FAT32)"
