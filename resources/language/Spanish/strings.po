@@ -41,11 +41,11 @@ msgstr "Velocidad máxima de descarga (kB/S)"
 
 msgctxt "#30006"
 msgid "Listen port min"
-msgstr "Puerto a la escucha mínimo"
+msgstr "Mímimo puerto a la escucha"
 
 msgctxt "#30007"
 msgid "Listen port max"
-msgstr "Puerto a la escucha máximo"
+msgstr "Máximo puerto a la escucha"
 
 msgctxt "#30008"
 msgid "Proxy"
@@ -502,15 +502,14 @@ msgstr "Vista por defecto para menús en Series TV"
 
 msgctxt "#30144"
 msgid "Default view for movie genres"
-msgstr "Vista por defecto para géneros de películas"
+msgstr "Vista por defecto para géneros de Películas"
 
 msgctxt "#30145"
 msgid "Default view for TV show genres"
-msgstr "Vista por defecto para géneros de series TV"
+msgstr "Vista por defecto para géneros de Series TV"
 
 msgctxt "#30146"
 msgid "Keep downloading?"
-# msgstr "¿Desea continuar la descarga?"
 msgstr "¿Continuo con la descarga del archivo?"
 
 msgctxt "#30147"
@@ -564,7 +563,6 @@ msgstr "No hay suficiente espacio disponible en la ruta de descarga."
 
 msgctxt "#30208"
 msgid "Elementum daemon has started"
-# msgstr "Demonio Elementum iniciado"
 msgstr "Demonio Elementum arrancado"
 
 msgctxt "#30209"
@@ -613,7 +611,6 @@ msgstr "Añadir / Eliminar de biblioteca"
 
 msgctxt "#30220"
 msgid "Library path not set"
-# msgstr "Ruta de biblioteca no configurada"
 msgstr "La ruta para la biblioteca no esta configurada"
 
 msgctxt "#30221"
@@ -994,7 +991,7 @@ msgstr "Los ajustes no se inicializaron.[CR]Guarde la configuración del addon, 
 
 msgctxt "#30315"
 msgid "Download storage type"
-msgstr "Tipo almacenamiento descargas"
+msgstr "Tipo de almacenamiento para descargas"
 
 msgctxt "#30316"
 msgid "Use files"
@@ -1122,7 +1119,7 @@ msgstr "No se pudo migrar ningún elemento"
 
 msgctxt "#30347"
 msgid "Could not find binary for architecture '%s'![CR]Try to uninstall this addon, re-download and re-install it from the biggest zip."
-msgstr "No se pudo encontrar binario para la arquitectura '%s'![CR]Intenta desinstalar el addon, volver a descargarlo y reinstalar desde el zip de mayor tamaño."
+msgstr "¡No se pudo encontrar binario para arquitectura '%s'![CR]Trate de desinstalar el addon, volver a descargarlo y reinstalar desde el zip de mayor tamaño."
 
 msgctxt "#30348"
 msgid "Create usual files on the file system and write to them.[CR]Needs selected file's full size to be available on the disk!"
@@ -1134,7 +1131,7 @@ msgstr "Utiliza la memoria del dispositivo para descargar partes del torrent.[CR
 
 msgctxt "#30350"
 msgid "so can be any storage. For 1gb memory devices[CR]100mb is enough for memory storage, 200-250mb for bigger devices."
-msgstr "por lo que puede ser cualquier tipo de almacenamiento 100mb[CR]es suficiente para el almacenamiento en memoria, 200-250mb para dispositivos más grandes."
+msgstr "puede ser cualquier tipo de almacenamiento 100mb[CR]es suficiente para el almacenamiento en memoria, 200-250mb para dispositivos más grandes."
 
 msgctxt "#30351"
 msgid "Same as for usual file storage, but splits file into many small files.[CR]Should be used on FAT-32 file-systems."
@@ -1146,7 +1143,6 @@ msgstr "Igual que el almacenamiento de archivos habitual, pero utilizando[CR]la 
 
 msgctxt "#30353"
 msgid "Auto-assign network ports"
-# msgstr "Asignación automática de puertos de red"
 msgstr "Asignar automáticamente puertos de red"
 
 msgctxt "#30354"
@@ -1223,7 +1219,7 @@ msgstr "Asignar automáticamente puertos de red "
 
 msgctxt "#30372"
 msgid "Force resume playback"
-msgstr "Forzar resumen en la reproducción"
+msgstr "Forzar resumen de la reproducción"
 
 msgctxt "#30373"
 msgid "Languages"
@@ -1299,11 +1295,11 @@ msgstr "Tiempo para mantener búsquedas en caché (segundos)"
 
 msgctxt "#30391"
 msgid "List of public DNS IPs"
-msgstr "Lista IPs DNS público"
+msgstr "Lista IP DNS público"
 
 msgctxt "#30392"
 msgid "List of Opennic DNS IPs"
-msgstr "Lista IPs DNS Opennic"
+msgstr "Lista IP DNS Opennic"
 
 msgctxt "#30393"
 msgid "Status"
@@ -1399,7 +1395,7 @@ msgstr "Próxima página (%s)"
 
 msgctxt "#30416"
 msgid "Percents of playback to mark as watched"
-msgstr "Porcentaje de reproducción para considerar como visto"
+msgstr "Porcentaje de reproducción para marcar como visto"
 
 msgctxt "#30417"
 msgid "Add to Trakt, when movie/show is added to Kodi library"
@@ -1544,6 +1540,7 @@ msgstr "Ruta para archivos torrent"
 msgctxt "#30452"
 msgid "Reset all paths"
 msgstr "Restablecer todas las rutas"
+
 #~ msgctxt "#30001"
 #~ msgid "Download path (not FAT32)"
 #~ msgstr "Ruta para descargar (NO FAT32)"
