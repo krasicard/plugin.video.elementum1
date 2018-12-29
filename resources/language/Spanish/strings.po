@@ -514,7 +514,7 @@ msgstr "¿Continuo con la descarga del archivo?"
 
 msgctxt "#30147"
 msgid "Caches are still warming up, give it a minute or two..."
-msgstr "La caché esta aún horneándose, dale un minuto o dos..."
+msgstr "La caché está aun horneándose, dale un minuto o dos..."
 
 msgctxt "#30148"
 msgid "Caches warmed up"
@@ -1095,19 +1095,19 @@ msgstr "Realizando migración de archivos strm"
 
 msgctxt "#30341"
 msgid "Performing database migration"
-msgstr "Realizando migración de la base de datos"
+msgstr "Realizando migración de base de datos"
 
 msgctxt "#30342"
 msgid "Cannot find Quasar userdata directory"
-msgstr "No se puedo encontrar el directorio de datos de usuario Quasar"
+msgstr "No se pudo encontrar el directorio de datos de usuario Quasar"
 
 msgctxt "#30343"
 msgid "Cannot find Quasar settings.xml path"
-msgstr "No se puedo encontrar la ruta del settings.xml Quasar"
+msgstr "No se pudo encontrar la ruta del settings.xml Quasar"
 
 msgctxt "#30344"
 msgid "Cannot find Quasar library path"
-msgstr "No se puedo encontrar la ruta de la biblioteca Quasar"
+msgstr "No se pudo encontrar la ruta de la biblioteca Quasar"
 
 msgctxt "#30345"
 msgid "Successfully migrated items: %s"
