@@ -1719,7 +1719,7 @@ msgstr "Desactivar si usa direcciones Tor, o si quiere pasar la resolución a la
 
 msgctxt "#30497"
 msgid "Use antizapret proxy if possible"
-msgstr "Usar proxy antizapret si es posible"
+msgstr "Usar si es posible proxy antizapret"
 
 #~ msgctxt "#30001"
 #~ msgid "Download path (not FAT32)"
