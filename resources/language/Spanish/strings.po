@@ -1747,11 +1747,11 @@ msgstr "Usar libtorrent.config para anular la configuración del motor torrent"
 
 msgctxt "#30504"
 msgid "Located at USERDATA/plugin.video.elementum/libtorrent.config file[CR]Settings apply automatically. Visit https://libtorrent.org for info."
-msgstr ""
+msgstr "Localizado en USERDATA/plugin.video.elementum/libtorrent.config[CR]la configuración se aplica automáticamente. Visite https://libtorrent.org para obtener información."
 
 msgctxt "#30505"
 msgid "Add episode number to the title"
-msgstr ""
+msgstr "Añadir número de episodio a título"
 
 #~ msgctxt "#30001"
 #~ msgid "Download path (not FAT32)"
