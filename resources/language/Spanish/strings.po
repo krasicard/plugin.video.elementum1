@@ -1743,7 +1743,7 @@ msgstr "Ajustar buffer según advancedsettings de Kodi, si está ajustado"
 
 msgctxt "#30503"
 msgid "Use libtorrent.config to override torrent engine settings"
-msgstr "Usar "
+msgstr "Usar libtorrent.config para anular la configuración del motor torrent"
 
 msgctxt "#30504"
 msgid "Located at USERDATA/plugin.video.elementum/libtorrent.config file[CR]Settings apply automatically. Visit https://libtorrent.org for info."
