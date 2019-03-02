@@ -361,7 +361,7 @@ msgstr "Vuze 5.7.3.0"
 
 msgctxt "#30086"
 msgid "Enable tuned storage settings"
-msgstr "Habilitar ajustes para almacenamiento optimizados"
+msgstr "Habilitar ajustes para almacenamiento optimizado"
 
 msgctxt "#30087"
 msgid "Ask to delete the files after streaming"
