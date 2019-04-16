@@ -1611,7 +1611,7 @@ msgstr "Limpiar caché Trakt"
 
 msgctxt "#30470"
 msgid "Clear the cache"
-msgstr "Limpiar la caché"
+msgstr "Limpiar caché"
 
 msgctxt "#30471"
 msgid "Are you sure you want to do it?"
@@ -1727,8 +1727,8 @@ msgstr "Restablecer esta ruta a '/'"
 
 msgctxt "#30499"
 msgid "Automatically adjust memory size[CR]for heavy torrents, if possible"
-msgstr "Ajustar automáticamente tamaño de memoria[CR] 
-para torrents pesados, si es posible"
+msgstr "Ajustar automáticamente tamaño de memoria[CR]para torrents pesados, si es posible"
+
 
 msgctxt "#30500"
 msgid "Automatically adjust buffer size[CR]for heavy torrents"
