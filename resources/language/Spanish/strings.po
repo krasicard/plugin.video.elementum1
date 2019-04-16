@@ -426,7 +426,7 @@ msgstr "Este complemento solo puede ser utilizado desde Elementum"
 
 msgctxt "#30103"
 msgid "Unable to find Elementum binary[CR]Required platform:"
-msgstr "No se pudo encontrar binario Elementum[CR]Plataforma requerida:"
+msgstr "No encontrado binario Elementum[CR]Plataforma requerida:"
 
 msgctxt "#30104"
 msgid "Insert file or URL"
@@ -1727,11 +1727,12 @@ msgstr "Restablecer esta ruta a '/'"
 
 msgctxt "#30499"
 msgid "Automatically adjust memory size[CR]for heavy torrents, if possible"
-msgstr "Ajustar automáticamente tamaño de memoria[CR] para torrents pesados, si es posible"
+msgstr "Ajustar automáticamente tamaño de memoria[CR] 
+para torrents pesados, si es posible"
 
 msgctxt "#30500"
 msgid "Automatically adjust buffer size[CR]for heavy torrents"
-msgstr "Ajustar automáticamente tamaño de buffer[CR] para torrents pesados"
+msgstr "Ajustar automáticamente tamaño de buffer[CR]para torrents pesados"
 
 msgctxt "#30501"
 msgid "Filter files with size less than, MB"
