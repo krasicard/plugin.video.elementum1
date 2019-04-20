@@ -1873,3 +1873,19 @@ msgstr "Спрашивать использовать сохраненную п�
 msgctxt "#30535"
 msgid "Continue playback from [COLOR gold][B]%s[/B][/COLOR]?"
 msgstr "Продолжить воспроизведение от [COLOR gold][B]%s[/B][/COLOR]?"
+
+msgctxt "#30536"
+msgid "Skip IPv6 addresses resolving"
+msgstr "Пропускать IPv6 адреса"
+
+msgctxt "#30537"
+msgid "Torrents history"
+msgstr "История торрентов"
+
+msgctxt "#30538"
+msgid "Use torrents history?"
+msgstr "Использовать историю торрентов?"
+
+msgctxt "#30539"
+msgid "Store N torrents in history"
+msgstr "Хранить N торрентов в истории"
