@@ -1864,7 +1864,7 @@ msgstr "Interrompere il download di tutti i file"
 
 msgctxt "#30533"
 msgid "Store Resume position for downloaded files"
-msgstr "Memoriazza la posizione Riprendi per i file scaricati"
+msgstr "Memorizza la posizione Riprendi per i file scaricati"
 
 msgctxt "#30534"
 msgid "Ask to use stored Resume position"
@@ -1872,7 +1872,7 @@ msgstr "Chiedere di utilizzare la posizione Riprendi memorizzata"
 
 msgctxt "#30535"
 msgid "Continue playback from [COLOR gold][B]%s[/B][/COLOR]?"
-msgstr "Continua la riproduzione da [COLOR gold][B]%s[/B][/COLOR]?"
+msgstr "Continuare la riproduzione da [COLOR gold][B]%s[/B][/COLOR]?"
 
 msgctxt "#30536"
 msgid "Skip IPv6 addresses resolving"
