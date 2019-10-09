@@ -2000,7 +2000,7 @@ msgstr "Liste"
 
 msgctxt "#30567"
 msgid "Show \"All seasons\" in shows"
-msgstr "Mostra \Tutte le stagioni\" nelle serie"
+msgstr "Mostra \"Tutte le stagioni\" nelle serie"
 
 msgctxt "#30568"
 msgid "Seasons order"
