@@ -2019,4 +2019,16 @@ msgstr "* Todas las temporadas"
 
 msgctxt "#30572"
 msgid "Log response body"
-msgstr ""
+msgstr "Cuerpo de registro de respuesta"
+
+msgctxt "#30573"
+msgid "Select file to play"
+msgstr "Seleccionar archivo para reproducir"
+
+msgctxt "#30574"
+msgid "Automatically answer Yes after timeout"
+msgstr "Responder SI automáticamente después de timeout"
+
+msgctxt "#30575"
+msgid "Timeout, seconds"
+msgstr "Timeout, segundos"
