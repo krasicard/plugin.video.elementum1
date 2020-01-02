@@ -2,6 +2,22 @@
 
 [COLOR red]-------------------------------------------------------------------------------------------------------[/COLOR]
 
+[B][COLOR red]0.1.44[/COLOR][/B]
+    - Fixed CloudFlare bypass module to bypass latest CloudFlare defense.
+    - Fixed issue with removing shows from the Kodi library.
+    - Added Settings links for Elementum and searchers to the main menu.
+
+[B][COLOR red]0.1.42-0.1.43[/COLOR][/B]
+    - Fixed segfault issue on Linux builds, caused by static linkage. 0.1.42 release is cancelled!
+    - Changed Smart episode play to start download even when playlist is empty.
+    - Moved back to using libC for binary compilation, instead of Musl.
+    - Changed Kodi library synchronization to avoid deadlocks.
+    - Fixes for having duplicated watches in Trakt.
+    - Changed deletion of movies/shows detection. (Will not update items - removed from Kodi library).
+    - Added Settings link to main menu.
+    - Added settings for customizing Trakt Client ID and Secret key.
+    - Added settings for customizing end of file buffer size (default is 4mb). 
+
 [B][COLOR red]0.1.41[/COLOR][/B]
     - Added Autoclose settings for closing Confirm Dialogs with timeout.
     - Added functionality to select which file to play, in list of active torrents.
