@@ -2032,3 +2032,35 @@ msgstr "Responder SI automáticamente después de timeout"
 msgctxt "#30575"
 msgid "Timeout, seconds"
 msgstr "Timeout (segundos)"
+
+msgctxt "#30576"
+msgid "Trakt authentication needs to be updated!"
+msgstr "¡La autenticación de Trakt necesita ser actualizada!"
+
+msgctxt "#30577"
+msgid "End of file Buffer size (MB)"
+msgstr "Tamaño de buffer fin de archivo (MB)"
+
+msgctxt "#30578"
+msgid "Beginning of file Buffer size (MB)"
+msgstr "Tamaño de buffer comienzo de archivo (MB)"
+
+msgctxt "#30579"
+msgid "Settings"
+msgstr "Ajustes"
+
+msgctxt "#30580"
+msgid "Custom Trakt API Client ID"
+msgstr ""
+
+msgctxt "#30581"
+msgid "Custom Trakt API Client Secret"
+msgstr ""
+
+msgctxt "#30582"
+msgid "Settings for %s provider"
+msgstr "Ajustes para proveedor %s"
+
+msgctxt "#30583"
+msgid "Resolving magnet link"
+msgstr "Resolviendo enlace magnet"
