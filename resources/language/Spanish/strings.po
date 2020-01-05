@@ -2051,11 +2051,11 @@ msgstr "Ajustes"
 
 msgctxt "#30580"
 msgid "Custom Trakt API Client ID"
-msgstr "Personalizar ID de Cliente para API Trakt"
+msgstr "ID de Cliente personalizada para API Trakt"
 
 msgctxt "#30581"
 msgid "Custom Trakt API Client Secret"
-msgstr "Personalizar Llave Secreta de Cliente para API Trakt"
+msgstr "Llave Secreta de Cliente personalizada para API Trakt"
 
 msgctxt "#30582"
 msgid "Settings for %s provider"
