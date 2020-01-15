@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-27 19:53+0200\n"
-"PO-Revision-Date: 2019-06-07 19:23+0200\n"
-"Last-Translator: gogo <trebelnik2@gmail.com>\n"
+"PO-Revision-Date: 2020-01-15 15:01+0100\n"
+"Last-Translator: gogo <linux.hr@protonmail.com>\n"
 "Language-Team: \n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
@@ -2002,6 +2002,178 @@ msgstr "Onemogući ako su podnaslovi dostupni u reproduktoru"
 msgctxt "#30543"
 msgid "Subtitles included in torrent"
 msgstr "Podnaslovi uključeni u torrentu"
+
+msgctxt "#30544"
+msgid "Automatic Scrape"
+msgstr "Automatsko pretraživanje"
+
+msgctxt "#30545"
+msgid ""
+"Automatic scraping allows to scrape connected providers[CR]to find new "
+"movies, if there are results,"
+msgstr ""
+"Automatsko pretraživanje dopušta pretraživanje povezanih pružatelja "
+"usluga[CR]u svrhu pronalaska novih filmova, ako postoje rezultati,"
+
+msgctxt "#30546"
+msgid "Strategy"
+msgstr "Strategija"
+
+msgctxt "#30547"
+msgid "Find in each provider"
+msgstr "Pretraži svakog pružatelja usluge"
+
+msgctxt "#30548"
+msgid "Find in overall"
+msgstr "Pretraži globalno"
+
+msgctxt "#30549"
+msgid "Number of results to find"
+msgstr "Broj pronađenih rezultata"
+
+msgctxt "#30550"
+msgid "What to search"
+msgstr "Što pretražiiti"
+
+msgctxt "#30551"
+msgid "How to search"
+msgstr "Nova pretragaKako pretražiti"
+
+msgctxt "#30552"
+msgid "Search each N hours"
+msgstr "Pretraži svakih N sati"
+
+msgctxt "#30553"
+msgid "Find 4K resolution"
+msgstr "Pretraži 4K razlučivost"
+
+msgctxt "#30554"
+msgid "Find 1080p resolution"
+msgstr "Pretraži 1080p razlučivost"
+
+msgctxt "#30555"
+msgid ""
+"and movie passes checks for number of results[CR]movie can be added to the "
+"library."
+msgstr ""
+"tada film prolazi provjeru za broj rezultata[CR]i film se može dodati u "
+"videoteku."
+
+msgctxt "#30556"
+msgid "Add to the library"
+msgstr "Dodaj u videoteku"
+
+msgctxt "#30557"
+msgid "Number of popular movies to search"
+msgstr "Broj popularnih filmova za pretražiti"
+
+msgctxt "#30558"
+msgid "Latest available movies"
+msgstr "Najnoviji dostupni filmovi"
+
+msgctxt "#30559"
+msgid "Skip searching for installed providers"
+msgstr "Preskoči pretraživanje instaliranih pružatelja usluga"
+
+msgctxt "#30560"
+msgid "Files: %s"
+msgstr "Datoteka: %s"
+
+msgctxt "#30561"
+msgid "Interval between requests, seconds"
+msgstr "Vrijeme između zahtjeva, sekunde"
+
+msgctxt "#30562"
+msgid "Open directory with Kodi file browser"
+msgstr "Otvori direktorij s Kodi preglednikom datoteka"
+
+msgctxt "#30563"
+msgid "Synchronize frequency of Trakt (minutes)"
+msgstr "Učestalost usklađivanja s Traktom (minuta)"
+
+msgctxt "#30564"
+msgid "Sync hidden items"
+msgstr "Uskladi skrivene stavke"
+
+msgctxt "#30565"
+msgid "Sync playback progress into Kodi library"
+msgstr "Uskladi napredak gledanja u Kodi videoteku"
+
+msgctxt "#30566"
+msgid "Lists"
+msgstr "Popisi"
+
+msgctxt "#30567"
+msgid "Show \"All seasons\" in shows"
+msgstr "Prikaži \"Sve sezone\" TV serijama"
+
+msgctxt "#30568"
+msgid "Seasons order"
+msgstr "Poredak sezona"
+
+msgctxt "#30569"
+msgid "Ascending"
+msgstr "Uzlazni"
+
+msgctxt "#30570"
+msgid "Descending"
+msgstr "Silazni"
+
+msgctxt "#30571"
+msgid "* All seasons"
+msgstr "* Sve sezone"
+
+msgctxt "#30572"
+msgid "Log response body"
+msgstr "Zapisuj odgovor tijela"
+
+msgctxt "#30573"
+msgid "Select file to play"
+msgstr "Odaberi datoteku za gledanje"
+
+msgctxt "#30574"
+msgid "Automatically answer Yes after timeout"
+msgstr "Automatski odgovori Da nakon isteka vremena"
+
+msgctxt "#30575"
+msgid "Timeout, seconds"
+msgstr "Vrijeme čekanja, sekunde"
+
+msgctxt "#30576"
+msgid "Trakt authentication needs to be updated!"
+msgstr "Trakt ovjera se treba nadopuniti!"
+
+msgctxt "#30577"
+msgid "End of file Buffer size (MB)"
+msgstr "Kraj veličine spremnika datoteke (MB)"
+
+msgctxt "#30578"
+msgid "Beginning of file Buffer size (MB)"
+msgstr "Početak veličine spremnika datoteke (MB)"
+
+msgctxt "#30579"
+msgid "Settings"
+msgstr "Postavke"
+
+msgctxt "#30580"
+msgid "Custom Trakt API Client ID"
+msgstr "Prilagođeni ID Trakt API klijenta"
+
+msgctxt "#30581"
+msgid "Custom Trakt API Client Secret"
+msgstr "Prilagođena tajna Trakt API klijenta"
+
+msgctxt "#30582"
+msgid "Settings for %s provider"
+msgstr "Postavke za %s pružatelja usluge"
+
+msgctxt "#30583"
+msgid "Resolving magnet link"
+msgstr "Razrješavanje magnetne poveznice"
+
+msgctxt "#30584"
+msgid "Remove multiple plays from history, leave 1"
+msgstr "Ukloni višestruka gledanja iz povijesti, napusti 1"
 
 #~ msgctxt "#30398"
 #~ msgid "Debug information"
