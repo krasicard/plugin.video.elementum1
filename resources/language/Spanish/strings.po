@@ -2039,11 +2039,11 @@ msgstr "¡La autenticación de Trakt necesita ser actualizada!"
 
 msgctxt "#30577"
 msgid "End of file Buffer size (MB)"
-msgstr "Tamaño de buffer fin de archivo (MB)"
+msgstr "Tamaño de buffer para fin de archivo (MB)"
 
 msgctxt "#30578"
 msgid "Beginning of file Buffer size (MB)"
-msgstr "Tamaño de buffer comienzo de archivo (MB)"
+msgstr "Tamaño de buffer para comienzo de archivo (MB)"
 
 msgctxt "#30579"
 msgid "Settings"
@@ -2051,11 +2051,11 @@ msgstr "Ajustes"
 
 msgctxt "#30580"
 msgid "Custom Trakt API Client ID"
-msgstr "ID de Cliente personalizada para API Trakt"
+msgstr "ID Cliente personalizada para API Trakt"
 
 msgctxt "#30581"
 msgid "Custom Trakt API Client Secret"
-msgstr "Llave Secreta de Cliente personalizada para API Trakt"
+msgstr "ID Cliente Secreta personalizada para API Trakt"
 
 msgctxt "#30582"
 msgid "Settings for %s provider"
