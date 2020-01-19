@@ -2035,7 +2035,7 @@ msgstr "Timeout (segundos)"
 
 msgctxt "#30576"
 msgid "Trakt authentication needs to be updated!"
-msgstr "¡La autenticación de Trakt necesita ser actualizada!"
+msgstr "¡La autenticación para Trakt necesita ser actualizada!"
 
 msgctxt "#30577"
 msgid "End of file Buffer size (MB)"
