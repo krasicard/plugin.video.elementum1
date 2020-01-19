@@ -2064,3 +2064,7 @@ msgstr "Ajustes para proveedor %s"
 msgctxt "#30583"
 msgid "Resolving magnet link"
 msgstr "Resolviendo enlace magnet"
+
+msgctxt "#30584"
+msgid "Remove multiple plays from history, leave 1"
+msgstr "Eliminar archivos reproducidos del historial, dejar solo uno"
