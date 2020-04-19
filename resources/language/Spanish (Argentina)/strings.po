@@ -414,7 +414,7 @@ msgstr "Sólamente torrents activos"
 # Interface
 msgctxt "#30100"
 msgid "Elementum has crashed, restarting..."
-msgstr "Elementum se ha cerrado insperadamente, reiniciando..."
+msgstr "Elementum se ha cerrado inesperadamente, reiniciando..."
 
 msgctxt "#30101"
 msgid "You must restart Kodi before using Elementum"
@@ -458,7 +458,7 @@ msgstr "Se colgó demasiadas veces, abortando..."
 
 msgctxt "#30111"
 msgid "Provider failed too many times, disabling..."
-msgstr "PRovvedor falló demasiadas veces, desactivando..."
+msgstr "Proveedor falló demasiadas veces, desactivando..."
 
 msgctxt "#30112"
 msgid "Unable to disable provider"
@@ -820,11 +820,11 @@ msgstr "Ahora hay un multiproveedor oficial de Elementum llamado [COLOR FFFF6B00
 
 msgctxt "#30272"
 msgid "Installation successful, enjoy Elementum [COLOR FFFF6B00]Burst[/COLOR]!"
-msgstr "La instalación exitosa, disfrute de Elementum [COLOR FFFF6B00]Burst[/COLOR]!"
+msgstr "Instalación exitosa, disfrute de Elementum [COLOR FFFF6B00]Burst[/COLOR]!"
 
 msgctxt "#30273"
 msgid "Shoot... It looks like we couldn't install [COLOR FFFF6B00]Burst[/COLOR] automatically, head over to the Elementum Repository, then under the Program add-ons section to install it."
-msgstr "Epa... Parece que no pudimos instalar[COLOR FFFF6B00]Burst[/COLOR] automáticamente, vaya al Repositorio Elementum, y luego en la sección de Addons de Programa para instalarlo."
+msgstr "Epa... Parece que no pudimos instalar[COLOR FFFF6B00]Burst[/COLOR] automáticamente, vaya al Repositorio Elementum y luego a la sección de Addons de Programa para instalarlo."
 
 msgctxt "#30274"
 msgid "Enable all"
@@ -840,11 +840,11 @@ msgstr "Borrar torrents y archivos"
 
 msgctxt "#30277"
 msgid "%s added to library, do you want to rescan it?[CR]You can later use Kodi's 'Update library' feature instead."
-msgstr "%s añadidos a la Colección ¿Quiere volver a escanearla?[CR]Puede utilizar luego la función 'Actualizar la Colección' de Kodi."
+msgstr "%s añadidos a la Colección ¿Quiere volver a escanearla?[CR]Luego puede utilizar la función 'Actualizar la Colección' de Kodi."
 
 msgctxt "#30278"
 msgid "%s removed from library, do you want to clean it?[CR]You can later use Kodi's 'Clean library' feature instead."
-msgstr "%s removido de la Colección ¿Quiere limpiarla?[CR]Puede utilizar luego la función 'Limpiar Colección' de Kodi."
+msgstr "%s removido de la Colección ¿Quiere limpiarla?[CR]Luego puede utilizar la función 'Limpiar Colección' de Kodi."
 
 msgctxt "#30279"
 msgid "Watchlist added to library"
@@ -876,7 +876,7 @@ msgstr "Mostrar episodios no emitidos"
 
 msgctxt "#30286"
 msgid "%s merged to library, do you want to rescan it?[CR]You can later use Kodi's 'Update library' feature instead."
-msgstr "%s fusionados en la Colección ¿Quiere volver a escanearla?[CR]Puede utilizar luego la función 'Actualizar Colección' de Kodi."
+msgstr "%s fusionados en la Colección ¿Quiere volver a escanearla?[CR]Luego puede utilizar la función 'Actualizar Colección' de Kodi."
 
 msgctxt "#30287"
 msgid "%s already in library"
@@ -884,7 +884,7 @@ msgstr "ya está en la Colección"
 
 msgctxt "#30288"
 msgid "Library updated, do you want to rescan it?[CR]You can later use Kodi's 'Update library' feature instead."
-msgstr "Colección actualizada, ¿Desea volver a escanearla?[CR]Puede utilizar luego la función 'Actualizar Colección' de Kodi."
+msgstr "Colección actualizada, ¿Desea volver a escanearla?[CR]Luego puede utilizar la función 'Actualizar Colección' de Kodi."
 
 msgctxt "#30289"
 msgid "Genres"
@@ -944,7 +944,7 @@ msgstr "Los archivos sólo se moverán una vez finalizada la siembra (ver[CR]- A
 
 msgctxt "#30303"
 msgid "RAR archive detected. Download will need to be completed before playback can start and will require around twice the amount of space, continue?"
-msgstr "Archivo RAR detectado. La descarga deberá completarse antes de que la reproducción pueda comenzar y requerirá aproximadamente el doble de la cantidad de espacio ¿Continuar?"
+msgstr "Archivo RAR detectado. La descarga deberá completarse para que la reproducción pueda comenzar y requerirá aproximadamente el doble de la cantidad de espacio ¿Continuar?"
 
 msgctxt "#30304"
 msgid "Error creating output pipe for 'unrar' command"
@@ -1148,7 +1148,7 @@ msgstr "Asignación automática de puertos de red"
 
 msgctxt "#30354"
 msgid "Could not start Torrent client. Please report to github with the Kodi log file!"
-msgstr "No se pudo iniciar cliente Torrent. ¡Por favor reporte esto a Github con el archivo de registro de Kodi!"
+msgstr "No se pudo iniciar cliente Torrent. ¡Por favor reporte esto en GitHub con el archivo de registro de Kodi!"
 
 msgctxt "#30355"
 msgid "Changelog"
@@ -1984,7 +1984,7 @@ msgstr "Abrir directorio con explorador archivos Kodi"
 
 msgctxt "#30563"
 msgid "Synchronize frequency of Trakt (minutes)"
-msgstr "Sincronizar frecuencia de Trakt (mins.)"
+msgstr "Frecuencia de sincronización de Trakt (mins.)"
 
 msgctxt "#30564"
 msgid "Sync hidden items"
@@ -2036,7 +2036,7 @@ msgstr "Tiempo espera (segs.)"
 
 msgctxt "#30576"
 msgid "Trakt authentication needs to be updated!"
-msgstr "¡Debe acrualizar su autenticaciónn en Trakt!"
+msgstr "¡Debe actualizar su autenticación en Trakt!"
 
 msgctxt "#30577"
 msgid "End of file Buffer size (MB)"
@@ -2069,3 +2069,15 @@ msgstr "Resolviendo link magnet"
 msgctxt "#30584"
 msgid "Remove multiple plays from history, leave 1"
 msgstr "Dejar sólo 1 reproducción en historial, borrar anteriores"
+
+msgctxt "#30585"
+msgid "Enable library integration with Kodi"
+msgstr "Activar integración Colección con Kodi"
+
+msgctxt "#30586"
+msgid "If disabled - Elementum will not get/insert items[CR]to Kodi library and skip[CR]watched management with Kodi."
+msgstr "Si inactivo Elementum no obtendrá/insertará items[CR]en Colección Kodi y evitará[CR]manejo de estado Visto con Kodi"
+
+msgctxt "#30587"
+msgid "Show welcome message on start"
+msgstr "Mostrar bienvenida al arrancar"
