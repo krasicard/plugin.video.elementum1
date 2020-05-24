@@ -5,6 +5,7 @@
         <setting label="30603" type="lsep" />
         <setting id="greeting_enabled" label="30587" type="bool" default="true" />
         <setting id="preload_timeout" label="30602" type="slider" option="int" range="1,1,120" default="1" />
+        <setting id="binary_platform" label="30611" type="select" values="Auto|android_arm|android_arm64|android_x86|android_x64|linux_armv6|linux_armv7|linux_arm64|linux_x86|linux_x64|darwin_x86|darwin_x64|windows_x86|windows_x64" default="Auto" />
 
         <!-- Storage -->
         <setting label="30327" type="lsep" />
@@ -62,6 +63,7 @@
         <setting id="force_link_type" type="bool" label="30324" default="false" />
         <setting id="smart_episode_match" type="bool" label="30333" default="true" />
         <setting id="smart_episode_start" type="bool" label="30525" default="true" />
+        <setting id="smart_episode_choose" type="bool" label="30609" default="true" />
         <setting id="use_cache_torrents" type="bool" label="30605" default="true" />
         <setting id="show_files_watched" type="bool" label="30606" default="true" />
     </category>
@@ -182,6 +184,7 @@
         <setting id="listen_autodetect_port" label="30371" type="bool" default="true" />
         <setting id="listen_port_min" label="30006" type="number" default="6891" enable="eq(-1,false)" />
         <setting id="listen_port_max" label="30007" type="number" default="6899" enable="eq(-2,false)" />
+        <setting id="magnet_resolve_timeout" label="30610" type="slider" option="int" range="1,1,180" default="15" />
 
         <setting label="30327" type="lsep" />
         <setting type="text" label="30598" enable="false" />

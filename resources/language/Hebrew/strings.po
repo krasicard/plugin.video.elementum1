@@ -2170,6 +2170,18 @@ msgctxt "#30608"
 msgid "Match found in your active torrents, play it?[CR]%s"
 msgstr ""
 
+msgctxt "#30609"
+msgid "Automatically start next episode if available"
+msgstr ""
+
+msgctxt "#30610"
+msgid "Magnet resolve timeout (seconds)"
+msgstr ""
+
+msgctxt "#30611"
+msgid "Application platform type"
+msgstr ""
+
 #~ msgctxt "#30028"
 #~ msgid "Do not ask to keep downloading"
 #~ msgstr "לא לשאול האם להמשיך להוריד"
