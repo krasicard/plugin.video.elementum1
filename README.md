@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/elgatito/plugin.video.elementum.svg?branch=master)](https://travis-ci.org/elgatito/plugin.video.elementum)
+[![Build Status](https://travis-ci.org/I-Cat/plugin.video.elementum.svg?branch=master)](https://travis-ci.org/I-Cat/plugin.video.elementum)
 [![Join the chat at https://gitter.im/ElementumApp/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ElementumApp/Lobby)
 
 
