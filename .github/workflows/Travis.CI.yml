@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Travis CI
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -34,93 +34,94 @@ jobs:
         
 dist: bionic
 language: python
+Python: 2.7
 python: 3.8
 
 matrix:
   include:
-    - python: 3.5
-    - python: 3.6
-    - python: 3.7
-    - python: 3.8
-    - env: REPO=repo-plugins BRANCH=gotham
-    - env: REPO=repo-plugins BRANCH=helix
-    - env: REPO=repo-plugins BRANCH=isengard
-    - env: REPO=repo-plugins BRANCH=jarvis
-    - env: REPO=repo-plugins BRANCH=krypton
-    - env: REPO=repo-plugins BRANCH=leia
-    - env: REPO=repo-plugins BRANCH=matrix
-    - env: REPO=repo-scrapers BRANCH=gotham
-    - env: REPO=repo-scrapers BRANCH=helix
-    - env: REPO=repo-scrapers BRANCH=isengard
-    - env: REPO=repo-scrapers BRANCH=jarvis
-    - env: REPO=repo-scrapers BRANCH=krypton
-    - env: REPO=repo-scrapers BRANCH=leia
-    - env: REPO=repo-scrapers BRANCH=matrix
-    - env: REPO=repo-resources BRANCH=isengard
-    - env: REPO=repo-resources BRANCH=jarvis
-    - env: REPO=repo-resources BRANCH=krypton
-    - env: REPO=repo-resources BRANCH=leia
-    - env: REPO=repo-resources BRANCH=matrix
-    - env: REPO=repo-scripts BRANCH=gotham
-    - env: REPO=repo-scripts BRANCH=helix
-    - env: REPO=repo-scripts BRANCH=isengard
-    - env: REPO=repo-scripts BRANCH=jarvis
-    - env: REPO=repo-scripts BRANCH=krypton
-    - env: REPO=repo-scripts BRANCH=leia
-    - env: REPO=repo-scripts BRANCH=matrix
-    - env: REPO=repo-skins BRANCH=krypton
-    - env: REPO=repo-skins BRANCH=leia
-    - env: REPO=repo-skins BRANCH=matrix
+      python: 3.5
+      python: 3.6
+      python: 3.7
+      python: 3.8
+      env: REPO=repo-plugins BRANCH=gotham
+      env: REPO=repo-plugins BRANCH=helix
+      env: REPO=repo-plugins BRANCH=isengard
+      env: REPO=repo-plugins BRANCH=jarvis
+      env: REPO=repo-plugins BRANCH=krypton
+      env: REPO=repo-plugins BRANCH=leia
+      env: REPO=repo-plugins BRANCH=matrix
+      env: REPO=repo-scrapers BRANCH=gotham
+      env: REPO=repo-scrapers BRANCH=helix
+      env: REPO=repo-scrapers BRANCH=isengard
+      env: REPO=repo-scrapers BRANCH=jarvis
+      env: REPO=repo-scrapers BRANCH=krypton
+      env: REPO=repo-scrapers BRANCH=leia
+      env: REPO=repo-scrapers BRANCH=matrix
+      env: REPO=repo-resources BRANCH=isengard
+      env: REPO=repo-resources BRANCH=jarvis
+      env: REPO=repo-resources BRANCH=krypton
+      env: REPO=repo-resources BRANCH=leia
+      env: REPO=repo-resources BRANCH=matrix
+      env: REPO=repo-scripts BRANCH=gotham
+      env: REPO=repo-scripts BRANCH=helix
+      env: REPO=repo-scripts BRANCH=isengard
+      env: REPO=repo-scripts BRANCH=jarvis
+      env: REPO=repo-scripts BRANCH=krypton
+      env: REPO=repo-scripts BRANCH=leia
+      env: REPO=repo-scripts BRANCH=matrix
+      env: REPO=repo-skins BRANCH=krypton
+      env: REPO=repo-skins BRANCH=leia
+      env: REPO=repo-skins BRANCH=matrix
   allow_failures:
-    - env: REPO=repo-plugins BRANCH=gotham
-    - env: REPO=repo-plugins BRANCH=helix
-    - env: REPO=repo-plugins BRANCH=isengard
-    - env: REPO=repo-plugins BRANCH=jarvis
-    - env: REPO=repo-plugins BRANCH=krypton
-    - env: REPO=repo-plugins BRANCH=leia
-    - env: REPO=repo-plugins BRANCH=matrix
-    - env: REPO=repo-scrapers BRANCH=gotham
-    - env: REPO=repo-scrapers BRANCH=helix
-    - env: REPO=repo-scrapers BRANCH=isengard
-    - env: REPO=repo-scrapers BRANCH=jarvis
-    - env: REPO=repo-scrapers BRANCH=krypton
-    - env: REPO=repo-scrapers BRANCH=leia
-    - env: REPO=repo-scrapers BRANCH=matrix
-    - env: REPO=repo-resources BRANCH=isengard
-    - env: REPO=repo-resources BRANCH=jarvis
-    - env: REPO=repo-resources BRANCH=krypton
-    - env: REPO=repo-resources BRANCH=leia
-    - env: REPO=repo-resources BRANCH=matrix
-    - env: REPO=repo-scripts BRANCH=gotham
-    - env: REPO=repo-scripts BRANCH=helix
-    - env: REPO=repo-scripts BRANCH=isengard
-    - env: REPO=repo-scripts BRANCH=jarvis
-    - env: REPO=repo-scripts BRANCH=krypton
-    - env: REPO=repo-scripts BRANCH=leia
-    - env: REPO=repo-scripts BRANCH=matrix
-    - env: REPO=repo-skins BRANCH=krypton
-    - env: REPO=repo-skins BRANCH=leia
-    - env: REPO=repo-skins BRANCH=matrix
+      env: REPO=repo-plugins BRANCH=gotham
+      env: REPO=repo-plugins BRANCH=helix
+      env: REPO=repo-plugins BRANCH=isengard
+      env: REPO=repo-plugins BRANCH=jarvis
+      env: REPO=repo-plugins BRANCH=krypton
+      env: REPO=repo-plugins BRANCH=leia
+      env: REPO=repo-plugins BRANCH=matrix
+      env: REPO=repo-scrapers BRANCH=gotham
+      env: REPO=repo-scrapers BRANCH=helix
+      env: REPO=repo-scrapers BRANCH=isengard
+      env: REPO=repo-scrapers BRANCH=jarvis
+      env: REPO=repo-scrapers BRANCH=krypton
+      env: REPO=repo-scrapers BRANCH=leia
+      env: REPO=repo-scrapers BRANCH=matrix
+      env: REPO=repo-resources BRANCH=isengard
+      env: REPO=repo-resources BRANCH=jarvis
+      env: REPO=repo-resources BRANCH=krypton
+      env: REPO=repo-resources BRANCH=leia
+      env: REPO=repo-resources BRANCH=matrix
+      env: REPO=repo-scripts BRANCH=gotham
+      env: REPO=repo-scripts BRANCH=helix
+      env: REPO=repo-scripts BRANCH=isengard
+      env: REPO=repo-scripts BRANCH=jarvis
+      env: REPO=repo-scripts BRANCH=krypton
+      env: REPO=repo-scripts BRANCH=leia
+      env: REPO=repo-scripts BRANCH=matrix
+      env: REPO=repo-skins BRANCH=krypton
+      env: REPO=repo-skins BRANCH=leia
+      env: REPO=repo-skins BRANCH=matrix
 
 # command to install dependencies
 install:
-  - pip install -r requirements.txt
+  - print info  requirements.txt
   - pip install pylint
 
 before_script:
-  - if [[ -n "$REPO" && -n "$BRANCH" ]]; then
+    if [[ -n "$REPO" && -n "$BRANCH" ]]; then
     git clone --branch=$BRANCH --depth=1 --single-branch https://github.com/xbmc/$REPO.git ../repo;
     fi
 
 # command to run tests
 script:
-  - if [[ -n "$REPO" && -n "$BRANCH" ]]; then
+    if [[ -n "$REPO" && -n "$BRANCH" ]]; then
     python3 -m kodi_addon_checker --branch=$BRANCH ../repo;
     fi
-  - if [[ -z "$REPO" || -z "$BRANCH" ]]; then
+    if [[ -z "$REPO" || -z "$BRANCH" ]]; then
     py.test -v;
     fi
-  - if [[ -z "$REPO" || -z "$BRANCH" ]]; then
+    if [[ -z "$REPO" || -z "$BRANCH" ]]; then
     pylint *;
     fi
     
@@ -630,3 +631,53 @@ script:
     ]
   }
 }
+
+language: python
+python:
+    2.7
+    
+git:
+  submodules: false
+
+before_install:
+    rm -rf plugin.video.elementum
+    git clone https://github.com/elgatito/elementum-binaries.git resources/bin/
+      git submodule init
+      git submodule update --depth=22
+
+install:
+   pip remove -r requirements.txt
+   pip Install flake8
+
+script:
+    ./scripts/xgettext.sh
+    make
+    |
+    if [ "${TRAVIS_PULL_REQUEST}" = "false" ] && [ -n "${TRAVIS_TAG}" ]; then
+      make zipfiles
+    &:
+
+  deploy:
+    provider: releases
+    api_key: $GH_TOKEN
+    file:
+        plugin.video.elementum-${TRAVIS_TAG:1}.zip
+        plugin.video.elementum-${TRAVIS_TAG:1}.android_arm.zip
+        plugin.video.elementum-${TRAVIS_TAG:1}.android_arm64.zip
+        plugin.video.elementum-${TRAVIS_TAG:1}.android_x86.zip
+        plugin.video.elementum-${TRAVIS_TAG:1}.darwin_x86.zip
+        plugin.video.elementum-${TRAVIS_TAG:1}.darwin_x64.zip
+        plugin.video.elementum-${TRAVIS_TAG:1}.ios_arm64.zip
+        plugin.video.elementum-${TRAVIS_TAG:1}.ios_arm-7.zip
+        plugin.video.elementum-${TRAVIS_TAG:1}.linux_arm-6.zip
+        plugin.video.elementum-${TRAVIS_TAG:1}.linux_arm-7.zip
+        plugin.video.elementum-${TRAVIS_TAG:1}.linux_arm64.zip
+        plugin.video.elementum-${TRAVIS_TAG:1}.linux_x64.zip
+        plugin.video.elementum-${TRAVIS_TAG:1}.linux_x86.zip
+        plugin.video.elementum-${TRAVIS_TAG:1}.windows_x64.zip
+        plugin.video.elementum-${TRAVIS_TAG:1}.windows_x86.zip
+    skip_cleanup: true
+    overwrite: true
+    on:
+      tags: true
+    Print: 
