@@ -1,0 +1,16 @@
+language: python
+python:
+  - "3.6"
+
+install:
+  - pip install Pillow
+
+# command to run our tests
+script: 
+  - cd .tests 
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then python check_repo.py; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then python check_repo.py  $(git diff --name-only HEAD~ | grep / | cut -d / -f1 | sort | uniq); fi'
+
+notifications:
+  email:
+    on_failure: change # default: always
