@@ -1,34 +1,16 @@
-language: go
-sudo: required
+on:
+  push:
+    branches: |
+      master
+      release/*
+       name: Setup Go environment
+        use: actions/setup-go@v2.0.3
+       with:
+    # The Go version to download (if necessary) and use. Supports semver spec and ranges.
+  #  go-version: # optional
+    # Whether to download only stable versions
+  #  stable: # optional, default is true
 
-# https://docs.travis-ci.com/user/languages/go/#go-import-path
-go_import_path: github.com/etix/mirrorbits
-
-go:
-  - "1.11.x"
-  - "1.12.x"
-  - "1.13.x"
-  - master
-
-os:
-  - linux
-
-matrix:
-  allow_failures:
-    - go: master
-
-before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y libgeoip-dev
-  - curl -L https://github.com/google/protobuf/releases/download/v3.9.1/protoc-3.9.1-linux-x86_64.zip -o /tmp/protoc.zip
-  - unzip /tmp/protoc.zip -d "$HOME"/protoc
-
-install:
-  - go version
-  - export GOBIN="$GOPATH/bin"
-  - export PROTOCBIN="$HOME/protoc/bin"
-  - export PATH="$PATH:$PROTOCBIN:$GOBIN"
-  - go env
-
-script:
-  - make && make test
+jobs: |
+     Go Action
+     actions-contrib/go@v0.1.0
