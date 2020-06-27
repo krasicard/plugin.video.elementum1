@@ -1,16 +1,15 @@
-on:
-  push:
-    branches: |
-      master
-      release/*
-       name: Setup Go environment
-        use: actions/setup-go@v2.0.3
-       with:
+# on:
+#  push:
+#    branches: |
+#      master
+#       name: Setup Go environment
+#        use: actions/setup-go@v2.0.3
+#       with:
     # The Go version to download (if necessary) and use. Supports semver spec and ranges.
   #  go-version: # optional
     # Whether to download only stable versions
   #  stable: # optional, default is true
 
-jobs: |
-     Go Action
-     actions-contrib/go@v0.1.0
+#jobs: |
+#     Go Action
+#     actions-contrib/go@v0.1.0
