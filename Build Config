@@ -13,6 +13,9 @@
     "master"
   ],
   "before_install": [
+    "pip --version"
+    "python -m ensurepip --default-pip"
+    "sudo python --version"
     "sudo apt-get -qq update",
     "sudo apt-get install -y libgeoip-dev",
     "curl -L https://github.com/google/protobuf/releases/download/v3.9.1/protoc-3.9.1-linux-x86_64.zip -o /tmp/protoc.zip",
