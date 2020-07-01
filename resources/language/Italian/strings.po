@@ -479,7 +479,7 @@ msgstr "Scraper Serie TV utilizzato dalla libreria di Kodi"
 
 msgctxt "#30116"
 msgid "Looks like Elementum is still starting up, give it a few seconds..."
-msgstr "Sembra che Elementum si sta ancora avviando, dagli qualche secondo..."
+msgstr "Sembra che Elementum si stia ancora avviando, dagli qualche secondo..."
 
 msgctxt "#30117"
 msgid "Resolving torrent files..."
@@ -515,7 +515,7 @@ msgstr "Continuare a scaricare '%s'?"
 
 msgctxt "#30147"
 msgid "Caches are still warming up, give it a minute or two..."
-msgstr "La cache si sta ancora popolando, dagli un minito o due..."
+msgstr "La cache si sta ancora popolando, dagli un minuto o due..."
 
 msgctxt "#30148"
 msgid "Caches warmed up"
@@ -816,7 +816,7 @@ msgstr "Corrispondenza trovata nei tuoi torrent attivi, mettere in play?"
 
 msgctxt "#30271"
 msgid "There is now an official multi-provider for Elementum called [COLOR FFFF6B00]Burst[/COLOR], would you like to install it now?"
-msgstr "E' ora disponibile un multi-provider ufficiale per Elementum chiamato [COLOR FFFF6B00]Burst[/COLOR], vuoi installarlo adesso?"
+msgstr "È ora disponibile un multi-provider ufficiale per Elementum chiamato [COLOR FFFF6B00]Burst[/COLOR], vuoi installarlo adesso?"
 
 msgctxt "#30272"
 msgid "Installation successful, enjoy Elementum [COLOR FFFF6B00]Burst[/COLOR]!"
@@ -824,7 +824,7 @@ msgstr "Installazione completata, goditi Elementum [COLOR FFFF6B00]Burst[/COLOR]
 
 msgctxt "#30273"
 msgid "Shoot... It looks like we couldn't install [COLOR FFFF6B00]Burst[/COLOR] automatically, head over to the Elementum Repository, then under the Program add-ons section to install it."
-msgstr "Sembra che è impossibile installare [COLOR FFFF6B00]Burst[/COLOR] automaticamente, per installarlo vai sul Repository Elementum, sezione add-ons Programmi."
+msgstr "Sembra che sia impossibile installare [COLOR FFFF6B00]Burst[/COLOR] automaticamente, per installarlo vai sul Repository Elementum, sezione add-ons Programmi."
 
 msgctxt "#30274"
 msgid "Enable all"
