@@ -1,6 +1,6 @@
 
-[![Build Status](https://travis-ci.org/elgatito/plugin.video.elementum.svg?branch=master)](https://travis-ci.org/elgatito/plugin.video.elementum)
-[![Join the chat at https://gitter.im/ElementumApp/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ElementumApp/Lobby)
+[![Build Status](https://travis-ci.org/I-Cat/plugin.video.elementum.svg?branch=master)](https://travis-ci.org/I-Cat/plugin.video.elementum)
+[![Join the chat at https://gitter.im/I-Cat/ElementumApp/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/I-Cat/ElementumApp/Lobby)
 
 
 Support
@@ -53,7 +53,7 @@ repositories. Here's the stack from top to bottom:
 #### Build status of each project
 | elementum daemon |
 | ---------------- |
-| [![Build Status](https://travis-ci.org/elgatito/elementum.svg?branch=master)](https://travis-ci.org/elgatito/elementum) |
+| [![Build Status](https://travis-ci.org/I-Cat/elementum.svg?branch=master)](https://travis-ci.org/I-Cat/elementum) |
 
 For Developers' guide, please, refer to [Elementum website](http://elementum.surge.sh)
 
@@ -92,7 +92,7 @@ FAQ
 Spread the word. Talk about it with your friends, show them, make videos, tutorials. Talk about it on social networks, blogs, etc...
 
 ##### The plugin doesn't work, what can I do?
-Please search currently [open and closed issues](https://github.com/I-Cat/elgatito/plugin.video.elgatito/issues) to see if it has already been reported and/or fixed. If not then add a new issue with a short but descriptive title, a detailed description and of course a link to the logs. If you don't know how to do that, just follow the guide at: [http://kodi.wiki/view/Log_file/Easy](http://kodi.wiki/view/Log_file/Easy). If you actually went through the logs and know the relevant part, you can instead paste that, as long as it's shorter than a hundred lines or so, and please enclose it in triple back-quotes for readability.
+Please search currently [open and closed issues](https://github.com/I-Cat/plugin.video.elgatito/issues) to see if it has already been reported and/or fixed. If not then add a new issue with a short but descriptive title, a detailed description and of course a link to the logs. If you don't know how to do that, just follow the guide at: [http://kodi.wiki/view/Log_file/Easy](http://kodi.wiki/view/Log_file/Easy). If you actually went through the logs and know the relevant part, you can instead paste that, as long as it's shorter than a hundred lines or so, and please enclose it in triple back-quotes for readability.
 
 ##### Can I seek in a video?
 Yes, but it can fail.
