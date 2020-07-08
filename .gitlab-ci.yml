@@ -60,6 +60,7 @@ release:
         cd/ $CI_BUILD_TAG; \
         mirror --reverse --verbose --include '.*' --include '.*/' --include-glob *.zip; \
         next;"
+        make R requirements.txt
   artifacts:
     paths: |
       plugin.video.elementum-${CI_BUILD_TAG:1}.zip
