@@ -29,7 +29,7 @@ tests:
   scripts: |
       flake8
       --output-file=LOG.TEXT
-      ./scripts/xgettext.sh
+#     ./scripts/xgettext.sh
 
 build:
   stage: build
