@@ -940,7 +940,7 @@ msgstr "Mover descargas finalizadas a carpetas separadas"
 
 msgctxt "#30302"
 msgid "Files will only be moved after seeding is finished (see[CR]- BitTorrent settings), and will wait if currently playing"
-msgstr "Los archivos sólo se moverán una vez finalizada la siembra (ver[CR]- Ajustes de BitTorrent), y esperará si se está reproduciendo."
+msgstr "Los archivos sólo se moverán una vez finalizada el seeding (ver[CR]- Ajustes de BitTorrent), y esperará si se está reproduciendo."
 
 msgctxt "#30303"
 msgid "RAR archive detected. Download will need to be completed before playback can start and will require around twice the amount of space, continue?"
@@ -1832,7 +1832,7 @@ msgstr "Tamaño mínimo de archivos Series en MB"
 
 msgctxt "#30525"
 msgid "Automatically start downloading next episode"
-msgstr "Iniciar descarga episodio siguiente automaáticamente"
+msgstr "Iniciar descarga episodio siguiente automáticamente"
 
 msgctxt "#30526"
 msgid "Use english title as 'original' for Anime search"
@@ -2180,16 +2180,16 @@ msgstr "Tipo plataforma aplicación"
 
 msgctxt "#30612"
 msgid "Select file to download"
-msgstr ""
+msgstr "Seleccionar archivo a descargar"
 
 msgctxt "#30613"
 msgid "... for movie"
-msgstr ""
+msgstr "... para película"
 
 msgctxt "#30614"
 msgid "... for tv show"
-msgstr ""
+msgstr "... para serie"
 
 msgctxt "#30615"
 msgid "... for search"
-msgstr ""
+msgstr "... para búsqueda"
