@@ -2160,7 +2160,7 @@ msgstr "Mostrar estado de visto para archivos torrents"
 
 msgctxt "#30607"
 msgid "Use earliest release date as basic for searching"
-msgstr ""
+msgstr "Usar fecha de lanzamiento más temprana para buscar"
 
 msgctxt "#30608"
 msgid "Match found in your active torrents, play it?[CR]%s"
