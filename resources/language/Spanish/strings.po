@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-27 19:53+0200\n"
-"PO-Revision-Date: 2020-07-15 00:00+ZONE\n"
+"PO-Revision-Date: 2020-04-24 00:00+ZONE\n"
 "Last-Translator: roliverosc (2020)\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
@@ -254,7 +254,7 @@ msgstr "Autorizar Elementum"
 
 msgctxt "#30059"
 msgid "Library update delay on startup (seconds)"
-msgstr "Retardo durante inicio para actualizar biblioteca (segundos)"
+msgstr "Retardo durante el inicio (segundos)"
 
 msgctxt "#30060"
 msgid "Library update frequency (hours)"
@@ -374,7 +374,7 @@ msgstr "Timeout buffering inicial (segundos)"
 
 msgctxt "#30089"
 msgid "Automatically re-scan Kodi library after updates"
-msgstr "Re-escanear automáticamente biblioteca Kodi después de actualizaciones"
+msgstr "Escanear automáticamente biblioteca después de actualizaciones"
 
 msgctxt "#30090"
 msgid "Listen interfaces"
@@ -940,7 +940,7 @@ msgstr "Mover descargas finalizadas a carpetas separadas"
 
 msgctxt "#30302"
 msgid "Files will only be moved after seeding is finished (see[CR]- BitTorrent settings), and will wait if currently playing"
-msgstr "Los archivos sólo se moverán una vez finalizada la siembra (ver[CR]- Ajustes BitTorrent), y esperará si se está reproduciendo."
+msgstr "Los archivos sólo se moverán una vez finalizada la siembra (ver[CR]Ajustes > BitTorrent), y esperará si se está reproduciendo."
 
 msgctxt "#30303"
 msgid "RAR archive detected. Download will need to be completed before playback can start and will require around twice the amount of space, continue?"
@@ -1236,7 +1236,7 @@ msgstr "Por tamaño"
 
 msgctxt "#30376"
 msgid "Choose memory size automatically"
-msgstr "Seleccionar automáticamente el tamaño de la memoria"
+msgstr "Seleccionar automáticamente tamaño de memoria"
 
 msgctxt "#30377"
 msgid "Size is chosen automatically, based on[CR]physical amount of memory"
@@ -2080,7 +2080,7 @@ msgstr "Si está deshabilitado - Elementum no obtendrá/insertará elementos[CR]
 
 msgctxt "#30587"
 msgid "Show welcome message on start"
-msgstr "Mostrar mensaje de bienvenida durante inicio"
+msgstr "Mostrar notificación durante el inicio"
 
 msgctxt "#30588"
 msgid "Pre-Play Buffering"
@@ -2140,11 +2140,11 @@ msgstr "Habilitar sincronización durante la reproducción"
 
 msgctxt "#30602"
 msgid "Retry plugin requests after timeout (seconds)"
-msgstr "Reintentar solicitudes de complemento después de timeout (segundos)"
+msgstr "Tiempo para reintentar solicitudes (segundos)"
 
 msgctxt "#30603"
 msgid "Addon Startup"
-msgstr "Arranque del add-on"
+msgstr "Arranque del complemento"
 
 msgctxt "#30604"
 msgid "Clean all history"
@@ -2152,7 +2152,7 @@ msgstr "Limpiar todo el historial"
 
 msgctxt "#30605"
 msgid "Cache downloaded torrent files after searches"
-msgstr "Crear caché de archivo torrent después de buscar"
+msgstr "Almacenar en caché archivos torrents después de búsqueda"
 
 msgctxt "#30606"
 msgid "Show watched state for torrent's files"
@@ -2160,36 +2160,36 @@ msgstr "Mostrar estado de visto para archivos torrents"
 
 msgctxt "#30607"
 msgid "Use earliest release date as basic for searching"
-msgstr "Usar fecha de lanzamiento más reciente para buscar"
+msgstr ""
 
 msgctxt "#30608"
 msgid "Match found in your active torrents, play it?[CR]%s"
-msgstr ""
+msgstr "Encontrada coincidencia en torrents activos, ¿Desea reroducir?[CR]%s"
 
 msgctxt "#30609"
 msgid "Automatically start next episode if available"
-msgstr ""
+msgstr "Reproducir automáticamente próximo episodio si está disponible"
 
 msgctxt "#30610"
 msgid "Magnet resolve timeout (seconds)"
-msgstr ""
+msgstr "Tiempo para resolver enlaces Magnet (segundos)"
 
 msgctxt "#30611"
 msgid "Application platform type"
-msgstr ""
+msgstr "Tipo de plataforma"
 
 msgctxt "#30612"
 msgid "Select file to download"
-msgstr ""
+msgstr "Seleccionar archivo a descargar"
 
 msgctxt "#30613"
 msgid "... for movie"
-msgstr ""
+msgstr "... para película"
 
 msgctxt "#30614"
 msgid "... for tv show"
-msgstr ""
+msgstr "... series TV"
 
 msgctxt "#30615"
 msgid "... for search"
-msgstr ""
+msgstr "... para búsqueda"
