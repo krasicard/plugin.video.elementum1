@@ -494,7 +494,7 @@ msgstr "Skrapar bevakare..."
 
 msgctxt "#30141"
 msgid "Please support Elementum development by visiting[CR]https://elementum.surge.sh/donate/ or https://elementumorg.github.io/donate/"
-msgstr "Vänligen stöda Elementums utveckling genom att besöka [CR]https://elementum.surge.sh/donate/ eller https://elementumorg.github.io/donate/"
+msgstr "Vänligen stöd Elementums utveckling genom att besöka [CR]https://elementum.surge.sh/donate/ eller https://elementumorg.github.io/donate/"
 
 msgctxt "#30142"
 msgid "Default view for menus in Movies"
