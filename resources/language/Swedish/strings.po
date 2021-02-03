@@ -109,7 +109,7 @@ msgstr "Resultat per sida"
 
 msgctxt "#30022"
 msgid "Enable overlay status"
-msgstr ""
+msgstr "Aktivera överlagringsstatus"
 
 msgctxt "#30023"
 msgid "Choose stream automatically"
@@ -141,7 +141,7 @@ msgstr "Sessionsbesparingsfrekvens (sekunder)"
 
 msgctxt "#30030"
 msgid "Overlay status vertical offset"
-msgstr ""
+msgstr "Överlagringsstatus vertikal förskjutning"
 
 msgctxt "#30031"
 msgid "Disable providers failing health check"
