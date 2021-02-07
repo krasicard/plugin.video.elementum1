@@ -2289,3 +2289,27 @@ msgstr "Depuración"
 msgctxt "#30639"
 msgid "Show Specials in season listings"
 msgstr "Mostrar Especiales en listas de Temporadas"
+
+msgctxt "#30640"
+msgid "Bitrate"
+msgstr "Bitrate"
+
+msgctxt "#30641"
+msgid "Playback"
+msgstr "Reproducción"
+
+msgctxt "#30642"
+msgid "Force Resume options"
+msgstr "Opciones de forzar reinicio"
+
+msgctxt "#30643"
+msgid "by Kodi"
+msgstr "por Kodi"
+
+msgctxt "#30644"
+msgid "by Elementum - Ask"
+msgstr "por Elementum - Preguntar"
+
+msgctxt "#30645"
+msgid "by Elementum - Force"
+msgstr "por Elementum - Forzar"
