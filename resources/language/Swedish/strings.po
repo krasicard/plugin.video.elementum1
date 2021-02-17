@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-27 19:53+0200\n"
-"PO-Revision-Date: 2021-01-30 13:59+0100\n"
+"PO-Revision-Date: 2021-02-17 17:30+0100\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -161,7 +161,7 @@ msgstr "Standardvy för filmer"
 
 msgctxt "#30035"
 msgid "Default view for TV Shows"
-msgstr "Standardvy för serier"
+msgstr "Standardvy för TV-serier"
 
 msgctxt "#30036"
 msgid "Default view for Seasons"
@@ -193,7 +193,7 @@ msgstr "Sorteringsläge för filmer"
 
 msgctxt "#30043"
 msgid "Sorting mode for TV Shows"
-msgstr "Sorteringsläge för serier"
+msgstr "Sorteringsläge för TV-serier"
 
 msgctxt "#30044"
 msgid "By seeders"
@@ -213,7 +213,7 @@ msgstr "Upplösningsinställning för filmer"
 
 msgctxt "#30048"
 msgid "Resolution preference for TV Shows"
-msgstr "Upplösningsinställning för serier"
+msgstr "Upplösningsinställning för TV-serier"
 
 msgctxt "#30049"
 msgid "Percentage of additional seeders required before choosing next resolution"
@@ -317,7 +317,7 @@ msgstr "i2p"
 
 msgctxt "#30074"
 msgid "Spoof user agent (highly inadvisable)"
-msgstr ""
+msgstr "Maskera användaragent (starkt orekommenderat)"
 
 msgctxt "#30075"
 msgid "Default advisable (acceptable)"
@@ -478,7 +478,7 @@ msgstr "TheTVDB"
 
 msgctxt "#30115"
 msgid "TV show scraper used by Kodi library"
-msgstr "Serieskrapare som används av Kodi-biblioteket"
+msgstr "TV-serieskrapare som används av Kodi-biblioteket"
 
 msgctxt "#30116"
 msgid "Looks like Elementum is still starting up, give it a few seconds..."
@@ -502,7 +502,7 @@ msgstr "Standardvy för menyer i filmer"
 
 msgctxt "#30143"
 msgid "Default view for menus in TV Shows"
-msgstr "Standardvy för menyer i serier"
+msgstr "Standardvy för menyer i TV-serier"
 
 msgctxt "#30144"
 msgid "Default view for movie genres"
@@ -510,7 +510,7 @@ msgstr "Standardvy för filmgenrer"
 
 msgctxt "#30145"
 msgid "Default view for TV show genres"
-msgstr "Standardvy för seriegenrer"
+msgstr "Standardvy för TV-seriegenrer"
 
 msgctxt "#30146"
 msgid "Keep downloading '%s'?"
@@ -539,7 +539,7 @@ msgstr "Cache rensad"
 
 msgctxt "#30201"
 msgid "Search TV Shows"
-msgstr "Sök serier"
+msgstr "Sök TV-serier"
 
 msgctxt "#30202"
 msgid "Choose stream..."
@@ -595,7 +595,7 @@ msgstr "Filmer"
 
 msgctxt "#30215"
 msgid "TV Shows"
-msgstr "Serier"
+msgstr "TV-serier"
 
 msgctxt "#30216"
 msgid "Add Torrent"
@@ -791,7 +791,7 @@ msgstr "Mina listor"
 
 msgctxt "#30264"
 msgid "Reset clearances"
-msgstr ""
+msgstr "Återställ rensning"
 
 msgctxt "#30265"
 msgid "Item already in library"
@@ -995,7 +995,7 @@ msgstr "Inställningarna initierades inte. [CR]Spara tilläggsinställningar, st
 
 msgctxt "#30315"
 msgid "Download storage type"
-msgstr ""
+msgstr "Hämta lagringstyp"
 
 msgctxt "#30316"
 msgid "Use files"
@@ -1963,7 +1963,7 @@ msgstr "Lägg till i biblioteket"
 
 msgctxt "#30557"
 msgid "Number of popular movies to search"
-msgstr "Antal populära filmer att söka"
+msgstr "Antal populära filmer att söka efter"
 
 msgctxt "#30558"
 msgid "Latest available movies"
@@ -2191,7 +2191,7 @@ msgstr "... för film"
 
 msgctxt "#30614"
 msgid "... for tv show"
-msgstr "... för serier"
+msgstr "... för tv-serier"
 
 msgctxt "#30615"
 msgid "... for search"
