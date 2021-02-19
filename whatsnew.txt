@@ -6,8 +6,6 @@
     - Do not expect any support, help and other things like that.
     - Source is open, so you can fork everything.
     - Some bug fixes or updates can come, to keep things working and have the latest versions.
-    - Fixed issue with finding next episode items (when season was not mentioned in file name).
-    - Added Anime:boolean value to search payload.
 
 [B][COLOR red]0.1.69[/COLOR][/B]
     - Adjusted matchers for filename.
@@ -20,7 +18,8 @@
     - Added 'Trakt', 'TMDB' labels to Movies/Shows index lists to distinguish sources of data.
     - Returned asking for play resume, when we think Kodi was asking (because Kodi does not ask resume for strm files).
     - Changed seeds/peers fields source to show more general numbers.
-    - 
+    - Fixed issue with finding next episode items (when season was not mentioned in file name).
+    - Added Anime:boolean value to search payload.
 
 [B][COLOR red]0.1.67[/COLOR][/B]
     - Added storing fetched metadata for magnets. 
