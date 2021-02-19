@@ -2191,7 +2191,7 @@ msgstr "... för film"
 
 msgctxt "#30614"
 msgid "... for tv show"
-msgstr "... för tv-serier"
+msgstr "... för tv-serie"
 
 msgctxt "#30615"
 msgid "... for search"
