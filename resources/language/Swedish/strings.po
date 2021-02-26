@@ -5,17 +5,15 @@
 #
 msgid ""
 msgstr ""
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-27 19:53+0200\n"
-"PO-Revision-Date: 2021-02-17 17:30+0100\n"
+"PO-Revision-Date: 2021-01-30 13:59+0100\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Project-Id-Version: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
 "X-Generator: Poedit 2.4.2\n"
 
 # Settings
@@ -2296,3 +2294,51 @@ msgstr "Visa specialer i säsongsförteckningar"
 msgctxt "#30640"
 msgid "Bitrate"
 msgstr "Bithastighet"
+
+msgctxt "#30641"
+msgid "Playback"
+msgstr ""
+
+msgctxt "#30642"
+msgid "Force Resume options"
+msgstr ""
+
+msgctxt "#30643"
+msgid "by Kodi"
+msgstr ""
+
+msgctxt "#30644"
+msgid "by Elementum - Ask"
+msgstr ""
+
+msgctxt "#30645"
+msgid "by Elementum - Force"
+msgstr ""
+
+msgctxt "#30646"
+msgid "Authorize Elementum on Trakt.tv"
+msgstr ""
+
+msgctxt "#30647"
+msgid "Cancel Authorization for Elementum on Trakt.tv"
+msgstr ""
+
+msgctxt "#30648"
+msgid "Authorization"
+msgstr ""
+
+msgctxt "#30649"
+msgid "To authorize addon for Trakt.tv you need to:[CR]1. Open [B]%s[/B][CR]2. Enter code: [B]%s[/B][CR]3. Wait for notification from Elementum."
+msgstr ""
+
+msgctxt "#30650"
+msgid "Successfully authorized for Trakt.tv"
+msgstr ""
+
+msgctxt "#30651"
+msgid "Could not authorize for Trakt.tv"
+msgstr ""
+
+msgctxt "#30652"
+msgid "Successfully deauthorized for Trakt.tv"
+msgstr ""

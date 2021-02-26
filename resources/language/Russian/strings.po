@@ -2314,3 +2314,31 @@ msgstr "с помощью Elementum - Спрашивать"
 msgctxt "#30645"
 msgid "by Elementum - Force"
 msgstr "с помощью Elementum - Принудительно"
+
+msgctxt "#30646"
+msgid "Authorize Elementum on Trakt.tv"
+msgstr "Авторизовать Elementum на Trakt.tv"
+
+msgctxt "#30647"
+msgid "Cancel Authorization for Elementum on Trakt.tv"
+msgstr "Отменить Авторизацию Elementum на Trakt.tv"
+
+msgctxt "#30648"
+msgid "Authorization"
+msgstr "Авторизация"
+
+msgctxt "#30649"
+msgid "To authorize addon for Trakt.tv you need to:[CR]1. Open [B]%s[/B][CR]2. Enter code: [B]%s[/B][CR]3. Wait for notification from Elementum."
+msgstr "Для авторизации дополнения на Trakt.tv вам нужно:[CR]1. Открыть [B]%s[/B][CR]2. Ввести код: [B]%s[/B][CR]3. Подождать уведомления от Elementum."
+
+msgctxt "#30650"
+msgid "Successfully authorized for Trakt.tv"
+msgstr "Успешно авторизован на Trakt.tv"
+
+msgctxt "#30651"
+msgid "Could not authorize for Trakt.tv"
+msgstr "Не удалось авторизовать на Trakt.tv"
+
+msgctxt "#30652"
+msgid "Successfully deauthorized for Trakt.tv"
+msgstr "Успешно отменена авторизация на Trakt.tv"

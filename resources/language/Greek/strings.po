@@ -2293,6 +2293,58 @@ msgctxt "#30639"
 msgid "Show Specials in season listings"
 msgstr ""
 
+msgctxt "#30640"
+msgid "Bitrate"
+msgstr ""
+
+msgctxt "#30641"
+msgid "Playback"
+msgstr ""
+
+msgctxt "#30642"
+msgid "Force Resume options"
+msgstr ""
+
+msgctxt "#30643"
+msgid "by Kodi"
+msgstr ""
+
+msgctxt "#30644"
+msgid "by Elementum - Ask"
+msgstr ""
+
+msgctxt "#30645"
+msgid "by Elementum - Force"
+msgstr ""
+
+msgctxt "#30646"
+msgid "Authorize Elementum on Trakt.tv"
+msgstr ""
+
+msgctxt "#30647"
+msgid "Cancel Authorization for Elementum on Trakt.tv"
+msgstr ""
+
+msgctxt "#30648"
+msgid "Authorization"
+msgstr ""
+
+msgctxt "#30649"
+msgid "To authorize addon for Trakt.tv you need to:[CR]1. Open [B]%s[/B][CR]2. Enter code: [B]%s[/B][CR]3. Wait for notification from Elementum."
+msgstr ""
+
+msgctxt "#30650"
+msgid "Successfully authorized for Trakt.tv"
+msgstr ""
+
+msgctxt "#30651"
+msgid "Could not authorize for Trakt.tv"
+msgstr ""
+
+msgctxt "#30652"
+msgid "Successfully deauthorized for Trakt.tv"
+msgstr ""
+
 #~ msgctxt "#30001"
 #~ msgid "Download path (not FAT32)"
 #~ msgstr "Διαδρομή λήψης (ΟΧΙ FAT32)"
