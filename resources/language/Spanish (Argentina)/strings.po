@@ -748,7 +748,7 @@ msgstr "Quitar de Colección"
 
 msgctxt "#30254"
 msgid "My Watchlist"
-msgstr "Mi Watchlist Trakt"
+msgstr "Mi Watchlist"
 
 msgctxt "#30255"
 msgid "Add to watchlist"
@@ -760,7 +760,7 @@ msgstr "Borrar de watchlist Trakt"
 
 msgctxt "#30257"
 msgid "My Collection"
-msgstr "Mi collection Trakt"
+msgstr "Mi collection"
 
 msgctxt "#30258"
 msgid "Add to collection"
@@ -2316,28 +2316,28 @@ msgstr "por Elementum - Forzar"
 
 msgctxt "#30646"
 msgid "Authorize Elementum on Trakt.tv"
-msgstr ""
+msgstr "Autorizar Elementum en Trakt.tv"
 
 msgctxt "#30647"
 msgid "Cancel Authorization for Elementum on Trakt.tv"
-msgstr ""
+msgstr "Cancelar autorización de Elementum en Trakt.tv"
 
 msgctxt "#30648"
 msgid "Authorization"
-msgstr ""
+msgstr "Autorización"
 
 msgctxt "#30649"
 msgid "To authorize addon for Trakt.tv you need to:[CR]1. Open [B]%s[/B][CR]2. Enter code: [B]%s[/B][CR]3. Wait for notification from Elementum."
-msgstr ""
+msgstr "Para autorizar el addon en Trakt.tv:[CR]1. Vaya a [B]%s[/B][CR]2. Introduzca código: [B]%s[/B][CR]3. Espere notificación de Elementum."
 
 msgctxt "#30650"
 msgid "Successfully authorized for Trakt.tv"
-msgstr ""
+msgstr "Autorización en Trakt.tv exitosa"
 
 msgctxt "#30651"
 msgid "Could not authorize for Trakt.tv"
-msgstr ""
+msgstr "No se pudo autorizar en Trakt.tv"
 
 msgctxt "#30652"
 msgid "Successfully deauthorized for Trakt.tv"
-msgstr ""
+msgstr "Desautorización en Trakt.tv exitosa"
