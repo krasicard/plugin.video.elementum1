@@ -644,7 +644,7 @@ msgstr "Ошибка обновления Elementum"
 
 msgctxt "#30228"
 msgid "Available streams for"
-msgstr "Доступные стримы для"
+msgstr "Доступные ссылки для"
 
 msgctxt "#30229"
 msgid "Torrents"
@@ -1064,7 +1064,7 @@ msgstr "Перезапускаем плагин..."
 
 msgctxt "#30333"
 msgid "Try to find other episodes in the torrent"
-msgstr "Поискать другие серии в торренте"
+msgstr "Искать другие серии в торренте"
 
 msgctxt "#30334"
 msgid "Migration"
@@ -1188,7 +1188,7 @@ msgstr "Синхронизировать Коллекцию из Trakt в биб
 
 msgctxt "#30364"
 msgid "Sync items from watchlist into Kodi library"
-msgstr "Синхронизировать Просмотренніе из Trakt в библиотеку"
+msgstr "Синхронизировать Непросмотренные из Trakt в библиотеку"
 
 msgctxt "#30365"
 msgid "Sync items from user lists into Kodi library"
@@ -1544,15 +1544,15 @@ msgstr "Сбросить все пути"
 
 msgctxt "#30453"
 msgid "Upload /debug/bundle (with kodi.log) to pastebin"
-msgstr "Загрузить /debug/bundle (совместно с kodi.log) в буфер обмена"
+msgstr "Загрузить /debug/bundle (совместно с kodi.log) на сервис обмена"
 
 msgctxt "#30454"
 msgid "Paste url:[CR]%s"
-msgstr "Вставить url:[CR]%s"
+msgstr "Ссылка на лог:[CR]%s"
 
 msgctxt "#30455"
 msgid "Logging"
-msgstr "Логирование"
+msgstr "Логгирование"
 
 msgctxt "#30456"
 msgid "Upload /debug/all (no kodi.log) to pastebin"
@@ -1804,7 +1804,7 @@ msgstr "В библиотеке Kodi"
 
 msgctxt "#30518"
 msgid "Use libtorrent deadlines"
-msgstr "Использовать предельный срок в libtorrent"
+msgstr "Использовать предельные сроки[CR](deadlines) в libtorrent"
 
 msgctxt "#30519"
 msgid "Use libtorrent pause/resume trick for added torrents"
@@ -2020,7 +2020,7 @@ msgstr "* Все сезоны"
 
 msgctxt "#30572"
 msgid "Log response body"
-msgstr "Логгировать ответ сервера"
+msgstr "Логгировать тело ответа сервера"
 
 msgctxt "#30573"
 msgid "Select file to play"
