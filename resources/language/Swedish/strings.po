@@ -27,14 +27,6 @@ msgctxt "#30001"
 msgid "Download path"
 msgstr "Hämtningssökväg"
 
-msgctxt "#30002"
-msgid "Keep files after playback/download stops"
-msgstr "Behåll filer efter att uppspelning/hämtning stoppats"
-
-msgctxt "#30003"
-msgid "Buffer size (MB)"
-msgstr "Buffertstorlek (MB)"
-
 msgctxt "#30004"
 msgid "Max upload rate (kB/s)"
 msgstr "Max sändningshastighet (kB/s)"
@@ -54,10 +46,6 @@ msgstr "Lyssningsport max"
 msgctxt "#30008"
 msgid "Proxy"
 msgstr "Proxy"
-
-msgctxt "#30009"
-msgid "SOCKS v5 Configuration"
-msgstr "SOCKS v5-konfiguration"
 
 msgctxt "#30010"
 msgid "Enabled"
@@ -99,10 +87,6 @@ msgctxt "#30019"
 msgid "Maintenance"
 msgstr "Underhåll"
 
-msgctxt "#30020"
-msgid "Clear cache"
-msgstr "Rensa cache"
-
 msgctxt "#30021"
 msgid "Results per page"
 msgstr "Resultat per sida"
@@ -114,10 +98,6 @@ msgstr "Aktivera överlagringsstatus"
 msgctxt "#30023"
 msgid "Choose stream automatically"
 msgstr "Välj ström automatiskt"
-
-msgctxt "#30024"
-msgid "Get updates for pre-releases"
-msgstr "Få uppdateringar för förutgåvor"
 
 msgctxt "#30025"
 msgid "Limit rates after initial buffering only"
@@ -251,10 +231,6 @@ msgctxt "#30057"
 msgid "Username"
 msgstr "Användarnamn"
 
-msgctxt "#30058"
-msgid "Authorize Elementum"
-msgstr "Auktorisera Elementum"
-
 msgctxt "#30059"
 msgid "Library update delay on startup (seconds)"
 msgstr "Biblioteksuppdateringsfördröjning vid start (sekunder)"
@@ -262,14 +238,6 @@ msgstr "Biblioteksuppdateringsfördröjning vid start (sekunder)"
 msgctxt "#30060"
 msgid "Library update frequency (hours)"
 msgstr "Biblioteksuppdateringsfrekvens (timmar)"
-
-msgctxt "#30061"
-msgid "Sync frequency of Trakt lists to library (hours)"
-msgstr "Synkroniseringsfrekvensen för Trakt-listor till biblioteket (timmar)"
-
-msgctxt "#30062"
-msgid "Ask to keep the files after streaming"
-msgstr "Fråga om filerna ska behållas efter strömning"
 
 msgctxt "#30063"
 msgid "Disable UPNP & NATPMP"
@@ -299,17 +267,9 @@ msgctxt "#30069"
 msgid "SOCKS5"
 msgstr "SOCKS5"
 
-msgctxt "#30070"
-msgid "SOCKS5 password"
-msgstr "SOCKS5-lösenord"
-
 msgctxt "#30071"
 msgid "HTTP"
 msgstr "HTTP"
-
-msgctxt "#30072"
-msgid "HTTP password"
-msgstr "HTTP-lösenord"
 
 msgctxt "#30073"
 msgid "i2p"
@@ -367,10 +327,6 @@ msgctxt "#30086"
 msgid "Enable tuned storage settings"
 msgstr "Aktivera inställda lagringsinställningar"
 
-msgctxt "#30087"
-msgid "Ask to delete the files after streaming"
-msgstr "Fråga om att filerna ska tas bort efter strömning"
-
 msgctxt "#30088"
 msgid "Initial buffering timeout (seconds)"
 msgstr "Tidsgräns för initial buffring (sekunder)"
@@ -399,30 +355,10 @@ msgctxt "#30094"
 msgid "Disable background progress dialog"
 msgstr "Inaktivera dialogrutan för bakgrundsförlopp"
 
-msgctxt "#30095"
-msgid "Sync watched progress with Kodi"
-msgstr "Synkronisera sedda-förlopp med Kodi"
-
-msgctxt "#30096"
-msgid "Never"
-msgstr "Aldrig"
-
-msgctxt "#30097"
-msgid "Always"
-msgstr "Alltid"
-
-msgctxt "#30098"
-msgid "Active torrents only"
-msgstr "Endast aktiva torrenter"
-
 # Interface
 msgctxt "#30100"
 msgid "Elementum has crashed, restarting..."
 msgstr "Elementum har kraschat, startar om..."
-
-msgctxt "#30101"
-msgid "You must restart Kodi before using Elementum"
-msgstr "Du måste starta om Kodi innan du använder Elementum"
 
 msgctxt "#30102"
 msgid "This add-on can only be run from within Elementum"
@@ -471,14 +407,6 @@ msgstr "Det går inte att inaktivera leverantören"
 msgctxt "#30113"
 msgid "Download path not set, check your settings"
 msgstr "Hämtningssökvägen har inte ställts in, kontrollera dina inställningar"
-
-msgctxt "#30114"
-msgid "TheTVDB"
-msgstr "TheTVDB"
-
-msgctxt "#30115"
-msgid "TV show scraper used by Kodi library"
-msgstr "TV-serieskrapare som används av Kodi-biblioteket"
 
 msgctxt "#30116"
 msgid "Looks like Elementum is still starting up, give it a few seconds..."
@@ -536,10 +464,6 @@ msgstr "Ingen tillgänglig JSON-RPC-anslutning till Kodi.[CR]Aktivera båda prog
 msgctxt "#30200"
 msgid "Cache cleared"
 msgstr "Cache rensad"
-
-msgctxt "#30201"
-msgid "Search TV Shows"
-msgstr "Sök TV-serier"
 
 msgctxt "#30202"
 msgid "Choose stream..."
@@ -601,49 +525,21 @@ msgctxt "#30216"
 msgid "Add Torrent"
 msgstr "Lägg till torrent"
 
-msgctxt "#30217"
-msgid "Paste Magnet or URL"
-msgstr "Klistra in magnet eller webbadress"
-
 msgctxt "#30218"
 msgid "Next page"
 msgstr "Nästa sida"
-
-msgctxt "#30219"
-msgid "Add / Remove from library"
-msgstr "Lägg till / ta bort från biblioteket"
 
 msgctxt "#30220"
 msgid "Library path not set"
 msgstr "Bibliotekssökväg har inte ställts in"
 
-msgctxt "#30221"
-msgid "Item successfully added to library"
-msgstr "Objektet har lagts till i biblioteket"
-
-msgctxt "#30222"
-msgid "Item removed from library"
-msgstr "Objektet har tagits bort från biblioteket"
-
-msgctxt "#30223"
-msgid "Files"
-msgstr "Filer"
-
 msgctxt "#30224"
 msgid "Provider error"
 msgstr "Leverantörsfel"
 
-msgctxt "#30225"
-msgid "Navigation error"
-msgstr "Navigationsfel"
-
 msgctxt "#30226"
 msgid "Daemon error"
 msgstr "Demon-fel"
-
-msgctxt "#30227"
-msgid "Error updating Elementum daemon"
-msgstr "Fel vid uppdatering av Elementum-demon"
 
 msgctxt "#30228"
 msgid "Available streams for"
@@ -713,10 +609,6 @@ msgctxt "#30244"
 msgid "Provider settings"
 msgstr "Leverantörsinställningar"
 
-msgctxt "#30245"
-msgid "Popular on Trakt"
-msgstr "Populärt på Trakt"
-
 msgctxt "#30246"
 msgid "Trending"
 msgstr "Trender"
@@ -777,33 +669,9 @@ msgctxt "#30260"
 msgid "A torrent was previously chosen, use it?[CR]%s"
 msgstr "En torrent valdes tidigare, använd den?[CR]%s"
 
-msgctxt "#30261"
-msgid "Search history"
-msgstr "Sökhistorik"
-
-msgctxt "#30262"
-msgid "Use search history?"
-msgstr "Använd sökhistorik?"
-
 msgctxt "#30263"
 msgid "My Lists"
 msgstr "Mina listor"
-
-msgctxt "#30264"
-msgid "Reset clearances"
-msgstr "Återställ rensning"
-
-msgctxt "#30265"
-msgid "Item already in library"
-msgstr "Objektet finns redan i biblioteket"
-
-msgctxt "#30266"
-msgid "Ignore duplicates"
-msgstr "Ignorera dubbletter"
-
-msgctxt "#30267"
-msgid "Keep downloaded files?"
-msgstr "Behålla hämtade filer?"
 
 msgctxt "#30268"
 msgid "Toggle watched"
@@ -812,10 +680,6 @@ msgstr "Växla sedda"
 msgctxt "#30269"
 msgid "Delete downloaded files '%s'?"
 msgstr "Ta bort hämtade filer \"%s\"?"
-
-msgctxt "#30270"
-msgid "Match found in your active torrents, play it?"
-msgstr "Matchning i dina aktiva torrenter, spela den?"
 
 msgctxt "#30271"
 msgid "There is now an official multi-provider for Elementum called [COLOR FFFF6B00]Burst[/COLOR], would you like to install it now?"
@@ -848,18 +712,6 @@ msgstr "%s läggs till i biblioteket, vill du skanna det igen?[CR]Du kan senare 
 msgctxt "#30278"
 msgid "%s removed from library, do you want to clean it?[CR]You can later use Kodi's 'Clean library' feature instead."
 msgstr "%s togs bort från biblioteket, vill du rensa den?[CR]Du kan senare använda Kodis \"Ren bibliotek\"-funktion istället."
-
-msgctxt "#30279"
-msgid "Watchlist added to library"
-msgstr "Tittalistan har lagts till i biblioteket"
-
-msgctxt "#30280"
-msgid "Collection added to library"
-msgstr "Samling lades till i biblioteket"
-
-msgctxt "#30281"
-msgid "List added to library"
-msgstr "Lista lades till i biblioteket"
 
 msgctxt "#30282"
 msgid "Nothing left to remove from Elementum"
@@ -1021,10 +873,6 @@ msgctxt "#30321"
 msgid "Stop"
 msgstr "Stoppa"
 
-msgctxt "#30322"
-msgid "Use Fat32 files"
-msgstr "Använd Fat32-filer"
-
 msgctxt "#30323"
 msgid "New search"
 msgstr "Ny sökning"
@@ -1057,10 +905,6 @@ msgctxt "#30330"
 msgid "Update Trakt"
 msgstr "Uppdatera Trakt"
 
-msgctxt "#30331"
-msgid "MMap File"
-msgstr "MMap-fil"
-
 msgctxt "#30332"
 msgid "Reloading configuration..."
 msgstr "Läser om konfiguration..."
@@ -1068,58 +912,6 @@ msgstr "Läser om konfiguration..."
 msgctxt "#30333"
 msgid "Try to find other episodes in the torrent"
 msgstr "Försök hitta andra avsnitt i torrenten"
-
-msgctxt "#30334"
-msgid "Migration"
-msgstr "Migration"
-
-msgctxt "#30335"
-msgid "Quasar"
-msgstr "Quasar"
-
-msgctxt "#30336"
-msgid "Run migration"
-msgstr "Kör migrering"
-
-msgctxt "#30337"
-msgid "This operation will change strm files and cleanup Quasar library![CR]Are you sure you want to do it?"
-msgstr "Denna åtgärd kommer att ändra strm-filer och rensa Quasar-biblioteket![CR]Är du säker på att du vill göra det?"
-
-msgctxt "#30338"
-msgid "Looking for Quasar database"
-msgstr "Söker efter Quasar-databas"
-
-msgctxt "#30339"
-msgid "Searching strm files"
-msgstr "Söker efter strm-filer"
-
-msgctxt "#30340"
-msgid "Performing strm migration"
-msgstr "Utför strm-migration"
-
-msgctxt "#30341"
-msgid "Performing database migration"
-msgstr "Utför databasmigrering"
-
-msgctxt "#30342"
-msgid "Cannot find Quasar userdata directory"
-msgstr "Kan inte hitta Quasars användardatakatalog"
-
-msgctxt "#30343"
-msgid "Cannot find Quasar settings.xml path"
-msgstr "Kan inte hitta sökvägen till Quasars settings.xml"
-
-msgctxt "#30344"
-msgid "Cannot find Quasar library path"
-msgstr "Kan inte hitta sökvägen till Quasar-biblioteket"
-
-msgctxt "#30345"
-msgid "Successfully migrated items: %s"
-msgstr "Migrerade objekt: %s"
-
-msgctxt "#30346"
-msgid "Could not migrate any item"
-msgstr "Kunde inte migrera något objekt"
 
 msgctxt "#30347"
 msgid "Could not find binary for architecture '%s'![CR]Try to uninstall this addon, re-download and re-install it from the biggest zip."
@@ -1145,21 +937,9 @@ msgctxt "#30352"
 msgid "Same as for usual file storage, but using memory[CR]to lower filesystem operations. Experimental storage!"
 msgstr "Samma som för vanligt fillagring, men med minne[CR]för att sänka filsystemets funktioner. Experimentell lagring!"
 
-msgctxt "#30353"
-msgid "Auto-assign network ports"
-msgstr "Tilldela nätverksportar automatiskt"
-
-msgctxt "#30354"
-msgid "Could not start Torrent client. Please report to github with the Kodi log file!"
-msgstr "Kunde inte starta Torrent-klienten. Vänligen rapportera till github med Kodi-loggfilen!"
-
 msgctxt "#30355"
 msgid "Changelog"
 msgstr "Ändringslogg"
-
-msgctxt "#30356"
-msgid "Not enough free memory!"
-msgstr "Inte tillräckligt med ledigt minne!"
 
 msgctxt "#30357"
 msgid "Use Trakt information in Trakt lists"
@@ -1205,10 +985,6 @@ msgctxt "#30367"
 msgid "Sync back Kodi watched states into Trakt"
 msgstr "Synkronisera tillbaka Kodi sedda-tillstånd till Trakt"
 
-msgctxt "#30368"
-msgid "Use Public DNS (Google, Quad9, Opennic)"
-msgstr "Använd publika DNS (Google, Quad9, Opennic)"
-
 msgctxt "#30369"
 msgid "Disable Upload"
 msgstr "Inaktivera sändning"
@@ -1220,10 +996,6 @@ msgstr "Tilldela nätverkets IP automatiskt"
 msgctxt "#30371"
 msgid "Auto-assign network ports"
 msgstr "Tilldela nätverksportar automatiskt"
-
-msgctxt "#30372"
-msgid "Force resume playback"
-msgstr "Tvinga återuppta uppspelning"
 
 msgctxt "#30373"
 msgid "Languages"
@@ -1273,10 +1045,6 @@ msgctxt "#30384"
 msgid "Language code for subtitles (example: en, it, es)"
 msgstr "Språkkod för undertexter (exempel: en, it, es)"
 
-msgctxt "#30385"
-msgid "HTTPS"
-msgstr "HTTPS"
-
 msgctxt "#30386"
 msgid "Disable background progress dialog on playback"
 msgstr "Inaktivera dialogrutan för bakgrundsförlopp vid uppspelning"
@@ -1296,14 +1064,6 @@ msgstr "Cacha sökresultat för ström"
 msgctxt "#30390"
 msgid "Cache search results duration, seconds"
 msgstr "Cacha sökresultatets längd, sekunder"
-
-msgctxt "#30391"
-msgid "List of public DNS IPs"
-msgstr "Lista över publika DNS-IP:er"
-
-msgctxt "#30392"
-msgid "List of Opennic DNS IPs"
-msgstr "Lista över Opennic DNS-IP:er"
 
 msgctxt "#30393"
 msgid "Status"
@@ -1361,10 +1121,6 @@ msgctxt "#30406"
 msgid "Remove from history"
 msgstr "Ta bort från historiken"
 
-msgctxt "#30407"
-msgid "Print only Error messages in the Kodi log"
-msgstr "Skriv endast ut felmeddelanden i Kodi-loggen"
-
 msgctxt "#30408"
 msgid "Plugin Connectivity"
 msgstr "Tilläggsanslutning"
@@ -1400,22 +1156,6 @@ msgstr "Nästa sida (%s)"
 msgctxt "#30416"
 msgid "Percents of playback to mark as watched"
 msgstr "Procent av uppspelning för att markera som sedda"
-
-msgctxt "#30417"
-msgid "Add to Trakt, when movie/show is added to Kodi library"
-msgstr "Lägg till i Trakt när film/serie läggs till i Kodi-biblioteket"
-
-msgctxt "#30418"
-msgid "Add to ..."
-msgstr "Lägg till ..."
-
-msgctxt "#30419"
-msgid "Remove from Trakt, when movie/show is deleted from Kodi library"
-msgstr "Ta bort från Trakt när film/serie tas bort från Kodi-biblioteket"
-
-msgctxt "#30420"
-msgid "Remove from ..."
-msgstr "Ta bort från ..."
 
 msgctxt "#30421"
 msgid "Load torrents from torrents folder on startup"
@@ -1473,17 +1213,9 @@ msgctxt "#30434"
 msgid "Date format"
 msgstr "Datumformat"
 
-msgctxt "#30435"
-msgid "Select userlist"
-msgstr "Välj användarlista"
-
 msgctxt "#30436"
 msgid "Userlist"
 msgstr "Användarlista"
-
-msgctxt "#30437"
-msgid "Selected userlist"
-msgstr "Vald användarlista"
 
 msgctxt "#30438"
 msgid "Userlists"
@@ -1649,10 +1381,6 @@ msgctxt "#30478"
 msgid "Searching"
 msgstr "Söker"
 
-msgctxt "#30479"
-msgid "Automatically run Kodi library update after add/delete"
-msgstr "Kör automatiskt Kodi-biblioteksuppdatering efter tilläggning/borttagning"
-
 msgctxt "#30480"
 msgid "Run Kodi library update after add/delete"
 msgstr "Kör Kodi-biblioteksuppdatering efter tilläggning/borttagning"
@@ -1721,10 +1449,6 @@ msgctxt "#30496"
 msgid "Turn off if you use Tor addresses, or you want to pass resolve to local network settings"
 msgstr "Stäng av om du använder Tor-adresser, eller om du vill skicka lösning till lokala nätverksinställningar"
 
-msgctxt "#30497"
-msgid "Use antizapret proxy if possible"
-msgstr "Använd antizapret-proxy om möjligt"
-
 msgctxt "#30498"
 msgid "Reset this path to '/'"
 msgstr "Återställ den här sökvägen till \"/\""
@@ -1736,10 +1460,6 @@ msgstr "Justera automatiskt minnesstorlek[CR]för tunga strömmar, om möjligt"
 msgctxt "#30500"
 msgid "Automatically adjust buffer size[CR]for heavy torrents"
 msgstr "Justera automatiskt buffertstorlek[CR]för tunga torrents"
-
-msgctxt "#30501"
-msgid "Filter files with size less than, MB"
-msgstr "Filtrera filer med storlek mindre än, MB"
 
 msgctxt "#30502"
 msgid "Adjust buffer according to Kodi advancedsettings, if set"
@@ -1864,14 +1584,6 @@ msgstr "Hämta alla filer från torrent"
 msgctxt "#30532"
 msgid "Stop Downloading all files"
 msgstr "Stoppa hämtning av alla filer"
-
-msgctxt "#30533"
-msgid "Store Resume position for downloaded files"
-msgstr "Lagra återuppta-position för hämtade filer"
-
-msgctxt "#30534"
-msgid "Ask to use stored Resume position"
-msgstr "Fråga om lagrad återuppta-position ska användas"
 
 msgctxt "#30535"
 msgid "Continue playback from [COLOR gold][B]%s[/B][/COLOR]?"
@@ -2069,10 +1781,6 @@ msgctxt "#30583"
 msgid "Resolving magnet link"
 msgstr "Löser magnetlänken"
 
-msgctxt "#30584"
-msgid "Remove multiple plays from history, leave 1"
-msgstr "Ta bort flera spelningar från historiken, lämna 1"
-
 msgctxt "#30585"
 msgid "Enable library integration with Kodi"
 msgstr "Aktivera biblioteksintegration med Kodi"
@@ -2116,10 +1824,6 @@ msgstr "Nätverk"
 msgctxt "#30595"
 msgid "Miscellaneous"
 msgstr "Diverse"
-
-msgctxt "#30596"
-msgid "Enable read/write caching for storage"
-msgstr "Aktivera läs-/skrivcaching för lagring"
 
 msgctxt "#30597"
 msgid "Cache size (MB)"
