@@ -110,7 +110,7 @@ msgstr "Показывать статус загрузки"
 
 msgctxt "#30023"
 msgid "Choose stream automatically"
-msgstr "Выбрать стрим автоматически"
+msgstr "Выбрать ссылку автоматически"
 
 msgctxt "#30024"
 msgid "Get updates for pre-releases"
@@ -540,7 +540,7 @@ msgstr "Искать Сериал"
 
 msgctxt "#30202"
 msgid "Choose stream..."
-msgstr "Выбрать стрим..."
+msgstr "Выбрать ссылку..."
 
 msgctxt "#30203"
 msgid "Show information"
@@ -992,7 +992,7 @@ msgstr "Настройки не сохранены[CR]Сохраните нас�
 
 msgctxt "#30315"
 msgid "Download storage type"
-msgstr "Способ загрузки торрентов"
+msgstr "Как загружать торрент"
 
 msgctxt "#30316"
 msgid "Use files"
