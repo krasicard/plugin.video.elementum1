@@ -30,7 +30,7 @@ msgstr "Сохранять файлы после просмотра"
 
 msgctxt "#30003"
 msgid "Buffer size (MB)"
-msgstr "Размер буфера (Мб)"
+msgstr "Размер буфера, Мб"
 
 msgctxt "#30004"
 msgid "Max upload rate (kB/s)"
@@ -90,7 +90,7 @@ msgstr "Включить (небезопасно)"
 
 msgctxt "#30018"
 msgid "Timeout in seconds"
-msgstr "Тайм-аут в секундах"
+msgstr "Тайм-аут, сек"
 
 msgctxt "#30019"
 msgid "Maintenance"
@@ -102,7 +102,7 @@ msgstr "Очистить кеш"
 
 msgctxt "#30021"
 msgid "Results per page"
-msgstr "Результатов на странице"
+msgstr "Ссылок на странице"
 
 msgctxt "#30022"
 msgid "Enable overlay status"
@@ -110,7 +110,7 @@ msgstr "Показывать статус загрузки"
 
 msgctxt "#30023"
 msgid "Choose stream automatically"
-msgstr "Выбрать ссылку автоматически"
+msgstr "Выбирать ссылку автоматически"
 
 msgctxt "#30024"
 msgid "Get updates for pre-releases"
@@ -202,7 +202,7 @@ msgstr "разрешения"
 
 msgctxt "#30046"
 msgid "Balanced"
-msgstr "оптимально"
+msgstr "оптимальная"
 
 msgctxt "#30047"
 msgid "Resolution preference for Movies"
@@ -415,7 +415,7 @@ msgstr "Только активные торренты"
 # Interface
 msgctxt "#30100"
 msgid "Elementum has crashed, restarting..."
-msgstr "Elementum сбойнул, перезапуск..."
+msgstr "Сбой плагина, перезапуск..."
 
 msgctxt "#30101"
 msgid "You must restart Kodi before using Elementum"
@@ -455,7 +455,7 @@ msgstr "ОК"
 
 msgctxt "#30110"
 msgid "Crashed too many times, aborting..."
-msgstr "Сбоило много раз, прервано..."
+msgstr "Перезапуск не помогает, останавливается..."
 
 msgctxt "#30111"
 msgid "Provider failed too many times, disabling..."
