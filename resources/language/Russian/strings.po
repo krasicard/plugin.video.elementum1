@@ -1044,7 +1044,7 @@ msgstr "Синхронизировать Коллекцию из Trakt в биб
 
 msgctxt "#30364"
 msgid "Sync items from watchlist into Kodi library"
-msgstr "Синхронизировать Непросмотренные из Trakt в библиотеку"
+msgstr "Синхронизировать Список просмотра из Trakt в библиотеку"
 
 msgctxt "#30365"
 msgid "Sync items from user lists into Kodi library"
