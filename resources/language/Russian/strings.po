@@ -82,11 +82,11 @@ msgstr "Дополнительно"
 
 msgctxt "#30016"
 msgid "Custom provider timeout"
-msgstr "Тайм-аут провайдера"
+msgstr "Переопределить тайм-аут провайдеров"
 
 msgctxt "#30017"
 msgid "Enabled (use at your own risk)"
-msgstr "Включить (небезопасно)"
+msgstr "Включить (возможны ошибки)"
 
 msgctxt "#30018"
 msgid "Timeout in seconds"
@@ -182,7 +182,7 @@ msgstr "ключ API"
 
 msgctxt "#30041"
 msgid "Stream sorting"
-msgstr "Сортировка линков"
+msgstr "Сортировка ссылок"
 
 msgctxt "#30042"
 msgid "Sorting mode for Movies"
@@ -362,7 +362,7 @@ msgstr ""
 
 msgctxt "#30086"
 msgid "Enable tuned storage settings"
-msgstr "Использовать новые настройки хранилища"
+msgstr "Включить оптимальные настройки хранилища"
 
 msgctxt "#30087"
 msgid "Ask to delete the files after streaming"
@@ -475,7 +475,7 @@ msgstr "Похоже Elementum еще стартует, подождите ещ�
 
 msgctxt "#30117"
 msgid "Resolving torrent files..."
-msgstr "Верифиция торрент-файлов..."
+msgstr "Воссоздание торрент-файла..."
 
 msgctxt "#30118"
 msgid "Scraping trackers..."
@@ -568,7 +568,7 @@ msgstr "С лучшим рейтингом"
 
 msgctxt "#30212"
 msgid "Most Voted"
-msgstr "Оцениваемые"
+msgstr "Самые оцениваемые"
 
 msgctxt "#30213"
 msgid "IMDB Top 250"
@@ -1004,7 +1004,7 @@ msgstr "Автоматически назначать сетевой порт"
 
 msgctxt "#30354"
 msgid "Could not start Torrent client. Please report to github with the Kodi log file!"
-msgstr "Невозможно запустить Торрент клиент. Пожалуйста, сообщите об ошибке и загрузите в github журнал Kodi!"
+msgstr "Невозможно запустить Торрент клиент. Пожалуйста, сообщите об ошибке и загрузите журнал Kodi!"
 
 msgctxt "#30355"
 msgid "Changelog"
@@ -1132,7 +1132,7 @@ msgstr "Кеширование"
 
 msgctxt "#30388"
 msgid "Cache selected streams"
-msgstr "Кешировать выбранные торренты"
+msgstr "Кешировать выбранный торрент"
 
 msgctxt "#30389"
 msgid "Cache stream search results"
@@ -1368,7 +1368,7 @@ msgstr "Сбросить все пути"
 
 msgctxt "#30453"
 msgid "Upload /debug/bundle (with kodi.log) to pastebin"
-msgstr "Загрузить /debug/bundle (совместно с kodi.log) на сервис обмена"
+msgstr "Загрузить /debug/bundle (включая kodi.log) на pastebin"
 
 msgctxt "#30454"
 msgid "Paste url:[CR]%s"
@@ -1380,11 +1380,11 @@ msgstr "Логгирование"
 
 msgctxt "#30456"
 msgid "Upload /debug/all (no kodi.log) to pastebin"
-msgstr "Загрузить /debug/all (без kodi.log) на сервис обмена"
+msgstr "Загрузить /debug/all (без kodi.log) на pastebin"
 
 msgctxt "#30457"
 msgid "Uploading file to pastebin"
-msgstr "Загружаем файл на сервис обмена"
+msgstr "Загружаем файл на pastebin"
 
 msgctxt "#30458"
 msgid "Deleted movies"
@@ -1556,7 +1556,7 @@ msgstr "Автоматически увеличивать размер буфф�
 
 msgctxt "#30502"
 msgid "Adjust buffer according to Kodi advancedsettings, if set"
-msgstr "Увеличить буффер, если установлено в расширенных"
+msgstr "Увеличить буффер, если установлено в advancedsettings.xml"
 
 msgctxt "#30503"
 msgid "Use libtorrent.config to override torrent engine settings"
@@ -1564,7 +1564,7 @@ msgstr "Использовать libtorrent.config для настроек torre
 
 msgctxt "#30504"
 msgid "Located at USERDATA/plugin.video.elementum/libtorrent.config file[CR]Settings apply automatically. Visit https://libtorrent.org for info."
-msgstr "Находится в файле USERDATA/plugin.video.elementum/libtorrent.config[CR]Применяются автоматически. Смотри https:/.libtorrent.org"
+msgstr "Находится в файле USERDATA/plugin.video.elementum/libtorrent.config[CR]Применяются автоматически. Смотри https://libtorrent.org"
 
 msgctxt "#30505"
 msgid "Add episode number to the title"
@@ -1736,7 +1736,7 @@ msgstr "Поиск среди всех"
 
 msgctxt "#30549"
 msgid "Number of results to find"
-msgstr "Прекратить поиск если найдено"
+msgstr "Прекратить поиск, если найдено, ссылок"
 
 msgctxt "#30550"
 msgid "What to search"
@@ -1828,7 +1828,7 @@ msgstr "* Все сезоны"
 
 msgctxt "#30572"
 msgid "Log response body"
-msgstr "Логгировать тело ответа сервера"
+msgstr "Логгировать содержимое ответа сервера"
 
 msgctxt "#30573"
 msgid "Select file to play"
@@ -2044,7 +2044,7 @@ msgstr "Размещается"
 
 msgctxt "#30628"
 msgid "Stalled"
-msgstr "З"
+msgstr "Замер"
 
 msgctxt "#30629"
 msgid "Paused"
@@ -2108,11 +2108,11 @@ msgstr "с помощью Kodi"
 
 msgctxt "#30644"
 msgid "by Elementum - Ask"
-msgstr "с помощью плагина-Спрашивать"
+msgstr "с помощью плагина - Спрашивать"
 
 msgctxt "#30645"
 msgid "by Elementum - Force"
-msgstr "с помощью плагина-Принудительно"
+msgstr "с помощью плагина - Принудительно"
 
 msgctxt "#30646"
 msgid "Authorize Elementum on Trakt.tv"
