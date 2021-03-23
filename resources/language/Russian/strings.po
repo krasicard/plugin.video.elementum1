@@ -1130,18 +1130,6 @@ msgctxt "#30387"
 msgid "Caching"
 msgstr "Кеширование"
 
-msgctxt "#30388"
-msgid "Cache selected streams"
-msgstr "Кешировать выбранный торрент"
-
-msgctxt "#30389"
-msgid "Cache stream search results"
-msgstr "Кешировать результаты поиска"
-
-msgctxt "#30390"
-msgid "Cache search results duration, seconds"
-msgstr "Длительность кеширования результатов, сек"
-
 msgctxt "#30391"
 msgid "List of public DNS IPs"
 msgstr "Список IP публичных DNS"
