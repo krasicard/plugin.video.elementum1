@@ -1464,7 +1464,7 @@ msgstr "Автоматически запускать сканирование K
 
 msgctxt "#30480"
 msgid "Run Kodi library update after add/delete"
-msgstr "Обновлять бмблиотеку"
+msgstr "Обновлять библиотеку"
 
 msgctxt "#30481"
 msgid "Automatically"
