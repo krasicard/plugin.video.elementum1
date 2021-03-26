@@ -30,15 +30,15 @@ msgstr "Сохранять файлы после просмотра"
 
 msgctxt "#30003"
 msgid "Buffer size (MB)"
-msgstr "Размер буфера, Мб"
+msgstr "Размер буфера, МБ"
 
 msgctxt "#30004"
 msgid "Max upload rate (kB/s)"
-msgstr "Скорость отдачи, Кб/с"
+msgstr "Скорость отдачи, КБ/с"
 
 msgctxt "#30005"
 msgid "Max download rate (kB/s)"
-msgstr "Скорость скачивания, Кб/с"
+msgstr "Скорость скачивания, КБ/с"
 
 msgctxt "#30006"
 msgid "Listen port min"
@@ -920,7 +920,7 @@ msgstr "Используя память"
 
 msgctxt "#30318"
 msgid "Memory size to use for each torrent (Mb)"
-msgstr "Размер памяти для каждого торрента (Мб)"
+msgstr "Размер памяти для каждого торрента, МБ"
 
 msgctxt "#30319"
 msgid "Continue"
@@ -988,7 +988,7 @@ msgstr "Использовать память устройства для ска
 
 msgctxt "#30350"
 msgid "so can be any storage. For 1gb memory devices[CR]100mb is enough for memory storage, 200-250mb for bigger devices."
-msgstr "Для устройств с памятью 1 Гб достаточно 100 Мб для хранения,[CR]200-250 Мб для устройств с большей памятью."
+msgstr "Для устройств с памятью 1 Гб достаточно 100 МБ для хранения,[CR]200-250 МБ для устройств с большей памятью."
 
 msgctxt "#30351"
 msgid "Same as for usual file storage, but splits file into many small files.[CR]Should be used on FAT-32 file-systems."
@@ -1096,7 +1096,7 @@ msgstr "Разрешить использование памяти"
 
 msgctxt "#30379"
 msgid "Minimum - 40MB, Default - 8%, Maximum - 15%"
-msgstr "Мин - 40 Мб, по умолчанию - 8%, макс - 15%"
+msgstr "Мин - 40 МБ, по умолчанию - 8%, макс - 15%"
 
 msgctxt "#30380"
 msgid "Minimum"
@@ -1628,11 +1628,11 @@ msgstr "Минимальный размер файла"
 
 msgctxt "#30523"
 msgid "Minimum file size for Movies, MB"
-msgstr "Минимальный размер Фильма, Мб"
+msgstr "Минимальный размер Фильма, МБ"
 
 msgctxt "#30524"
 msgid "Minimum file size for Shows, per minute, MB"
-msgstr "Минимальный размер Сериала, Мб/минута"
+msgstr "Минимальный размер Сериала, МБ/минута"
 
 msgctxt "#30525"
 msgid "Automatically start downloading next episode"
@@ -1836,11 +1836,11 @@ msgstr "Авторизацию пользователя Trakt нужно обн�
 
 msgctxt "#30577"
 msgid "End of file Buffer size (MB)"
-msgstr "Размер буфера перед просмотром, конец файла, Мб"
+msgstr "Размер буфера перед просмотром, конец файла, МБ"
 
 msgctxt "#30578"
 msgid "Beginning of file Buffer size (MB)"
-msgstr "Размер буфера перед просмотром, начало файла, Мб"
+msgstr "Размер буфера перед просмотром, начало файла, МБ"
 
 msgctxt "#30579"
 msgid "Settings"
@@ -1908,7 +1908,7 @@ msgstr "Разное"
 
 msgctxt "#30597"
 msgid "Cache size (MB)"
-msgstr "Размер кеша, Мб"
+msgstr "Размер кеша, МБ"
 
 msgctxt "#30598"
 msgid "Enable caching if using File storage and have speed problems.[CR]Will use more memory, but can improve the speed."
