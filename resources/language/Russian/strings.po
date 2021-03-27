@@ -1052,7 +1052,7 @@ msgstr "Кеширование"
 
 msgctxt "#30388"
 msgid "Cache selected streams"
-msgstr "Кешировать выбранный торрент"
+msgstr "Кешировать выбор торрента"
 
 msgctxt "#30389"
 msgid "Cache stream search results"
@@ -1732,7 +1732,7 @@ msgstr "* Все сезоны"
 
 msgctxt "#30572"
 msgid "Log response body"
-msgstr "Логгировать содержимое ответа сервера"
+msgstr "Логгировать тело ответа сервера"
 
 msgctxt "#30573"
 msgid "Select file to play"
