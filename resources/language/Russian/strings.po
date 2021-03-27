@@ -24,14 +24,6 @@ msgctxt "#30001"
 msgid "Download path"
 msgstr "Путь для загрузок"
 
-msgctxt "#30002"
-msgid "Keep files after playback/download stops"
-msgstr "Сохранять файлы после просмотра"
-
-msgctxt "#30003"
-msgid "Buffer size (MB)"
-msgstr "Размер буфера, МБ"
-
 msgctxt "#30004"
 msgid "Max upload rate (kB/s)"
 msgstr "Скорость отдачи, КБ/с"
@@ -51,10 +43,6 @@ msgstr "Порт, макс"
 msgctxt "#30008"
 msgid "Proxy"
 msgstr "Прокси"
-
-msgctxt "#30009"
-msgid "SOCKS v5 Configuration"
-msgstr "SOCKS v5 настройки"
 
 msgctxt "#30010"
 msgid "Enabled"
@@ -240,10 +228,6 @@ msgctxt "#30057"
 msgid "Username"
 msgstr "Пользователь"
 
-msgctxt "#30058"
-msgid "Authorize Elementum"
-msgstr "Авторизовать Elementum в Trakt"
-
 msgctxt "#30059"
 msgid "Library update delay on startup (seconds)"
 msgstr "Задержка обновления библиотеки при запуске, сек"
@@ -251,14 +235,6 @@ msgstr "Задержка обновления библиотеки при зап
 msgctxt "#30060"
 msgid "Library update frequency (hours)"
 msgstr "Частота обновления библиотеки, часы"
-
-msgctxt "#30061"
-msgid "Sync frequency of Trakt lists to library (hours)"
-msgstr "Частота синхронизации списков[CR]Trakt в библиотеку, часы"
-
-msgctxt "#30062"
-msgid "Ask to keep the files after streaming"
-msgstr "Спросить: оставлять файлы после просмотра"
 
 msgctxt "#30063"
 msgid "Disable UPNP & NATPMP"
@@ -348,10 +324,6 @@ msgctxt "#30086"
 msgid "Enable tuned storage settings"
 msgstr "Включить оптимальные настройки хранилища"
 
-msgctxt "#30087"
-msgid "Ask to delete the files after streaming"
-msgstr "Спросить: удалить файлы после просмотра"
-
 msgctxt "#30088"
 msgid "Initial buffering timeout (seconds)"
 msgstr "Тайм-аут пре-буфферизации, сек"
@@ -384,10 +356,6 @@ msgstr "Скрыть окно прогресса в фоне"
 msgctxt "#30100"
 msgid "Elementum has crashed, restarting..."
 msgstr "Сбой плагина, перезапуск..."
-
-msgctxt "#30101"
-msgid "You must restart Kodi before using Elementum"
-msgstr "Перезапустите Kodi перед использованием Elementum"
 
 msgctxt "#30102"
 msgid "This add-on can only be run from within Elementum"
@@ -966,14 +934,6 @@ msgctxt "#30352"
 msgid "Same as for usual file storage, but using memory[CR]to lower filesystem operations. Experimental storage!"
 msgstr "Как и с обычными файлами, но использует память[CR]для уменьшения операций с файловой системой. Экспериментальная функция!"
 
-msgctxt "#30353"
-msgid "Auto-assign network ports"
-msgstr "Автоматически назначать сетевой порт"
-
-msgctxt "#30354"
-msgid "Could not start Torrent client. Please report to github with the Kodi log file!"
-msgstr "Невозможно запустить Торрент клиент. Пожалуйста, сообщите об ошибке и загрузите журнал Kodi!"
-
 msgctxt "#30355"
 msgid "Changelog"
 msgstr "Список изменений"
@@ -1092,23 +1052,15 @@ msgstr "Кеширование"
 
 msgctxt "#30388"
 msgid "Cache selected streams"
-msgstr "Кеширование выбора торрента"
+msgstr "Кешировать выбранный торрент"
 
 msgctxt "#30389"
 msgid "Cache stream search results"
-msgstr "Кеширование результатов поиска торрентов"
+msgstr "Кешировать результаты поиска"
 
 msgctxt "#30390"
 msgid "Cache search results duration, seconds"
-msgstr "Длительность кеширование результатов поиска, в секундах"
-
-msgctxt "#30391"
-msgid "List of public DNS IPs"
-msgstr "Список IP публичных DNS"
-
-msgctxt "#30392"
-msgid "List of Opennic DNS IPs"
-msgstr "Список IP Opennic DNS"
+msgstr "Длительность кеширования результатов, сек"
 
 msgctxt "#30393"
 msgid "Status"
@@ -1132,7 +1084,7 @@ msgstr "Web UI"
 
 msgctxt "#30398"
 msgid "Debug information (with kodi.log)"
-msgstr "Debug (отладочная) информация (совместно с kodi.log)"
+msgstr "Debug (отладочная) информация (включая kodi.log)"
 
 msgctxt "#30399"
 msgid "Addresses"
@@ -1261,10 +1213,6 @@ msgstr "Формат даты"
 msgctxt "#30436"
 msgid "Userlist"
 msgstr "Мой Список"
-
-msgctxt "#30437"
-msgid "Selected userlist"
-msgstr "Выбранный Мой Список"
 
 msgctxt "#30438"
 msgid "Userlists"
@@ -1430,10 +1378,6 @@ msgctxt "#30478"
 msgid "Searching"
 msgstr "Выполняется поиск"
 
-msgctxt "#30479"
-msgid "Automatically run Kodi library update after add/delete"
-msgstr "Автоматически запускать сканирование Kodi[CR]после добавления/удаления"
-
 msgctxt "#30480"
 msgid "Run Kodi library update after add/delete"
 msgstr "Обновлять библиотеку"
@@ -1500,7 +1444,7 @@ msgstr "Использовать встроенный DNS клиент"
 
 msgctxt "#30496"
 msgid "Turn off if you use Tor addresses, or you want to pass resolve to local network settings"
-msgstr "Отключите если используете адреса Tor, или хотите оставить DNS настройки сети"
+msgstr "Отключите, если используете адреса Tor, или хотите оставить DNS настройки сети"
 
 msgctxt "#30498"
 msgid "Reset this path to '/'"
@@ -1696,7 +1640,7 @@ msgstr "Поиск среди всех"
 
 msgctxt "#30549"
 msgid "Number of results to find"
-msgstr "Прекратить поиск, если найдено, ссылок"
+msgstr "Cчитать поиск удачным, если найдено, ссылок"
 
 msgctxt "#30550"
 msgid "What to search"
@@ -1900,7 +1844,7 @@ msgstr "Включить синхронизацию во время проигр
 
 msgctxt "#30602"
 msgid "Retry plugin requests after timeout (seconds)"
-msgstr "Повторить запрос после тайм-аута, сек"
+msgstr "Повторять запрос к дополнению после тайм-аута, сек"
 
 msgctxt "#30603"
 msgid "Addon Startup"
@@ -2028,7 +1972,7 @@ msgstr "Нет, %s сек"
 
 msgctxt "#30634"
 msgid "Log level"
-msgstr "Уровень сообщений в журнале"
+msgstr "Детализация сообщений в журнале"
 
 msgctxt "#30635"
 msgid "None"
