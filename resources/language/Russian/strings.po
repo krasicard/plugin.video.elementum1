@@ -96,10 +96,6 @@ msgctxt "#30019"
 msgid "Maintenance"
 msgstr "Обслуживание"
 
-msgctxt "#30020"
-msgid "Clear cache"
-msgstr "Очистить кеш"
-
 msgctxt "#30021"
 msgid "Results per page"
 msgstr "Ссылок на странице"
@@ -111,10 +107,6 @@ msgstr "Показывать статус загрузки"
 msgctxt "#30023"
 msgid "Choose stream automatically"
 msgstr "Выбирать ссылку автоматически"
-
-msgctxt "#30024"
-msgid "Get updates for pre-releases"
-msgstr "Получать обновления для пре-релизов"
 
 msgctxt "#30025"
 msgid "Limit rates after initial buffering only"
@@ -296,17 +288,9 @@ msgctxt "#30069"
 msgid "SOCKS5"
 msgstr "Socks5"
 
-msgctxt "#30070"
-msgid "SOCKS5 password"
-msgstr "Socks5 пароль"
-
 msgctxt "#30071"
 msgid "HTTP"
 msgstr "HTTP"
-
-msgctxt "#30072"
-msgid "HTTP password"
-msgstr "Пароль HTTP"
 
 msgctxt "#30073"
 msgid "i2p"
@@ -395,22 +379,6 @@ msgstr "Отключить звук уведомлений"
 msgctxt "#30094"
 msgid "Disable background progress dialog"
 msgstr "Скрыть окно прогресса в фоне"
-
-msgctxt "#30095"
-msgid "Sync watched progress with Kodi"
-msgstr "Сохранять прогресс просмотра"
-
-msgctxt "#30096"
-msgid "Never"
-msgstr "Никогда"
-
-msgctxt "#30097"
-msgid "Always"
-msgstr "Всегда"
-
-msgctxt "#30098"
-msgid "Active torrents only"
-msgstr "Только активные торренты"
 
 # Interface
 msgctxt "#30100"
@@ -1010,10 +978,6 @@ msgctxt "#30355"
 msgid "Changelog"
 msgstr "Список изменений"
 
-msgctxt "#30356"
-msgid "Not enough free memory!"
-msgstr "Недостаточно свободной памяти!"
-
 msgctxt "#30357"
 msgid "Use Trakt information in Trakt lists"
 msgstr "Использовать Trakt информацию в списках Trakt"
@@ -1118,10 +1082,6 @@ msgctxt "#30384"
 msgid "Language code for subtitles (example: en, it, es)"
 msgstr "Код языка для субтитров (пример: en, it, ru)"
 
-msgctxt "#30385"
-msgid "HTTPS"
-msgstr "HTTPS"
-
 msgctxt "#30386"
 msgid "Disable background progress dialog on playback"
 msgstr "Скрыть окно прогресса в фоне при проигрывании"
@@ -1129,6 +1089,18 @@ msgstr "Скрыть окно прогресса в фоне при проигр
 msgctxt "#30387"
 msgid "Caching"
 msgstr "Кеширование"
+
+msgctxt "#30388"
+msgid "Cache selected streams"
+msgstr "Кеширование выбора торрента"
+
+msgctxt "#30389"
+msgid "Cache stream search results"
+msgstr "Кеширование результатов поиска торрентов"
+
+msgctxt "#30390"
+msgid "Cache search results duration, seconds"
+msgstr "Длительность кеширование результатов поиска, в секундах"
 
 msgctxt "#30391"
 msgid "List of public DNS IPs"
@@ -1528,7 +1500,7 @@ msgstr "Использовать встроенный DNS клиент"
 
 msgctxt "#30496"
 msgid "Turn off if you use Tor addresses, or you want to pass resolve to local network settings"
-msgstr "Отключите, если используете адреса Tor, или хотите оставить DNS настройки сети"
+msgstr "Отключите если используете адреса Tor, или хотите оставить DNS настройки сети"
 
 msgctxt "#30498"
 msgid "Reset this path to '/'"
