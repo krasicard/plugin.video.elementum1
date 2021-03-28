@@ -1732,7 +1732,7 @@ msgstr "* Все сезоны"
 
 msgctxt "#30572"
 msgid "Log response body"
-msgstr "Логгировать тело ответа сервера"
+msgstr "Логгировать содержимое ответа сервера"
 
 msgctxt "#30573"
 msgid "Select file to play"
@@ -1776,7 +1776,7 @@ msgstr "Настройки провайдера %s"
 
 msgctxt "#30583"
 msgid "Resolving magnet link"
-msgstr "Ищем magnet ссылку"
+msgstr "Поиск magnet ссылки..."
 
 msgctxt "#30585"
 msgid "Enable library integration with Kodi"
