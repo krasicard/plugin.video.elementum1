@@ -182,7 +182,7 @@
 
         <setting label="30594" type="lsep" />
         <setting id="disable_dht" label="30050" type="bool" default="false" />
-        <setting id="disable_lsd" label="30058" type="bool" default="false" />
+        <setting id="disable_lsd" label="30657" type="bool" default="false" />
         <setting id="disable_tcp" label="30328" type="bool" default="false" />
         <setting id="disable_utp" label="30329" type="bool" default="false" />
         <setting id="disable_upnp" label="30063" type="bool" default="false" />
