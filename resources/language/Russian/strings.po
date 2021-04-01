@@ -2062,3 +2062,7 @@ msgstr "Файлы сезона"
 msgctxt "#30656"
 msgid "All files"
 msgstr "Все файлы"
+
+msgctxt "#30057"
+msgid "Disable LSD"
+msgstr "Отключить LSD"

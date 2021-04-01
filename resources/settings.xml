@@ -63,7 +63,7 @@
           <setting id="completed_shows_path" type="folder" label="30215" source="auto" option="writeable" subsetting="true" enable="eq(-2,true)" />
           <setting id="completed_help" label="30302" type="text" enable="false" subsetting="true" />
         <setting id="silent_stream_start" type="bool" label="30359" default="false" />
-        
+
         <setting id="autoyes_enabled" label="30574" type="bool" default="true" enable="eq(-1,false)" />
         <setting id="autoyes_timeout" label="30575" type="slider" option="int" range="1,1,120" default="5" enable="eq(-2,false)" />
 
@@ -168,7 +168,7 @@
         <setting label="30590" type="lsep" />
         <setting id="autoload_torrents" type="bool" label="30421" default="true" />
         <setting id="autoload_torrents_paused" type="bool" label="30515" default="true" />
-        
+
         <setting label="30591" type="lsep" />
         <setting id="connections_limit" label="30027" type="number" default="" />
         <setting id="conntracker_limit_auto" label="30486" type="bool" default="true" />
@@ -182,6 +182,7 @@
 
         <setting label="30594" type="lsep" />
         <setting id="disable_dht" label="30050" type="bool" default="false" />
+        <setting id="disable_lsd" label="30058" type="bool" default="false" />
         <setting id="disable_tcp" label="30328" type="bool" default="false" />
         <setting id="disable_utp" label="30329" type="bool" default="false" />
         <setting id="disable_upnp" label="30063" type="bool" default="false" />
@@ -230,7 +231,7 @@
         <setting id="resolution_preference_movies" label="30047" type="enum" values="1080p / 720p / 480p|720p / 1080p / 480p|720p / 480p / 1080p|480p / 720p / 1080p" />
         <setting id="resolution_preference_shows" label="30048" type="enum" values="1080p / 720p / 480p|720p / 1080p / 480p|720p / 480p / 1080p|480p / 720p / 1080p" />
         <setting id="percentage_additional_seeders" label="30049" type="number" default="25" />
-        
+
         <!-- Caching -->
         <setting label="30387" type="lsep" />
         <setting id="use_cache_selection" label="30388" type="bool" default="true" />
@@ -238,11 +239,11 @@
         <setting id="cache_search_duration" label="30390" type="number" default="180" enable="eq(-1,true)" />
 
         <!-- Providers -->
-        <setting label="30239" type="lsep" />        
+        <setting label="30239" type="lsep" />
         <setting id="skip_burst_search" label="30559" type="bool" default="false" />
         <setting id="provider_disable_failing" label="30031" type="bool" default="false" />
         <setting id="provider_allowed_failures" label="30032" type="slider" option="int" range="0,1,10" default="3" />
-        
+
         <!-- Custom timeout -->
         <setting label="30016" type="lsep" />
         <setting id="custom_provider_timeout_enabled" label="30017" type="bool" default="false" />
@@ -304,7 +305,7 @@
         <setting id="trakt_sync_playback_enabled" label="30601" type="bool" default="true" />
         <setting id="trakt_sync_frequency_min" label="30563" type="slider" option="int" range="0,1,300" default="5" />
         <setting type="action" label="30330" action="RunPlugin(plugin://plugin.video.elementum/trakt/update)" />
-        
+
         <!-- Trakt guys have asked to remove Custom API keys, so, please, stick with default keys -->
         <!-- <setting id="trakt_client_id" type="text" label="30580" default="" visible="false" />
         <setting id="trakt_client_secret" type="text" label="30581" default="" visible="false" /> -->
@@ -329,7 +330,7 @@
         <setting                                           type="action" label="30444" action="RunPlugin(plugin://plugin.video.elementum/trakt/select_list/added/shows)" enable="eq(-1,2)" />
         <setting id="trakt_sync_added_shows_list_name"     type="text" label="30446"                 default="" enable="false" />
         <setting id="trakt_sync_added_shows_list"          type="number" label="Added userlist ID"   default="" enable="false" />
-        
+
         <setting id="trakt_sync_removed_movies"            type="bool" label="30449" default="true" />
         <setting id="trakt_sync_removed_movies_location"   type="enum" label="30442" lvalues="30257|30254|30436" default="0" enable="eq(-1,true)" />
         <setting                                           type="action" label="30441" action="RunPlugin(plugin://plugin.video.elementum/trakt/select_list/removed/movies)" enable="eq(-1,2)" />

@@ -2072,3 +2072,7 @@ msgstr ""
 msgctxt "#30656"
 msgid "All files"
 msgstr ""
+
+msgctxt "#30057"
+msgid "Disable LSD"
+msgstr ""
