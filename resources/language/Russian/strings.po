@@ -2066,3 +2066,19 @@ msgstr "Все файлы"
 msgctxt "#30657"
 msgid "Disable LSD"
 msgstr "Отключить LSD"
+
+msgctxt "#30658"
+msgid "Add extra trackers"
+msgstr "Добавить доп. трекеры"
+
+msgctxt "#30659"
+msgid "Minimum set"
+msgstr "Минимальный набор"
+
+msgctxt "#30660"
+msgid "Best trackers"
+msgstr "Лучшие трекеры"
+
+msgctxt "#30661"
+msgid "All trackers"
+msgstr "Все трекеры"
