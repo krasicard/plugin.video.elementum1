@@ -86,7 +86,7 @@ msgstr "Обслуживание"
 
 msgctxt "#30021"
 msgid "Results per page"
-msgstr "Ссылок на странице"
+msgstr "Элементов на странице"
 
 msgctxt "#30022"
 msgid "Enable overlay status"
@@ -342,7 +342,7 @@ msgstr "Исходящие интерфейсы"
 
 msgctxt "#30092"
 msgid "Use default fanart"
-msgstr "Использовать фанарт"
+msgstr "Использовать фанарт по умолчанию"
 
 msgctxt "#30093"
 msgid "Disable notification sound"
@@ -355,7 +355,7 @@ msgstr "Скрыть окно прогресса в фоне"
 # Interface
 msgctxt "#30100"
 msgid "Elementum has crashed, restarting..."
-msgstr "Сбой плагина, перезапуск..."
+msgstr "Сбой Elementum, перезапуск..."
 
 msgctxt "#30102"
 msgid "This add-on can only be run from within Elementum"
@@ -1024,7 +1024,7 @@ msgstr "Мин - 40 МБ, по умолчанию - 8%, макс - 15%"
 
 msgctxt "#30380"
 msgid "Minimum"
-msgstr "Минимальный"
+msgstr "Минимальное"
 
 msgctxt "#30381"
 msgid "Default"
@@ -1032,7 +1032,7 @@ msgstr "По умолчанию"
 
 msgctxt "#30382"
 msgid "Maximum"
-msgstr "Максимальный"
+msgstr "Максимальное"
 
 msgctxt "#30383"
 msgid "Use Kodi language for subtitles search"
@@ -1192,7 +1192,7 @@ msgstr "Сортировать сериалы по"
 
 msgctxt "#30430"
 msgid "By latest watched"
-msgstr "истории просмотра"
+msgstr "По последнему просмотру"
 
 msgctxt "#30431"
 msgid "By show name"
@@ -1512,7 +1512,7 @@ msgstr "Высокая скорость"
 
 msgctxt "#30515"
 msgid "Load torrents from torrents folder paused"
-msgstr "Не начинать закачку торрентов из папки torrents"
+msgstr "Не стартовать торренты из папки torrents"
 
 msgctxt "#30516"
 msgid "... resume N seconds earlier"
@@ -1848,7 +1848,7 @@ msgstr "Повторять запрос к дополнению после та�
 
 msgctxt "#30603"
 msgid "Addon Startup"
-msgstr "Запускается"
+msgstr "Настройки запуска"
 
 msgctxt "#30604"
 msgid "Clean all history"
@@ -1936,7 +1936,7 @@ msgstr "Скачивается"
 
 msgctxt "#30625"
 msgid "Finished"
-msgstr "Завершено"
+msgstr "Завершен"
 
 msgctxt "#30626"
 msgid "Seeding"
