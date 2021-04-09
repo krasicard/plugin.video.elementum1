@@ -2092,3 +2092,7 @@ msgstr ""
 msgctxt "#30661"
 msgid "All trackers"
 msgstr ""
+
+msgctxt "#30662"
+msgid "Remove original trackers from torrent"
+msgstr ""

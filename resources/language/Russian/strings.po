@@ -2082,3 +2082,7 @@ msgstr "Лучшие трекеры"
 msgctxt "#30661"
 msgid "All trackers"
 msgstr "Все трекеры"
+
+msgctxt "#30662"
+msgid "Remove original trackers from torrent"
+msgstr "Удалить оригинальные трекеры из торрента"
