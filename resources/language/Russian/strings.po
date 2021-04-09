@@ -1156,7 +1156,7 @@ msgstr "Процент просмотра для отметки просмотр
 
 msgctxt "#30421"
 msgid "Load torrents from torrents folder on startup"
-msgstr "Запускать торренты из папки torrents при запуске"
+msgstr "Добавлять торренты из папки torrents при запуске"
 
 msgctxt "#30422"
 msgid "Popular lists"
@@ -1192,7 +1192,7 @@ msgstr "Сортировать сериалы по"
 
 msgctxt "#30430"
 msgid "By latest watched"
-msgstr "По последнему просмотру"
+msgstr "последнему просмотру"
 
 msgctxt "#30431"
 msgid "By show name"
@@ -1380,7 +1380,7 @@ msgstr "Выполняется поиск"
 
 msgctxt "#30480"
 msgid "Run Kodi library update after add/delete"
-msgstr "Обновлять библиотеку"
+msgstr "Автоматически обновлять библиотеку Kodi"
 
 msgctxt "#30481"
 msgid "Automatically"
@@ -1404,7 +1404,7 @@ msgstr "Предел, подключений/сек"
 
 msgctxt "#30486"
 msgid "Automatic concurrent connections limit"
-msgstr "Автоматический предел, подключений/сек"
+msgstr "Автоматический предел подключений/сек"
 
 msgctxt "#30487"
 msgid "Enable built-in HTTP proxy"
@@ -1464,7 +1464,7 @@ msgstr "Увеличить буффер, если установлено в adva
 
 msgctxt "#30503"
 msgid "Use libtorrent.config to override torrent engine settings"
-msgstr "Использовать libtorrent.config для настроек утилиты torrent"
+msgstr "Использовать libtorrent.config для настроек движка torrent"
 
 msgctxt "#30504"
 msgid "Located at USERDATA/plugin.video.elementum/libtorrent.config file[CR]Settings apply automatically. Visit https://libtorrent.org for info."
@@ -1964,11 +1964,11 @@ msgstr "Проигрывается"
 
 msgctxt "#30632"
 msgid "Yes (%s seconds)"
-msgstr "Да, %s сек"
+msgstr "Да (%s сек)"
 
 msgctxt "#30633"
 msgid "No (%s seconds)"
-msgstr "Нет, %s сек"
+msgstr "Нет (%s сек)"
 
 msgctxt "#30634"
 msgid "Log level"
