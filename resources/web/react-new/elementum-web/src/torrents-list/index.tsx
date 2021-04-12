@@ -1,0 +1,46 @@
+import React, { FC } from 'react';
+import { Button, Icon, Table } from 'semantic-ui-react';
+import TorrentListItem from './torrent';
+import { ITorrent } from '../dataStructure';
+
+interface ITorrentListProps {
+  torrents: ITorrent[]
+}
+
+const TorrentList: FC<ITorrentListProps> = ({ torrents }: ITorrentListProps) => (
+  <>
+    <Table celled>
+      <Table.Header>
+        <Table.Row>
+          <Table.HeaderCell />
+          <Table.HeaderCell />
+          <Table.HeaderCell>Name</Table.HeaderCell>
+          <Table.HeaderCell>Progres</Table.HeaderCell>
+          <Table.HeaderCell>Status</Table.HeaderCell>
+          <Table.HeaderCell>Ratios</Table.HeaderCell>
+          <Table.HeaderCell>Size</Table.HeaderCell>
+          <Table.HeaderCell>Rates</Table.HeaderCell>
+          <Table.HeaderCell>Seeds</Table.HeaderCell>
+          <Table.HeaderCell>Peers</Table.HeaderCell>
+        </Table.Row>
+      </Table.Header>
+      <Table.Body>
+        {torrents.map((t) => <TorrentListItem torrent={t} />)}
+      </Table.Body>
+      <Table.Footer>
+        <Table.Row>
+          <Table.HeaderCell />
+          <Table.HeaderCell colSpan={10}>
+            <Button floated="left">Delete</Button>
+            <Button icon labelPosition="left" floated="right">
+              <Icon name="download" />
+              Add Torrent
+            </Button>
+          </Table.HeaderCell>
+        </Table.Row>
+      </Table.Footer>
+    </Table>
+  </>
+);
+
+export default TorrentList;
