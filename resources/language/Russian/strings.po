@@ -2072,16 +2072,16 @@ msgid "Add extra trackers"
 msgstr "Добавить доп. трекеры"
 
 msgctxt "#30659"
-msgid "Minimum set"
-msgstr "Минимальный набор"
+msgid "All trackers"
+msgstr "Все трекеры"
 
 msgctxt "#30660"
 msgid "Best trackers"
 msgstr "Лучшие трекеры"
 
 msgctxt "#30661"
-msgid "All trackers"
-msgstr "Все трекеры"
+msgid "Minimum set"
+msgstr "Минимальный набор"
 
 msgctxt "#30662"
 msgid "Remove original trackers from torrent"

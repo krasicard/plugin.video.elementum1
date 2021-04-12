@@ -2070,7 +2070,7 @@ msgid "Add extra trackers"
 msgstr ""
 
 msgctxt "#30659"
-msgid "Minimum set"
+msgid "All trackers"
 msgstr ""
 
 msgctxt "#30660"
@@ -2078,7 +2078,7 @@ msgid "Best trackers"
 msgstr ""
 
 msgctxt "#30661"
-msgid "All trackers"
+msgid "Minimum set"
 msgstr ""
 
 msgctxt "#30662"
