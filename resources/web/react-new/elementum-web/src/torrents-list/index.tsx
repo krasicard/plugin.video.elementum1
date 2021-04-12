@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
-import { Button, Icon, Table } from 'semantic-ui-react';
+import { Button, Table } from 'semantic-ui-react';
+import ModalExampleModal from '../upload-modal';
 import TorrentListItem from './torrent';
 import { ITorrent } from '../dataStructure';
 
@@ -9,7 +10,7 @@ interface ITorrentListProps {
 
 const TorrentList: FC<ITorrentListProps> = ({ torrents }: ITorrentListProps) => (
   <>
-    <Table celled>
+    <Table celled definition compact stackable>
       <Table.Header>
         <Table.Row>
           <Table.HeaderCell />
@@ -32,10 +33,7 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents }: ITorrentListProps) => 
           <Table.HeaderCell />
           <Table.HeaderCell colSpan={10}>
             <Button floated="left">Delete</Button>
-            <Button icon labelPosition="left" floated="right">
-              <Icon name="download" />
-              Add Torrent
-            </Button>
+            <ModalExampleModal />
           </Table.HeaderCell>
         </Table.Row>
       </Table.Footer>

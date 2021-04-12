@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { Statistic } from 'semantic-ui-react';
 
 interface StatisticsProps {
   downloading: number,
@@ -8,18 +9,20 @@ interface StatisticsProps {
 
 const Statistics: FC<StatisticsProps> = ({ downloading, finished, total }: StatisticsProps) => (
   <>
-    <div className="statistics">
-      <div>{downloading}</div>
-      <div className="label">Downloading</div>
-    </div>
-    <div className="statistics">
-      <div>{finished}</div>
-      <div className="label">Finished</div>
-    </div>
-    <div className="statistics">
-      <div>{total}</div>
-      <div className="label">Total</div>
-    </div>
+    <Statistic.Group widths="3">
+      <Statistic>
+        <Statistic.Value>{downloading}</Statistic.Value>
+        <Statistic.Label>Downloading</Statistic.Label>
+      </Statistic>
+      <Statistic>
+        <Statistic.Value>{finished}</Statistic.Value>
+        <Statistic.Label>Finished</Statistic.Label>
+      </Statistic>
+      <Statistic>
+        <Statistic.Value>{total}</Statistic.Value>
+        <Statistic.Label>Total</Statistic.Label>
+      </Statistic>
+    </Statistic.Group>
   </>
 );
 

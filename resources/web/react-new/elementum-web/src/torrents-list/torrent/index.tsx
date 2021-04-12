@@ -1,6 +1,9 @@
 import React, { FC } from 'react';
-import { Label, Table } from 'semantic-ui-react';
+import {
+  Label, Popup, Progress, Table,
+} from 'semantic-ui-react';
 import { ITorrent } from '../../dataStructure';
+import './style.css';
 
 interface ITorrentListItemProps {
   torrent: ITorrent
@@ -15,7 +18,12 @@ const TorrentListItem: FC<ITorrentListItemProps> = ({ torrent }: ITorrentListIte
         <Table.Cell />
         <Table.Cell />
         <Table.Cell>{torrent.name}</Table.Cell>
-        <Table.Cell>{torrent.progress}</Table.Cell>
+        <Table.Cell>
+          <Popup
+            content={`${torrent.progress.toFixed(2)}%`}
+            trigger={<Progress percent={torrent.progress} autoSuccess size="small" />}
+          />
+        </Table.Cell>
         <Table.Cell>
           <Label color={statusLabelColor}>{torrent.status}</Label>
         </Table.Cell>
@@ -43,7 +51,7 @@ const TorrentListItem: FC<ITorrentListItemProps> = ({ torrent }: ITorrentListIte
           </div>
         </Table.Cell>
         <Table.Cell>
-          <span>{torrent.size}</span>
+          <Label>{torrent.size}</Label>
         </Table.Cell>
         <Table.Cell>
           <div>

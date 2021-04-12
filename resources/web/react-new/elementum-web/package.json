@@ -39,7 +39,8 @@
           "js": "never",
           "jsx": "never",
           "ts": "never",
-          "tsx": "never"
+          "tsx": "never",
+          "css": "never"
         }
      ],
      "no-use-before-define": "off",

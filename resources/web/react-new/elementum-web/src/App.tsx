@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { Header } from 'semantic-ui-react';
 import Statistics from './statistics-total';
 import TorrentList from './torrents-list';
-import './App.css';
 import { ITorrent } from './dataStructure';
 import 'semantic-ui-css/semantic.min.css';
 
@@ -21,9 +21,16 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="../header.jpg" className="App-logo" alt="logo" />
-      </header>
+      <Header>
+        <div style={{
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url("../header.jpg")', backgroundSize: 'cover', height: '150px', textAlign: 'center',
+        }}
+        >
+          <a href="/web">
+            <img src="../title.png" alt="Elementum" height="100%" />
+          </a>
+        </div>
+      </Header>
       <div>
         <Statistics
           downloading={torrents.filter((t) => t.status !== 'Finished').length}
