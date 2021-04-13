@@ -3,7 +3,7 @@ import {
   Button, Form, Icon, Modal,
 } from 'semantic-ui-react';
 
-function ModalExampleModal() {
+function UploadTorrentModal() {
   const [open, setOpen] = React.useState(false);
   const [uri, setUri] = React.useState('');
   const [file, setFile] = React.useState<File>();
@@ -30,36 +30,10 @@ function ModalExampleModal() {
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>
-        <Button
-          content="Cancel"
-          color="red"
-          onClick={() => setOpen(false)}
-        />
-        <Button
-          content="Add (all files)"
-          labelPosition="left"
-          icon="download"
-          color="yellow"
-          onClick={() => addTorrent('torrents/add', [['all', '1']])}
-        />
-        <Button
-          content="Add"
-          labelPosition="left"
-          icon="download"
-          color="blue"
-          onClick={() => {
-            addTorrent('torrents/add');
-          }}
-        />
-        <Button
-          content="Stream"
-          labelPosition="left"
-          icon="play"
-          color="green"
-          onClick={() => {
-            addTorrent('playuri');
-          }}
-        />
+        <Button content="Cancel" color="red" onClick={() => setOpen(false)} />
+        <Button content="Add (all files)" labelPosition="left" icon="download" color="yellow" onClick={() => addTorrent('torrents/add', [['all', '1']])} />
+        <Button content="Add" labelPosition="left" icon="download" color="blue" onClick={() => addTorrent('torrents/add')} />
+        <Button content="Stream" labelPosition="left" icon="play" color="green" onClick={() => addTorrent('playuri')} />
       </Modal.Actions>
     </Modal>
   );
@@ -78,4 +52,4 @@ function ModalExampleModal() {
   }
 }
 
-export default ModalExampleModal;
+export default UploadTorrentModal;

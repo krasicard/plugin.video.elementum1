@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Button, Table } from 'semantic-ui-react';
-import ModalExampleModal from '../upload-modal';
+import UploadTorrentModal from '../upload-modal';
 import TorrentListItem from './torrent';
 import { ITorrent } from '../dataStructure';
 
@@ -15,6 +15,7 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents }: ITorrentListProps) => 
         <Table.Row>
           <Table.HeaderCell />
           <Table.HeaderCell />
+          <Table.HeaderCell />
           <Table.HeaderCell>Name</Table.HeaderCell>
           <Table.HeaderCell>Progres</Table.HeaderCell>
           <Table.HeaderCell>Status</Table.HeaderCell>
@@ -26,14 +27,14 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents }: ITorrentListProps) => 
         </Table.Row>
       </Table.Header>
       <Table.Body>
-        {torrents.map((t) => <TorrentListItem torrent={t} />)}
+        {torrents.map((t) => <TorrentListItem torrent={t} key={t.id} />)}
       </Table.Body>
       <Table.Footer>
         <Table.Row>
           <Table.HeaderCell />
           <Table.HeaderCell colSpan={10}>
             <Button floated="left">Delete</Button>
-            <ModalExampleModal />
+            <UploadTorrentModal />
           </Table.HeaderCell>
         </Table.Row>
       </Table.Footer>
