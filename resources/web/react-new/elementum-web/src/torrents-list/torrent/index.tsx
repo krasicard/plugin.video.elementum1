@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import {
   Button,
+  ButtonProps,
   Checkbox,
   CheckboxProps,
   Icon,
@@ -30,6 +31,10 @@ const TorrentListItem: FC<ITorrentListItemProps> = ({ torrent }: ITorrentListIte
     fetch(`http://127.0.0.1:65220/torrents/${action}/${torrent.id}`);
   };
 
+  const onPlay = (_event: React.MouseEvent<HTMLButtonElement, MouseEvent>, _data: ButtonProps) => {
+    fetch(`http://127.0.0.1:65220/playuri?resume=${torrent.id}`);
+  };
+
   return (
     <>
       <Table.Row>
@@ -37,7 +42,7 @@ const TorrentListItem: FC<ITorrentListItemProps> = ({ torrent }: ITorrentListIte
           <Checkbox toggle onChange={onResumePause} checked={isActive} />
         </Table.Cell>
         <Table.Cell collapsing><Checkbox /></Table.Cell>
-        <Table.Cell collapsing><Button color="green" icon="play" floated="right" /></Table.Cell>
+        <Table.Cell collapsing><Button color="green" icon="play" floated="right" onClick={onPlay} /></Table.Cell>
         <Table.Cell>{torrent.name}</Table.Cell>
         <Table.Cell>
           <Popup
