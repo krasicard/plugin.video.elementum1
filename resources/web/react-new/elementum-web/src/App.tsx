@@ -15,8 +15,7 @@ function App() {
     };
 
     getList();
-    const interval = setInterval(() => getList(), 5000);
-    return () => clearInterval(interval);
+    setInterval(() => getList(), 5000);
   }, []);
 
   return (

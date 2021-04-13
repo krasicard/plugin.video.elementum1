@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import {
   Button,
   Checkbox,
+  CheckboxProps,
   Icon,
   Label,
   Popup,
@@ -19,12 +20,22 @@ interface ITorrentListItemProps {
 }
 
 const TorrentListItem: FC<ITorrentListItemProps> = ({ torrent }: ITorrentListItemProps) => {
-  const statusLabelColor = (torrent.status === 'Seeding' || torrent.status === 'Downloading') ? 'green' : 'grey';
+  const isActive = torrent.status !== 'Finished' && torrent.status !== 'Paused';
+  const statusLabelColor = isActive ? 'green' : 'grey';
+
+  const onResumePause = (_event: React.FormEvent<HTMLInputElement>, data: CheckboxProps) => {
+    const { checked } = data;
+    const action = checked ? 'resume' : 'pause';
+
+    fetch(`http://127.0.0.1:65220/torrents/${action}/${torrent.id}`);
+  };
 
   return (
     <>
       <Table.Row>
-        <Table.Cell collapsing><Checkbox toggle fitted /></Table.Cell>
+        <Table.Cell collapsing>
+          <Checkbox toggle onChange={onResumePause} checked={isActive} />
+        </Table.Cell>
         <Table.Cell collapsing><Checkbox /></Table.Cell>
         <Table.Cell collapsing><Button color="green" icon="play" floated="right" /></Table.Cell>
         <Table.Cell>{torrent.name}</Table.Cell>
