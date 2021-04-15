@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import {
   Button,
   ButtonProps,
@@ -13,14 +13,15 @@ import {
   StatisticValue,
   Table,
 } from 'semantic-ui-react';
-import { ITorrent } from '../../dataStructure';
+import { ITorrentView } from '../../dataStructure';
 import './style.css';
 
 interface ITorrentListItemProps {
-  torrent: ITorrent
+  torrent: ITorrentView,
+  onTorrentSelected: (_torrentId: string, _isChecked: boolean) => void
 }
 
-const TorrentListItem: FC<ITorrentListItemProps> = ({ torrent }: ITorrentListItemProps) => {
+const TorrentListItem = ({ torrent, onTorrentSelected }: ITorrentListItemProps) => {
   const isActive = torrent.status !== 'Finished' && torrent.status !== 'Paused';
   const statusLabelColor = isActive ? 'green' : 'grey';
 
@@ -41,7 +42,9 @@ const TorrentListItem: FC<ITorrentListItemProps> = ({ torrent }: ITorrentListIte
         <Table.Cell collapsing>
           <Checkbox toggle onChange={onResumePause} checked={isActive} />
         </Table.Cell>
-        <Table.Cell collapsing><Checkbox /></Table.Cell>
+        <Table.Cell collapsing>
+          <Checkbox onChange={(_, data) => onTorrentSelected(torrent.id, data.checked ?? false)} />
+        </Table.Cell>
         <Table.Cell collapsing><Button color="green" icon="play" floated="right" onClick={onPlay} /></Table.Cell>
         <Table.Cell>{torrent.name}</Table.Cell>
         <Table.Cell>

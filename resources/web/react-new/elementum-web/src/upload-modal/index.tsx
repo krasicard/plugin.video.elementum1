@@ -14,7 +14,7 @@ function UploadTorrentModal() {
       onOpen={() => setOpen(true)}
       open={open}
       trigger={(
-        <Button icon labelPosition="left" floated="right">
+        <Button icon labelPosition="left" floated="right" primary>
           <Icon name="download" />
           Add Torrent
         </Button>
@@ -31,7 +31,13 @@ function UploadTorrentModal() {
       </Modal.Content>
       <Modal.Actions>
         <Button content="Cancel" color="red" onClick={() => setOpen(false)} />
-        <Button content="Add (all files)" labelPosition="left" icon="download" color="yellow" onClick={() => addTorrent('torrents/add', [['all', '1']])} />
+        <Button
+          content="Add (all files)"
+          labelPosition="left"
+          icon="download"
+          color="yellow"
+          onClick={() => addTorrent('torrents/add', [['all', '1']])}
+        />
         <Button content="Add" labelPosition="left" icon="download" color="blue" onClick={() => addTorrent('torrents/add')} />
         <Button content="Stream" labelPosition="left" icon="play" color="green" onClick={() => addTorrent('playuri')} />
       </Modal.Actions>

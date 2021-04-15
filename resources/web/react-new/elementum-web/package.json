@@ -45,7 +45,8 @@
      ],
      "no-use-before-define": "off",
      "@typescript-eslint/no-use-before-define": ["error"],
-     "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
+     "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+     "max-len": ["error", { "code": 140 }]
     },
     "settings": {
       "import/resolver": {

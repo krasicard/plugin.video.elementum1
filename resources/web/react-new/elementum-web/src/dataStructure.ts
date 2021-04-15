@@ -14,5 +14,9 @@ export interface ITorrent {
     seeding_time: string,
     size: string,
     time_ratio: number,
-    upload_rate: number
+    upload_rate: number,
+}
+
+export interface ITorrentView extends ITorrent {
+    is_selected: boolean,
 }
