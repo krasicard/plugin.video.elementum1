@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Header } from 'semantic-ui-react';
 import Statistics from './statistics-total';
+import SearchBar from './search-bar';
 import TorrentList from './torrents-list';
 import { ITorrent, ITorrentView } from './dataStructure';
 import 'semantic-ui-css/semantic.min.css';
@@ -40,6 +41,7 @@ function App() {
           finished={torrents.filter((t) => t.status === 'Finished').length}
           total={torrents.length}
         />
+        <SearchBar />
         <TorrentList torrents={torrents} />
       </div>
     </div>
