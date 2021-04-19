@@ -1,6 +1,8 @@
 /* eslint-disable camelcase */
 /* eslint-disable no-unused-vars */
-import React, { FC, useReducer, useState } from 'react';
+import React, {
+  FC, useReducer, useRef, useState,
+} from 'react';
 import {
   Dropdown, DropdownItemProps, Grid, Item, ItemGroup, Search, SearchResultProps,
 } from 'semantic-ui-react';
@@ -35,9 +37,9 @@ const debounceWaitTime = 300;
 
 interface Action {
   type: ActionType,
-  query: string,
-  results: ResultView[],
-  selection: string
+  query?: string,
+  results?: ResultView[],
+  selection?: string
 }
 
 // eslint-disable-next-line no-shadow
@@ -51,6 +53,7 @@ enum ActionType {
 interface Info {
   plotoutline: string,
   tagline: string,
+  code: string,
 }
 
 interface Art {
@@ -86,19 +89,20 @@ const initialState: State = {
   value: '',
 };
 
+// TODO: remove "!"
 function queryReducer(state: State, action: Action): State {
   switch (action.type) {
     case ActionType.CleanQuery:
       return initialState;
     case ActionType.StartSearch:
-      return { ...state, loading: true, value: action.query };
+      return { ...state, loading: true, value: action.query! };
     case ActionType.FinishSearch:
-      return { ...state, loading: false, results: action.results };
+      return { ...state, loading: false, results: action.results! };
     case ActionType.UpdateSelection:
-      return { ...state, value: action.selection };
+      return { ...state, value: action.selection! };
 
     default:
-      throw new Error();
+      throw new Error(`Unsupported ActionType: ${action.type}`);
   }
 }
 
@@ -134,6 +138,7 @@ function getSearchType(torrentType: TorrentType) {
 
 const Statistics: FC = () => {
   const [torrentType, setTorrentType] = useState(TorrentType.Movies);
+  const searcRef = useRef<any>();
   const [state, dispatch] = useReducer(queryReducer, initialState);
   const { loading, results, value } = state;
 
@@ -147,25 +152,24 @@ const Statistics: FC = () => {
       type: ActionType.FinishSearch,
       results: items.filter((i) => i.info !== undefined).map((i) => ({
         image: i.art.thumb,
-        key: i.art.thumb,
+        key: i.info.code,
         description: i.info.plotoutline,
         title: i.label,
         tagline: i.info.tagline,
         path: i.path,
       })),
       query,
-      selection: '',
     });
   }, debounceWaitTime);
 
   const handleQueryChange = async (query: string) => {
     dispatch({
-      type: ActionType.StartSearch, query, results: [], selection: '',
+      type: ActionType.StartSearch, query,
     });
 
     if (query.trim().length === 0) {
       dispatch({
-        type: ActionType.CleanQuery, query: '', results: [], selection: '',
+        type: ActionType.CleanQuery,
       });
       return;
     }
@@ -173,15 +177,47 @@ const Statistics: FC = () => {
     await debounceSearchChange(query);
   };
 
-  const handleResultSelect = (data: ResultView) => {
+  const handleResultSelect = async (data: ResultView) => {
     const path = data.path.replace('plugin://plugin.video.elementum/', '');
-    fetch(`http://127.0.0.1:65220/${path}`);
+    switch (torrentType) {
+      case TorrentType.Movies:
+        fetch(`http://127.0.0.1:65220/${path}`);
+        return;
+      case TorrentType.TvShows: {
+        dispatch({
+          type: ActionType.StartSearch, query: data.title,
+        });
+
+        // TODO: Remove copypaste
+        const response = await fetch(`http://127.0.0.1:65220/${path}`);
+        const items = (await response.json()).items as Result[];
+
+        dispatch({
+          type: ActionType.FinishSearch,
+          results: items.filter((i) => i.info !== undefined).map((i) => ({
+            image: i.art.thumb,
+            key: i.info.code,
+            description: i.info.plotoutline,
+            title: i.label,
+            tagline: i.info.tagline,
+            path: i.path,
+          })),
+          query: data.title,
+        });
+        searcRef.current.open();
+        return;
+      }
+      case TorrentType.General:
+        return;
+      default:
+        throw new Error(`Unsupported TorrentType: ${torrentType}`);
+    }
   };
 
   const handleTorrentTypeChange = (torrentTypeValue: TorrentType) => {
     setTorrentType(torrentTypeValue);
     dispatch({
-      type: ActionType.CleanQuery, query: '', results: [], selection: '',
+      type: ActionType.CleanQuery,
     });
   };
 
@@ -211,6 +247,7 @@ const Statistics: FC = () => {
                     onSearchChange={(_, data) => handleQueryChange(data.value ?? '')}
                     resultRenderer={resultRenderer}
                     onResultSelect={(_, data) => handleResultSelect(data.result)}
+                    ref={searcRef}
                   />
                 </Grid.Column>
               </Grid.Row>
