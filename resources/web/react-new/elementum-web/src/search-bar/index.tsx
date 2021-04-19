@@ -1,25 +1,32 @@
 /* eslint-disable camelcase */
 /* eslint-disable no-unused-vars */
-import React, { FC, useReducer } from 'react';
+import React, { FC, useReducer, useState } from 'react';
 import {
   Dropdown, DropdownItemProps, Grid, Item, ItemGroup, Search, SearchResultProps,
 } from 'semantic-ui-react';
 import { useDebouncedCallback } from 'use-debounce';
 
+// eslint-disable-next-line no-shadow
+enum TorrentType {
+  Movies,
+  TvShows,
+  General,
+}
+
 const torrentTypes: DropdownItemProps[] = [
   {
     text: 'Movies',
-    value: 'Movies',
+    value: TorrentType.Movies,
     icon: 'film',
   },
   {
     text: 'TV Shows',
-    value: 'TV Shows',
+    value: TorrentType.TvShows,
     icon: 'tv',
   },
   {
     text: 'General',
-    value: 'General',
+    value: TorrentType.General,
     icon: 'magnet',
   },
 ];
@@ -112,17 +119,33 @@ const resultRenderer = (item: SearchResultProps) => {
   );
 };
 
+function getSearchType(torrentType: TorrentType) {
+  switch (torrentType) {
+    case TorrentType.Movies:
+      return 'movies';
+    case TorrentType.TvShows:
+      return 'shows';
+    case TorrentType.General:
+      return '.';
+    default:
+      throw new Error(`Unexpected torrent type: ${torrentType}`);
+  }
+}
+
 const Statistics: FC = () => {
+  const [torrentType, setTorrentType] = useState(TorrentType.Movies);
   const [state, dispatch] = useReducer(queryReducer, initialState);
   const { loading, results, value } = state;
 
   const debounceSearchChange = useDebouncedCallback(async (query: string) => {
-    const response = await fetch(`http://127.0.0.1:65220/movies/search?q=${query}`);
+    const searchType = getSearchType(torrentType);
+
+    const response = await fetch(`http://127.0.0.1:65220/${searchType}/search?q=${query}`);
     const items = (await response.json()).items as Result[];
 
     dispatch({
       type: ActionType.FinishSearch,
-      results: items.filter((i) => i.is_playable).map((i) => ({
+      results: items.filter((i) => i.info !== undefined).map((i) => ({
         image: i.art.thumb,
         key: i.art.thumb,
         description: i.info.plotoutline,
@@ -155,6 +178,13 @@ const Statistics: FC = () => {
     fetch(`http://127.0.0.1:65220/${path}`);
   };
 
+  const handleTorrentTypeChange = (torrentTypeValue: TorrentType) => {
+    setTorrentType(torrentTypeValue);
+    dispatch({
+      type: ActionType.CleanQuery, query: '', results: [], selection: '',
+    });
+  };
+
   return (
     <>
       <Grid padded stackable columns="3">
@@ -163,7 +193,13 @@ const Statistics: FC = () => {
             <Grid>
               <Grid.Row>
                 <Grid.Column width="5">
-                  <Dropdown fluid selection options={torrentTypes} defaultValue={torrentTypes[0].value} />
+                  <Dropdown
+                    fluid
+                    selection
+                    options={torrentTypes}
+                    defaultValue={torrentTypes[0].value}
+                    onChange={(_, data) => handleTorrentTypeChange(data.value as TorrentType)}
+                  />
                 </Grid.Column>
                 <Grid.Column width="11">
                   <Search
