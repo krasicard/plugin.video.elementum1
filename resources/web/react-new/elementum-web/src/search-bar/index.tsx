@@ -1,15 +1,10 @@
 /* eslint-disable camelcase */
 /* eslint-disable no-unused-vars */
-import React, { FC, useCallback, useReducer } from 'react';
+import React, { FC, useReducer } from 'react';
 import {
   Dropdown, DropdownItemProps, Grid, Item, ItemGroup, Search, SearchResultProps,
 } from 'semantic-ui-react';
-
-// interface SearchBarProps {
-//   downloading: number,
-//   finished: number,
-//   total: number,
-// }
+import { useDebouncedCallback } from 'use-debounce';
 
 const torrentTypes: DropdownItemProps[] = [
   {
@@ -28,6 +23,8 @@ const torrentTypes: DropdownItemProps[] = [
     icon: 'magnet',
   },
 ];
+
+const debounceWaitTime = 300;
 
 interface Action {
   type: ActionType,
@@ -49,10 +46,15 @@ interface Info {
   tagline: string,
 }
 
+interface Art {
+  thumb: string
+}
+
 interface Result {
   label: string
   info: Info,
-  thumbnail: string,
+  art: Art,
+  path: string,
   is_playable: boolean,
 }
 
@@ -62,6 +64,7 @@ interface ResultView {
   tagline: string,
   description: string,
   image: string,
+  path: string,
 }
 
 interface State {
@@ -76,7 +79,7 @@ const initialState: State = {
   value: '',
 };
 
-function exampleReducer(state: State, action: Action): State {
+function queryReducer(state: State, action: Action): State {
   switch (action.type) {
     case ActionType.CleanQuery:
       return initialState;
@@ -110,11 +113,29 @@ const resultRenderer = (item: SearchResultProps) => {
 };
 
 const Statistics: FC = () => {
-  const [state, dispatch] = useReducer(exampleReducer, initialState);
+  const [state, dispatch] = useReducer(queryReducer, initialState);
   const { loading, results, value } = state;
 
-  const handleSearchChange = useCallback(async (e, data) => {
-    const query: string = data.value;
+  const debounceSearchChange = useDebouncedCallback(async (query: string) => {
+    const response = await fetch(`http://127.0.0.1:65220/movies/search?q=${query}`);
+    const items = (await response.json()).items as Result[];
+
+    dispatch({
+      type: ActionType.FinishSearch,
+      results: items.filter((i) => i.is_playable).map((i) => ({
+        image: i.art.thumb,
+        key: i.art.thumb,
+        description: i.info.plotoutline,
+        title: i.label,
+        tagline: i.info.tagline,
+        path: i.path,
+      })),
+      query,
+      selection: '',
+    });
+  }, debounceWaitTime);
+
+  const handleQueryChange = async (query: string) => {
     dispatch({
       type: ActionType.StartSearch, query, results: [], selection: '',
     });
@@ -126,21 +147,13 @@ const Statistics: FC = () => {
       return;
     }
 
-    const response = await fetch(`http://127.0.0.1:65220/movies/search?q=${query}`);
-    const items = (await response.json()).items as Result[];
-    dispatch({
-      type: ActionType.FinishSearch,
-      results: items.filter((i) => i.is_playable).map((i) => ({
-        image: i.thumbnail,
-        key: i.thumbnail,
-        description: i.info.plotoutline,
-        title: i.label,
-        tagline: i.info.tagline,
-      })),
-      query,
-      selection: '',
-    });
-  }, []);
+    await debounceSearchChange(query);
+  };
+
+  const handleResultSelect = (data: ResultView) => {
+    const path = data.path.replace('plugin://plugin.video.elementum/', '');
+    fetch(`http://127.0.0.1:65220/${path}`);
+  };
 
   return (
     <>
@@ -159,8 +172,9 @@ const Statistics: FC = () => {
                     loading={loading}
                     results={results}
                     value={value}
-                    onSearchChange={handleSearchChange}
+                    onSearchChange={(_, data) => handleQueryChange(data.value ?? '')}
                     resultRenderer={resultRenderer}
+                    onResultSelect={(_, data) => handleResultSelect(data.result)}
                   />
                 </Grid.Column>
               </Grid.Row>

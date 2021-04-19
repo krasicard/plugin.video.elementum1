@@ -16,6 +16,7 @@
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",
     "typescript": "^4.2.4",
+    "use-debounce": "^6.0.1",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
@@ -31,7 +32,16 @@
       "eslint-config-airbnb"
     ],
     "rules": {
-      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".tsx"
+          ]
+        }
+      ],
       "import/extensions": [
         "error",
         "ignorePackages",
@@ -42,16 +52,33 @@
           "tsx": "never",
           "css": "never"
         }
-     ],
-     "no-use-before-define": "off",
-     "@typescript-eslint/no-use-before-define": ["error"],
-     "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-     "max-len": ["error", { "code": 140 }]
+      ],
+      "no-use-before-define": "off",
+      "@typescript-eslint/no-use-before-define": [
+        "error"
+      ],
+      "no-unused-vars": [
+        "error",
+        {
+          "argsIgnorePattern": "^_"
+        }
+      ],
+      "max-len": [
+        "error",
+        {
+          "code": 140
+        }
+      ]
     },
     "settings": {
       "import/resolver": {
         "node": {
-          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx"
+          ]
         }
       }
     }
