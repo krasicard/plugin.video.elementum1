@@ -8,47 +8,31 @@ import {
 } from 'semantic-ui-react';
 import { useDebouncedCallback } from 'use-debounce';
 
-// eslint-disable-next-line no-shadow
-enum TorrentType {
-  Movies,
-  TvShows,
-  General,
-}
+const debounceWaitTime = 300;
 
+type TorrentType = 'Movies' | 'TvShows' | 'General';
 const torrentTypes: DropdownItemProps[] = [
   {
     text: 'Movies',
-    value: TorrentType.Movies,
+    value: 'Movies',
     icon: 'film',
   },
   {
     text: 'TV Shows',
-    value: TorrentType.TvShows,
+    value: 'TvShows',
     icon: 'tv',
   },
   {
     text: 'General',
-    value: TorrentType.General,
+    value: 'General',
     icon: 'magnet',
   },
 ];
 
-const debounceWaitTime = 300;
-
-interface Action {
-  type: ActionType,
-  query?: string,
-  results?: ResultView[],
-  selection?: string
-}
-
-// eslint-disable-next-line no-shadow
-enum ActionType {
-  CleanQuery,
-  StartSearch,
-  FinishSearch,
-  UpdateSelection,
-}
+type Action = {type: 'CleanQuery'}
+            | {type: 'StartSearch', query: string}
+            | {type: 'FinishSearch', results: ResultView[]}
+            | {type: 'UpdateSelection', selection: string};
 
 interface Info {
   plotoutline: string,
@@ -89,20 +73,16 @@ const initialState: State = {
   value: '',
 };
 
-// TODO: remove "!"
 function queryReducer(state: State, action: Action): State {
   switch (action.type) {
-    case ActionType.CleanQuery:
+    case 'CleanQuery':
       return initialState;
-    case ActionType.StartSearch:
-      return { ...state, loading: true, value: action.query! };
-    case ActionType.FinishSearch:
-      return { ...state, loading: false, results: action.results! };
-    case ActionType.UpdateSelection:
-      return { ...state, value: action.selection! };
-
-    default:
-      throw new Error(`Unsupported ActionType: ${action.type}`);
+    case 'StartSearch':
+      return { ...state, loading: true, value: action.query };
+    case 'FinishSearch':
+      return { ...state, loading: false, results: action.results };
+    case 'UpdateSelection':
+      return { ...state, value: action.selection };
   }
 }
 
@@ -125,11 +105,11 @@ const resultRenderer = (item: SearchResultProps) => {
 
 function getSearchType(torrentType: TorrentType) {
   switch (torrentType) {
-    case TorrentType.Movies:
+    case 'Movies':
       return 'movies';
-    case TorrentType.TvShows:
+    case 'TvShows':
       return 'shows';
-    case TorrentType.General:
+    case 'General':
       return '.';
     default:
       throw new Error(`Unexpected torrent type: ${torrentType}`);
@@ -137,7 +117,7 @@ function getSearchType(torrentType: TorrentType) {
 }
 
 const Statistics: FC = () => {
-  const [torrentType, setTorrentType] = useState(TorrentType.Movies);
+  const [torrentType, setTorrentType] = useState<TorrentType>('Movies');
   const searcRef = useRef<any>();
   const [state, dispatch] = useReducer(queryReducer, initialState);
   const { loading, results, value } = state;
@@ -149,7 +129,7 @@ const Statistics: FC = () => {
     const items = (await response.json()).items as Result[];
 
     dispatch({
-      type: ActionType.FinishSearch,
+      type: 'FinishSearch',
       results: items.filter((i) => i.info !== undefined).map((i) => ({
         image: i.art.thumb,
         key: i.info.code,
@@ -158,18 +138,17 @@ const Statistics: FC = () => {
         tagline: i.info.tagline,
         path: i.path,
       })),
-      query,
     });
   }, debounceWaitTime);
 
   const handleQueryChange = async (query: string) => {
     dispatch({
-      type: ActionType.StartSearch, query,
+      type: 'StartSearch', query,
     });
 
     if (query.trim().length === 0) {
       dispatch({
-        type: ActionType.CleanQuery,
+        type: 'CleanQuery',
       });
       return;
     }
@@ -180,12 +159,12 @@ const Statistics: FC = () => {
   const handleResultSelect = async (data: ResultView) => {
     const path = data.path.replace('plugin://plugin.video.elementum/', '');
     switch (torrentType) {
-      case TorrentType.Movies:
+      case 'Movies':
         fetch(`http://127.0.0.1:65220/${path}`);
         return;
-      case TorrentType.TvShows: {
+      case 'TvShows': {
         dispatch({
-          type: ActionType.StartSearch, query: data.title,
+          type: 'StartSearch', query: data.title,
         });
 
         // TODO: Remove copypaste
@@ -193,7 +172,7 @@ const Statistics: FC = () => {
         const items = (await response.json()).items as Result[];
 
         dispatch({
-          type: ActionType.FinishSearch,
+          type: 'FinishSearch',
           results: items.filter((i) => i.info !== undefined).map((i) => ({
             image: i.art.thumb,
             key: i.info.code,
@@ -202,12 +181,11 @@ const Statistics: FC = () => {
             tagline: i.info.tagline,
             path: i.path,
           })),
-          query: data.title,
         });
         searcRef.current.open();
         return;
       }
-      case TorrentType.General:
+      case 'General':
         return;
       default:
         throw new Error(`Unsupported TorrentType: ${torrentType}`);
@@ -217,7 +195,7 @@ const Statistics: FC = () => {
   const handleTorrentTypeChange = (torrentTypeValue: TorrentType) => {
     setTorrentType(torrentTypeValue);
     dispatch({
-      type: ActionType.CleanQuery,
+      type: 'CleanQuery',
     });
   };
 

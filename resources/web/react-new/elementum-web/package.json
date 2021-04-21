@@ -68,7 +68,9 @@
         {
           "code": 140
         }
-      ]
+      ],
+      "default-case": "off",
+      "consistent-return": "off"
     },
     "settings": {
       "import/resolver": {
