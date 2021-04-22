@@ -7,7 +7,7 @@ interface ITorrentListProps {
   torrentIdsToDelete: string[]
 }
 
-const DeleteTorrentModal = ({ torrentIdsToDelete } : ITorrentListProps) => {
+const DeleteTorrentModal = ({ torrentIdsToDelete } : ITorrentListProps): JSX.Element => {
   const [open, setOpen] = useState(false);
   const [deleteFiles, setDeleteFiles] = useState(false);
 

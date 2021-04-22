@@ -1,5 +1,3 @@
-/* eslint-disable camelcase */
-/* eslint-disable no-unused-vars */
 import React, {
   FC, useReducer, useRef, useState,
 } from 'react';
@@ -29,10 +27,10 @@ const torrentTypes: DropdownItemProps[] = [
   },
 ];
 
-type Action = {type: 'CleanQuery'}
-            | {type: 'StartSearch', query: string}
-            | {type: 'FinishSearch', results: ResultView[]}
-            | {type: 'UpdateSelection', selection: string};
+type Action = { type: 'CleanQuery' }
+| { type: 'StartSearch', query: string }
+| { type: 'FinishSearch', results: ResultView[] }
+| { type: 'UpdateSelection', selection: string };
 
 interface Info {
   plotoutline: string,
@@ -53,12 +51,12 @@ interface Result {
 }
 
 interface ResultView {
-  key: string,
   title: string,
   tagline: string,
   description: string,
   image: string,
   path: string,
+  key: string,
 }
 
 interface State {
@@ -103,7 +101,7 @@ const resultRenderer = (item: SearchResultProps) => {
   );
 };
 
-function getSearchType(torrentType: TorrentType) {
+function getSearchType(torrentType: TorrentType): string {
   switch (torrentType) {
     case 'Movies':
       return 'movies';
@@ -111,9 +109,24 @@ function getSearchType(torrentType: TorrentType) {
       return 'shows';
     case 'General':
       return '.';
-    default:
-      throw new Error(`Unexpected torrent type: ${torrentType}`);
   }
+}
+
+async function querySearchResults(url: string, dispatch: React.Dispatch<Action>) {
+  const response = await fetch(url);
+  const items = (await response.json()).items as Result[];
+
+  dispatch({
+    type: 'FinishSearch',
+    results: items.filter((i) => i.info !== undefined).map((i) => ({
+      image: i.art.thumb,
+      key: i.info.code,
+      description: i.info.plotoutline,
+      title: i.label,
+      tagline: i.info.tagline,
+      path: i.path,
+    })),
+  });
 }
 
 const Statistics: FC = () => {
@@ -125,20 +138,7 @@ const Statistics: FC = () => {
   const debounceSearchChange = useDebouncedCallback(async (query: string) => {
     const searchType = getSearchType(torrentType);
 
-    const response = await fetch(`http://127.0.0.1:65220/${searchType}/search?q=${query}`);
-    const items = (await response.json()).items as Result[];
-
-    dispatch({
-      type: 'FinishSearch',
-      results: items.filter((i) => i.info !== undefined).map((i) => ({
-        image: i.art.thumb,
-        key: i.info.code,
-        description: i.info.plotoutline,
-        title: i.label,
-        tagline: i.info.tagline,
-        path: i.path,
-      })),
-    });
+    await querySearchResults(`http://127.0.0.1:65220/${searchType}/search?q=${query}`, dispatch);
   }, debounceWaitTime);
 
   const handleQueryChange = async (query: string) => {
@@ -156,39 +156,29 @@ const Statistics: FC = () => {
     await debounceSearchChange(query);
   };
 
-  const handleResultSelect = async (data: ResultView) => {
+  const handleResultSelect = async (data: ResultView): Promise<void> => {
     const path = data.path.replace('plugin://plugin.video.elementum/', '');
+    const url = `http://127.0.0.1:65220/${path}?external=1`;
+
     switch (torrentType) {
       case 'Movies':
-        fetch(`http://127.0.0.1:65220/${path}`);
-        return;
+        await fetch(url);
+        break;
       case 'TvShows': {
         dispatch({
-          type: 'StartSearch', query: data.title,
+          type: 'StartSearch', query: value,
         });
 
-        // TODO: Remove copypaste
-        const response = await fetch(`http://127.0.0.1:65220/${path}`);
-        const items = (await response.json()).items as Result[];
-
-        dispatch({
-          type: 'FinishSearch',
-          results: items.filter((i) => i.info !== undefined).map((i) => ({
-            image: i.art.thumb,
-            key: i.info.code,
-            description: i.info.plotoutline,
-            title: i.label,
-            tagline: i.info.tagline,
-            path: i.path,
-          })),
-        });
-        searcRef.current.open();
-        return;
+        if (path.includes('links')) {
+          await fetch(url);
+        } else {
+          await querySearchResults(url, dispatch);
+          searcRef.current.open();
+        }
+        break;
       }
       case 'General':
-        return;
-      default:
-        throw new Error(`Unsupported TorrentType: ${torrentType}`);
+        break;
     }
   };
 

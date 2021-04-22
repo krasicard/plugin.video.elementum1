@@ -6,7 +6,7 @@ import TorrentList from './torrents-list';
 import { ITorrent, ITorrentView } from './dataStructure';
 import 'semantic-ui-css/semantic.min.css';
 
-function App() {
+function App(): JSX.Element {
   const [torrents, setTorrents] = useState<ITorrentView[]>([]);
 
   useEffect(() => {
@@ -16,8 +16,8 @@ function App() {
       setTorrents(torrentsList as ITorrentView[]);
     };
 
-    getList();
-    setInterval(() => getList(), 5000);
+    void getList();
+    setInterval(() => void getList(), 5000);
   }, []);
 
   return (

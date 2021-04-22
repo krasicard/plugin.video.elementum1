@@ -21,19 +21,19 @@ interface ITorrentListItemProps {
   onTorrentSelected: (_torrentId: string, _isChecked: boolean) => void
 }
 
-const TorrentListItem = ({ torrent, onTorrentSelected }: ITorrentListItemProps) => {
+const TorrentListItem = ({ torrent, onTorrentSelected }: ITorrentListItemProps): JSX.Element => {
   const isActive = torrent.status !== 'Finished' && torrent.status !== 'Paused';
   const statusLabelColor = isActive ? 'green' : 'grey';
 
-  const onResumePause = (_event: React.FormEvent<HTMLInputElement>, data: CheckboxProps) => {
+  const onResumePause = async (_event: React.FormEvent<HTMLInputElement>, data: CheckboxProps) => {
     const { checked } = data;
     const action = checked ? 'resume' : 'pause';
 
-    fetch(`http://127.0.0.1:65220/torrents/${action}/${torrent.id}`);
+    await fetch(`http://127.0.0.1:65220/torrents/${action}/${torrent.id}`);
   };
 
-  const onPlay = (_event: React.MouseEvent<HTMLButtonElement, MouseEvent>, _data: ButtonProps) => {
-    fetch(`http://127.0.0.1:65220/playuri?resume=${torrent.id}`);
+  const onPlay = async (_event: React.MouseEvent<HTMLButtonElement, MouseEvent>, _data: ButtonProps) => {
+    await fetch(`http://127.0.0.1:65220/playuri?resume=${torrent.id}`);
   };
 
   return (

@@ -3,10 +3,23 @@ import {
   Button, Form, Icon, Modal,
 } from 'semantic-ui-react';
 
-function UploadTorrentModal() {
+function UploadTorrentModal(): JSX.Element {
   const [open, setOpen] = React.useState(false);
   const [uri, setUri] = React.useState('');
   const [file, setFile] = React.useState<File>();
+
+  async function addTorrent(path: string, additionalData?: [name: string, value: string][]) {
+    const formData = new FormData();
+    formData.append('uri', uri);
+    formData.append('file', file ?? 'null');
+    additionalData?.forEach((x) => formData.append(x[0], x[1]));
+
+    await fetch(`http://127.0.0.1:65220/${path}`, {
+      method: 'POST',
+      body: formData,
+    });
+    setOpen(false);
+  }
 
   return (
     <Modal
@@ -43,19 +56,6 @@ function UploadTorrentModal() {
       </Modal.Actions>
     </Modal>
   );
-
-  function addTorrent(path: string, additionalData?: [name: string, value: string][]) {
-    const formData = new FormData();
-    formData.append('uri', uri);
-    formData.append('file', file ?? 'null');
-    additionalData?.forEach((x) => formData.append(x[0], x[1]));
-
-    fetch(`http://127.0.0.1:65220/${path}`, {
-      method: 'POST',
-      body: formData,
-    });
-    setOpen(false);
-  }
 }
 
 export default UploadTorrentModal;
