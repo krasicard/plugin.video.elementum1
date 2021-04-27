@@ -35,7 +35,7 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents }: ITorrentListProps) => 
   return (
     <>
       <Table celled definition compact stackable>
-        <Table.Header>
+        <Table.Header className="mobile-hidden">
           <Table.Row>
             <Table.HeaderCell />
             <Table.HeaderCell>
@@ -58,12 +58,12 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents }: ITorrentListProps) => 
         <Table.Body>
           {torrentList.map((t) => (<TorrentListItem key={t.id} torrent={t} onTorrentSelected={onTorrentSelected} />))}
         </Table.Body>
-        <Table.Footer>
+        <Table.Footer fullWidth>
           <Table.Row>
             <Table.HeaderCell />
             <Table.HeaderCell colSpan={10}>
-              <DeleteTorrentModal torrentIdsToDelete={selectedTorrents} />
               <UploadTorrentModal />
+              <DeleteTorrentModal torrentIdsToDelete={selectedTorrents} />
             </Table.HeaderCell>
           </Table.Row>
         </Table.Footer>

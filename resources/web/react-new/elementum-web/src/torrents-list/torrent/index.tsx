@@ -39,13 +39,15 @@ const TorrentListItem = ({ torrent, onTorrentSelected }: ITorrentListItemProps):
   return (
     <>
       <Table.Row>
-        <Table.Cell collapsing>
+        <Table.Cell collapsing textAlign="center">
           <Checkbox toggle onChange={onResumePause} checked={isActive} />
         </Table.Cell>
-        <Table.Cell collapsing>
+        <Table.Cell collapsing textAlign="center">
           <Checkbox onChange={(_, data) => onTorrentSelected(torrent.id, data.checked ?? false)} checked={torrent.is_selected} />
         </Table.Cell>
-        <Table.Cell collapsing><Button color="green" icon="play" floated="right" onClick={onPlay} /></Table.Cell>
+        <Table.Cell collapsing>
+          <Button color="green" icon="play" floated="right" onClick={onPlay} />
+        </Table.Cell>
         <Table.Cell>{torrent.name}</Table.Cell>
         <Table.Cell>
           <Popup
@@ -53,7 +55,7 @@ const TorrentListItem = ({ torrent, onTorrentSelected }: ITorrentListItemProps):
             trigger={<Progress percent={torrent.progress} autoSuccess size="small" />}
           />
         </Table.Cell>
-        <Table.Cell collapsing>
+        <Table.Cell collapsing textAlign="center">
           <Label color={statusLabelColor}>{torrent.status}</Label>
         </Table.Cell>
         <Table.Cell>
@@ -63,7 +65,7 @@ const TorrentListItem = ({ torrent, onTorrentSelected }: ITorrentListItemProps):
             <Statistic value={`${torrent.seed_time}s`} label="Seed time" />
           </StatisticGroup>
         </Table.Cell>
-        <Table.Cell>
+        <Table.Cell textAlign="center">
           <Label>{torrent.size}</Label>
         </Table.Cell>
         <Table.Cell>

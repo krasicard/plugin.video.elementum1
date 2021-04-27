@@ -26,7 +26,9 @@ function App(): JSX.Element {
         <div style={{
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url("../header.jpg")',
           backgroundSize: 'cover',
+          backgroundPosition: 'top',
           height: '150px',
+          padding: '20px',
           textAlign: 'center',
         }}
         >

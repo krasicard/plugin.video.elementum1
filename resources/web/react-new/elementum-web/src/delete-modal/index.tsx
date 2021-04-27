@@ -19,7 +19,7 @@ const DeleteTorrentModal = ({ torrentIdsToDelete } : ITorrentListProps): JSX.Ele
   }
 
   return (
-    <Modal onClose={() => setOpen(false)} onOpen={() => setOpen(true)} open={open} trigger={<Button floated="left" content="Delete" />}>
+    <Modal onClose={() => setOpen(false)} onOpen={() => setOpen(true)} open={open} trigger={<Button content="Delete" />}>
       <Modal.Header>Delete Torrent</Modal.Header>
       <Modal.Content>
         <Modal.Description>

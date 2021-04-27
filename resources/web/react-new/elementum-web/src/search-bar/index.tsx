@@ -233,19 +233,19 @@ const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate }
               </Grid.Row>
             </Grid>
           </Grid.Column>
-          <Grid.Column width="4" />
+          <Grid.Column width="4" className="mobile-hidden" />
           <Grid.Column width="5">
             <Statistic.Group widths="2" size="tiny">
               <Statistic>
                 <Statistic.Value>
                   <Icon name="arrow down" size="small" />
-                  {` ${totalDownloadRate.toFixed(2)} kB/s`}
+                  {` ${totalDownloadRate.toFixed(1)} kB/s`}
                 </Statistic.Value>
               </Statistic>
               <Statistic>
                 <Statistic.Value>
                   <Icon name="arrow up" size="small" />
-                  {` ${totalUploadRate.toFixed(2)} kB/s`}
+                  {` ${totalUploadRate.toFixed(1)} kB/s`}
                 </Statistic.Value>
               </Statistic>
             </Statistic.Group>
