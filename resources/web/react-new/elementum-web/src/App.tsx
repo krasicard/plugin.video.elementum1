@@ -5,6 +5,7 @@ import SearchBar from './search-bar';
 import TorrentList from './torrents-list';
 import { ITorrent, ITorrentView } from './dataStructure';
 import 'semantic-ui-css/semantic.min.css';
+import './style.css';
 
 function App(): JSX.Element {
   const [torrents, setTorrents] = useState<ITorrentView[]>([]);

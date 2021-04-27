@@ -14,7 +14,6 @@ import {
   Table,
 } from 'semantic-ui-react';
 import { ITorrentView } from '../../dataStructure';
-import './style.css';
 
 interface ITorrentListItemProps {
   torrent: ITorrentView,

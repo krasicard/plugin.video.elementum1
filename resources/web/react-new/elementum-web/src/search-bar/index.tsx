@@ -36,6 +36,10 @@ interface Info {
   plotoutline: string,
   tagline: string,
   code: string,
+  year: number,
+  rating: number,
+  genre: string[],
+  date: Date
 }
 
 interface Art {
@@ -54,6 +58,10 @@ interface ResultView {
   title: string,
   tagline: string,
   description: string,
+  year: number,
+  rating: number,
+  genre: string[],
+  date: Date
   image: string,
   path: string,
   key: string,
@@ -89,12 +97,12 @@ const resultRenderer = (item: SearchResultProps) => {
   return (
     <ItemGroup>
       <Item>
-        <Item.Image src={result.image} />
+        <Item.Image size="small" src={result.image} />
         <Item.Content>
-          <Item.Header>{result.title}</Item.Header>
+          <Item.Header>{`${result.title} (${result.year})`}</Item.Header>
           <Item.Meta>{result.tagline}</Item.Meta>
           <Item.Description>{result.description}</Item.Description>
-          <Item.Extra>test</Item.Extra>
+          <Item.Extra>{`${result.rating} - ${result.genre?.join(', ')} - ${result.date.toString()}`}</Item.Extra>
         </Item.Content>
       </Item>
     </ItemGroup>
@@ -124,6 +132,10 @@ async function querySearchResults(url: string, dispatch: React.Dispatch<Action>)
       description: i.info.plotoutline,
       title: i.label,
       tagline: i.info.tagline,
+      year: i.info.year,
+      date: i.info.date,
+      genre: i.info.genre,
+      rating: i.info.rating,
       path: i.path,
     })),
   });
@@ -205,10 +217,10 @@ const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate }
     <>
       <Grid padded stackable columns="3">
         <Grid.Row>
-          <Grid.Column width="7">
+          <Grid.Column width="11">
             <Grid>
               <Grid.Row>
-                <Grid.Column width="5">
+                <Grid.Column mobile="7" computer="4">
                   <Dropdown
                     fluid
                     selection
@@ -217,7 +229,7 @@ const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate }
                     onChange={(_, data) => handleTorrentTypeChange(data.value as TorrentType)}
                   />
                 </Grid.Column>
-                <Grid.Column width="11">
+                <Grid.Column mobile="9" computer="12">
                   <Search
                     fluid
                     placeholder="Search"
@@ -228,12 +240,12 @@ const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate }
                     resultRenderer={resultRenderer}
                     onResultSelect={(_, data) => handleResultSelect(data.result)}
                     ref={searcRef}
+                    minCharacters={3}
                   />
                 </Grid.Column>
               </Grid.Row>
             </Grid>
           </Grid.Column>
-          <Grid.Column width="4" className="mobile-hidden" />
           <Grid.Column width="5">
             <Statistic.Group widths="2" size="tiny">
               <Statistic>
