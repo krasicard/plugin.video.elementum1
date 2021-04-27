@@ -32,6 +32,7 @@ type Action = { type: 'CleanQuery' }
 | { type: 'FinishSearch', results: ResultView[] }
 | { type: 'UpdateSelection', selection: string };
 
+type MediaType = 'movie' | 'tvshow' | 'season' | 'episode';
 interface Info {
   plotoutline: string,
   tagline: string,
@@ -39,7 +40,8 @@ interface Info {
   year: number,
   rating: number,
   genre: string[],
-  date: Date
+  date: Date,
+  mediatype: MediaType
 }
 
 interface Art {
@@ -64,6 +66,7 @@ interface ResultView {
   date: Date
   image: string,
   path: string,
+  mediatype: MediaType,
   key: string,
 }
 
@@ -99,10 +102,14 @@ const resultRenderer = (item: SearchResultProps) => {
       <Item>
         <Item.Image size="small" src={result.image} />
         <Item.Content>
-          <Item.Header>{`${result.title} (${result.year})`}</Item.Header>
+          <Item.Header>{result.title}</Item.Header>
           <Item.Meta>{result.tagline}</Item.Meta>
           <Item.Description>{result.description}</Item.Description>
-          <Item.Extra>{`${result.rating} - ${result.genre?.join(', ')} - ${result.date.toString()}`}</Item.Extra>
+          {result.mediatype !== 'season' && (
+            <Item.Extra>
+              {`${result.rating} - ${result.genre?.join(', ')} - ${result.date?.toString() ?? result.year ?? '-'}`}
+            </Item.Extra>
+          )}
         </Item.Content>
       </Item>
     </ItemGroup>
@@ -136,6 +143,7 @@ async function querySearchResults(url: string, dispatch: React.Dispatch<Action>)
       date: i.info.date,
       genre: i.info.genre,
       rating: i.info.rating,
+      mediatype: i.info.mediatype,
       path: i.path,
     })),
   });
