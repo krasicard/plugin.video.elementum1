@@ -5,6 +5,8 @@ import SearchBar from './search-bar';
 import TorrentList from './torrents-list';
 import { ITorrent, ITorrentView } from './dataStructure';
 import 'semantic-ui-css/semantic.min.css';
+import header from './static/header.jpg';
+import logo from './static/logo.png';
 import './style.css';
 
 function App(): JSX.Element {
@@ -25,7 +27,7 @@ function App(): JSX.Element {
     <div className="App">
       <Header>
         <div style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url("../header.jpg")',
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url("${header}")`,
           backgroundSize: 'cover',
           backgroundPosition: 'top',
           height: '150px',
@@ -34,7 +36,7 @@ function App(): JSX.Element {
         }}
         >
           <a href="/web">
-            <img src="../title.png" alt="Elementum" height="100%" />
+            <img src={logo} alt="Elementum" height="100%" />
           </a>
         </div>
       </Header>
