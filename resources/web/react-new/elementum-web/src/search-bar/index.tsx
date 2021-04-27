@@ -233,7 +233,7 @@ const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate }
               </Grid.Row>
             </Grid>
           </Grid.Column>
-          <Grid.Column width="4">test</Grid.Column>
+          <Grid.Column width="4" />
           <Grid.Column width="5">
             <Statistic.Group widths="2" size="tiny">
               <Statistic>
