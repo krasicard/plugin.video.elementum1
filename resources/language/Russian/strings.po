@@ -2086,11 +2086,3 @@ msgstr "Минимальный набор"
 msgctxt "#30662"
 msgid "Remove original trackers from torrent"
 msgstr "Удалить оригинальные трекеры из торрента"
-
-msgctxt "#30663"
-msgid "Only for new"
-msgstr "Только для новых"
-
-msgctxt "#30664"
-msgid "For all"
-msgstr "Для всех"
