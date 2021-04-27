@@ -14,7 +14,7 @@ function UploadTorrentModal(): JSX.Element {
     formData.append('file', file ?? 'null');
     additionalData?.forEach((x) => formData.append(x[0], x[1]));
 
-    await fetch(`http://127.0.0.1:65220/${path}`, {
+    await fetch(path, {
       method: 'POST',
       body: formData,
     });
@@ -49,10 +49,10 @@ function UploadTorrentModal(): JSX.Element {
           labelPosition="left"
           icon="download"
           color="yellow"
-          onClick={() => addTorrent('torrents/add', [['all', '1']])}
+          onClick={() => addTorrent('/torrents/add', [['all', '1']])}
         />
-        <Button content="Add" labelPosition="left" icon="download" color="blue" onClick={() => addTorrent('torrents/add')} />
-        <Button content="Stream" labelPosition="left" icon="play" color="green" onClick={() => addTorrent('playuri')} />
+        <Button content="Add" labelPosition="left" icon="download" color="blue" onClick={() => addTorrent('/torrents/add')} />
+        <Button content="Stream" labelPosition="left" icon="play" color="green" onClick={() => addTorrent('/playuri')} />
       </Modal.Actions>
     </Modal>
   );

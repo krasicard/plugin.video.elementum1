@@ -138,7 +138,7 @@ const Statistics: FC = () => {
   const debounceSearchChange = useDebouncedCallback(async (query: string) => {
     const searchType = getSearchType(torrentType);
 
-    await querySearchResults(`http://127.0.0.1:65220/${searchType}/search?q=${query}`, dispatch);
+    await querySearchResults(`/${searchType}/search?q=${query}`, dispatch);
   }, debounceWaitTime);
 
   const handleQueryChange = async (query: string) => {
@@ -158,7 +158,7 @@ const Statistics: FC = () => {
 
   const handleResultSelect = async (data: ResultView): Promise<void> => {
     const path = data.path.replace('plugin://plugin.video.elementum/', '');
-    const url = `http://127.0.0.1:65220/${path}?external=1`;
+    const url = `/${path}?external=1`;
 
     switch (torrentType) {
       case 'Movies':

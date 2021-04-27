@@ -11,7 +11,7 @@ function App(): JSX.Element {
 
   useEffect(() => {
     const getList = async () => {
-      const response = await fetch('http://127.0.0.1:65220/torrents/list');
+      const response = await fetch('/torrents/list');
       const torrentsList = await response.json() as ITorrent[];
       setTorrents(torrentsList as ITorrentView[]);
     };

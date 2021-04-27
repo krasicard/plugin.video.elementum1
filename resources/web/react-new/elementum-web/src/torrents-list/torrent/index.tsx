@@ -29,11 +29,11 @@ const TorrentListItem = ({ torrent, onTorrentSelected }: ITorrentListItemProps):
     const { checked } = data;
     const action = checked ? 'resume' : 'pause';
 
-    await fetch(`http://127.0.0.1:65220/torrents/${action}/${torrent.id}`);
+    await fetch(`/torrents/${action}/${torrent.id}`);
   };
 
   const onPlay = async (_event: React.MouseEvent<HTMLButtonElement, MouseEvent>, _data: ButtonProps) => {
-    await fetch(`http://127.0.0.1:65220/playuri?resume=${torrent.id}`);
+    await fetch(`/playuri?resume=${torrent.id}`);
   };
 
   return (
