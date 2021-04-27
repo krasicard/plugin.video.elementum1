@@ -70,13 +70,13 @@ const TorrentListItem = ({ torrent, onTorrentSelected }: ITorrentListItemProps):
           <StatisticGroup widths="1" size="mini">
             <Statistic>
               <StatisticValue>
-                <Icon name="angle double down" />
+                <Icon name="arrow down" size="small" />
                 {` ${torrent.download_rate.toFixed(2)} kB/s`}
               </StatisticValue>
             </Statistic>
             <Statistic>
               <StatisticValue>
-                <Icon name="angle double up" />
+                <Icon name="arrow up" size="small" />
                 {` ${torrent.upload_rate.toFixed(2)} kB/s`}
               </StatisticValue>
             </Statistic>

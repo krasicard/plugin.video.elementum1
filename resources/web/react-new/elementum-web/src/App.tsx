@@ -41,7 +41,10 @@ function App(): JSX.Element {
           finished={torrents.filter((t) => t.status === 'Finished').length}
           total={torrents.length}
         />
-        <SearchBar />
+        <SearchBar
+          totalDownloadRate={torrents.reduce((rate, item) => rate + item.download_rate, 0)}
+          totalUploadRate={torrents.reduce((rate, item) => rate + item.upload_rate, 0)}
+        />
         <TorrentList torrents={torrents} />
       </div>
     </div>

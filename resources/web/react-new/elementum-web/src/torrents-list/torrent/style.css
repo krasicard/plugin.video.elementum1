@@ -2,8 +2,8 @@
     min-width: 0 !important;
 }
 
-.ui.mini.statistics .statistic>.value {
-    text-transform: none;
+.statistic>.value {
+    text-transform: none !important;
 }
 
 .ui.mini.statistics .statistic>.label {

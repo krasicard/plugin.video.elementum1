@@ -2,7 +2,7 @@ import React, {
   FC, useReducer, useRef, useState,
 } from 'react';
 import {
-  Dropdown, DropdownItemProps, Grid, Item, ItemGroup, Search, SearchResultProps,
+  Dropdown, DropdownItemProps, Grid, Icon, Item, ItemGroup, Search, SearchResultProps, Statistic,
 } from 'semantic-ui-react';
 import { useDebouncedCallback } from 'use-debounce';
 
@@ -129,7 +129,19 @@ async function querySearchResults(url: string, dispatch: React.Dispatch<Action>)
   });
 }
 
-const Statistics: FC = () => {
+interface IStatisticsProps {
+  /**
+   * Total download rate in kB/s
+   */
+  totalDownloadRate: number,
+
+  /**
+   * Total upload rate in kB/s
+   */
+  totalUploadRate: number,
+}
+
+const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate }: IStatisticsProps) => {
   const [torrentType, setTorrentType] = useState<TorrentType>('Movies');
   const searcRef = useRef<any>();
   const [state, dispatch] = useReducer(queryReducer, initialState);
@@ -222,7 +234,22 @@ const Statistics: FC = () => {
             </Grid>
           </Grid.Column>
           <Grid.Column width="4">test</Grid.Column>
-          <Grid.Column width="3">test</Grid.Column>
+          <Grid.Column width="5">
+            <Statistic.Group widths="2" size="tiny">
+              <Statistic>
+                <Statistic.Value>
+                  <Icon name="arrow down" size="small" />
+                  {` ${totalDownloadRate.toFixed(2)} kB/s`}
+                </Statistic.Value>
+              </Statistic>
+              <Statistic>
+                <Statistic.Value>
+                  <Icon name="arrow up" size="small" />
+                  {` ${totalUploadRate.toFixed(2)} kB/s`}
+                </Statistic.Value>
+              </Statistic>
+            </Statistic.Group>
+          </Grid.Column>
         </Grid.Row>
       </Grid>
     </>
