@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import { Table } from 'semantic-ui-react';
+import { Checkbox, Table } from 'semantic-ui-react';
 import DeleteTorrentModal from '../delete-modal';
 import UploadTorrentModal from '../upload-modal';
 import TorrentListItem from './torrent';
@@ -24,13 +24,26 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents }: ITorrentListProps) => 
     }
   };
 
+  const onAllTorrentsSelected = (isChecked: boolean) => {
+    if (isChecked) {
+      setSelectedTorrents(torrents.map((t) => t.id));
+    } else {
+      setSelectedTorrents([]);
+    }
+  };
+
   return (
     <>
       <Table celled definition compact stackable>
         <Table.Header>
           <Table.Row>
             <Table.HeaderCell />
-            <Table.HeaderCell />
+            <Table.HeaderCell>
+              <Checkbox
+                onChange={(_, data) => onAllTorrentsSelected(data.checked ?? false)}
+                checked={torrentList.every((t) => t.is_selected)}
+              />
+            </Table.HeaderCell>
             <Table.HeaderCell />
             <Table.HeaderCell>Name</Table.HeaderCell>
             <Table.HeaderCell>Progres</Table.HeaderCell>

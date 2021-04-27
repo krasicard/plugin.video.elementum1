@@ -43,7 +43,7 @@ const TorrentListItem = ({ torrent, onTorrentSelected }: ITorrentListItemProps):
           <Checkbox toggle onChange={onResumePause} checked={isActive} />
         </Table.Cell>
         <Table.Cell collapsing>
-          <Checkbox onChange={(_, data) => onTorrentSelected(torrent.id, data.checked ?? false)} />
+          <Checkbox onChange={(_, data) => onTorrentSelected(torrent.id, data.checked ?? false)} checked={torrent.is_selected} />
         </Table.Cell>
         <Table.Cell collapsing><Button color="green" icon="play" floated="right" onClick={onPlay} /></Table.Cell>
         <Table.Cell>{torrent.name}</Table.Cell>
