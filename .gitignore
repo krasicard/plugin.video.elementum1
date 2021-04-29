@@ -54,7 +54,6 @@ target/
 
 # Other
 resources/bin/
-resources/web/static/js/*.map
 plugin.video.elementum-*.zip
 
 # React app
