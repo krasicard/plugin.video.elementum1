@@ -34,7 +34,7 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents }: ITorrentListProps) => 
 
   return (
     <>
-      <Table celled definition compact stackable>
+      <Table compact="very" size="small" stackable>
         <Table.Header className="mobile-hidden">
           <Table.Row>
             <Table.HeaderCell />

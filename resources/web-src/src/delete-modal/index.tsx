@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  Button, Checkbox, Modal,
+  Button, Checkbox, Message, Modal, Popup,
 } from 'semantic-ui-react';
 
 interface ITorrentListProps {
@@ -10,6 +10,7 @@ interface ITorrentListProps {
 const DeleteTorrentModal = ({ torrentIdsToDelete } : ITorrentListProps): JSX.Element => {
   const [open, setOpen] = useState(false);
   const [deleteFiles, setDeleteFiles] = useState(false);
+  const hasSelectedTorrents = torrentIdsToDelete.length !== 0;
 
   // TODO: handle response
   // TODO: update list after executing fetch
@@ -19,13 +20,27 @@ const DeleteTorrentModal = ({ torrentIdsToDelete } : ITorrentListProps): JSX.Ele
   }
 
   return (
-    <Modal onClose={() => setOpen(false)} onOpen={() => setOpen(true)} open={open} trigger={<Button content="Delete" />}>
+    <Modal
+      onClose={() => setOpen(false)}
+      open={open}
+      trigger={(
+        <Popup
+          trigger={<p><Button content="Delete" disabled={!hasSelectedTorrents} onClick={(_, _data) => setOpen(true)} /></p>}
+          content="Select at least 1 torrent"
+          disabled={hasSelectedTorrents}
+          closeOnTriggerClick={false}
+          inverted
+        />
+      )}
+    >
       <Modal.Header>Delete Torrent</Modal.Header>
       <Modal.Content>
         <Modal.Description>
           Are you sure?
           <br />
-          <Checkbox toggle label="Also delete files" onChange={(e, data) => setDeleteFiles(data.checked ?? false)} />
+          <Message negative>
+            <Checkbox label="Also delete files" onChange={(e, data) => setDeleteFiles(data.checked ?? false)} />
+          </Message>
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>
