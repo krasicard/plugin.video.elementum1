@@ -25,7 +25,11 @@ const DeleteTorrentModal = ({ torrentIdsToDelete } : ITorrentListProps): JSX.Ele
       open={open}
       trigger={(
         <Popup
-          trigger={<p><Button content="Delete" disabled={!hasSelectedTorrents} onClick={(_, _data) => setOpen(true)} /></p>}
+          trigger={(
+            <div style={{ display: 'inline-block' }}>
+              <Button content="Delete" disabled={!hasSelectedTorrents} onClick={(_, _data) => setOpen(true)} />
+            </div>
+          )}
           content="Select at least 1 torrent"
           disabled={hasSelectedTorrents}
           closeOnTriggerClick={false}
