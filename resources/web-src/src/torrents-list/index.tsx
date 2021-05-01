@@ -13,7 +13,8 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents }: ITorrentListProps) => 
   const [selectedTorrents, setSelectedTorrents] = useState<string[]>([]);
   const torrentList = torrents.map((t) => {
     const torrent = t;
-    torrent.is_selected = selectedTorrents.includes(t.id); return t;
+    torrent.is_selected = selectedTorrents.includes(t.id);
+    return torrent;
   });
 
   const onTorrentSelected = (torrentId: string, isChecked: boolean) => {
@@ -46,7 +47,7 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents }: ITorrentListProps) => 
             </Table.HeaderCell>
             <Table.HeaderCell />
             <Table.HeaderCell>Name</Table.HeaderCell>
-            <Table.HeaderCell>Progres</Table.HeaderCell>
+            <Table.HeaderCell>Progress</Table.HeaderCell>
             <Table.HeaderCell>Status</Table.HeaderCell>
             <Table.HeaderCell>Ratios</Table.HeaderCell>
             <Table.HeaderCell>Size</Table.HeaderCell>

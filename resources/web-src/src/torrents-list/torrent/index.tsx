@@ -86,15 +86,13 @@ const TorrentListItem = ({ torrent, onTorrentSelected }: ITorrentListItemProps):
           </StatisticGroup>
         </Table.Cell>
         <Table.Cell>
-          <StatisticGroup widths="2" size="mini">
-            <Statistic value={torrent.seeders} label="Active" />
-            <Statistic value={torrent.seeders_total} label="Total" />
+          <StatisticGroup widths="1" size="mini">
+            <Statistic value={`${torrent.seeders} / ${torrent.seeders_total}`} label="Active / Total" />
           </StatisticGroup>
         </Table.Cell>
         <Table.Cell>
-          <StatisticGroup widths="2" size="mini">
-            <Statistic value={torrent.peers} label="Active" />
-            <Statistic value={torrent.peers_total} label="Total" />
+          <StatisticGroup widths="1" size="mini">
+            <Statistic value={`${torrent.peers} / ${torrent.peers_total}`} label="Active / Total" />
           </StatisticGroup>
         </Table.Cell>
       </Table.Row>
