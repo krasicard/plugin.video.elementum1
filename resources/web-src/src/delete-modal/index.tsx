@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import {
-  Button, Checkbox, Message, Modal, Popup,
-} from 'semantic-ui-react';
+import { Button, Checkbox, Message, Modal, Popup } from 'semantic-ui-react';
 
 interface ITorrentListProps {
-  torrentIdsToDelete: string[]
+  torrentIdsToDelete: string[];
 }
 
-const DeleteTorrentModal = ({ torrentIdsToDelete } : ITorrentListProps): JSX.Element => {
+const DeleteTorrentModal = ({ torrentIdsToDelete }: ITorrentListProps): JSX.Element => {
   const [open, setOpen] = useState(false);
   const [deleteFiles, setDeleteFiles] = useState(false);
   const hasSelectedTorrents = torrentIdsToDelete.length !== 0;
@@ -23,19 +21,19 @@ const DeleteTorrentModal = ({ torrentIdsToDelete } : ITorrentListProps): JSX.Ele
     <Modal
       onClose={() => setOpen(false)}
       open={open}
-      trigger={(
+      trigger={
         <Popup
-          trigger={(
+          trigger={
             <div style={{ display: 'inline-block' }}>
               <Button content="Delete" disabled={!hasSelectedTorrents} onClick={(_, _data) => setOpen(true)} />
             </div>
-          )}
+          }
           content="Select at least 1 torrent"
           disabled={hasSelectedTorrents}
           closeOnTriggerClick={false}
           inverted
         />
-      )}
+      }
     >
       <Modal.Header>Delete Torrent</Modal.Header>
       <Modal.Content>

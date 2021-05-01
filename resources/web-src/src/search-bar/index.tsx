@@ -1,9 +1,5 @@
-import React, {
-  FC, useReducer, useRef, useState,
-} from 'react';
-import {
-  Dropdown, DropdownItemProps, Grid, Icon, Item, ItemGroup, Search, SearchResultProps, Statistic,
-} from 'semantic-ui-react';
+import React, { FC, useReducer, useRef, useState } from 'react';
+import { Dropdown, DropdownItemProps, Grid, Icon, Item, ItemGroup, Search, SearchResultProps, Statistic } from 'semantic-ui-react';
 import { useDebouncedCallback } from 'use-debounce';
 
 const debounceWaitTime = 300;
@@ -27,53 +23,54 @@ const torrentTypes: DropdownItemProps[] = [
   },
 ];
 
-type Action = { type: 'CleanQuery' }
-| { type: 'StartSearch', query: string }
-| { type: 'FinishSearch', results: ResultView[] }
-| { type: 'UpdateSelection', selection: string };
+type Action =
+  | { type: 'CleanQuery' }
+  | { type: 'StartSearch'; query: string }
+  | { type: 'FinishSearch'; results: ResultView[] }
+  | { type: 'UpdateSelection'; selection: string };
 
 type MediaType = 'movie' | 'tvshow' | 'season' | 'episode';
 interface Info {
-  plotoutline: string,
-  tagline: string,
-  code: string,
-  year: number,
-  rating: number,
-  genre: string[],
-  date: Date,
-  mediatype: MediaType
+  plotoutline: string;
+  tagline: string;
+  code: string;
+  year: number;
+  rating: number;
+  genre: string[];
+  date: Date;
+  mediatype: MediaType;
 }
 
 interface Art {
-  thumb: string
+  thumb: string;
 }
 
 interface Result {
-  label: string
-  info: Info,
-  art: Art,
-  path: string,
-  is_playable: boolean,
+  label: string;
+  info: Info;
+  art: Art;
+  path: string;
+  is_playable: boolean;
 }
 
 interface ResultView {
-  title: string,
-  tagline: string,
-  description: string,
-  year: number,
-  rating: number,
-  genre: string[],
-  date: Date
-  image: string,
-  path: string,
-  mediatype: MediaType,
-  key: string,
+  title: string;
+  tagline: string;
+  description: string;
+  year: number;
+  rating: number;
+  genre: string[];
+  date: Date;
+  image: string;
+  path: string;
+  mediatype: MediaType;
+  key: string;
 }
 
 interface State {
-  loading: boolean,
-  results: ResultView[],
-  value: string,
+  loading: boolean;
+  results: ResultView[];
+  value: string;
 }
 
 const initialState: State = {
@@ -106,9 +103,7 @@ const resultRenderer = (item: SearchResultProps) => {
           <Item.Meta>{result.tagline}</Item.Meta>
           <Item.Description>{result.description}</Item.Description>
           {result.mediatype !== 'season' && (
-            <Item.Extra>
-              {`${result.rating} - ${result.genre?.join(', ')} - ${result.date?.toString() ?? result.year ?? '-'}`}
-            </Item.Extra>
+            <Item.Extra>{`${result.rating} - ${result.genre?.join(', ')} - ${result.date?.toString() ?? result.year ?? '-'}`}</Item.Extra>
           )}
         </Item.Content>
       </Item>
@@ -133,19 +128,21 @@ async function querySearchResults(url: string, dispatch: React.Dispatch<Action>)
 
   dispatch({
     type: 'FinishSearch',
-    results: items.filter((i) => i.info !== undefined).map((i) => ({
-      image: i.art.thumb,
-      key: i.info.code,
-      description: i.info.plotoutline,
-      title: i.label,
-      tagline: i.info.tagline,
-      year: i.info.year,
-      date: i.info.date,
-      genre: i.info.genre,
-      rating: i.info.rating,
-      mediatype: i.info.mediatype,
-      path: i.path,
-    })),
+    results: items
+      .filter((i) => i.info !== undefined)
+      .map((i) => ({
+        image: i.art.thumb,
+        key: i.info.code,
+        description: i.info.plotoutline,
+        title: i.label,
+        tagline: i.info.tagline,
+        year: i.info.year,
+        date: i.info.date,
+        genre: i.info.genre,
+        rating: i.info.rating,
+        mediatype: i.info.mediatype,
+        path: i.path,
+      })),
   });
 }
 
@@ -153,12 +150,12 @@ interface IStatisticsProps {
   /**
    * Total download rate in kB/s
    */
-  totalDownloadRate: number,
+  totalDownloadRate: number;
 
   /**
    * Total upload rate in kB/s
    */
-  totalUploadRate: number,
+  totalUploadRate: number;
 }
 
 const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate }: IStatisticsProps) => {
@@ -175,7 +172,8 @@ const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate }
 
   const handleQueryChange = async (query: string) => {
     dispatch({
-      type: 'StartSearch', query,
+      type: 'StartSearch',
+      query,
     });
 
     if (query.trim().length === 0) {
@@ -198,7 +196,8 @@ const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate }
         break;
       case 'TvShows': {
         dispatch({
-          type: 'StartSearch', query: value,
+          type: 'StartSearch',
+          query: value,
         });
 
         if (path.includes('links')) {

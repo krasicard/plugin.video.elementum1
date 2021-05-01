@@ -16,8 +16,8 @@ import {
 import { ITorrentView } from '../../dataStructure';
 
 interface ITorrentListItemProps {
-  torrent: ITorrentView,
-  onTorrentSelected: (_torrentId: string, _isChecked: boolean) => void
+  torrent: ITorrentView;
+  onTorrentSelected: (_torrentId: string, _isChecked: boolean) => void;
 }
 
 const TorrentListItem = ({ torrent, onTorrentSelected }: ITorrentListItemProps): JSX.Element => {
@@ -49,10 +49,7 @@ const TorrentListItem = ({ torrent, onTorrentSelected }: ITorrentListItemProps):
         </Table.Cell>
         <Table.Cell>{torrent.name}</Table.Cell>
         <Table.Cell>
-          <Popup
-            content={`${torrent.progress.toFixed(2)}%`}
-            trigger={<Progress percent={torrent.progress} autoSuccess size="small" />}
-          />
+          <Popup content={`${torrent.progress.toFixed(2)}%`} trigger={<Progress percent={torrent.progress} autoSuccess size="small" />} />
         </Table.Cell>
         <Table.Cell collapsing textAlign="center">
           <Label color={statusLabelColor}>{torrent.status}</Label>

@@ -6,7 +6,7 @@ import TorrentListItem from './torrent';
 import { ITorrentView } from '../dataStructure';
 
 interface ITorrentListProps {
-  torrents: ITorrentView[]
+  torrents: ITorrentView[];
 }
 
 const TorrentList: FC<ITorrentListProps> = ({ torrents }: ITorrentListProps) => {
@@ -57,7 +57,9 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents }: ITorrentListProps) => 
           </Table.Row>
         </Table.Header>
         <Table.Body>
-          {torrentList.map((t) => (<TorrentListItem key={t.id} torrent={t} onTorrentSelected={onTorrentSelected} />))}
+          {torrentList.map((t) => (
+            <TorrentListItem key={t.id} torrent={t} onTorrentSelected={onTorrentSelected} />
+          ))}
         </Table.Body>
         <Table.Footer fullWidth>
           <Table.Row>

@@ -2,9 +2,9 @@ import React, { FC } from 'react';
 import { Statistic } from 'semantic-ui-react';
 
 interface StatisticsProps {
-  downloading: number,
-  finished: number,
-  total: number,
+  downloading: number;
+  finished: number;
+  total: number;
 }
 
 const Statistics: FC<StatisticsProps> = ({ downloading, finished, total }: StatisticsProps) => (

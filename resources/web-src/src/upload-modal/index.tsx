@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Button, Form, Icon, Modal,
-} from 'semantic-ui-react';
+import { Button, Form, Icon, Modal } from 'semantic-ui-react';
 
 function UploadTorrentModal(): JSX.Element {
   const [open, setOpen] = React.useState(false);
@@ -26,12 +24,12 @@ function UploadTorrentModal(): JSX.Element {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={(
+      trigger={
         <Button icon labelPosition="left" floated="right" primary>
           <Icon name="download" />
           Add Torrent
         </Button>
-      )}
+      }
     >
       <Modal.Header>Add Torrent</Modal.Header>
       <Modal.Content>

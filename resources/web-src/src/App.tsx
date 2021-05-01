@@ -15,7 +15,7 @@ function App(): JSX.Element {
   useEffect(() => {
     const getList = async () => {
       const response = await fetch('/torrents/list');
-      const torrentsList = await response.json() as ITorrent[];
+      const torrentsList = (await response.json()) as ITorrent[];
       setTorrents(torrentsList as ITorrentView[]);
     };
 
@@ -26,14 +26,15 @@ function App(): JSX.Element {
   return (
     <div className="App">
       <Header>
-        <div style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url("${header}")`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'top',
-          height: '150px',
-          padding: '20px',
-          textAlign: 'center',
-        }}
+        <div
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url("${header}")`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'top',
+            height: '150px',
+            padding: '20px',
+            textAlign: 'center',
+          }}
         >
           <a href="/web">
             <img src={logo} alt="Elementum" height="100%" />
