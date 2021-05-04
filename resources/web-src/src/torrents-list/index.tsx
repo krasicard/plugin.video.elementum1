@@ -7,9 +7,11 @@ import { ITorrentView } from '../dataStructure';
 
 interface ITorrentListProps {
   torrents: ITorrentView[];
+  activeTorrent: ITorrentView | undefined;
+  onSetActiveTorrent: (_torrentId: ITorrentView | undefined) => void;
 }
 
-const TorrentList: FC<ITorrentListProps> = ({ torrents }: ITorrentListProps) => {
+const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrent, onSetActiveTorrent }: ITorrentListProps) => {
   const [selectedTorrents, setSelectedTorrents] = useState<string[]>([]);
   const torrentList = torrents.map((t) => {
     const torrent = t;
@@ -58,7 +60,13 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents }: ITorrentListProps) => 
         </Table.Header>
         <Table.Body>
           {torrentList.map((t) => (
-            <TorrentListItem key={t.id} torrent={t} onTorrentSelected={onTorrentSelected} />
+            <TorrentListItem
+              key={t.id}
+              torrent={t}
+              onSelect={onTorrentSelected}
+              onClicked={onSetActiveTorrent}
+              isClicked={activeTorrent?.id === t.id}
+            />
           ))}
         </Table.Body>
         <Table.Footer fullWidth>

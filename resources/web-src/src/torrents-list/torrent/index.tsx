@@ -17,10 +17,12 @@ import { ITorrentView } from '../../dataStructure';
 
 interface ITorrentListItemProps {
   torrent: ITorrentView;
-  onTorrentSelected: (_torrentId: string, _isChecked: boolean) => void;
+  isClicked: boolean;
+  onSelect: (_torrentId: string, _isChecked: boolean) => void;
+  onClicked: (torrent: ITorrentView | undefined) => void;
 }
 
-const TorrentListItem = ({ torrent, onTorrentSelected }: ITorrentListItemProps): JSX.Element => {
+const TorrentListItem = ({ torrent, onSelect, onClicked, isClicked }: ITorrentListItemProps): JSX.Element => {
   const isActive = torrent.status !== 'Finished' && torrent.status !== 'Paused';
   const statusLabelColor = isActive ? 'green' : 'grey';
 
@@ -37,12 +39,12 @@ const TorrentListItem = ({ torrent, onTorrentSelected }: ITorrentListItemProps):
 
   return (
     <>
-      <Table.Row>
+      <Table.Row onClick={() => onClicked(isClicked ? undefined : torrent)} active={isClicked}>
         <Table.Cell collapsing textAlign="center">
           <Checkbox toggle onChange={onResumePause} checked={isActive} />
         </Table.Cell>
         <Table.Cell collapsing textAlign="center">
-          <Checkbox onChange={(_, data) => onTorrentSelected(torrent.id, data.checked ?? false)} checked={torrent.is_selected} />
+          <Checkbox onChange={(_, data) => onSelect(torrent.id, data.checked ?? false)} checked={torrent.is_selected} />
         </Table.Cell>
         <Table.Cell collapsing>
           <Button color="green" icon="play" floated="right" onClick={onPlay} />
