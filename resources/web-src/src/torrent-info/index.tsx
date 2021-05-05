@@ -1,3 +1,5 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable no-restricted-syntax */
 import React, { useEffect, useState } from 'react';
 import { Grid, GridColumn, GridRow, List, Tab } from 'semantic-ui-react';
 import { ITorrentView } from '../dataStructure';
@@ -6,6 +8,44 @@ interface ITorrentInfoItemProps {
   torrent: ITorrentView;
   // onTorrentSelected: (_torrentId: string, _isChecked: boolean) => void;
 }
+
+// TODO: Rewrite using a tree
+const GetFileTree = (files: string[][]): JSX.Element => {
+  const name = files[0].shift();
+  for (const e of files) {
+    if (e[0] === name) {
+      e.shift();
+    }
+  }
+
+  const childFiles = files
+    .filter((f) => f.length === 1)
+    .map((f) => {
+      const n = f.pop();
+      return (
+        <List>
+          <List.Item>
+            <List.Icon name="file" />
+            <List.Content>{n}</List.Content>
+          </List.Item>
+        </List>
+      );
+    });
+
+  if (files.some((f) => f.length > 0)) childFiles.push(GetFileTree(files.filter((f) => f.length > 0)));
+
+  return (
+    <List>
+      <List.Item>
+        <List.Icon name={childFiles.length > 0 ? 'folder' : 'file'} />
+        <List.Content>
+          <List.Header>{name}</List.Header>
+          {childFiles}
+        </List.Content>
+      </List.Item>
+    </List>
+  );
+};
 
 const TorrentInfo = ({ torrent }: ITorrentInfoItemProps): JSX.Element => {
   const [filesList, setFilesList] = useState<string[]>([]);
@@ -60,9 +100,7 @@ const TorrentInfo = ({ torrent }: ITorrentInfoItemProps): JSX.Element => {
         <Tab.Pane loading={loading}>
           <Grid>
             <GridRow>
-              <GridColumn>
-                <List items={filesList} />
-              </GridColumn>
+              <GridColumn>{GetFileTree(filesList.map((f) => f.split('/')))}</GridColumn>
             </GridRow>
           </Grid>
         </Tab.Pane>
