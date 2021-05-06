@@ -1,5 +1,3 @@
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable no-restricted-syntax */
 import React, { useEffect, useState } from 'react';
 import { Grid, GridColumn, GridRow, List, Tab } from 'semantic-ui-react';
 import { ITorrentView } from '../dataStructure';
@@ -9,39 +7,53 @@ interface ITorrentInfoItemProps {
   // onTorrentSelected: (_torrentId: string, _isChecked: boolean) => void;
 }
 
-// TODO: Rewrite using a tree
-const GetFileTree = (files: string[][]): JSX.Element => {
-  const name = files[0].shift();
-  for (const e of files) {
-    if (e[0] === name) {
-      e.shift();
-    }
-  }
+interface Tree {
+  [key: string]: Tree;
+}
 
-  const childFiles = files
-    .filter((f) => f.length === 1)
-    .map((f) => {
-      const n = f.pop();
+const getFileTree = (files: string[][]): Tree => {
+  const tree: Tree = {};
+
+  files.forEach((f) => {
+    let parentNode = tree;
+
+    for (let i = 0; i < f.length; i += 1) {
+      const pathChunk = f[i];
+
+      if (!(pathChunk in parentNode)) {
+        parentNode[pathChunk] = {};
+      }
+
+      parentNode = parentNode[pathChunk];
+    }
+  });
+
+  return tree;
+};
+
+const renderFileTree = (files: string[][]): JSX.Element => {
+  const renderTree = (tree: Tree): JSX.Element[] =>
+    Object.keys(tree).map((k) => {
+      const isFolder = Object.keys(tree[k]).length > 0;
+
       return (
-        <List>
+        <List.List key={k}>
           <List.Item>
-            <List.Icon name="file" />
-            <List.Content>{n}</List.Content>
+            <List.Icon name={isFolder ? 'folder' : 'file'} />
+            <List.Content>
+              {isFolder ? <List.Header>{k}</List.Header> : <List.Description>{k}</List.Description>}
+              {renderTree(tree[k])}
+            </List.Content>
           </List.Item>
-        </List>
+        </List.List>
       );
     });
 
-  if (files.some((f) => f.length > 0)) childFiles.push(GetFileTree(files.filter((f) => f.length > 0)));
-
+  const fileTree = getFileTree(files);
   return (
     <List>
       <List.Item>
-        <List.Icon name={childFiles.length > 0 ? 'folder' : 'file'} />
-        <List.Content>
-          <List.Header>{name}</List.Header>
-          {childFiles}
-        </List.Content>
+        <List.Content>{renderTree(fileTree)}</List.Content>
       </List.Item>
     </List>
   );
@@ -100,7 +112,7 @@ const TorrentInfo = ({ torrent }: ITorrentInfoItemProps): JSX.Element => {
         <Tab.Pane loading={loading}>
           <Grid>
             <GridRow>
-              <GridColumn>{GetFileTree(filesList.map((f) => f.split('/')))}</GridColumn>
+              <GridColumn>{renderFileTree(filesList.map((f) => f.split('/')))}</GridColumn>
             </GridRow>
           </Grid>
         </Tab.Pane>
