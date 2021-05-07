@@ -27,6 +27,10 @@
   height: auto;
 }
 
+.pieces-container {
+  line-break: anywhere;
+}
+
 @media only screen and (max-width: 768px) {
   [class*='mobile-hidden'] {
     display: none !important;

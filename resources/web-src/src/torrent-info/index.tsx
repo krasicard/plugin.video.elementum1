@@ -76,7 +76,12 @@ const TorrentInfo = ({ torrent }: ITorrentInfoItemProps): JSX.Element => {
 
       const { files, pieces } = match.groups;
       setFilesList(files.split('\n').map((f) => f.trim()));
-      setPiecesList(pieces);
+      setPiecesList(
+        pieces
+          .split('\n')
+          .map((p) => p.trim())
+          .join(''),
+      );
 
       setLoading(false);
     };
@@ -122,13 +127,7 @@ const TorrentInfo = ({ torrent }: ITorrentInfoItemProps): JSX.Element => {
       menuItem: { key: 'pieces', content: 'Pieces' },
       render: () => (
         <Tab.Pane loading={loading}>
-          <Grid>
-            <GridRow>
-              <GridColumn>
-                <div>{piecesList}</div>
-              </GridColumn>
-            </GridRow>
-          </Grid>
+          <div className="pieces-container">{piecesList}</div>
         </Tab.Pane>
       ),
     },
