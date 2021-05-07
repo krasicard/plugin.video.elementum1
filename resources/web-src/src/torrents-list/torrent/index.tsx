@@ -26,14 +26,21 @@ const TorrentListItem = ({ torrent, onSelect, onClicked, isClicked }: ITorrentLi
   const isActive = torrent.status !== 'Finished' && torrent.status !== 'Paused';
   const statusLabelColor = isActive ? 'green' : 'grey';
 
-  const onResumePause = async (_event: React.FormEvent<HTMLInputElement>, data: CheckboxProps) => {
+  const onResumePause = async (event: React.FormEvent<HTMLInputElement>, data: CheckboxProps) => {
+    event.stopPropagation();
     const { checked } = data;
     const action = checked ? 'resume' : 'pause';
 
     await fetch(`/torrents/${action}/${torrent.id}`);
   };
 
-  const onPlay = async (_event: React.MouseEvent<HTMLButtonElement, MouseEvent>, _data: ButtonProps) => {
+  const onCheckboxClick = (event: React.FormEvent<HTMLInputElement>, data: CheckboxProps) => {
+    event.stopPropagation();
+    onSelect(torrent.id, data.checked ?? false);
+  };
+
+  const onPlay = async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>, _data: ButtonProps) => {
+    event.stopPropagation();
     await fetch(`/playuri?resume=${torrent.id}`);
   };
 
@@ -44,7 +51,7 @@ const TorrentListItem = ({ torrent, onSelect, onClicked, isClicked }: ITorrentLi
           <Checkbox toggle onChange={onResumePause} checked={isActive} />
         </Table.Cell>
         <Table.Cell collapsing textAlign="center">
-          <Checkbox onChange={(_, data) => onSelect(torrent.id, data.checked ?? false)} checked={torrent.is_selected} />
+          <Checkbox checked={torrent.is_selected} onChange={onCheckboxClick} />
         </Table.Cell>
         <Table.Cell collapsing>
           <Button color="green" icon="play" floated="right" onClick={onPlay} />

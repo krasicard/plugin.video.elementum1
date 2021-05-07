@@ -4,7 +4,6 @@ import { ITorrentView } from '../dataStructure';
 
 interface ITorrentInfoItemProps {
   torrent: ITorrentView;
-  // onTorrentSelected: (_torrentId: string, _isChecked: boolean) => void;
 }
 
 interface Tree {
