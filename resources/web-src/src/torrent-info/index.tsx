@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Grid, GridColumn, GridRow, List, Tab } from 'semantic-ui-react';
 import { ITorrentView } from '../dataStructure';
+import { getRefreshRate } from '../Services/settings';
 import PieceMap from './piece-map';
 
 interface ITorrentInfoItemProps {
@@ -87,7 +88,7 @@ const TorrentInfo = ({ torrent }: ITorrentInfoItemProps): JSX.Element => {
     };
 
     void getInfo();
-    const intervalHandle = setInterval(() => void getInfo(), 5000);
+    const intervalHandle = setInterval(() => void getInfo(), getRefreshRate());
     return () => clearInterval(intervalHandle);
   }, [torrent.name]);
 
