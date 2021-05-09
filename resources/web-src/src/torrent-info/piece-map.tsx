@@ -1,4 +1,5 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useRef } from 'react';
+import { useDebounce } from 'use-debounce/lib';
 import useResizeObserver from 'use-resize-observer';
 
 interface IPieceMapProps {
@@ -9,34 +10,46 @@ const PieceSize = 8;
 const Margin = 1;
 const FullSize = PieceSize + Margin;
 
-const d3Graph = (pieces: string) => {
-  const parentDiv = document.getElementById('pieces') as HTMLDivElement | null;
-  if (!parentDiv) return;
-
+const draw = (parentDiv: HTMLDivElement, context: CanvasRenderingContext2D, pieces: string) => {
   const parentWidth = parentDiv.clientWidth;
   const piecesPerLine = Math.floor(parentWidth / FullSize);
   const height = Math.ceil(pieces.length / piecesPerLine) * FullSize;
 
-  const canvas = document.getElementById('pieces-graph') as HTMLCanvasElement;
+  const { canvas } = context;
   canvas.width = parentWidth;
   canvas.height = height;
-  const context = canvas.getContext('2d');
-  if (!context) return;
 
   for (let i = 0; i < pieces.length; i += 1) {
-    const value = pieces[i] === '+' ? '#4CAF50' : '#ECEFF1';
-    context.fillStyle = value;
+    const pieceColor = pieces[i] === '+' ? '#4CAF50' : '#ECEFF1';
+    context.fillStyle = pieceColor;
     context.fillRect(FullSize * (i % piecesPerLine), Math.floor(i / piecesPerLine) * FullSize, PieceSize, PieceSize);
   }
 };
 
 const PieceMap = ({ pieces }: IPieceMapProps): JSX.Element => {
-  const { ref, width = 1, height = 1 } = useResizeObserver<HTMLDivElement>();
-  useMemo(() => d3Graph(pieces), [pieces, width, height]);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const parentDivRef = useRef<HTMLDivElement>(null);
+  const { width } = useResizeObserver<HTMLDivElement>({ ref: parentDivRef });
+  const [debouncedWidth] = useDebounce(width, 100, { trailing: true });
+
+  useEffect(() => {
+    if (!debouncedWidth) return;
+
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const context = canvas.getContext('2d');
+    if (!context) return;
+
+    const parentDiv = parentDivRef.current;
+    if (!parentDiv) return;
+
+    draw(parentDiv, context, pieces);
+  }, [pieces, debouncedWidth]);
 
   return (
-    <div id="pieces" ref={ref}>
-      <canvas id="pieces-graph" />
+    <div ref={parentDivRef}>
+      <canvas ref={canvasRef} />
     </div>
   );
 };
