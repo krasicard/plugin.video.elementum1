@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Grid, GridColumn, GridRow, List, Tab } from 'semantic-ui-react';
 import { ITorrentView } from '../dataStructure';
+import PieceMap from './piece-map';
 
 interface ITorrentInfoItemProps {
   torrent: ITorrentView;
@@ -126,7 +127,7 @@ const TorrentInfo = ({ torrent }: ITorrentInfoItemProps): JSX.Element => {
       menuItem: { key: 'pieces', content: 'Pieces' },
       render: () => (
         <Tab.Pane loading={loading}>
-          <div className="pieces-container">{piecesList}</div>
+          <PieceMap pieces={piecesList} />
         </Tab.Pane>
       ),
     },
