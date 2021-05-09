@@ -2076,3 +2076,7 @@ msgstr ""
 msgctxt "#30657"
 msgid "Disable LSD"
 msgstr ""
+
+msgctxt "#30663"
+msgid "Show episodes on release day (w/o delay)"
+msgstr ""
