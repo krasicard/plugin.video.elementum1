@@ -14,6 +14,10 @@
   margin-bottom: 0 !important;
 }
 
+.ui.search > .input {
+  width: 100%;
+}
+
 .ui.search > .results .result .image + .content {
   margin-right: 1em;
 }
@@ -31,16 +35,16 @@
   line-break: anywhere;
 }
 
+.ui.fluid.search .results {
+  width: 200%;
+}
+
 @media only screen and (max-width: 768px) {
   [class*='mobile-hidden'] {
     display: none !important;
   }
 
   .ui.search > .results {
-    left: -90%;
-  }
-
-  .ui.fluid.search .results {
-    width: auto;
+    left: -50%;
   }
 }

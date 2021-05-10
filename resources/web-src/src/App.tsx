@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import HeaderMenu from './menu';
-import Statistics from './statistics-total';
 import SearchBar from './search-bar';
 import TorrentList from './torrents-list';
 import TorrentInfo from './torrent-info';
@@ -28,14 +27,12 @@ function App(): JSX.Element {
     <div className="App">
       <HeaderMenu />
       <div>
-        <Statistics
-          downloading={torrents.filter((t) => t.status !== 'Finished').length}
-          finished={torrents.filter((t) => t.status === 'Finished').length}
-          total={torrents.length}
-        />
         <SearchBar
           totalDownloadRate={torrents.reduce((rate, item) => rate + item.download_rate, 0)}
           totalUploadRate={torrents.reduce((rate, item) => rate + item.upload_rate, 0)}
+          active={torrents.filter((t) => t.status !== 'Finished').length}
+          finished={torrents.filter((t) => t.status === 'Finished').length}
+          total={torrents.length}
         />
         <TorrentList torrents={torrents} onSetActiveTorrent={setActiveTorrent} activeTorrent={activeTorrent} />
         {activeTorrent !== undefined && <TorrentInfo torrent={activeTorrent} />}

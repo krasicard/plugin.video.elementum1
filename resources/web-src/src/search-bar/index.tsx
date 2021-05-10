@@ -156,9 +156,24 @@ interface IStatisticsProps {
    * Total upload rate in kB/s
    */
   totalUploadRate: number;
+
+  /**
+   * Active torrents
+   */
+  active: number;
+
+  /**
+   * Finished torrents
+   */
+  finished: number;
+
+  /**
+   * Total torrents
+   */
+  total: number;
 }
 
-const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate }: IStatisticsProps) => {
+const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate, active, finished, total }: IStatisticsProps) => {
   const [torrentType, setTorrentType] = useState<TorrentType>('Movies');
   const searcRef = useRef<any>();
   const [state, dispatch] = useReducer(queryReducer, initialState);
@@ -222,12 +237,12 @@ const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate }
 
   return (
     <>
-      <Grid padded stackable columns="3">
-        <Grid.Row>
-          <Grid.Column width="11">
+      <Grid padded="horizontally" stackable columns="3">
+        <Grid.Row verticalAlign="middle">
+          <Grid.Column floated="left">
             <Grid>
               <Grid.Row>
-                <Grid.Column mobile="7" computer="4">
+                <Grid.Column width="5">
                   <Dropdown
                     fluid
                     selection
@@ -236,7 +251,7 @@ const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate }
                     onChange={(_, data) => handleTorrentTypeChange(data.value as TorrentType)}
                   />
                 </Grid.Column>
-                <Grid.Column mobile="9" computer="12">
+                <Grid.Column width="11">
                   <Search
                     fluid
                     placeholder="Search"
@@ -253,7 +268,23 @@ const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate }
               </Grid.Row>
             </Grid>
           </Grid.Column>
-          <Grid.Column width="5">
+          <Grid.Column width="3">
+            <Statistic.Group widths="3" size="tiny">
+              <Statistic>
+                <Statistic.Value>{active}</Statistic.Value>
+                <Statistic.Label>Active</Statistic.Label>
+              </Statistic>
+              <Statistic>
+                <Statistic.Value>{finished}</Statistic.Value>
+                <Statistic.Label>Finished</Statistic.Label>
+              </Statistic>
+              <Statistic>
+                <Statistic.Value>{total}</Statistic.Value>
+                <Statistic.Label>Total</Statistic.Label>
+              </Statistic>
+            </Statistic.Group>
+          </Grid.Column>
+          <Grid.Column floated="right">
             <Statistic.Group widths="2" size="tiny">
               <Statistic>
                 <Statistic.Value>
