@@ -240,33 +240,32 @@ const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate, 
       <Grid padded="horizontally" stackable columns="3">
         <Grid.Row verticalAlign="middle">
           <Grid.Column floated="left">
-            <Grid>
-              <Grid.Row>
-                <Grid.Column width="5">
+            <Search
+              fluid
+              placeholder="Search"
+              loading={loading}
+              results={results}
+              value={value}
+              onSearchChange={(_, data) => handleQueryChange(data.value ?? '')}
+              resultRenderer={resultRenderer}
+              onResultSelect={(_, data) => handleResultSelect(data.result)}
+              ref={searcRef}
+              minCharacters={3}
+              input={{
+                icon: 'search',
+                iconPosition: 'right',
+                action: (
                   <Dropdown
                     fluid
                     selection
+                    style={{ width: '30%' }}
                     options={torrentTypes}
                     defaultValue={torrentTypes[0].value}
                     onChange={(_, data) => handleTorrentTypeChange(data.value as TorrentType)}
                   />
-                </Grid.Column>
-                <Grid.Column width="11">
-                  <Search
-                    fluid
-                    placeholder="Search"
-                    loading={loading}
-                    results={results}
-                    value={value}
-                    onSearchChange={(_, data) => handleQueryChange(data.value ?? '')}
-                    resultRenderer={resultRenderer}
-                    onResultSelect={(_, data) => handleResultSelect(data.result)}
-                    ref={searcRef}
-                    minCharacters={3}
-                  />
-                </Grid.Column>
-              </Grid.Row>
-            </Grid>
+                ),
+              }}
+            />
           </Grid.Column>
           <Grid.Column width="3">
             <Statistic.Group widths="3" size="tiny">
