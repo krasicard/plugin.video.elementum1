@@ -132,7 +132,7 @@ async function querySearchResults(url: string, dispatch: React.Dispatch<Action>)
       .filter((i) => i.info !== undefined)
       .map((i) => ({
         image: i.art.thumb,
-        key: i.info.code,
+        key: `${i.info.code}-${i.label}`,
         description: i.info.plotoutline,
         title: i.label,
         tagline: i.info.tagline,
@@ -253,12 +253,10 @@ const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate, 
               minCharacters={3}
               input={{
                 icon: 'search',
-                iconPosition: 'right',
                 action: (
                   <Dropdown
                     fluid
                     selection
-                    style={{ width: '30%' }}
                     options={torrentTypes}
                     defaultValue={torrentTypes[0].value}
                     onChange={(_, data) => handleTorrentTypeChange(data.value as TorrentType)}
