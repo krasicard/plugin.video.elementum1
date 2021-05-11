@@ -1,26 +1,28 @@
 import React, { useEffect, useState } from 'react';
+import isEqual from 'react-fast-compare';
 import HeaderMenu from './menu';
 import SearchBar from './search-bar';
 import TorrentList from './torrents-list';
 import TorrentInfo from './torrent-info';
-import { ITorrent, ITorrentView } from './dataStructure';
+import { ITorrent } from './dataStructure';
 import 'semantic-ui-css/semantic.min.css';
 import './style.css';
 import { getRefreshRate } from './Services/settings';
 
 function App(): JSX.Element {
-  const [torrents, setTorrents] = useState<ITorrentView[]>([]);
-  const [activeTorrent, setActiveTorrent] = useState<ITorrentView>();
+  const [torrents, setTorrents] = useState<ITorrent[]>([]);
+  const [activeTorrent, setActiveTorrent] = useState<ITorrent>();
 
   useEffect(() => {
     const getList = async () => {
       const response = await fetch('/torrents/list');
-      const torrentsList = (await response.json()) as ITorrent[];
-      setTorrents(torrentsList as ITorrentView[]);
+      const fetchedTorrents = (await response.json()) as ITorrent[];
+      setTorrents((t) => (isEqual(t, fetchedTorrents) ? t : fetchedTorrents));
     };
 
     void getList();
-    setInterval(() => void getList(), getRefreshRate());
+    const intervalHandle = setInterval(() => void getList(), getRefreshRate());
+    return () => clearInterval(intervalHandle);
   }, []);
 
   return (

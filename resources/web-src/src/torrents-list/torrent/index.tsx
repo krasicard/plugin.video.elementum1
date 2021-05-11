@@ -1,4 +1,5 @@
 import React from 'react';
+import isEqual from 'react-fast-compare';
 import {
   Button,
   ButtonProps,
@@ -13,16 +14,17 @@ import {
   StatisticValue,
   Table,
 } from 'semantic-ui-react';
-import { ITorrentView } from '../../dataStructure';
+import { ITorrent } from '../../dataStructure';
 
 interface ITorrentListItemProps {
-  torrent: ITorrentView;
+  torrent: ITorrent;
   isClicked: boolean;
+  isChecked: boolean;
   onSelect: (_torrentId: string, _isChecked: boolean) => void;
-  onClicked: (torrent: ITorrentView | undefined) => void;
+  onClick: (torrent: ITorrent | undefined) => void;
 }
 
-const TorrentListItem = ({ torrent, onSelect, onClicked, isClicked }: ITorrentListItemProps): JSX.Element => {
+const TorrentListItem = ({ torrent, isClicked, isChecked, onSelect, onClick }: ITorrentListItemProps): JSX.Element => {
   const isActive = torrent.status !== 'Finished' && torrent.status !== 'Paused';
   const statusLabelColor = isActive ? 'green' : 'grey';
 
@@ -46,12 +48,12 @@ const TorrentListItem = ({ torrent, onSelect, onClicked, isClicked }: ITorrentLi
 
   return (
     <>
-      <Table.Row onClick={() => onClicked(isClicked ? undefined : torrent)} active={isClicked}>
+      <Table.Row onClick={() => onClick(isClicked ? undefined : torrent)} active={isClicked}>
         <Table.Cell collapsing textAlign="center">
           <Checkbox toggle onChange={onResumePause} checked={isActive} />
         </Table.Cell>
         <Table.Cell collapsing textAlign="center">
-          <Checkbox checked={torrent.is_selected} onChange={onCheckboxClick} />
+          <Checkbox checked={isChecked} onChange={onCheckboxClick} />
         </Table.Cell>
         <Table.Cell collapsing>
           <Button color="green" icon="play" floated="right" onClick={onPlay} />
@@ -106,4 +108,4 @@ const TorrentListItem = ({ torrent, onSelect, onClicked, isClicked }: ITorrentLi
   );
 };
 
-export default TorrentListItem;
+export default React.memo(TorrentListItem, isEqual);

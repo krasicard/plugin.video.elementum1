@@ -1,31 +1,26 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useCallback, useState } from 'react';
 import { Checkbox, Table } from 'semantic-ui-react';
 import DeleteTorrentModal from '../delete-modal';
 import UploadTorrentModal from '../upload-modal';
 import TorrentListItem from './torrent';
-import { ITorrentView } from '../dataStructure';
+import { ITorrent } from '../dataStructure';
 
 interface ITorrentListProps {
-  torrents: ITorrentView[];
-  activeTorrent: ITorrentView | undefined;
-  onSetActiveTorrent: (_torrentId: ITorrentView | undefined) => void;
+  torrents: ITorrent[];
+  activeTorrent: ITorrent | undefined;
+  onSetActiveTorrent: (_torrentId: ITorrent | undefined) => void;
 }
 
 const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrent, onSetActiveTorrent }: ITorrentListProps) => {
   const [selectedTorrents, setSelectedTorrents] = useState<string[]>([]);
-  const torrentList = torrents.map((t) => {
-    const torrent = t;
-    torrent.is_selected = selectedTorrents.includes(t.id);
-    return torrent;
-  });
 
-  const onTorrentSelected = (torrentId: string, isChecked: boolean) => {
+  const onTorrentSelected = useCallback((torrentId: string, isChecked: boolean) => {
     if (isChecked) {
-      setSelectedTorrents([...selectedTorrents, torrentId]);
+      setSelectedTorrents((st) => [...st, torrentId]);
     } else {
-      setSelectedTorrents(selectedTorrents.filter((t) => t !== torrentId));
+      setSelectedTorrents((st) => st.filter((t) => t !== torrentId));
     }
-  };
+  }, []);
 
   const onAllTorrentsSelected = (isChecked: boolean) => {
     if (isChecked) {
@@ -44,7 +39,7 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrent, onSetActi
             <Table.HeaderCell>
               <Checkbox
                 onChange={(_, data) => onAllTorrentsSelected(data.checked ?? false)}
-                checked={torrentList.every((t) => t.is_selected)}
+                checked={selectedTorrents.length >= torrents.length}
               />
             </Table.HeaderCell>
             <Table.HeaderCell />
@@ -59,13 +54,14 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrent, onSetActi
           </Table.Row>
         </Table.Header>
         <Table.Body>
-          {torrentList.map((t) => (
+          {torrents.map((t) => (
             <TorrentListItem
               key={t.id}
               torrent={t}
               onSelect={onTorrentSelected}
-              onClicked={onSetActiveTorrent}
+              onClick={onSetActiveTorrent}
               isClicked={activeTorrent?.id === t.id}
+              isChecked={selectedTorrents.includes(t.id)}
             />
           ))}
         </Table.Body>
