@@ -2068,4 +2068,4 @@ msgstr "Отключить LSD"
 
 msgctxt "#30663"
 msgid "Show episodes on release day (w/o delay)"
-msgid "Показать эпизоды в день релиза (без задержки)"
+msgid "Показывать эпизоды в день релиза (без задержки)"
