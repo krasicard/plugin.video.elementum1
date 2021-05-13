@@ -2084,3 +2084,7 @@ msgstr ""
 msgctxt "#30662"
 msgid "Remove original trackers from torrent"
 msgstr ""
+
+msgctxt "#30663"
+msgid "Show episodes on release day (w/o delay)"
+msgstr ""
