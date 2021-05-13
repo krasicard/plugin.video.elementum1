@@ -25,19 +25,19 @@ msgid "Download path"
 msgstr "Путь для загрузок"
 
 msgctxt "#30004"
-msgid "Max upload rate (kB/s)"
+msgid "Max upload rate, kB/s"
 msgstr "Предельная скорость отдачи, КБ/с"
 
 msgctxt "#30005"
-msgid "Max download rate (kB/s)"
+msgid "Max download rate, kB/s"
 msgstr "Предельная скорость загрузки, КБ/с"
 
 msgctxt "#30006"
-msgid "Listen port min"
+msgid "Listen port, min"
 msgstr "Порт, мин"
 
 msgctxt "#30007"
-msgid "Listen port max"
+msgid "Listen port, max"
 msgstr "Порт, макс"
 
 msgctxt "#30008"
@@ -69,15 +69,15 @@ msgid "Advanced"
 msgstr "Дополнительно"
 
 msgctxt "#30016"
-msgid "Custom provider timeout"
+msgid "Redefine providers timeout"
 msgstr "Переопределить тайм-аут провайдеров"
 
 msgctxt "#30017"
-msgid "Enabled (use at your own risk)"
+msgid "Enabled (might lead to slow speed)"
 msgstr "Включить (возможна низкая скорость)"
 
 msgctxt "#30018"
-msgid "Timeout in seconds"
+msgid "Timeout, seconds"
 msgstr "Тайм-аут, сек"
 
 msgctxt "#30019"
@@ -85,7 +85,7 @@ msgid "Maintenance"
 msgstr "Обслуживание"
 
 msgctxt "#30021"
-msgid "Results per page"
+msgid "Elements per page"
 msgstr "Элементов на странице"
 
 msgctxt "#30022"
@@ -113,7 +113,7 @@ msgid "Download after play was stopped"
 msgstr "Продолжать скачивание после просмотра"
 
 msgctxt "#30029"
-msgid "Session saving frequency (seconds)"
+msgid "Session saving frequency, seconds"
 msgstr "Частота сохранений сессии, сек"
 
 msgctxt "#30030"
@@ -121,7 +121,7 @@ msgid "Overlay status vertical offset"
 msgstr "Позиция статуса загрузки по вертикали"
 
 msgctxt "#30031"
-msgid "Disable providers failing health check"
+msgid "Disable providers that failed health check"
 msgstr "Отключать сбойные провайдеры"
 
 msgctxt "#30032"
@@ -201,15 +201,15 @@ msgid "Disable DHT"
 msgstr "Отключить DHT"
 
 msgctxt "#30051"
-msgid "Share ratio limit (percent)"
+msgid "Share ratio limit, percentage"
 msgstr "Лимит соотношения раздачи, %"
 
 msgctxt "#30052"
-msgid "Seed time ratio limit (percent)"
+msgid "Seed time ratio limit, percentage"
 msgstr "Лимит соотношения времени сидирования, %"
 
 msgctxt "#30053"
-msgid "Seed time limit (hours)"
+msgid "Seed time limit, hours"
 msgstr "Лимит времени сидирования, часы"
 
 msgctxt "#30054"
@@ -229,11 +229,11 @@ msgid "Username"
 msgstr "Пользователь"
 
 msgctxt "#30059"
-msgid "Library update delay on startup (seconds)"
+msgid "Library update delay on startup, seconds"
 msgstr "Задержка обновления библиотеки при запуске, сек"
 
 msgctxt "#30060"
-msgid "Library update frequency (hours)"
+msgid "Library update frequency, hours"
 msgstr "Частота обновления библиотеки, часы"
 
 msgctxt "#30063"
@@ -325,7 +325,7 @@ msgid "Enable tuned storage settings"
 msgstr "Включить тонкие настройки хранилища"
 
 msgctxt "#30088"
-msgid "Initial buffering timeout (seconds)"
+msgid "Initial buffering timeout, seconds"
 msgstr "Тайм-аут пре-буфферизации, сек"
 
 msgctxt "#30089"
@@ -341,7 +341,7 @@ msgid "Outgoing interfaces"
 msgstr "Исходящие интерфейсы"
 
 msgctxt "#30092"
-msgid "Use default fanart"
+msgid "Use fallback fanart if fanart wasn't found"
 msgstr "Использовать фанарт по умолчанию"
 
 msgctxt "#30093"
@@ -855,7 +855,7 @@ msgid "Use memory"
 msgstr "Используя память"
 
 msgctxt "#30318"
-msgid "Memory size to use for each torrent (Mb)"
+msgid "Memory size to use for each torrent, Mb"
 msgstr "Размер памяти для каждого торрента, МБ"
 
 msgctxt "#30319"
@@ -1051,7 +1051,7 @@ msgid "Caching"
 msgstr "Кеширование"
 
 msgctxt "#30388"
-msgid "Cache selected streams"
+msgid "Cache stream selection"
 msgstr "Кешировать выбор торрента"
 
 msgctxt "#30389"
@@ -1399,11 +1399,11 @@ msgid "Create NFO files for TV Show scrapers"
 msgstr "Создавать NFO файлы для скраппера сериалов"
 
 msgctxt "#30485"
-msgid "Concurrent connections limit"
+msgid "Concurrent connections limit per second"
 msgstr "Предел, подключений/сек"
 
 msgctxt "#30486"
-msgid "Automatic concurrent connections limit"
+msgid "Automatic concurrent connections limit per second"
 msgstr "Автоматический предел подключений/сек"
 
 msgctxt "#30487"
@@ -1459,7 +1459,7 @@ msgid "Automatically adjust buffer size[CR]for heavy torrents"
 msgstr "Автоматически увеличивать размер буффера[CR]для тяжелых торрентов"
 
 msgctxt "#30502"
-msgid "Adjust buffer according to Kodi advancedsettings, if set"
+msgid "Adjust buffer according to Kodi advancedsettings.xml, if set"
 msgstr "Увеличить буффер, если установлено в advancedsettings.xml"
 
 msgctxt "#30503"
@@ -1547,7 +1547,7 @@ msgid "Minimum file size for Movies, MB"
 msgstr "Минимальный размер Фильма, МБ"
 
 msgctxt "#30524"
-msgid "Minimum file size for Shows, per minute, MB"
+msgid "Minimum file size for Shows, MB per minute"
 msgstr "Минимальный размер Сериала, МБ/минута"
 
 msgctxt "#30525"
@@ -1611,7 +1611,7 @@ msgid "Automatic Subtitles Search"
 msgstr "Автоматический поиск субтитров"
 
 msgctxt "#30542"
-msgid "Disabled if subtitles available in player"
+msgid "Disable if subtitles are available in player"
 msgstr "Отключено, если субтитры доступны в плеере"
 
 msgctxt "#30543"
@@ -1639,7 +1639,7 @@ msgid "Find in overall"
 msgstr "Поиск среди всех"
 
 msgctxt "#30549"
-msgid "Number of results to find"
+msgid "Search is successful when found N results"
 msgstr "Cчитать поиск удачным, если найдено, ссылок"
 
 msgctxt "#30550"
@@ -1695,7 +1695,7 @@ msgid "Open directory with Kodi file browser"
 msgstr "Открыть папку с помощью браузера файлов Kodi"
 
 msgctxt "#30563"
-msgid "Synchronize frequency of Trakt (minutes)"
+msgid "Synchronize frequency of Trakt, minutes"
 msgstr "Частота синхронизации Trakt, минут"
 
 msgctxt "#30564"
@@ -1731,7 +1731,7 @@ msgid "* All seasons"
 msgstr "* Все сезоны"
 
 msgctxt "#30572"
-msgid "Log response body"
+msgid "Log server's response body"
 msgstr "Логгировать содержимое ответа сервера"
 
 msgctxt "#30573"
@@ -1751,11 +1751,11 @@ msgid "Trakt authentication needs to be updated!"
 msgstr "Авторизацию пользователя Trakt нужно обновить!"
 
 msgctxt "#30577"
-msgid "End of file Buffer size (MB)"
+msgid "End of file Buffer size, MB"
 msgstr "Размер буфера перед просмотром, конец файла, МБ"
 
 msgctxt "#30578"
-msgid "Beginning of file Buffer size (MB)"
+msgid "Beginning of file Buffer size, MB"
 msgstr "Размер буфера перед просмотром, начало файла, МБ"
 
 msgctxt "#30579"
@@ -1803,7 +1803,7 @@ msgid "Torrents autoload on plugin startup"
 msgstr "Автозагрузка торрентов при запуске дополнения"
 
 msgctxt "#30591"
-msgid "Connection limits"
+msgid "Limits for connections"
 msgstr "Ограничение подключений"
 
 msgctxt "#30592"
@@ -1811,7 +1811,7 @@ msgid "Seeding"
 msgstr "Сидирование"
 
 msgctxt "#30593"
-msgid "Seed forever (unless disk space needed)"
+msgid "Seed forever"
 msgstr "Сидировать всегда"
 
 msgctxt "#30594"
@@ -1823,7 +1823,7 @@ msgid "Miscellaneous"
 msgstr "Разное"
 
 msgctxt "#30597"
-msgid "Cache size (MB)"
+msgid "Cache size, MB"
 msgstr "Размер кеша, МБ"
 
 msgctxt "#30598"
@@ -1843,7 +1843,7 @@ msgid "Enable synchronization while playback"
 msgstr "Включить синхронизацию во время проигрывания"
 
 msgctxt "#30602"
-msgid "Retry plugin requests after timeout (seconds)"
+msgid "Retry requests to plugin after timeout, seconds"
 msgstr "Повторять запрос к дополнению после тайм-аута, сек"
 
 msgctxt "#30603"
@@ -1855,7 +1855,7 @@ msgid "Clean all history"
 msgstr "Очистить всю историю"
 
 msgctxt "#30605"
-msgid "Cache downloaded torrent files after searches"
+msgid "Cache downloaded torrent files after search"
 msgstr "Кешировать скачанные торрент файлы после поиска"
 
 msgctxt "#30606"
@@ -1875,7 +1875,7 @@ msgid "Automatically start next episode if available"
 msgstr "Автоматически выбирать следующую серию, если доступна"
 
 msgctxt "#30610"
-msgid "Magnet resolve timeout (seconds)"
+msgid "Magnet resolve timeout, seconds"
 msgstr "Тайм-аут поиска Magnet ссылки, сек"
 
 msgctxt "#30611"
