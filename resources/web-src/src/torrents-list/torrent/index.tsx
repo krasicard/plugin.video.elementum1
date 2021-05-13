@@ -50,7 +50,7 @@ const TorrentListItem = ({ torrent, isClicked, isChecked, onSelect, onClick }: I
   return (
     <>
       <Table.Row onClick={() => onClick(isClicked ? undefined : torrent)} active={isClicked}>
-        <Table.Cell textAlign="center">
+        <Table.Cell>
           <Checkbox toggle onChange={onResumePause} checked={isActive} />
         </Table.Cell>
         <Table.Cell textAlign="center">
@@ -97,12 +97,8 @@ const TorrentListItem = ({ torrent, isClicked, isChecked, onSelect, onClick }: I
           </StatisticGroup>
         </Table.Cell>
         <Table.Cell>
-          <StatisticGroup widths="1" size="mini">
+          <StatisticGroup widths="2" size="mini">
             <Statistic value={`${torrent.seeders} / ${torrent.seeders_total}`} label="Active / Total" />
-          </StatisticGroup>
-        </Table.Cell>
-        <Table.Cell>
-          <StatisticGroup widths="1" size="mini">
             <Statistic value={`${torrent.peers} / ${torrent.peers_total}`} label="Active / Total" />
           </StatisticGroup>
         </Table.Cell>

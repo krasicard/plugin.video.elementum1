@@ -106,6 +106,15 @@ const TorrentInfo = ({ torrent }: ITorrentInfoItemProps): JSX.Element => {
                 <div>
                   <b>Size:</b> {torrent.size}
                 </div>
+                <div>
+                  <b>Completed:</b> {torrent.progress.toFixed(2)}%
+                </div>
+                <div>
+                  <b>Seed time:</b> {torrent.seeding_time}
+                </div>
+                <div>
+                  <b>Seed time limit:</b> {torrent.seed_time_limit}s
+                </div>
               </GridColumn>
             </GridRow>
           </Grid>

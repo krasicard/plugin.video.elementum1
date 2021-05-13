@@ -42,15 +42,14 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrent, onSetActi
                 checked={selectedTorrents.length >= torrents.length}
               />
             </Table.HeaderCell>
-            <Table.HeaderCell width="1" />
-            <Table.HeaderCell width="8">Name</Table.HeaderCell>
+            <Table.HeaderCell width="2" />
+            <Table.HeaderCell width="11">Name</Table.HeaderCell>
             <Table.HeaderCell width="2">Progress</Table.HeaderCell>
-            <Table.HeaderCell width="2">Status</Table.HeaderCell>
-            <Table.HeaderCell width="4">Ratios</Table.HeaderCell>
+            <Table.HeaderCell width="3">Status</Table.HeaderCell>
+            <Table.HeaderCell width="6">Ratios</Table.HeaderCell>
             <Table.HeaderCell width="2">Size</Table.HeaderCell>
-            <Table.HeaderCell width="5">Rates</Table.HeaderCell>
-            <Table.HeaderCell width="2">Seeds</Table.HeaderCell>
-            <Table.HeaderCell width="2">Peers</Table.HeaderCell>
+            <Table.HeaderCell width="6">Rates</Table.HeaderCell>
+            <Table.HeaderCell width="5">Seeds / Peers</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
         <Table.Body>
