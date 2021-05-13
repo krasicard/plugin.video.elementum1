@@ -2082,7 +2082,7 @@ msgid "Add extra trackers"
 msgstr ""
 
 msgctxt "#30659"
-msgid "All trackers"
+msgid "All known trackers"
 msgstr ""
 
 msgctxt "#30660"
