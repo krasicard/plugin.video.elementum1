@@ -32,25 +32,25 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrent, onSetActi
 
   return (
     <>
-      <Table compact="very" size="small" stackable>
+      <Table compact="very" size="small" stackable fixed singleLine>
         <Table.Header className="mobile-hidden">
           <Table.Row>
-            <Table.HeaderCell />
-            <Table.HeaderCell>
+            <Table.HeaderCell width="2" />
+            <Table.HeaderCell width="1" textAlign="center">
               <Checkbox
                 onChange={(_, data) => onAllTorrentsSelected(data.checked ?? false)}
                 checked={selectedTorrents.length >= torrents.length}
               />
             </Table.HeaderCell>
-            <Table.HeaderCell />
-            <Table.HeaderCell>Name</Table.HeaderCell>
-            <Table.HeaderCell>Progress</Table.HeaderCell>
-            <Table.HeaderCell>Status</Table.HeaderCell>
-            <Table.HeaderCell>Ratios</Table.HeaderCell>
-            <Table.HeaderCell>Size</Table.HeaderCell>
-            <Table.HeaderCell>Rates</Table.HeaderCell>
-            <Table.HeaderCell>Seeds</Table.HeaderCell>
-            <Table.HeaderCell>Peers</Table.HeaderCell>
+            <Table.HeaderCell width="1" />
+            <Table.HeaderCell width="8">Name</Table.HeaderCell>
+            <Table.HeaderCell width="2">Progress</Table.HeaderCell>
+            <Table.HeaderCell width="2">Status</Table.HeaderCell>
+            <Table.HeaderCell width="4">Ratios</Table.HeaderCell>
+            <Table.HeaderCell width="2">Size</Table.HeaderCell>
+            <Table.HeaderCell width="5">Rates</Table.HeaderCell>
+            <Table.HeaderCell width="2">Seeds</Table.HeaderCell>
+            <Table.HeaderCell width="2">Peers</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
         <Table.Body>

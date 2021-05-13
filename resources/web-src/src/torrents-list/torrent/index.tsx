@@ -11,6 +11,7 @@ import {
   Progress,
   Statistic,
   StatisticGroup,
+  StatisticLabel,
   StatisticValue,
   Table,
 } from 'semantic-ui-react';
@@ -49,20 +50,20 @@ const TorrentListItem = ({ torrent, isClicked, isChecked, onSelect, onClick }: I
   return (
     <>
       <Table.Row onClick={() => onClick(isClicked ? undefined : torrent)} active={isClicked}>
-        <Table.Cell collapsing textAlign="center">
+        <Table.Cell textAlign="center">
           <Checkbox toggle onChange={onResumePause} checked={isActive} />
         </Table.Cell>
-        <Table.Cell collapsing textAlign="center">
+        <Table.Cell textAlign="center">
           <Checkbox checked={isChecked} onChange={onCheckboxClick} />
         </Table.Cell>
-        <Table.Cell collapsing>
-          <Button color="green" icon="play" floated="right" onClick={onPlay} />
+        <Table.Cell textAlign="center">
+          <Button color="green" icon="play" onClick={onPlay} />
         </Table.Cell>
-        <Table.Cell>{torrent.name}</Table.Cell>
+        <Table.Cell title={torrent.name}>{torrent.name}</Table.Cell>
         <Table.Cell>
           <Popup content={`${torrent.progress.toFixed(2)}%`} trigger={<Progress percent={torrent.progress} autoSuccess size="small" />} />
         </Table.Cell>
-        <Table.Cell collapsing textAlign="center">
+        <Table.Cell textAlign="center">
           <Label color={statusLabelColor}>{torrent.status}</Label>
         </Table.Cell>
         <Table.Cell>
@@ -82,14 +83,16 @@ const TorrentListItem = ({ torrent, isClicked, isChecked, onSelect, onClick }: I
             <Statistic>
               <StatisticValue>
                 <Icon name="arrow down" size="small" />
-                {` ${torrent.download_rate.toFixed(2)} kB/s`}
+                {` ${torrent.upload_rate.toFixed(2)}`}
               </StatisticValue>
+              <StatisticLabel>kB/s</StatisticLabel>
             </Statistic>
             <Statistic>
               <StatisticValue>
                 <Icon name="arrow up" size="small" />
-                {` ${torrent.upload_rate.toFixed(2)} kB/s`}
+                {` ${torrent.upload_rate.toFixed(2)}`}
               </StatisticValue>
+              <StatisticLabel>kB/s</StatisticLabel>
             </Statistic>
           </StatisticGroup>
         </Table.Cell>
