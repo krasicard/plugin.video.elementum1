@@ -50,7 +50,7 @@ const TorrentListItem = ({ torrent, isClicked, isChecked, onSelect, onClick }: I
   return (
     <>
       <Table.Row onClick={() => onClick(isClicked ? undefined : torrent)} active={isClicked}>
-        <Table.Cell>
+        <Table.Cell textAlign="center">
           <Checkbox toggle onChange={onResumePause} checked={isActive} />
         </Table.Cell>
         <Table.Cell textAlign="center">
