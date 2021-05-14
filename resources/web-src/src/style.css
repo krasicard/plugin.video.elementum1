@@ -2,6 +2,10 @@
   min-width: 0 !important;
 }
 
+div.torrent-table {
+  padding: 0.7rem;
+}
+
 .statistic > .value {
   text-transform: none !important;
 }

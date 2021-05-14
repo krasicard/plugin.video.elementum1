@@ -3,8 +3,6 @@ import isEqual from 'react-fast-compare';
 import {
   Button,
   ButtonProps,
-  Checkbox,
-  CheckboxProps,
   Icon,
   Label,
   Popup,
@@ -20,26 +18,19 @@ import { ITorrent } from '../../dataStructure';
 interface ITorrentListItemProps {
   torrent: ITorrent;
   isClicked: boolean;
-  isChecked: boolean;
-  onSelect: (_torrentId: string, _isChecked: boolean) => void;
   onClick: (torrent: ITorrent | undefined) => void;
 }
 
-const TorrentListItem = ({ torrent, isClicked, isChecked, onSelect, onClick }: ITorrentListItemProps): JSX.Element => {
+const TorrentListItem = ({ torrent, isClicked, onClick }: ITorrentListItemProps): JSX.Element => {
   const isActive = torrent.status !== 'Finished' && torrent.status !== 'Paused';
   const statusLabelColor = isActive ? 'green' : 'grey';
 
-  const onResumePause = async (event: React.FormEvent<HTMLInputElement>, data: CheckboxProps) => {
+  const onResumePause = async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>, data: ButtonProps) => {
     event.stopPropagation();
-    const { checked } = data;
-    const action = checked ? 'resume' : 'pause';
+    const { active } = data;
+    const action = active ? 'pause' : 'resume';
 
     await fetch(`/torrents/${action}/${torrent.id}`);
-  };
-
-  const onCheckboxClick = (event: React.FormEvent<HTMLInputElement>, data: CheckboxProps) => {
-    event.stopPropagation();
-    onSelect(torrent.id, data.checked ?? false);
   };
 
   const onPlay = async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>, _data: ButtonProps) => {
@@ -50,15 +41,6 @@ const TorrentListItem = ({ torrent, isClicked, isChecked, onSelect, onClick }: I
   return (
     <>
       <Table.Row onClick={() => onClick(isClicked ? undefined : torrent)} active={isClicked}>
-        <Table.Cell textAlign="center">
-          <Checkbox toggle onChange={onResumePause} checked={isActive} />
-        </Table.Cell>
-        <Table.Cell textAlign="center">
-          <Checkbox checked={isChecked} onChange={onCheckboxClick} />
-        </Table.Cell>
-        <Table.Cell textAlign="center">
-          <Button color="green" icon="play" onClick={onPlay} />
-        </Table.Cell>
         <Table.Cell title={torrent.name}>{torrent.name}</Table.Cell>
         <Table.Cell>
           <Popup content={`${torrent.progress.toFixed(2)}%`} trigger={<Progress percent={torrent.progress} autoSuccess size="small" />} />
@@ -101,6 +83,12 @@ const TorrentListItem = ({ torrent, isClicked, isChecked, onSelect, onClick }: I
             <Statistic value={`${torrent.seeders} / ${torrent.seeders_total}`} label="Active / Total" />
             <Statistic value={`${torrent.peers} / ${torrent.peers_total}`} label="Active / Total" />
           </StatisticGroup>
+        </Table.Cell>
+        <Table.Cell textAlign="center">
+          <Button.Group basic fluid size="tiny">
+            <Button icon={isActive ? 'pause' : 'download'} toggle active={isActive} onClick={onResumePause} />
+            <Button icon="play" onClick={onPlay} title="Play" />
+          </Button.Group>
         </Table.Cell>
       </Table.Row>
     </>
