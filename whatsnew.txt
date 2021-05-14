@@ -7,7 +7,19 @@
     - Source is open, so you can fork everything.
     - Some bug fixes or updates can come, to keep things working and have the latest versions.
 
-[B][COLOR red]0.1.70[/COLOR][/B]
+[B][COLOR red]0.1.76[/COLOR][/B]
+    - Fixed creation of repository.elementum.
+    - Changes to information constructors for movie/show/episode.
+
+[B][COLOR red]0.1.75[/COLOR][/B]
+    - Small bug fixes (thanks to @antonsoroko).
+    - Reverting to previous version of Swig, trying to avoid antivirus treat as a trojan. 
+
+[B][COLOR red]0.1.72-74[/COLOR][/B]
+    - Small fixes to existing code (thanks to @antonsoroko).
+    - Added logging of Kodi address, that sends requests, to send responses to that Kodi. (Should pop dialogs on proper Kodi)
+
+[B][COLOR red]0.1.70-71[/COLOR][/B]
     - Fixed issue with crashing due to empty lists in Trakt. (thanks to @antonsoroko).
     - Added option to select which files should be queued for download (File storage only).
 
