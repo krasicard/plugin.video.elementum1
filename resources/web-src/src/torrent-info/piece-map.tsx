@@ -12,7 +12,7 @@ const FullSize = PieceSize + Margin;
 
 const drawLegend = (context: CanvasRenderingContext2D, legendHeight: number) => {
   const y = context.canvas.height - legendHeight / 2;
-  context.font = '15px sans-serif';
+  context.font = '12px sans-serif';
   const pieceSize = PieceSize * 1.3;
 
   const drawLegendItem = (fillStyle: string, x: number, text: string) => {

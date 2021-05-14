@@ -23,7 +23,6 @@ interface ITorrentListItemProps {
 
 const TorrentListItem = ({ torrent, isClicked, onClick }: ITorrentListItemProps): JSX.Element => {
   const isActive = torrent.status !== 'Finished' && torrent.status !== 'Paused';
-  const statusLabelColor = isActive ? 'green' : 'grey';
 
   const onResumePause = async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>, data: ButtonProps) => {
     event.stopPropagation();
@@ -41,12 +40,18 @@ const TorrentListItem = ({ torrent, isClicked, onClick }: ITorrentListItemProps)
   return (
     <>
       <Table.Row onClick={() => onClick(isClicked ? undefined : torrent)} active={isClicked}>
-        <Table.Cell title={torrent.name}>{torrent.name}</Table.Cell>
-        <Table.Cell>
-          <Popup content={`${torrent.progress.toFixed(2)}%`} trigger={<Progress percent={torrent.progress} autoSuccess size="small" />} />
+        <Table.Cell title={torrent.name}>
+          {torrent.name}
+          <Popup
+            content={`${torrent.progress.toFixed(2)}%`}
+            trigger={<Progress percent={torrent.progress} autoSuccess indicating={isActive} size="tiny" />}
+          />
         </Table.Cell>
         <Table.Cell textAlign="center">
-          <Label color={statusLabelColor}>{torrent.status}</Label>
+          <Label color={isActive ? 'green' : undefined}>
+            {torrent.size}
+            <Label.Detail>{torrent.status}</Label.Detail>
+          </Label>
         </Table.Cell>
         <Table.Cell>
           <StatisticGroup size="mini" widths="2">
@@ -56,9 +61,6 @@ const TorrentListItem = ({ torrent, isClicked, onClick }: ITorrentListItemProps)
               trigger={<Statistic value={`${torrent.time_ratio.toFixed(2)}`} label="Time ratio" />}
             />
           </StatisticGroup>
-        </Table.Cell>
-        <Table.Cell textAlign="center">
-          <Label>{torrent.size}</Label>
         </Table.Cell>
         <Table.Cell>
           <StatisticGroup widths="2" size="mini">
@@ -87,7 +89,7 @@ const TorrentListItem = ({ torrent, isClicked, onClick }: ITorrentListItemProps)
         <Table.Cell textAlign="center">
           <Button.Group basic fluid size="tiny">
             <Button icon={isActive ? 'pause' : 'download'} toggle active={isActive} onClick={onResumePause} />
-            <Button icon="play" onClick={onPlay} title="Play" />
+            <Button icon="play" onClick={onPlay} title="Play in Kodi" />
           </Button.Group>
         </Table.Cell>
       </Table.Row>

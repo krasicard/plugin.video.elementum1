@@ -237,7 +237,7 @@ const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate, 
 
   return (
     <>
-      <Grid padded="horizontally" stackable columns="3">
+      <Grid stackable columns="3">
         <Grid.Row verticalAlign="middle">
           <Grid.Column floated="left">
             <Search

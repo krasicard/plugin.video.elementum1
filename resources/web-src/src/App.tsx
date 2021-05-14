@@ -26,9 +26,9 @@ function App(): JSX.Element {
   }, []);
 
   return (
-    <div className="App">
+    <div>
       <HeaderMenu />
-      <div>
+      <div className="app">
         <SearchBar
           totalDownloadRate={torrents.reduce((rate, item) => rate + item.download_rate, 0)}
           totalUploadRate={torrents.reduce((rate, item) => rate + item.upload_rate, 0)}

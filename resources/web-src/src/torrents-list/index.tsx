@@ -12,16 +12,14 @@ interface ITorrentListProps {
 }
 
 const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrent, onSetActiveTorrent }: ITorrentListProps) => (
-  <div className="torrent-table">
+  <>
     <Table compact="very" size="small" stackable fixed singleLine>
       <Table.Header className="mobile-hidden">
         <Table.Row>
           <Table.HeaderCell width="11">Name</Table.HeaderCell>
-          <Table.HeaderCell width="2">Progress</Table.HeaderCell>
-          <Table.HeaderCell width="3">Status</Table.HeaderCell>
-          <Table.HeaderCell width="6">Ratios</Table.HeaderCell>
-          <Table.HeaderCell width="2">Size</Table.HeaderCell>
-          <Table.HeaderCell width="6">Rates</Table.HeaderCell>
+          <Table.HeaderCell width="4">Size/Status</Table.HeaderCell>
+          <Table.HeaderCell width="5">Ratios</Table.HeaderCell>
+          <Table.HeaderCell width="5">Rates</Table.HeaderCell>
           <Table.HeaderCell width="5">Seeds / Peers</Table.HeaderCell>
           <Table.HeaderCell width="3" />
         </Table.Row>
@@ -40,7 +38,7 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrent, onSetActi
         </Table.Row>
       </Table.Footer>
     </Table>
-  </div>
+  </>
 );
 
 export default TorrentList;
