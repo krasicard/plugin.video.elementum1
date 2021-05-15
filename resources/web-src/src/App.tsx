@@ -1,57 +1,43 @@
 import React, { useEffect, useState } from 'react';
-import { Header } from 'semantic-ui-react';
-import Statistics from './statistics-total';
+import isEqual from 'react-fast-compare';
+import HeaderMenu from './menu';
 import SearchBar from './search-bar';
 import TorrentList from './torrents-list';
-import { ITorrent, ITorrentView } from './dataStructure';
+import TorrentInfo from './torrent-info';
+import { ITorrent } from './dataStructure';
 import 'semantic-ui-css/semantic.min.css';
-import header from './static/header.jpg';
-import logo from './static/logo.png';
 import './style.css';
+import { getRefreshRate } from './Services/settings';
 
 function App(): JSX.Element {
-  const [torrents, setTorrents] = useState<ITorrentView[]>([]);
+  const [torrents, setTorrents] = useState<ITorrent[]>([]);
+  const [activeTorrent, setActiveTorrent] = useState<ITorrent>();
 
   useEffect(() => {
     const getList = async () => {
       const response = await fetch('/torrents/list');
-      const torrentsList = (await response.json()) as ITorrent[];
-      setTorrents(torrentsList as ITorrentView[]);
+      const fetchedTorrents = (await response.json()) as ITorrent[];
+      setTorrents((t) => (isEqual(t, fetchedTorrents) ? t : fetchedTorrents));
     };
 
     void getList();
-    setInterval(() => void getList(), 5000);
+    const intervalHandle = setInterval(() => void getList(), getRefreshRate());
+    return () => clearInterval(intervalHandle);
   }, []);
 
   return (
-    <div className="App">
-      <Header>
-        <div
-          style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url("${header}")`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'top',
-            height: '150px',
-            padding: '20px',
-            textAlign: 'center',
-          }}
-        >
-          <a href="/web">
-            <img src={logo} alt="Elementum" height="100%" />
-          </a>
-        </div>
-      </Header>
-      <div>
-        <Statistics
-          downloading={torrents.filter((t) => t.status !== 'Finished').length}
-          finished={torrents.filter((t) => t.status === 'Finished').length}
-          total={torrents.length}
-        />
+    <div>
+      <HeaderMenu />
+      <div className="app">
         <SearchBar
           totalDownloadRate={torrents.reduce((rate, item) => rate + item.download_rate, 0)}
           totalUploadRate={torrents.reduce((rate, item) => rate + item.upload_rate, 0)}
+          active={torrents.filter((t) => t.status !== 'Finished').length}
+          finished={torrents.filter((t) => t.status === 'Finished').length}
+          total={torrents.length}
         />
-        <TorrentList torrents={torrents} />
+        <TorrentList torrents={torrents} onSetActiveTorrent={setActiveTorrent} activeTorrent={activeTorrent} />
+        {activeTorrent !== undefined && <TorrentInfo torrent={activeTorrent} />}
       </div>
     </div>
   );

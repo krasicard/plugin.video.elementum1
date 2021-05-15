@@ -132,7 +132,7 @@ async function querySearchResults(url: string, dispatch: React.Dispatch<Action>)
       .filter((i) => i.info !== undefined)
       .map((i) => ({
         image: i.art.thumb,
-        key: i.info.code,
+        key: `${i.info.code}-${i.label}`,
         description: i.info.plotoutline,
         title: i.label,
         tagline: i.info.tagline,
@@ -156,9 +156,24 @@ interface IStatisticsProps {
    * Total upload rate in kB/s
    */
   totalUploadRate: number;
+
+  /**
+   * Active torrents
+   */
+  active: number;
+
+  /**
+   * Finished torrents
+   */
+  finished: number;
+
+  /**
+   * Total torrents
+   */
+  total: number;
 }
 
-const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate }: IStatisticsProps) => {
+const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate, active, finished, total }: IStatisticsProps) => {
   const [torrentType, setTorrentType] = useState<TorrentType>('Movies');
   const searcRef = useRef<any>();
   const [state, dispatch] = useReducer(queryReducer, initialState);
@@ -222,12 +237,23 @@ const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate }
 
   return (
     <>
-      <Grid padded stackable columns="3">
-        <Grid.Row>
-          <Grid.Column width="11">
-            <Grid>
-              <Grid.Row>
-                <Grid.Column mobile="7" computer="4">
+      <Grid stackable columns="3">
+        <Grid.Row verticalAlign="middle">
+          <Grid.Column floated="left">
+            <Search
+              fluid
+              placeholder="Search"
+              loading={loading}
+              results={results}
+              value={value}
+              onSearchChange={(_, data) => handleQueryChange(data.value ?? '')}
+              resultRenderer={resultRenderer}
+              onResultSelect={(_, data) => handleResultSelect(data.result)}
+              ref={searcRef}
+              minCharacters={3}
+              input={{
+                icon: 'search',
+                action: (
                   <Dropdown
                     fluid
                     selection
@@ -235,25 +261,27 @@ const Statistics: FC<IStatisticsProps> = ({ totalDownloadRate, totalUploadRate }
                     defaultValue={torrentTypes[0].value}
                     onChange={(_, data) => handleTorrentTypeChange(data.value as TorrentType)}
                   />
-                </Grid.Column>
-                <Grid.Column mobile="9" computer="12">
-                  <Search
-                    fluid
-                    placeholder="Search"
-                    loading={loading}
-                    results={results}
-                    value={value}
-                    onSearchChange={(_, data) => handleQueryChange(data.value ?? '')}
-                    resultRenderer={resultRenderer}
-                    onResultSelect={(_, data) => handleResultSelect(data.result)}
-                    ref={searcRef}
-                    minCharacters={3}
-                  />
-                </Grid.Column>
-              </Grid.Row>
-            </Grid>
+                ),
+              }}
+            />
           </Grid.Column>
-          <Grid.Column width="5">
+          <Grid.Column width="3">
+            <Statistic.Group widths="3" size="tiny">
+              <Statistic>
+                <Statistic.Value>{active}</Statistic.Value>
+                <Statistic.Label>Active</Statistic.Label>
+              </Statistic>
+              <Statistic>
+                <Statistic.Value>{finished}</Statistic.Value>
+                <Statistic.Label>Finished</Statistic.Label>
+              </Statistic>
+              <Statistic>
+                <Statistic.Value>{total}</Statistic.Value>
+                <Statistic.Label>Total</Statistic.Label>
+              </Statistic>
+            </Statistic.Group>
+          </Grid.Column>
+          <Grid.Column floated="right">
             <Statistic.Group widths="2" size="tiny">
               <Statistic>
                 <Statistic.Value>

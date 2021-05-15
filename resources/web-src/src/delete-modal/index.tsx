@@ -2,18 +2,20 @@ import React, { useState } from 'react';
 import { Button, Checkbox, Message, Modal, Popup } from 'semantic-ui-react';
 
 interface ITorrentListProps {
-  torrentIdsToDelete: string[];
+  torrentIdToDelete: string | undefined;
 }
 
-const DeleteTorrentModal = ({ torrentIdsToDelete }: ITorrentListProps): JSX.Element => {
+const DeleteTorrentModal = ({ torrentIdToDelete }: ITorrentListProps): JSX.Element => {
   const [open, setOpen] = useState(false);
   const [deleteFiles, setDeleteFiles] = useState(false);
-  const hasSelectedTorrents = torrentIdsToDelete.length !== 0;
+  const hasSelectedTorrent = torrentIdToDelete !== undefined;
 
   // TODO: handle response
   // TODO: update list after executing fetch
-  function deleteSelectedTorrents() {
-    torrentIdsToDelete.map((id) => fetch(`/torrents/delete/${id}?files=${deleteFiles}`));
+  function deleteSelectedTorrent() {
+    if (torrentIdToDelete) {
+      void fetch(`/torrents/delete/${torrentIdToDelete}?files=${deleteFiles}`);
+    }
     setOpen(false);
   }
 
@@ -25,11 +27,11 @@ const DeleteTorrentModal = ({ torrentIdsToDelete }: ITorrentListProps): JSX.Elem
         <Popup
           trigger={
             <div style={{ display: 'inline-block' }}>
-              <Button content="Delete" disabled={!hasSelectedTorrents} onClick={(_, _data) => setOpen(true)} />
+              <Button content="Delete" disabled={!hasSelectedTorrent} onClick={(_, _data) => setOpen(true)} />
             </div>
           }
-          content="Select at least 1 torrent"
-          disabled={hasSelectedTorrents}
+          content="Select a torrent first"
+          disabled={hasSelectedTorrent}
           closeOnTriggerClick={false}
           inverted
         />
@@ -47,7 +49,7 @@ const DeleteTorrentModal = ({ torrentIdsToDelete }: ITorrentListProps): JSX.Elem
       </Modal.Content>
       <Modal.Actions>
         <Button content="No" icon="undo" onClick={() => setOpen(false)} />
-        <Button content="Yes" icon="trash" color="red" onClick={() => deleteSelectedTorrents()} />
+        <Button content="Yes" icon="trash" color="red" onClick={() => deleteSelectedTorrent()} />
       </Modal.Actions>
     </Modal>
   );

@@ -1,58 +1,57 @@
 import React from 'react';
+import isEqual from 'react-fast-compare';
 import {
   Button,
   ButtonProps,
-  Checkbox,
-  CheckboxProps,
   Icon,
   Label,
   Popup,
   Progress,
   Statistic,
   StatisticGroup,
+  StatisticLabel,
   StatisticValue,
   Table,
 } from 'semantic-ui-react';
-import { ITorrentView } from '../../dataStructure';
+import { ITorrent } from '../../dataStructure';
 
 interface ITorrentListItemProps {
-  torrent: ITorrentView;
-  onTorrentSelected: (_torrentId: string, _isChecked: boolean) => void;
+  torrent: ITorrent;
+  isClicked: boolean;
+  onClick: (torrent: ITorrent | undefined) => void;
 }
 
-const TorrentListItem = ({ torrent, onTorrentSelected }: ITorrentListItemProps): JSX.Element => {
+const TorrentListItem = ({ torrent, isClicked, onClick }: ITorrentListItemProps): JSX.Element => {
   const isActive = torrent.status !== 'Finished' && torrent.status !== 'Paused';
-  const statusLabelColor = isActive ? 'green' : 'grey';
 
-  const onResumePause = async (_event: React.FormEvent<HTMLInputElement>, data: CheckboxProps) => {
-    const { checked } = data;
-    const action = checked ? 'resume' : 'pause';
+  const onResumePause = async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>, data: ButtonProps) => {
+    event.stopPropagation();
+    const { active } = data;
+    const action = active ? 'pause' : 'resume';
 
     await fetch(`/torrents/${action}/${torrent.id}`);
   };
 
-  const onPlay = async (_event: React.MouseEvent<HTMLButtonElement, MouseEvent>, _data: ButtonProps) => {
+  const onPlay = async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>, _data: ButtonProps) => {
+    event.stopPropagation();
     await fetch(`/playuri?resume=${torrent.id}`);
   };
 
   return (
     <>
-      <Table.Row>
-        <Table.Cell collapsing textAlign="center">
-          <Checkbox toggle onChange={onResumePause} checked={isActive} />
+      <Table.Row onClick={() => onClick(isClicked ? undefined : torrent)} active={isClicked}>
+        <Table.Cell title={torrent.name}>
+          {torrent.name}
+          <Popup
+            content={`${torrent.progress.toFixed(2)}%`}
+            trigger={<Progress percent={torrent.progress} autoSuccess indicating={isActive} size="tiny" />}
+          />
         </Table.Cell>
-        <Table.Cell collapsing textAlign="center">
-          <Checkbox onChange={(_, data) => onTorrentSelected(torrent.id, data.checked ?? false)} checked={torrent.is_selected} />
-        </Table.Cell>
-        <Table.Cell collapsing>
-          <Button color="green" icon="play" floated="right" onClick={onPlay} />
-        </Table.Cell>
-        <Table.Cell>{torrent.name}</Table.Cell>
-        <Table.Cell>
-          <Popup content={`${torrent.progress.toFixed(2)}%`} trigger={<Progress percent={torrent.progress} autoSuccess size="small" />} />
-        </Table.Cell>
-        <Table.Cell collapsing textAlign="center">
-          <Label color={statusLabelColor}>{torrent.status}</Label>
+        <Table.Cell textAlign="center">
+          <Label color={isActive ? 'green' : undefined}>
+            {torrent.size}
+            <Label.Detail>{torrent.status}</Label.Detail>
+          </Label>
         </Table.Cell>
         <Table.Cell>
           <StatisticGroup size="mini" widths="2">
@@ -63,38 +62,39 @@ const TorrentListItem = ({ torrent, onTorrentSelected }: ITorrentListItemProps):
             />
           </StatisticGroup>
         </Table.Cell>
-        <Table.Cell textAlign="center">
-          <Label>{torrent.size}</Label>
-        </Table.Cell>
         <Table.Cell>
           <StatisticGroup widths="2" size="mini">
             <Statistic>
               <StatisticValue>
                 <Icon name="arrow down" size="small" />
-                {` ${torrent.download_rate.toFixed(2)} kB/s`}
+                {` ${torrent.upload_rate.toFixed(2)}`}
               </StatisticValue>
+              <StatisticLabel>kB/s</StatisticLabel>
             </Statistic>
             <Statistic>
               <StatisticValue>
                 <Icon name="arrow up" size="small" />
-                {` ${torrent.upload_rate.toFixed(2)} kB/s`}
+                {` ${torrent.upload_rate.toFixed(2)}`}
               </StatisticValue>
+              <StatisticLabel>kB/s</StatisticLabel>
             </Statistic>
           </StatisticGroup>
         </Table.Cell>
         <Table.Cell>
-          <StatisticGroup widths="1" size="mini">
+          <StatisticGroup widths="2" size="mini">
             <Statistic value={`${torrent.seeders} / ${torrent.seeders_total}`} label="Active / Total" />
-          </StatisticGroup>
-        </Table.Cell>
-        <Table.Cell>
-          <StatisticGroup widths="1" size="mini">
             <Statistic value={`${torrent.peers} / ${torrent.peers_total}`} label="Active / Total" />
           </StatisticGroup>
+        </Table.Cell>
+        <Table.Cell textAlign="center">
+          <Button.Group basic fluid size="tiny">
+            <Button icon={isActive ? 'pause' : 'download'} toggle active={isActive} onClick={onResumePause} />
+            <Button icon="play" onClick={onPlay} title="Play in Kodi" />
+          </Button.Group>
         </Table.Cell>
       </Table.Row>
     </>
   );
 };
 
-export default TorrentListItem;
+export default React.memo(TorrentListItem, isEqual);

@@ -16,7 +16,3 @@ export interface ITorrent {
   time_ratio: number;
   upload_rate: number;
 }
-
-export interface ITorrentView extends ITorrent {
-  is_selected: boolean;
-}
