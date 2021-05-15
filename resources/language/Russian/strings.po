@@ -2065,3 +2065,27 @@ msgstr "Все файлы"
 msgctxt "#30657"
 msgid "Disable LSD"
 msgstr "Отключить LSD"
+
+msgctxt "#30658"
+msgid "Add extra trackers"
+msgstr "Добавлять доп. трекеры"
+
+msgctxt "#30659"
+msgid "All known trackers"
+msgstr "Все известные трекеры"
+
+msgctxt "#30660"
+msgid "Best trackers"
+msgstr "Лучшие трекеры"
+
+msgctxt "#30661"
+msgid "Minimum set"
+msgstr "Минимальный набор"
+
+msgctxt "#30662"
+msgid "Remove original trackers from torrent"
+msgstr "Удалять оригинальные трекеры из торрента"
+
+msgctxt "#30663"
+msgid "Show episodes on release day (w/o delay)"
+msgid "Показывать эпизоды в день релиза (без задержки)"
