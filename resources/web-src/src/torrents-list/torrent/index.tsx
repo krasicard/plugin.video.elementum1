@@ -67,7 +67,7 @@ const TorrentListItem = ({ torrent, isClicked, onClick }: ITorrentListItemProps)
             <Statistic>
               <StatisticValue>
                 <Icon name="arrow down" size="small" />
-                {` ${torrent.upload_rate.toFixed(2)}`}
+                {` ${torrent.download_rate.toFixed(2)}`}
               </StatisticValue>
               <StatisticLabel>kB/s</StatisticLabel>
             </Statistic>
