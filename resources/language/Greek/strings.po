@@ -1442,12 +1442,12 @@ msgid "Use Proxy for torrent downloading"
 msgstr "Χρήση του proxy για λήψεις μεσω torrent"
 
 msgctxt "#30495"
-msgid "Use internal DNS resolver"
-msgstr "Χρήση του ενσωματωμενου DNS resover"
+msgid "Use internal DNS resolver (enable for Tor)"
+msgstr "Χρήση του ενσωματωμενου DNS resover (ενεργοποίηση για Tor)"
 
 msgctxt "#30496"
-msgid "Turn off if you use Tor addresses, or you want to pass resolve to local network settings"
-msgstr "Απενεργοποιήστε το αυτο αν χρησιμοποιειτε διευθύνσεις Tor"
+msgid "Turn off if you want to pass resolve to local network settings"
+msgstr "Απενεργοποιήστε εάν θέλετε να χρησιμοποιήσετε τις ρυθμίσεις τοπικού δικτύου για επίλυση ονόματος κεντρικού υπολογιστή"
 
 msgctxt "#30498"
 msgid "Reset this path to '/'"

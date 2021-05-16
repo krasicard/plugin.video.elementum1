@@ -1442,12 +1442,12 @@ msgid "Use Proxy for torrent downloading"
 msgstr "Använd proxy för hämtning av torrent"
 
 msgctxt "#30495"
-msgid "Use internal DNS resolver"
-msgstr "Använd intern DNS-resolver"
+msgid "Use internal DNS resolver (enable for Tor)"
+msgstr "Använd intern DNS-resolver (aktivera för Tor)"
 
 msgctxt "#30496"
-msgid "Turn off if you use Tor addresses, or you want to pass resolve to local network settings"
-msgstr "Stäng av om du använder Tor-adresser, eller om du vill skicka lösning till lokala nätverksinställningar"
+msgid "Turn off if you want to pass resolve to local network settings"
+msgstr "Stäng av om du vill skicka lösning till lokala nätverksinställningar"
 
 msgctxt "#30498"
 msgid "Reset this path to '/'"
