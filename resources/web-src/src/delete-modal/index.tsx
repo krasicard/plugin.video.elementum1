@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
 import { Button, Checkbox, Message, Modal, Popup } from 'semantic-ui-react';
+import { ITorrent } from '../dataStructure';
 
 interface ITorrentListProps {
-  torrentIdToDelete: string | undefined;
+  torrent: ITorrent | undefined;
 }
 
-const DeleteTorrentModal = ({ torrentIdToDelete }: ITorrentListProps): JSX.Element => {
+const DeleteTorrentModal = ({ torrent }: ITorrentListProps): JSX.Element => {
   const [open, setOpen] = useState(false);
   const [deleteFiles, setDeleteFiles] = useState(false);
-  const hasSelectedTorrent = torrentIdToDelete !== undefined;
+  const hasSelectedTorrent = torrent !== undefined;
 
   // TODO: handle response
   // TODO: update list after executing fetch
   function deleteSelectedTorrent() {
-    if (torrentIdToDelete) {
-      void fetch(`/torrents/delete/${torrentIdToDelete}?files=${deleteFiles}`);
+    if (torrent) {
+      void fetch(`/torrents/delete/${torrent.id}?files=${deleteFiles}`);
     }
     setOpen(false);
   }
@@ -37,10 +38,10 @@ const DeleteTorrentModal = ({ torrentIdToDelete }: ITorrentListProps): JSX.Eleme
         />
       }
     >
-      <Modal.Header>Delete Torrent</Modal.Header>
+      <Modal.Header>Delete {torrent?.name}</Modal.Header>
       <Modal.Content>
         <Modal.Description>
-          Are you sure?
+          Are you sure you want to delete <b>{torrent?.name}</b>?
           <br />
           <Message negative>
             <Checkbox label="Also delete files" onChange={(e, data) => setDeleteFiles(data.checked ?? false)} />

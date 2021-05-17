@@ -13,7 +13,7 @@ interface ITorrentListProps {
 
 const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrent, onSetActiveTorrent }: ITorrentListProps) => (
   <>
-    <Table compact="very" size="small" stackable fixed singleLine>
+    <Table compact="very" size="small" stackable fixed singleLine selectable>
       <Table.Header className="mobile-hidden">
         <Table.Row>
           <Table.HeaderCell width="11">Name</Table.HeaderCell>
@@ -33,7 +33,7 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrent, onSetActi
         <Table.Row>
           <Table.HeaderCell colSpan={11}>
             <UploadTorrentModal />
-            <DeleteTorrentModal torrentIdToDelete={activeTorrent?.id} />
+            <DeleteTorrentModal torrent={activeTorrent} />
           </Table.HeaderCell>
         </Table.Row>
       </Table.Footer>
