@@ -5,7 +5,6 @@ import {
   ButtonProps,
   Icon,
   Label,
-  Popup,
   Progress,
   Statistic,
   StatisticGroup,
@@ -40,12 +39,9 @@ const TorrentListItem = ({ torrent, isClicked, onClick }: ITorrentListItemProps)
   return (
     <>
       <Table.Row onClick={() => onClick(isClicked ? undefined : torrent)} active={isClicked}>
-        <Table.Cell title={torrent.name}>
-          {torrent.name}
-          <Popup
-            content={`${torrent.progress.toFixed(2)}%`}
-            trigger={<Progress percent={torrent.progress} autoSuccess indicating={isActive} size="tiny" />}
-          />
+        <Table.Cell>
+          <span title={torrent.name}>{torrent.name}</span>
+          <Progress percent={torrent.progress} title={`${torrent.progress.toFixed(2)}%`} autoSuccess indicating={isActive} size="tiny" />
         </Table.Cell>
         <Table.Cell textAlign="center">
           <Label color={isActive ? 'green' : undefined}>
@@ -56,10 +52,7 @@ const TorrentListItem = ({ torrent, isClicked, onClick }: ITorrentListItemProps)
         <Table.Cell>
           <StatisticGroup size="mini" widths="2">
             <Statistic value={torrent.ratio.toFixed(2)} label="Seed ratio" />
-            <Popup
-              content={`Seed time: ${torrent.seeding_time}`}
-              trigger={<Statistic value={`${torrent.time_ratio.toFixed(2)}`} label="Time ratio" />}
-            />
+            <Statistic value={`${torrent.time_ratio.toFixed(2)}`} label="Time ratio" />
           </StatisticGroup>
         </Table.Cell>
         <Table.Cell>

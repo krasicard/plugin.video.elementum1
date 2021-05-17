@@ -17,7 +17,7 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrent, onSetActi
       <Table.Header className="mobile-hidden">
         <Table.Row>
           <Table.HeaderCell width="11">Name</Table.HeaderCell>
-          <Table.HeaderCell width="4">Size/Status</Table.HeaderCell>
+          <Table.HeaderCell width="4">Size / Status</Table.HeaderCell>
           <Table.HeaderCell width="5">Ratios</Table.HeaderCell>
           <Table.HeaderCell width="5">Rates</Table.HeaderCell>
           <Table.HeaderCell width="5">Seeds / Peers</Table.HeaderCell>
