@@ -12,7 +12,7 @@ import {
   StatisticValue,
   Table,
 } from 'semantic-ui-react';
-import { ITorrent } from '../../dataStructure';
+import { ITorrent, StatusCode } from '../../dataStructure';
 
 interface ITorrentListItemProps {
   torrent: ITorrent;
@@ -21,7 +21,7 @@ interface ITorrentListItemProps {
 }
 
 const TorrentListItem = ({ torrent, isClicked, onClick }: ITorrentListItemProps): JSX.Element => {
-  const isActive = torrent.status !== 'Finished' && torrent.status !== 'Paused';
+  const isActive = torrent.status_code !== StatusCode.StatusFinished && torrent.status_code !== StatusCode.StatusPaused;
 
   const onResumePause = async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>, data: ButtonProps) => {
     event.stopPropagation();

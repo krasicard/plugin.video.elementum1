@@ -1,5 +1,20 @@
+export enum StatusCode {
+  StatusQueued = 0,
+  StatusChecking,
+  StatusFinding,
+  StatusDownloading,
+  StatusFinished,
+  StatusSeeding,
+  StatusAllocating,
+  StatusStalled,
+  StatusPaused,
+  StatusBuffering,
+  StatusPlaying,
+}
+
 export interface ITorrent {
   status: string;
+  status_code: StatusCode;
   progress: number;
   name: string;
   download_rate: number;
