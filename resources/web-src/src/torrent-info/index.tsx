@@ -70,8 +70,8 @@ const TorrentInfo = ({ torrent }: ITorrentInfoItemProps): JSX.Element => {
     setLoading(true);
 
     const getInfo = async () => {
-      const regexp = new RegExp(`${torrent.id}.+?Files.+?:\\s+(?<files>.+?)\\n\\n.+?Pieces:\\s+(?<pieces>.+?)\\n\\n\\n`, 'gs');
-      const response = await fetch('/info');
+      const regexp = new RegExp('Files.+?:\\s+(?<files>.+?)\\n\\n.+?Pieces:\\s+(?<pieces>.+?)\\n\\n', 'gs');
+      const response = await fetch(`/info?torrentid=${torrent.id}&pieces=true&trackers=false`);
       const info = await response.text();
       const match = regexp.exec(info);
       if (!match || !match.groups) return;
