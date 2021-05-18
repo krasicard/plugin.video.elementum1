@@ -2,7 +2,7 @@ import React, { FC, useReducer, useRef, useState } from 'react';
 import { Dropdown, DropdownItemProps, Grid, Icon, Item, ItemGroup, Search, SearchResultProps, Statistic } from 'semantic-ui-react';
 import { useDebouncedCallback } from 'use-debounce';
 
-const debounceWaitTime = 300;
+const debounceWaitTime = 500;
 
 type TorrentType = 'Movies' | 'TvShows' | 'General';
 const torrentTypes: DropdownItemProps[] = [
