@@ -30,4 +30,6 @@ export interface ITorrent {
   size: string;
   time_ratio: number;
   upload_rate: number;
+  total_download: number;
+  total_upload: number;
 }

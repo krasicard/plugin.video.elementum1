@@ -1,3 +1,4 @@
+import prettyBytes from 'pretty-bytes';
 import React, { useEffect, useState } from 'react';
 import { Grid, GridColumn, GridRow, List, Tab } from 'semantic-ui-react';
 import { ITorrent } from '../dataStructure';
@@ -114,6 +115,12 @@ const TorrentInfo = ({ torrent }: ITorrentInfoItemProps): JSX.Element => {
                 </div>
                 <div>
                   <b>Seed time limit:</b> {torrent.seed_time_limit}s
+                </div>
+                <div>
+                  <b>Total download:</b> {prettyBytes(torrent.total_download, { binary: true })}
+                </div>
+                <div>
+                  <b>Total upload:</b> {prettyBytes(torrent.total_upload, { binary: true })}
                 </div>
               </GridColumn>
             </GridRow>
