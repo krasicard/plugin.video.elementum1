@@ -11,7 +11,7 @@ import { getRefreshRate } from './Services/settings';
 
 function App(): JSX.Element {
   const [torrents, setTorrents] = useState<ITorrent[]>([]);
-  const [activeTorrent, setActiveTorrent] = useState<ITorrent>();
+  const [activeTorrents, setActiveTorrents] = useState<ITorrent[]>([]);
 
   useEffect(() => {
     const getList = async () => {
@@ -36,8 +36,8 @@ function App(): JSX.Element {
           finished={torrents.filter((t) => t.status_code === StatusCode.StatusFinished).length}
           total={torrents.length}
         />
-        <TorrentList torrents={torrents} onSetActiveTorrent={setActiveTorrent} activeTorrent={activeTorrent} />
-        {activeTorrent !== undefined && <TorrentInfo torrent={activeTorrent} />}
+        <TorrentList torrents={torrents} onSetActiveTorrents={setActiveTorrents} activeTorrents={activeTorrents} />
+        {activeTorrents.length > 0 && <TorrentInfo torrent={activeTorrents[activeTorrents.length - 1]} />}
       </div>
     </div>
   );

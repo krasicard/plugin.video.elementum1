@@ -7,11 +7,11 @@ import { ITorrent } from '../dataStructure';
 
 interface ITorrentListProps {
   torrents: ITorrent[];
-  activeTorrent: ITorrent | undefined;
-  onSetActiveTorrent: (_torrentId: ITorrent | undefined) => void;
+  activeTorrents: ITorrent[];
+  onSetActiveTorrents: React.Dispatch<React.SetStateAction<ITorrent[]>>;
 }
 
-const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrent, onSetActiveTorrent }: ITorrentListProps) => (
+const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrents, onSetActiveTorrents }: ITorrentListProps) => (
   <>
     <Table compact="very" size="small" stackable fixed singleLine selectable>
       <Table.Header className="mobile-hidden">
@@ -26,14 +26,19 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrent, onSetActi
       </Table.Header>
       <Table.Body>
         {torrents.map((t) => (
-          <TorrentListItem key={t.id} torrent={t} onClick={onSetActiveTorrent} isClicked={activeTorrent?.id === t.id} />
+          <TorrentListItem
+            key={t.id}
+            torrent={t}
+            onSetActiveTorrents={onSetActiveTorrents}
+            isSelected={activeTorrents.some((at) => at.id === t.id)}
+          />
         ))}
       </Table.Body>
       <Table.Footer fullWidth>
         <Table.Row>
           <Table.HeaderCell colSpan={11}>
             <UploadTorrentModal />
-            <DeleteTorrentModal torrent={activeTorrent} />
+            <DeleteTorrentModal torrents={activeTorrents} />
           </Table.HeaderCell>
         </Table.Row>
       </Table.Footer>

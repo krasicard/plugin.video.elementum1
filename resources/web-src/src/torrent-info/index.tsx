@@ -117,10 +117,10 @@ const TorrentInfo = ({ torrent }: ITorrentInfoItemProps): JSX.Element => {
                   <b>Seed time limit:</b> {torrent.seed_time_limit}s
                 </div>
                 <div>
-                  <b>Total download:</b> {prettyBytes(torrent.total_download, { binary: true })}
+                  <b>Total download:</b> {prettyBytes(torrent.total_download)}
                 </div>
                 <div>
-                  <b>Total upload:</b> {prettyBytes(torrent.total_upload, { binary: true })}
+                  <b>Total upload:</b> {prettyBytes(torrent.total_upload)}
                 </div>
               </GridColumn>
             </GridRow>
