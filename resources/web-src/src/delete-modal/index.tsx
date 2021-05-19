@@ -41,13 +41,20 @@ const DeleteTorrentModal = ({ torrents }: ITorrentListProps): JSX.Element => {
         <Modal.Description>
           Are you sure you want to delete
           {torrents.length === 1 ? (
-            <b> {torrents[0].name}</b>
+            <>
+              <b> {torrents[0].name}</b>?
+            </>
           ) : (
-            <ol>
-              {torrents.map((t) => (
-                <li>{t.name}</li>
-              ))}
-            </ol>
+            <>
+              <> these {torrents.length} torrents?</>
+              <ol>
+                {torrents.map((t) => (
+                  <li>
+                    <b>{t.name}</b>
+                  </li>
+                ))}
+              </ol>
+            </>
           )}
           <Message negative>
             <Checkbox label="Also delete files" onChange={(e, data) => setDeleteFiles(data.checked ?? false)} />
