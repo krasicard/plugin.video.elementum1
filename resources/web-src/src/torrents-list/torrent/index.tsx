@@ -36,26 +36,30 @@ const TorrentListItem = ({ torrent, isSelected, onSetActiveTorrents }: ITorrentL
     await fetch(`/playuri?resume=${torrent.id}`);
   };
 
+  /**
+   * Select a torrent from the torrent list.
+   * By default it sets active torrents to the last clicked torrent element,
+   * but it also supports multiselect using Ctrl-key. In this case normal rules apply:
+   * if a torrent wasn't previously selected - add it to the list of selected torrents,
+   * otherwise - remove it from the list.
+   */
+  const onClick = (event: React.MouseEvent) => {
+    if (!event.ctrlKey) {
+      onSetActiveTorrents([torrent]);
+    } else {
+      onSetActiveTorrents((activeTorrents) => {
+        const activeTorrentIndex = activeTorrents.findIndex((t) => t.id === torrent.id);
+        if (activeTorrentIndex === -1) {
+          return [...activeTorrents, torrent];
+        }
+        return activeTorrents.filter((_, i) => i !== activeTorrentIndex);
+      });
+    }
+  };
+
   return (
     <>
-      <Table.Row
-        onClick={(event: React.MouseEvent) => {
-          if (event.ctrlKey) {
-            // if a torrent hasn't been already selected - select it
-            // otherwise remove selection
-            onSetActiveTorrents((activeTorrents) => {
-              const activeTorrentIndex = activeTorrents.findIndex((t) => t.id === torrent.id);
-              if (activeTorrentIndex === -1) {
-                return [...activeTorrents, torrent];
-              }
-              return activeTorrents.filter((_, i) => i !== activeTorrentIndex);
-            });
-          } else {
-            onSetActiveTorrents([torrent]);
-          }
-        }}
-        active={isSelected}
-      >
+      <Table.Row onClick={onClick} active={isSelected}>
         <Table.Cell>
           <span title={torrent.name}>{torrent.name}</span>
           <Progress percent={torrent.progress} title={`${torrent.progress.toFixed(2)}%`} autoSuccess indicating={isActive} size="tiny" />
