@@ -45,7 +45,7 @@ const TorrentListItem = ({ torrent, isSelected, onSetActiveTorrents }: ITorrentL
    */
   const onClick = (event: React.MouseEvent) => {
     if (!event.ctrlKey) {
-      onSetActiveTorrents([torrent]);
+      onSetActiveTorrents(isSelected ? [] : [torrent]);
     } else {
       onSetActiveTorrents((activeTorrents) => {
         const activeTorrentIndex = activeTorrents.findIndex((t) => t.id === torrent.id);
