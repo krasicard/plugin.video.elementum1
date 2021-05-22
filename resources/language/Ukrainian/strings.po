@@ -570,13 +570,10 @@ msgctxt "#30216"
 msgid "Add Torrent"
 msgstr "Додати торрент"
 
-<<<<<<< patch-2
 msgctxt "#30217"
 msgid "Paste Magnet or URL"
 msgstr "Вставити посилання Magnet чи URL"
 
-=======
->>>>>>> master
 msgctxt "#30218"
 msgid "Next page"
 msgstr "Наступна сторінка"
