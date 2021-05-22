@@ -27,37 +27,25 @@ msgctxt "#30001"
 msgid "Download path"
 msgstr "נתיב הורדה"
 
-msgctxt "#30002"
-msgid "Keep files after playback/download stops"
-msgstr "שמירת הקבצים בסיום הניגון/ההורדה"
-
-msgctxt "#30003"
-msgid "Buffer size (MB)"
-msgstr "גודל הבאפר (MB)"
-
 msgctxt "#30004"
-msgid "Max upload rate (kB/s)"
+msgid "Max upload rate, kB/s"
 msgstr "קצב העלאה מרבי (kB/s)"
 
 msgctxt "#30005"
-msgid "Max download rate (kB/s)"
+msgid "Max download rate, kB/s"
 msgstr "קצב הורדה מרבי (kB/s)"
 
 msgctxt "#30006"
-msgid "Listen port min"
+msgid "Listen port, min"
 msgstr "פורט האזנה מינימלי"
 
 msgctxt "#30007"
-msgid "Listen port max"
+msgid "Listen port, max"
 msgstr "פורט האזנה מקסימלי"
 
 msgctxt "#30008"
 msgid "Proxy"
 msgstr "פרוקסי"
-
-msgctxt "#30009"
-msgid "SOCKS v5 Configuration"
-msgstr "הגדרת SOCKS v5"
 
 msgctxt "#30010"
 msgid "Enabled"
@@ -84,27 +72,23 @@ msgid "Advanced"
 msgstr "מתקדם"
 
 msgctxt "#30016"
-msgid "Custom provider timeout"
+msgid "Redefine providers timeout"
 msgstr "Timeout מותאם אישית"
 
 msgctxt "#30017"
-msgid "Enabled (use at your own risk)"
+msgid "Enabled (might lead to slow speed)"
 msgstr "הפעלה (שימוש רק באחריותך)"
 
 msgctxt "#30018"
-msgid "Timeout in seconds"
+msgid "Timeout, seconds"
 msgstr "Timeout בשניות"
 
 msgctxt "#30019"
 msgid "Maintenance"
 msgstr "תחזוקה"
 
-msgctxt "#30020"
-msgid "Clear cache"
-msgstr "ניקוי מטמון"
-
 msgctxt "#30021"
-msgid "Results per page"
+msgid "Elements per page"
 msgstr "מספר תוצאות בעמוד"
 
 msgctxt "#30022"
@@ -114,10 +98,6 @@ msgstr "הצגת שורת מצב"
 msgctxt "#30023"
 msgid "Choose stream automatically"
 msgstr "בחירת מקור אוטומטית"
-
-msgctxt "#30024"
-msgid "Get updates for pre-releases"
-msgstr "הפעלת עדכוני קדם-שחרור"
 
 msgctxt "#30025"
 msgid "Limit rates after initial buffering only"
@@ -136,7 +116,7 @@ msgid "Download after play was stopped"
 msgstr "הורדה לאחר עצירת הניגון"
 
 msgctxt "#30029"
-msgid "Session saving frequency (seconds)"
+msgid "Session saving frequency, seconds"
 msgstr "תדירות שמירת ההפעלה (בשניות)"
 
 msgctxt "#30030"
@@ -144,7 +124,7 @@ msgid "Overlay status vertical offset"
 msgstr "הזזת המיקום של שורת המצב"
 
 msgctxt "#30031"
-msgid "Disable providers failing health check"
+msgid "Disable providers that failed health check"
 msgstr "כיבוי בדיקת ספקים"
 
 msgctxt "#30032"
@@ -224,15 +204,15 @@ msgid "Disable DHT"
 msgstr "כיבוי DHT"
 
 msgctxt "#30051"
-msgid "Share ratio limit (percent)"
+msgid "Share ratio limit, percentage"
 msgstr "הגבלת יחס זריעה (באחוזים)"
 
 msgctxt "#30052"
-msgid "Seed time ratio limit (percent)"
+msgid "Seed time ratio limit, percentage"
 msgstr "הגבלת יחס זמן לזריעה (באחוזים)"
 
 msgctxt "#30053"
-msgid "Seed time limit (hours)"
+msgid "Seed time limit, hours"
 msgstr "הגבלת זמן זריעה (בשעות)"
 
 msgctxt "#30054"
@@ -251,25 +231,13 @@ msgctxt "#30057"
 msgid "Username"
 msgstr "שם משתמש"
 
-msgctxt "#30058"
-msgid "Authorize Elementum"
-msgstr "אישור Elementum"
-
 msgctxt "#30059"
-msgid "Library update delay on startup (seconds)"
+msgid "Library update delay on startup, seconds"
 msgstr "זמן (בשניות) להשהיה לאחר ההפעה עד לעדכון הספריה"
 
 msgctxt "#30060"
-msgid "Library update frequency (hours)"
+msgid "Library update frequency, hours"
 msgstr "תדירות עדכון הספרייה (בשעות)"
-
-msgctxt "#30061"
-msgid "Sync frequency of Trakt lists to library (hours)"
-msgstr "תדירות סנכרון הספרייה עם רשימות מבTrakt"
-
-msgctxt "#30062"
-msgid "Ask to keep the files after streaming"
-msgstr "האם לשאול אם לשמור קבצים בסיום הניגון"
 
 msgctxt "#30063"
 msgid "Disable UPNP & NATPMP"
@@ -299,17 +267,9 @@ msgctxt "#30069"
 msgid "SOCKS5"
 msgstr "SOCKS5"
 
-msgctxt "#30070"
-msgid "SOCKS5 password"
-msgstr "SOKCS% עם ססמה"
-
 msgctxt "#30071"
 msgid "HTTP"
 msgstr "HTTP"
-
-msgctxt "#30072"
-msgid "HTTP password"
-msgstr "HTTP עם ססמה"
 
 msgctxt "#30073"
 msgid "i2p"
@@ -367,12 +327,8 @@ msgctxt "#30086"
 msgid "Enable tuned storage settings"
 msgstr "הפעלת הגדרות לאחסון מכוון"
 
-msgctxt "#30087"
-msgid "Ask to delete the files after streaming"
-msgstr "האם לשאול אם למחוק את הקבצים בסיום ההזרמה"
-
 msgctxt "#30088"
-msgid "Initial buffering timeout (seconds)"
+msgid "Initial buffering timeout, seconds"
 msgstr "מקסימום זמן לטעינה לפני תחילת ניגון (בשניות)"
 
 msgctxt "#30089"
@@ -388,7 +344,7 @@ msgid "Outgoing interfaces"
 msgstr "מנשק יוצא"
 
 msgctxt "#30092"
-msgid "Use default fanart"
+msgid "Use fallback fanart if fanart wasn't found"
 msgstr "שימוש ב fanart ברירת מחדל"
 
 msgctxt "#30093"
@@ -399,30 +355,10 @@ msgctxt "#30094"
 msgid "Disable background progress dialog"
 msgstr "כיבוי הצגת מצב ההתקדמות ברקע"
 
-msgctxt "#30095"
-msgid "Sync watched progress with Kodi"
-msgstr "סנכרון התקדמות צפייה עם קודי"
-
-msgctxt "#30096"
-msgid "Never"
-msgstr "לעולם לא"
-
-msgctxt "#30097"
-msgid "Always"
-msgstr "תמיד"
-
-msgctxt "#30098"
-msgid "Active torrents only"
-msgstr "טורנטים פעילים בלבד"
-
 # Interface
 msgctxt "#30100"
 msgid "Elementum has crashed, restarting..."
 msgstr "Elementum קרס, מופעל מחדש..."
-
-msgctxt "#30101"
-msgid "You must restart Kodi before using Elementum"
-msgstr "יש להפעיל את Kodi מחדש לפני השימוש ב־Elementum"
 
 msgctxt "#30102"
 msgid "This add-on can only be run from within Elementum"
@@ -473,14 +409,6 @@ msgid "Download path not set, check your settings"
 msgstr "לא הוגדר נתיב הורדה, אנא בדקו את ההגדרות"
 
 # Site name
-msgctxt "#30114"
-msgid "TheTVDB"
-msgstr "TheTVDB"
-
-msgctxt "#30115"
-msgid "TV show scraper used by Kodi library"
-msgstr "סקרפרים בשימוש על־ידי הספרייה"
-
 msgctxt "#30116"
 msgid "Looks like Elementum is still starting up, give it a few seconds..."
 msgstr "נראה כי Elementum עדיין בעליה, תנו לזה עוד כמה שניות..."
@@ -537,10 +465,6 @@ msgstr "לא מצליח ליצור קישור JSON-RPC ל־Kodi.[CR]יש להפ�
 msgctxt "#30200"
 msgid "Cache cleared"
 msgstr "מטמון נוקה"
-
-msgctxt "#30201"
-msgid "Search TV Shows"
-msgstr "חיפוש תוכנית טלוויזיה"
 
 msgctxt "#30202"
 msgid "Choose stream..."
@@ -602,49 +526,21 @@ msgctxt "#30216"
 msgid "Add Torrent"
 msgstr "הוספת טורנט"
 
-msgctxt "#30217"
-msgid "Paste Magnet or URL"
-msgstr "הדבקת קישור מגנט או כתובת אינטרנט"
-
 msgctxt "#30218"
 msgid "Next page"
 msgstr "עמוד הבא"
-
-msgctxt "#30219"
-msgid "Add / Remove from library"
-msgstr "הוספה/הסרה מהספרייה"
 
 msgctxt "#30220"
 msgid "Library path not set"
 msgstr "נתיב הספרייה לא מוגדר"
 
-msgctxt "#30221"
-msgid "Item successfully added to library"
-msgstr "פריט הוסף בהצלחה לספרייה"
-
-msgctxt "#30222"
-msgid "Item removed from library"
-msgstr "פריט הוסר בהצלחה מהספרייה"
-
-msgctxt "#30223"
-msgid "Files"
-msgstr "קבצים"
-
 msgctxt "#30224"
 msgid "Provider error"
 msgstr "שגיאת ספק"
 
-msgctxt "#30225"
-msgid "Navigation error"
-msgstr "שגיאת ניווט"
-
 msgctxt "#30226"
 msgid "Daemon error"
 msgstr "שגיאת שרת"
-
-msgctxt "#30227"
-msgid "Error updating Elementum daemon"
-msgstr "שגיאה בעדכון של שרת Elementum"
 
 msgctxt "#30228"
 msgid "Available streams for"
@@ -714,10 +610,6 @@ msgctxt "#30244"
 msgid "Provider settings"
 msgstr "הגדרות ספקים"
 
-msgctxt "#30245"
-msgid "Popular on Trakt"
-msgstr "פופולרי ב־Trakt"
-
 msgctxt "#30246"
 msgid "Trending"
 msgstr "טרנדי"
@@ -778,33 +670,9 @@ msgctxt "#30260"
 msgid "A torrent was previously chosen, use it?[CR]%s"
 msgstr "הטורנט הזה כבר נבחר בעבר, האם להשתמש בו?[CR]%s"
 
-msgctxt "#30261"
-msgid "Search history"
-msgstr "היסטוריית חיפוש"
-
-msgctxt "#30262"
-msgid "Use search history?"
-msgstr "האם להשתמש בהיסטוריית החיפוש?"
-
 msgctxt "#30263"
 msgid "My Lists"
 msgstr "רשימות"
-
-msgctxt "#30264"
-msgid "Reset clearances"
-msgstr "איפוס הסיווגים"
-
-msgctxt "#30265"
-msgid "Item already in library"
-msgstr "הפריט כבר בספרייה"
-
-msgctxt "#30266"
-msgid "Ignore duplicates"
-msgstr "התעלמות מכפילויות"
-
-msgctxt "#30267"
-msgid "Keep downloaded files?"
-msgstr "האם לשמור את הקבצים שהורדו?"
 
 msgctxt "#30268"
 msgid "Toggle watched"
@@ -813,10 +681,6 @@ msgstr "סימון כנצפה"
 msgctxt "#30269"
 msgid "Delete downloaded files '%s'?"
 msgstr "למחוק את הקבצים שהורדו '%s'?"
-
-msgctxt "#30270"
-msgid "Match found in your active torrents, play it?"
-msgstr "נמצאה התאמה ברשימת הטורנטים הפעילים, האם להשתמש בה?"
 
 msgctxt "#30271"
 msgid "There is now an official multi-provider for Elementum called [COLOR FFFF6B00]Burst[/COLOR], would you like to install it now?"
@@ -849,18 +713,6 @@ msgstr "%s נוסף לספריה. האם לסרוק אותה מחדש?[CR]אפש
 msgctxt "#30278"
 msgid "%s removed from library, do you want to clean it?[CR]You can later use Kodi's 'Clean library' feature instead."
 msgstr "%s הוסרה מהספריה, האם לנקות אותה?[CR]אפשר להשתמש מאוחר יותר גם באפשרות המובנית בקודי \"ניקוי ספריה\"."
-
-msgctxt "#30279"
-msgid "Watchlist added to library"
-msgstr "רשימת צפיה נוספה לספרייה"
-
-msgctxt "#30280"
-msgid "Collection added to library"
-msgstr "האוספים נוספות לספריה"
-
-msgctxt "#30281"
-msgid "List added to library"
-msgstr "הרשימות נוספו לספריה"
 
 msgctxt "#30282"
 msgid "Nothing left to remove from Elementum"
@@ -1007,7 +859,7 @@ msgid "Use memory"
 msgstr "שימוש בזכרון"
 
 msgctxt "#30318"
-msgid "Memory size to use for each torrent (Mb)"
+msgid "Memory size to use for each torrent, Mb"
 msgstr "כמות זיכרון לשימוש עבור כל טורנט (Mb)"
 
 msgctxt "#30319"
@@ -1021,10 +873,6 @@ msgstr "שאל האם לעצור"
 msgctxt "#30321"
 msgid "Stop"
 msgstr "עצור"
-
-msgctxt "#30322"
-msgid "Use Fat32 files"
-msgstr "שימוש במערכת קבצים Fat32"
 
 msgctxt "#30323"
 msgid "New search"
@@ -1058,10 +906,6 @@ msgctxt "#30330"
 msgid "Update Trakt"
 msgstr "עדכון Trakt"
 
-msgctxt "#30331"
-msgid "MMap File"
-msgstr "קובץ MMap"
-
 msgctxt "#30332"
 msgid "Reloading configuration..."
 msgstr "טוען הגדרות מחדש..."
@@ -1069,58 +913,6 @@ msgstr "טוען הגדרות מחדש..."
 msgctxt "#30333"
 msgid "Try to find other episodes in the torrent"
 msgstr "יש לנסות למצוא עוד פרקים בקובץ הטורנט"
-
-msgctxt "#30334"
-msgid "Migration"
-msgstr "הגירה"
-
-msgctxt "#30335"
-msgid "Quasar"
-msgstr "Quasar"
-
-msgctxt "#30336"
-msgid "Run migration"
-msgstr "הרצת הגירה"
-
-msgctxt "#30337"
-msgid "This operation will change strm files and cleanup Quasar library![CR]Are you sure you want to do it?"
-msgstr "הפעולה תשנה את קבצי strm ותנקה את ספריית Quasar![CR]האם להמשיך?"
-
-msgctxt "#30338"
-msgid "Looking for Quasar database"
-msgstr "מחפש מסד נתונים של Quasar"
-
-msgctxt "#30339"
-msgid "Searching strm files"
-msgstr "חיפוש קבצי strm"
-
-msgctxt "#30340"
-msgid "Performing strm migration"
-msgstr "מבצע הגירה לקבציי strm"
-
-msgctxt "#30341"
-msgid "Performing database migration"
-msgstr "מבצע הגירה למסד הנתונים"
-
-msgctxt "#30342"
-msgid "Cannot find Quasar userdata directory"
-msgstr "לא ניתן למצוא את ספריית userdata מ Quasar"
-
-msgctxt "#30343"
-msgid "Cannot find Quasar settings.xml path"
-msgstr "לא ניתן למצוא את הנתיב לקובץ settings.xml של Quasar"
-
-msgctxt "#30344"
-msgid "Cannot find Quasar library path"
-msgstr "לא ניתן למצוא את הנתיב לספריית Quasar"
-
-msgctxt "#30345"
-msgid "Successfully migrated items: %s"
-msgstr "בוצעה הגירה בהצלחה לפריטים: %s"
-
-msgctxt "#30346"
-msgid "Could not migrate any item"
-msgstr "לא ניתן לבצע הגירה לאף פריט"
 
 msgctxt "#30347"
 msgid "Could not find binary for architecture '%s'![CR]Try to uninstall this addon, re-download and re-install it from the biggest zip."
@@ -1146,21 +938,9 @@ msgctxt "#30352"
 msgid "Same as for usual file storage, but using memory[CR]to lower filesystem operations. Experimental storage!"
 msgstr "זהה לאחסון קבצים רגיל, אבל שימוש בזיכרון[CR]עבור פעולות ברמה בסיסית. אחסון ניסויי!"
 
-msgctxt "#30353"
-msgid "Auto-assign network ports"
-msgstr "הקצאה אוטומטית של פורטים ברשת"
-
-msgctxt "#30354"
-msgid "Could not start Torrent client. Please report to github with the Kodi log file!"
-msgstr "לא ניתן להפעיל את קליינט ה Torrent. אנא התייעצו בגיטהאב בצירוף קבצי הלוג!"
-
 msgctxt "#30355"
 msgid "Changelog"
 msgstr "רשימת שינויים"
-
-msgctxt "#30356"
-msgid "Not enough free memory!"
-msgstr "אין מספיק זכרון פנוי!"
 
 msgctxt "#30357"
 msgid "Use Trakt information in Trakt lists"
@@ -1206,10 +986,6 @@ msgctxt "#30367"
 msgid "Sync back Kodi watched states into Trakt"
 msgstr "סנכרון חזרה מקודי לTrakt"
 
-msgctxt "#30368"
-msgid "Use Public DNS (Google, Quad9, Opennic)"
-msgstr "שימוש בשרתי DNS ציבוריים (גוגל, Quad9, Opennic)"
-
 msgctxt "#30369"
 msgid "Disable Upload"
 msgstr "כיבוי העלאה"
@@ -1220,10 +996,6 @@ msgstr ""
 
 msgctxt "#30371"
 msgid "Auto-assign network ports"
-msgstr ""
-
-msgctxt "#30372"
-msgid "Force resume playback"
 msgstr ""
 
 msgctxt "#30373"
@@ -1274,10 +1046,6 @@ msgctxt "#30384"
 msgid "Language code for subtitles (example: en, it, es)"
 msgstr ""
 
-msgctxt "#30385"
-msgid "HTTPS"
-msgstr ""
-
 msgctxt "#30386"
 msgid "Disable background progress dialog on playback"
 msgstr ""
@@ -1287,7 +1055,7 @@ msgid "Caching"
 msgstr ""
 
 msgctxt "#30388"
-msgid "Cache selected streams"
+msgid "Cache stream selection"
 msgstr ""
 
 msgctxt "#30389"
@@ -1296,14 +1064,6 @@ msgstr ""
 
 msgctxt "#30390"
 msgid "Cache search results duration, seconds"
-msgstr ""
-
-msgctxt "#30391"
-msgid "List of public DNS IPs"
-msgstr ""
-
-msgctxt "#30392"
-msgid "List of Opennic DNS IPs"
 msgstr ""
 
 msgctxt "#30393"
@@ -1362,10 +1122,6 @@ msgctxt "#30406"
 msgid "Remove from history"
 msgstr ""
 
-msgctxt "#30407"
-msgid "Print only Error messages in the Kodi log"
-msgstr ""
-
 msgctxt "#30408"
 msgid "Plugin Connectivity"
 msgstr ""
@@ -1400,22 +1156,6 @@ msgstr ""
 
 msgctxt "#30416"
 msgid "Percents of playback to mark as watched"
-msgstr ""
-
-msgctxt "#30417"
-msgid "Add to Trakt, when movie/show is added to Kodi library"
-msgstr ""
-
-msgctxt "#30418"
-msgid "Add to ..."
-msgstr ""
-
-msgctxt "#30419"
-msgid "Remove from Trakt, when movie/show is deleted from Kodi library"
-msgstr ""
-
-msgctxt "#30420"
-msgid "Remove from ..."
 msgstr ""
 
 msgctxt "#30421"
@@ -1474,16 +1214,8 @@ msgctxt "#30434"
 msgid "Date format"
 msgstr ""
 
-msgctxt "#30435"
-msgid "Select userlist"
-msgstr ""
-
 msgctxt "#30436"
 msgid "Userlist"
-msgstr ""
-
-msgctxt "#30437"
-msgid "Selected userlist"
 msgstr ""
 
 msgctxt "#30438"
@@ -1650,10 +1382,6 @@ msgctxt "#30478"
 msgid "Searching"
 msgstr ""
 
-msgctxt "#30479"
-msgid "Automatically run Kodi library update after add/delete"
-msgstr ""
-
 msgctxt "#30480"
 msgid "Run Kodi library update after add/delete"
 msgstr ""
@@ -1675,11 +1403,11 @@ msgid "Create NFO files for TV Show scrapers"
 msgstr ""
 
 msgctxt "#30485"
-msgid "Concurrent connections limit"
+msgid "Concurrent connections limit per second"
 msgstr ""
 
 msgctxt "#30486"
-msgid "Automatic concurrent connections limit"
+msgid "Automatic concurrent connections limit per second"
 msgstr ""
 
 msgctxt "#30487"
@@ -1715,15 +1443,11 @@ msgid "Use Proxy for torrent downloading"
 msgstr ""
 
 msgctxt "#30495"
-msgid "Use internal DNS resolver"
+msgid "Use built-in DNS resolver"
 msgstr ""
 
 msgctxt "#30496"
-msgid "Turn off if you use Tor addresses, or you want to pass resolve to local network settings"
-msgstr ""
-
-msgctxt "#30497"
-msgid "Use antizapret proxy if possible"
+msgid "Turn off if you use Tor addresses, or you want to use DNS settings from OS"
 msgstr ""
 
 msgctxt "#30498"
@@ -1738,12 +1462,8 @@ msgctxt "#30500"
 msgid "Automatically adjust buffer size[CR]for heavy torrents"
 msgstr ""
 
-msgctxt "#30501"
-msgid "Filter files with size less than, MB"
-msgstr ""
-
 msgctxt "#30502"
-msgid "Adjust buffer according to Kodi advancedsettings, if set"
+msgid "Adjust buffer according to Kodi advancedsettings.xml, if set"
 msgstr ""
 
 msgctxt "#30503"
@@ -1760,22 +1480,6 @@ msgstr ""
 
 msgctxt "#30506"
 msgid "Enable libtorrent logging"
-msgstr ""
-
-msgctxt "#30507"
-msgid "Magnet trackers"
-msgstr ""
-
-msgctxt "#30508"
-msgid "Leave as is"
-msgstr ""
-
-msgctxt "#30509"
-msgid "Remove all"
-msgstr ""
-
-msgctxt "#30510"
-msgid "Add retrackers"
 msgstr ""
 
 msgctxt "#30511"
@@ -1831,7 +1535,7 @@ msgid "Minimum file size for Movies, MB"
 msgstr ""
 
 msgctxt "#30524"
-msgid "Minimum file size for Shows, per minute, MB"
+msgid "Minimum file size for Shows, MB per minute"
 msgstr ""
 
 msgctxt "#30525"
@@ -1866,14 +1570,6 @@ msgctxt "#30532"
 msgid "Stop Downloading all files"
 msgstr ""
 
-msgctxt "#30533"
-msgid "Store Resume position for downloaded files"
-msgstr ""
-
-msgctxt "#30534"
-msgid "Ask to use stored Resume position"
-msgstr ""
-
 msgctxt "#30535"
 msgid "Continue playback from [COLOR gold][B]%s[/B][/COLOR]?"
 msgstr ""
@@ -1903,7 +1599,7 @@ msgid "Automatic Subtitles Search"
 msgstr ""
 
 msgctxt "#30542"
-msgid "Disabled if subtitles available in player"
+msgid "Disable if subtitles are available in player"
 msgstr ""
 
 msgctxt "#30543"
@@ -1931,7 +1627,7 @@ msgid "Find in overall"
 msgstr ""
 
 msgctxt "#30549"
-msgid "Number of results to find"
+msgid "Search is successful when found N results"
 msgstr ""
 
 msgctxt "#30550"
@@ -1987,7 +1683,7 @@ msgid "Open directory with Kodi file browser"
 msgstr ""
 
 msgctxt "#30563"
-msgid "Synchronize frequency of Trakt (minutes)"
+msgid "Synchronize frequency of Trakt, minutes"
 msgstr ""
 
 msgctxt "#30564"
@@ -2023,7 +1719,7 @@ msgid "* All seasons"
 msgstr ""
 
 msgctxt "#30572"
-msgid "Log response body"
+msgid "Log server's response body"
 msgstr ""
 
 msgctxt "#30573"
@@ -2043,11 +1739,11 @@ msgid "Trakt authentication needs to be updated!"
 msgstr ""
 
 msgctxt "#30577"
-msgid "End of file Buffer size (MB)"
+msgid "End of file Buffer size, MB"
 msgstr ""
 
 msgctxt "#30578"
-msgid "Beginning of file Buffer size (MB)"
+msgid "Beginning of file Buffer size, MB"
 msgstr ""
 
 msgctxt "#30579"
@@ -2068,10 +1764,6 @@ msgstr ""
 
 msgctxt "#30583"
 msgid "Resolving magnet link"
-msgstr ""
-
-msgctxt "#30584"
-msgid "Remove multiple plays from history, leave 1"
 msgstr ""
 
 msgctxt "#30585"
@@ -2099,7 +1791,7 @@ msgid "Torrents autoload on plugin startup"
 msgstr ""
 
 msgctxt "#30591"
-msgid "Connection limits"
+msgid "Limits for connections"
 msgstr ""
 
 msgctxt "#30592"
@@ -2107,7 +1799,7 @@ msgid "Seeding"
 msgstr ""
 
 msgctxt "#30593"
-msgid "Seed forever (unless disk space needed)"
+msgid "Seed forever"
 msgstr ""
 
 msgctxt "#30594"
@@ -2118,12 +1810,8 @@ msgctxt "#30595"
 msgid "Miscellaneous"
 msgstr ""
 
-msgctxt "#30596"
-msgid "Enable read/write caching for storage"
-msgstr ""
-
 msgctxt "#30597"
-msgid "Cache size (MB)"
+msgid "Cache size, MB"
 msgstr ""
 
 msgctxt "#30598"
@@ -2143,7 +1831,7 @@ msgid "Enable synchronization while playback"
 msgstr ""
 
 msgctxt "#30602"
-msgid "Retry plugin requests after timeout (seconds)"
+msgid "Retry requests to plugin after timeout, seconds"
 msgstr ""
 
 msgctxt "#30603"
@@ -2155,7 +1843,7 @@ msgid "Clean all history"
 msgstr ""
 
 msgctxt "#30605"
-msgid "Cache downloaded torrent files after searches"
+msgid "Cache downloaded torrent files after search"
 msgstr ""
 
 msgctxt "#30606"
@@ -2175,7 +1863,7 @@ msgid "Automatically start next episode if available"
 msgstr ""
 
 msgctxt "#30610"
-msgid "Magnet resolve timeout (seconds)"
+msgid "Magnet resolve timeout, seconds"
 msgstr ""
 
 msgctxt "#30611"
@@ -2362,30 +2050,30 @@ msgctxt "#30656"
 msgid "All files"
 msgstr ""
 
-#~ msgctxt "#30028"
-#~ msgid "Do not ask to keep downloading"
-#~ msgstr "לא לשאול האם להמשיך להוריד"
+msgctxt "#30657"
+msgid "Disable LSD"
+msgstr ""
 
-#~ msgctxt "#30095"
-#~ msgid "Resume playback from library integration"
-#~ msgstr "המשך צפיה באינטגרציה עם הספריה"
+msgctxt "#30658"
+msgid "Add extra trackers"
+msgstr ""
 
-#~ msgctxt "#30025"
-#~ msgid "Limit rates after buffering only"
-#~ msgstr "הגבלת קצב לאחר התחלת הניגון"
+msgctxt "#30659"
+msgid "All known trackers"
+msgstr ""
 
-#~ msgctxt "#30103"
-#~ msgid "Unable to find Elementum binary"
-#~ msgstr "אין אפשרות למצוא את קובץ ההרצה של Elementum"
+msgctxt "#30660"
+msgid "Best trackers"
+msgstr ""
 
-#~ msgctxt "#30093"
-#~ msgid "Do Not Disturb mode"
-#~ msgstr "מצב נא לא להפריע"
+msgctxt "#30661"
+msgid "Minimum set"
+msgstr ""
 
-#~ msgctxt "#30028"
-#~ msgid "Background handling of torrents"
-#~ msgstr "ניהול הורדת בטורנטים ברקע"
+msgctxt "#30662"
+msgid "Remove original trackers from torrent"
+msgstr ""
 
-#~ msgctxt "#30021"
-#~ msgid "Enable pagination"
-#~ msgstr "הפעלת עימוד"
+msgctxt "#30663"
+msgid "Show episodes on release day (w/o delay)"
+msgstr ""
