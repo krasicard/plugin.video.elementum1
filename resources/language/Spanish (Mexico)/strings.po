@@ -1477,22 +1477,6 @@ msgctxt "#30506"
 msgid "Enable libtorrent logging"
 msgstr ""
 
-msgctxt "#30507"
-msgid "Magnet trackers"
-msgstr ""
-
-msgctxt "#30508"
-msgid "Leave as is"
-msgstr ""
-
-msgctxt "#30509"
-msgid "Remove all"
-msgstr ""
-
-msgctxt "#30510"
-msgid "Add retrackers"
-msgstr ""
-
 msgctxt "#30511"
 msgid "Libtorrent settings profile"
 msgstr ""
@@ -2060,23 +2044,3 @@ msgstr ""
 msgctxt "#30656"
 msgid "All files"
 msgstr ""
-
-#~ msgctxt "#30001"
-#~ msgid "Download path (not FAT32)"
-#~ msgstr "Ruta para descargar (NO FAT32)"
-
-#~ msgctxt "#30021"
-#~ msgid "Enable pagination"
-#~ msgstr "Activar paginación"
-
-#~ msgctxt "#30025"
-#~ msgid "Limit rates after buffering only"
-#~ msgstr "Limitar tasas después de hacer buffering"
-
-#~ msgctxt "#30028"
-#~ msgid "Background handling of torrents"
-#~ msgstr "Procesar torrents en segundo plano"
-
-#~ msgctxt "#30103"
-#~ msgid "Unable to find Elementum binary"
-#~ msgstr "No se ha encontrado el binario de Elementum"

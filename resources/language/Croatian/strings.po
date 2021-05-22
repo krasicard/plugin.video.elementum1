@@ -1481,22 +1481,6 @@ msgctxt "#30506"
 msgid "Enable libtorrent logging"
 msgstr "Omogući libtorrent zapisivanje"
 
-msgctxt "#30507"
-msgid "Magnet trackers"
-msgstr "Magnet pratitelji"
-
-msgctxt "#30508"
-msgid "Leave as is"
-msgstr "Ostavi kako jest"
-
-msgctxt "#30509"
-msgid "Remove all"
-msgstr "Ukloni sve"
-
-msgctxt "#30510"
-msgid "Add retrackers"
-msgstr "Dodaj ponovno pratitelje"
-
 msgctxt "#30511"
 msgid "Libtorrent settings profile"
 msgstr "Libtorrent postavka profila"
@@ -2064,35 +2048,3 @@ msgstr ""
 msgctxt "#30656"
 msgid "All files"
 msgstr ""
-
-#~ msgctxt "#30398"
-#~ msgid "Debug information"
-#~ msgstr "Informacije otklanjanja greške"
-
-#~ msgctxt "#30001"
-#~ msgid "Download path (not FAT32)"
-#~ msgstr "Lokacija preuzimanja (ne FAT32)"
-
-#~ msgctxt "#30021"
-#~ msgid "Enable pagination"
-#~ msgstr "Omogući pagination"
-
-#~ msgctxt "#30025"
-#~ msgid "Limit rates after buffering only"
-#~ msgstr "Ograniči brzinu nakon završetka međuspremanja"
-
-#~ msgctxt "#30028"
-#~ msgid "Background handling of torrents"
-#~ msgstr "Pozadinsko rukovanje torrentima"
-
-#~ msgctxt "#30075"
-#~ msgid "Default from libtorrent (acceptable)"
-#~ msgstr "Zadano iz libtorrenta (preporučljivo)"
-
-#~ msgctxt "#30103"
-#~ msgid "Unable to find Elementum binary"
-#~ msgstr "Nemoguć pronalazak Elementumove binarne datoteke"
-
-#~ msgctxt "#30230"
-#~ msgid "Play/resume torrent"
-#~ msgstr "Gledaj/nastavi torrent"

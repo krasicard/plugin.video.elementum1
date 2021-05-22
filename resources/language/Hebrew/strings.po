@@ -1482,22 +1482,6 @@ msgctxt "#30506"
 msgid "Enable libtorrent logging"
 msgstr ""
 
-msgctxt "#30507"
-msgid "Magnet trackers"
-msgstr ""
-
-msgctxt "#30508"
-msgid "Leave as is"
-msgstr ""
-
-msgctxt "#30509"
-msgid "Remove all"
-msgstr ""
-
-msgctxt "#30510"
-msgid "Add retrackers"
-msgstr ""
-
 msgctxt "#30511"
 msgid "Libtorrent settings profile"
 msgstr ""
@@ -2065,27 +2049,3 @@ msgstr ""
 msgctxt "#30656"
 msgid "All files"
 msgstr ""
-
-#~ msgctxt "#30028"
-#~ msgid "Do not ask to keep downloading"
-#~ msgstr "לא לשאול האם להמשיך להוריד"
-
-#~ msgctxt "#30025"
-#~ msgid "Limit rates after buffering only"
-#~ msgstr "הגבלת קצב לאחר התחלת הניגון"
-
-#~ msgctxt "#30103"
-#~ msgid "Unable to find Elementum binary"
-#~ msgstr "אין אפשרות למצוא את קובץ ההרצה של Elementum"
-
-#~ msgctxt "#30093"
-#~ msgid "Do Not Disturb mode"
-#~ msgstr "מצב נא לא להפריע"
-
-#~ msgctxt "#30028"
-#~ msgid "Background handling of torrents"
-#~ msgstr "ניהול הורדת בטורנטים ברקע"
-
-#~ msgctxt "#30021"
-#~ msgid "Enable pagination"
-#~ msgstr "הפעלת עימוד"

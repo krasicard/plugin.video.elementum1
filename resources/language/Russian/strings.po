@@ -1478,22 +1478,6 @@ msgctxt "#30506"
 msgid "Enable libtorrent logging"
 msgstr "Включить журнал libtorrent"
 
-msgctxt "#30507"
-msgid "Magnet trackers"
-msgstr "Magnet трекеры"
-
-msgctxt "#30508"
-msgid "Leave as is"
-msgstr "Оставить как есть"
-
-msgctxt "#30509"
-msgid "Remove all"
-msgstr "Удалить все"
-
-msgctxt "#30510"
-msgid "Add retrackers"
-msgstr "Добавить ретрекеры"
-
 msgctxt "#30511"
 msgid "Libtorrent settings profile"
 msgstr "Профиль настроек Libtorrent"

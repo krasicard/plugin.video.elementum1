@@ -1478,22 +1478,6 @@ msgctxt "#30506"
 msgid "Enable libtorrent logging"
 msgstr "Activar logging de libtorrent"
 
-msgctxt "#30507"
-msgid "Magnet trackers"
-msgstr "Trackers Magnet"
-
-msgctxt "#30508"
-msgid "Leave as is"
-msgstr "Dejar como está"
-
-msgctxt "#30509"
-msgid "Remove all"
-msgstr "Borrar todo"
-
-msgctxt "#30510"
-msgid "Add retrackers"
-msgstr "Añadir retrackers"
-
 msgctxt "#30511"
 msgid "Libtorrent settings profile"
 msgstr "Perfil de ajustes libtorrent"

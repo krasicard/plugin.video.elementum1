@@ -1481,22 +1481,6 @@ msgctxt "#30506"
 msgid "Enable libtorrent logging"
 msgstr "Aktivera libtorrent-loggning"
 
-msgctxt "#30507"
-msgid "Magnet trackers"
-msgstr "Magnet-bevakare"
-
-msgctxt "#30508"
-msgid "Leave as is"
-msgstr "Låt det vara"
-
-msgctxt "#30509"
-msgid "Remove all"
-msgstr "Ta bort alla"
-
-msgctxt "#30510"
-msgid "Add retrackers"
-msgstr "Lägg till återbevakare"
-
 msgctxt "#30511"
 msgid "Libtorrent settings profile"
 msgstr "Libtorrent-inställningsprofil"
