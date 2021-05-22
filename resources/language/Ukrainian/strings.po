@@ -44,10 +44,6 @@ msgctxt "#30008"
 msgid "Proxy"
 msgstr "Проксі"
 
-msgctxt "#30009"
-msgid "SOCKS v5 Configuration"
-msgstr "SOCKS v5 налаштування"
-
 msgctxt "#30010"
 msgid "Enabled"
 msgstr "Увімкнути"
