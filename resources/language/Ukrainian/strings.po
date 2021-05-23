@@ -26,7 +26,7 @@ msgstr "Тека завантаження"
 
 msgctxt "#30004"
 msgid "Max upload rate, kB/s"
-msgstr "Максимальна швидкість віддач, кБ/с"
+msgstr "Максимальна швидкість віддачі, кБ/с"
 
 msgctxt "#30005"
 msgid "Max download rate, kB/s"
@@ -379,7 +379,7 @@ msgstr "Файл"
 
 msgctxt "#30107"
 msgid "Insert URL"
-msgstr "Вкажить URL"
+msgstr "Вкажіть URL"
 
 msgctxt "#30108"
 msgid "File path"
@@ -447,7 +447,7 @@ msgstr "Кеш ще не заповнився, зачекайте хвилинк
 
 msgctxt "#30148"
 msgid "Caches warmed up"
-msgstr "Кеш цілком заповнен"
+msgstr "Кеш цілком заповнений"
 
 msgctxt "#30149"
 msgid "Trakt username not set, check your settings"
@@ -496,7 +496,7 @@ msgstr "Пошук"
 
 msgctxt "#30210"
 msgid "Most Popular"
-msgstr "Найпопулярниші"
+msgstr "Найпопулярніші"
 
 msgctxt "#30211"
 msgid "Top Rated"
@@ -504,7 +504,7 @@ msgstr "З кращим рейтингом"
 
 msgctxt "#30212"
 msgid "Most Voted"
-msgstr "Найоцінюваніши"
+msgstr "Найоцінюваніші"
 
 msgctxt "#30213"
 msgid "IMDB Top 250"
@@ -528,7 +528,7 @@ msgstr "Наступна сторінка"
 
 msgctxt "#30220"
 msgid "Library path not set"
-msgstr "Теку бібліотеці не визначено"
+msgstr "Теку бібліотеки не визначено"
 
 msgctxt "#30224"
 msgid "Provider error"
@@ -624,7 +624,7 @@ msgstr "В обраному"
 
 msgctxt "#30250"
 msgid "Most Anticipated"
-msgstr "Найочікуваніши"
+msgstr "Найочікуваніші"
 
 msgctxt "#30251"
 msgid "Box Office"
@@ -632,7 +632,7 @@ msgstr "В прокаті"
 
 msgctxt "#30252"
 msgid "Add to library"
-msgstr "Додати до бібліотеці"
+msgstr "Додати до бібліотеки"
 
 msgctxt "#30253"
 msgid "Remove from library"
@@ -788,7 +788,7 @@ msgstr "Всі Прем'єри"
 
 msgctxt "#30301"
 msgid "Move finished downloads to separate folders"
-msgstr "Переміщувати завантаження після опрацування до теці"
+msgstr "Перемістити до теки після завантаження"
 
 msgctxt "#30302"
 msgid "Files will only be moved after seeding is finished (see[CR]- BitTorrent settings), and will wait if currently playing"
@@ -796,7 +796,7 @@ msgstr "Файли буде переміщено після сідування"
 
 msgctxt "#30303"
 msgid "RAR archive detected. Download will need to be completed before playback can start and will require around twice the amount of space, continue?"
-msgstr "Архів RAR знайдено. Має буте завантажено заздалегідь та необхідно майже вдвічи більше вільного місця."
+msgstr "Архів RAR знайдено. Має буте завантажено заздалегідь та необхідно майже вдвічі більше вільного місця."
 
 msgctxt "#30304"
 msgid "Error creating output pipe for 'unrar' command"
@@ -808,7 +808,7 @@ msgstr "Помилка разархивування"
 
 msgctxt "#30306"
 msgid "Error waiting for 'unrar' command"
-msgstr "Помилка очикування разархивування"
+msgstr "Помилка очікування разархивування"
 
 msgctxt "#30307"
 msgid "Error reading from destination folder"
@@ -820,11 +820,11 @@ msgstr "Перенесення закінчено"
 
 msgctxt "#30309"
 msgid "Keep"
-msgstr "Утримувати"
+msgstr "Залишити"
 
 msgctxt "#30310"
 msgid "Ask to delete"
-msgstr "Запитувати про видаленя"
+msgstr "Запитувати про видалення"
 
 msgctxt "#30311"
 msgid "Delete"
@@ -832,15 +832,15 @@ msgstr "Видалити"
 
 msgctxt "#30312"
 msgid "Keep files for not finished video"
-msgstr "Утримувати файли для непереглянутого видива"
+msgstr "Утримувати файли для непереглянутого відео"
 
 msgctxt "#30313"
 msgid "Keep files for watched/downloaded video"
-msgstr "Утримувати файли для перглянутого видива"
+msgstr "Утримувати файли для переглянутого відео"
 
 msgctxt "#30314"
 msgid "Settings were not initialized.[CR]Save addon settings, then restart Kodi."
-msgstr "Налаштування не завантажені.[CR]Збередіть налаштування та перезапустить к завантажувати торенти"
+msgstr "Налаштування не завантажені.[CR]Збережіть налаштування та перезапустіть Kodi"
 
 msgctxt "#30315"
 msgid "Download storage type"
@@ -848,15 +848,15 @@ msgstr "Як завантажувати"
 
 msgctxt "#30316"
 msgid "Use files"
-msgstr "Використовуючі файли"
+msgstr "Використовуючи файли"
 
 msgctxt "#30317"
 msgid "Use memory"
-msgstr "Використовуючі пам'ять"
+msgstr "Використовуючи пам'ять"
 
 msgctxt "#30318"
 msgid "Memory size to use for each torrent, Mb"
-msgstr "Пам'ять на кожний торент, Мб"
+msgstr "Пам'ять на кожен торент, Мб"
 
 msgctxt "#30319"
 msgid "Continue"
@@ -868,7 +868,7 @@ msgstr "Запит чи зупиняти"
 
 msgctxt "#30321"
 msgid "Stop"
-msgstr "Зупинить"
+msgstr "Зупинити"
 
 msgctxt "#30323"
 msgid "New search"
@@ -952,7 +952,7 @@ msgstr "Не запитувати перед відтворюванням"
 
 msgctxt "#30360"
 msgid "My Progress"
-msgstr "Моє видиво"
+msgstr "Моє відео"
 
 msgctxt "#30361"
 msgid "My History"
@@ -960,7 +960,7 @@ msgstr "Моя історія"
 
 msgctxt "#30362"
 msgid "Synchronization"
-msgstr "Сінхронизація"
+msgstr "Синхронізація"
 
 msgctxt "#30363"
 msgid "Sync items from collections into Kodi library"
@@ -1008,15 +1008,15 @@ msgstr "за розміром"
 
 msgctxt "#30376"
 msgid "Choose memory size automatically"
-msgstr "Обирати розмір пам'яти автоматично"
+msgstr "Обирати розмір пам'яті автоматично"
 
 msgctxt "#30377"
 msgid "Size is chosen automatically, based on[CR]physical amount of memory"
-msgstr "Розмір обран автоматично"
+msgstr "Розмір обраний автоматично"
 
 msgctxt "#30378"
 msgid "Allow memory usage"
-msgstr "Дозволяти використування пам'яти"
+msgstr "Дозволяти використування пам'яті"
 
 msgctxt "#30379"
 msgid "Minimum - 40MB, Default - 8%, Maximum - 15%"
@@ -1876,7 +1876,7 @@ msgstr "... для фильмів"
 
 msgctxt "#30614"
 msgid "... for tv show"
-msgstr "... для сериалів"
+msgstr "... для серіалів"
 
 msgctxt "#30615"
 msgid "... for search"
@@ -1916,7 +1916,7 @@ msgstr "Пошук"
 
 msgctxt "#30624"
 msgid "Downloading"
-msgstr "Загружається"
+msgstr "Завантажується"
 
 msgctxt "#30625"
 msgid "Finished"
@@ -1936,11 +1936,11 @@ msgstr "Завмерлий"
 
 msgctxt "#30629"
 msgid "Paused"
-msgstr "Призипинен"
+msgstr "Призупинений"
 
 msgctxt "#30630"
 msgid "Buffering"
-msgstr "Буферізиеться"
+msgstr "Буферізується"
 
 msgctxt "#30631"
 msgid "Playing"
@@ -1992,15 +1992,15 @@ msgstr "Форсувати пергляд"
 
 msgctxt "#30643"
 msgid "by Kodi"
-msgstr "за доромогою Kodi-"
+msgstr "за допомогою Kodi"
 
 msgctxt "#30644"
 msgid "by Elementum - Ask"
-msgstr "за плагіном--питати"
+msgstr "за плагіном - питати"
 
 msgctxt "#30645"
 msgid "by Elementum - Force"
-msgstr "за плагіном-формувати"
+msgstr "за плагіном - формувати"
 
 msgctxt "#30646"
 msgid "Authorize Elementum on Trakt.tv"
