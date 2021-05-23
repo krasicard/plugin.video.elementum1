@@ -29,11 +29,11 @@ msgstr "Hämtningssökväg"
 
 msgctxt "#30004"
 msgid "Max upload rate, kB/s"
-msgstr "Max sändningshastighet (kB/s)"
+msgstr "Max sändningshastighet, kB/s"
 
 msgctxt "#30005"
 msgid "Max download rate, kB/s"
-msgstr "Max hämtningshastighet (kB/s)"
+msgstr "Max hämtningshastighet, kB/s"
 
 msgctxt "#30006"
 msgid "Listen port, min"
@@ -41,7 +41,7 @@ msgstr "Lyssningsport min"
 
 msgctxt "#30007"
 msgid "Listen port, max"
-msgstr "Lyssningsport max"
+msgstr "Lyssningsport, max"
 
 msgctxt "#30008"
 msgid "Proxy"
@@ -73,15 +73,15 @@ msgstr "Avancerat"
 
 msgctxt "#30016"
 msgid "Redefine providers timeout"
-msgstr "Anpassad tidsgräns för leverantör"
+msgstr "Omdefiniera tidsgräns för leverantörer"
 
 msgctxt "#30017"
 msgid "Enabled (might lead to slow speed)"
-msgstr "Aktiverad (använd på egen risk)"
+msgstr "Aktiverad (kan leda till låg hastighet)"
 
 msgctxt "#30018"
 msgid "Timeout, seconds"
-msgstr "Tidsgräns i sekunder"
+msgstr "Tidsgräns, sekunder"
 
 msgctxt "#30019"
 msgid "Maintenance"
@@ -89,7 +89,7 @@ msgstr "Underhåll"
 
 msgctxt "#30021"
 msgid "Elements per page"
-msgstr "Resultat per sida"
+msgstr "Element per sida"
 
 msgctxt "#30022"
 msgid "Enable overlay status"
@@ -117,7 +117,7 @@ msgstr "Hämtning efter uppspelning stoppades"
 
 msgctxt "#30029"
 msgid "Session saving frequency, seconds"
-msgstr "Sessionsbesparingsfrekvens (sekunder)"
+msgstr "Sessionsbesparingsfrekvens, sekunder"
 
 msgctxt "#30030"
 msgid "Overlay status vertical offset"
@@ -125,7 +125,7 @@ msgstr "Överlagringsstatus vertikal förskjutning"
 
 msgctxt "#30031"
 msgid "Disable providers that failed health check"
-msgstr "Inaktivera leverantörer som misslyckas med hälsokontroll"
+msgstr "Inaktivera leverantörer som misslyckades med hälsokontroll"
 
 msgctxt "#30032"
 msgid "Allowed failures before provider is disabled"
@@ -177,7 +177,7 @@ msgstr "Sorteringsläge för TV-serier"
 
 msgctxt "#30044"
 msgid "By seeders"
-msgstr "Efter distributörer"
+msgstr "Efter delare"
 
 msgctxt "#30045"
 msgid "By resolution"
@@ -197,7 +197,7 @@ msgstr "Upplösningsinställning för TV-serier"
 
 msgctxt "#30049"
 msgid "Percentage of additional seeders required before choosing next resolution"
-msgstr "Procent av ytterligare distributörer som krävs innan du väljer nästa upplösning"
+msgstr "Procent av ytterligare delare som krävs innan du väljer nästa upplösning"
 
 msgctxt "#30050"
 msgid "Disable DHT"
@@ -205,15 +205,15 @@ msgstr "Inaktivera DHT"
 
 msgctxt "#30051"
 msgid "Share ratio limit, percentage"
-msgstr "Gräns för delningskvot (procent)"
+msgstr "Gräns för delningskvot, procent"
 
 msgctxt "#30052"
 msgid "Seed time ratio limit, percentage"
-msgstr "Kvotgräns för distributionstid (procent)"
+msgstr "Kvotgräns för delningstid (procent)"
 
 msgctxt "#30053"
 msgid "Seed time limit, hours"
-msgstr "Distributionstidsgräns (timmar)"
+msgstr "Tidsgräns för delning, timmar"
 
 msgctxt "#30054"
 msgid "Update library"
@@ -233,11 +233,11 @@ msgstr "Användarnamn"
 
 msgctxt "#30059"
 msgid "Library update delay on startup, seconds"
-msgstr "Biblioteksuppdateringsfördröjning vid start (sekunder)"
+msgstr "Biblioteksuppdateringsfördröjning vid start, sekunder"
 
 msgctxt "#30060"
 msgid "Library update frequency, hours"
-msgstr "Biblioteksuppdateringsfrekvens (timmar)"
+msgstr "Biblioteksuppdateringsfrekvens, timmar"
 
 msgctxt "#30063"
 msgid "Disable UPNP & NATPMP"
@@ -329,7 +329,7 @@ msgstr "Aktivera inställda lagringsinställningar"
 
 msgctxt "#30088"
 msgid "Initial buffering timeout, seconds"
-msgstr "Tidsgräns för initial buffring (sekunder)"
+msgstr "Tidsgräns för initial buffring, sekunder"
 
 msgctxt "#30089"
 msgid "Automatically re-scan Kodi library after updates"
@@ -345,7 +345,7 @@ msgstr "Utgående gränssnitt"
 
 msgctxt "#30092"
 msgid "Use fallback fanart if fanart wasn't found"
-msgstr "Använd standard fanart"
+msgstr "Använd reserv fanart om fanart inte hittades"
 
 msgctxt "#30093"
 msgid "Disable notification sound"
@@ -795,7 +795,7 @@ msgstr "Flytta slutförda hämtningar till separata mappar"
 
 msgctxt "#30302"
 msgid "Files will only be moved after seeding is finished (see[CR]- BitTorrent settings), and will wait if currently playing"
-msgstr "Filer flyttas bara efter att distribueringen är klar (se[CR]- BitTorrent-inställningar) och väntar om de spelas för närvarande"
+msgstr "Filer flyttas bara efter att delningen är klar (se[CR]- BitTorrent-inställningar) och väntar om de spelas för närvarande"
 
 msgctxt "#30303"
 msgid "RAR archive detected. Download will need to be completed before playback can start and will require around twice the amount of space, continue?"
@@ -859,7 +859,7 @@ msgstr "Använd minne"
 
 msgctxt "#30318"
 msgid "Memory size to use for each torrent, Mb"
-msgstr "Minnesstorlek som ska användas för varje torrent (Mb)"
+msgstr "Minnesstorlek som ska användas för varje torrent, Mb"
 
 msgctxt "#30319"
 msgid "Continue"
@@ -1403,7 +1403,7 @@ msgstr "Skapa NFO-filer för TV-serieskrapor"
 
 msgctxt "#30485"
 msgid "Concurrent connections limit per second"
-msgstr "Samtidiga gränser för anslutningar"
+msgstr "Samtidiga gränser för anslutningar per sekund"
 
 msgctxt "#30486"
 msgid "Automatic concurrent connections limit per second"
@@ -1443,11 +1443,11 @@ msgstr "Använd proxy för hämtning av torrent"
 
 msgctxt "#30495"
 msgid "Use built-in DNS resolver"
-msgstr "Använd intern DNS-resolver"
+msgstr "Använd inbyggda DNS-lösare"
 
 msgctxt "#30496"
 msgid "Turn off if you use Tor addresses, or you want to use DNS settings from OS"
-msgstr "Stäng av om du använder Tor-adresser, eller om du vill skicka lösning till lokala nätverksinställningar"
+msgstr "Stäng av om du använder TOR-adresser, eller du vill använda DNS-inställningar från operativsystemet"
 
 msgctxt "#30498"
 msgid "Reset this path to '/'"
@@ -1463,7 +1463,7 @@ msgstr "Justera automatiskt buffertstorlek[CR]för tunga torrents"
 
 msgctxt "#30502"
 msgid "Adjust buffer according to Kodi advancedsettings.xml, if set"
-msgstr "Justera bufferten enligt Kodis avancerade inställningar, om den är inställd"
+msgstr "Justera bufferten enligt Kodis advancedsettings.xml, om inställd"
 
 msgctxt "#30503"
 msgid "Use libtorrent.config to override torrent engine settings"
@@ -1535,7 +1535,7 @@ msgstr "Minimum filstorlek för filmer, MB"
 
 msgctxt "#30524"
 msgid "Minimum file size for Shows, MB per minute"
-msgstr "Minimum filstorlek för serier, per minut, MB"
+msgstr "Minimum filstorlek för serier, MB per minut"
 
 msgctxt "#30525"
 msgid "Automatically start downloading next episode"
@@ -1599,7 +1599,7 @@ msgstr "Automatisk undertextsökning"
 
 msgctxt "#30542"
 msgid "Disable if subtitles are available in player"
-msgstr "Inaktiverad om undertexter finns i spelaren"
+msgstr "Inaktivera om undertexter finns i spelaren"
 
 msgctxt "#30543"
 msgid "Subtitles included in torrent"
@@ -1627,7 +1627,7 @@ msgstr "Hitta totalt"
 
 msgctxt "#30549"
 msgid "Search is successful when found N results"
-msgstr "Antal resultat att hitta"
+msgstr "Sökningen lyckas när N resultat hittas"
 
 msgctxt "#30550"
 msgid "What to search"
@@ -1683,7 +1683,7 @@ msgstr "Öppna mappen med Kodi-filhanteraren"
 
 msgctxt "#30563"
 msgid "Synchronize frequency of Trakt, minutes"
-msgstr "Synkronisera frekvensen för Trakt (minuter)"
+msgstr "Synkronisera frekvensen för Trakt, minuter"
 
 msgctxt "#30564"
 msgid "Sync hidden items"
@@ -1719,7 +1719,7 @@ msgstr "* Alla säsonger"
 
 msgctxt "#30572"
 msgid "Log server's response body"
-msgstr "Text för loggsvar"
+msgstr "Loggserverens svarstext"
 
 msgctxt "#30573"
 msgid "Select file to play"
@@ -1739,11 +1739,11 @@ msgstr "Trakt-autentisering måste uppdateras!"
 
 msgctxt "#30577"
 msgid "End of file Buffer size, MB"
-msgstr "Slut på filbuffertstorlek (MB)"
+msgstr "Slut på filbuffertstorlek, MB"
 
 msgctxt "#30578"
 msgid "Beginning of file Buffer size, MB"
-msgstr "Början av filbuffertstorlek (MB)"
+msgstr "Början av filbuffertstorlek, MB"
 
 msgctxt "#30579"
 msgid "Settings"
@@ -1791,15 +1791,15 @@ msgstr "Torrenter läses in automatiskt vid tilläggsstart"
 
 msgctxt "#30591"
 msgid "Limits for connections"
-msgstr "Anslutningsgränser"
+msgstr "Gränser för anslutningar"
 
 msgctxt "#30592"
 msgid "Seeding"
-msgstr "Distribuerar"
+msgstr "Delar"
 
 msgctxt "#30593"
 msgid "Seed forever"
-msgstr "Distribuera för alltid (såvida inte diskutrymme behövs)"
+msgstr "Dela för alltid"
 
 msgctxt "#30594"
 msgid "Network"
@@ -1811,7 +1811,7 @@ msgstr "Diverse"
 
 msgctxt "#30597"
 msgid "Cache size, MB"
-msgstr "Cachestorlek (MB)"
+msgstr "Cachestorlek, MB"
 
 msgctxt "#30598"
 msgid "Enable caching if using File storage and have speed problems.[CR]Will use more memory, but can improve the speed."
@@ -1831,7 +1831,7 @@ msgstr "Aktivera synkronisering under uppspelning"
 
 msgctxt "#30602"
 msgid "Retry requests to plugin after timeout, seconds"
-msgstr "Försök igen tilläggsförfrågningar efter att tiden gått ut (sekunder)"
+msgstr "Skicka förfrågningar igen till tillägg efter att tiden gått ut, sekunder"
 
 msgctxt "#30603"
 msgid "Addon Startup"
@@ -1843,7 +1843,7 @@ msgstr "Rensa all historik"
 
 msgctxt "#30605"
 msgid "Cache downloaded torrent files after search"
-msgstr "Cacha hämtade torrentfiler efter sökningar"
+msgstr "Cacha hämtade torrentfiler efter sökning"
 
 msgctxt "#30606"
 msgid "Show watched state for torrent's files"
@@ -1863,7 +1863,7 @@ msgstr "Starta nästa avsnitt automatiskt om tillgängligt"
 
 msgctxt "#30610"
 msgid "Magnet resolve timeout, seconds"
-msgstr "Tidsgräns för magnetlösning (sekunder)"
+msgstr "Tidsgräns för magnetlösning, sekunder"
 
 msgctxt "#30611"
 msgid "Application platform type"
@@ -1927,7 +1927,7 @@ msgstr "Slutförd"
 
 msgctxt "#30626"
 msgid "Seeding"
-msgstr "Distribuerar"
+msgstr "Delar"
 
 msgctxt "#30627"
 msgid "Allocating"
@@ -2051,28 +2051,28 @@ msgstr "Alla filer"
 
 msgctxt "#30657"
 msgid "Disable LSD"
-msgstr ""
+msgstr "Inaktivera LSD"
 
 msgctxt "#30658"
 msgid "Add extra trackers"
-msgstr ""
+msgstr "Lägg till extra bevakare"
 
 msgctxt "#30659"
 msgid "All known trackers"
-msgstr ""
+msgstr "Alla kända bevakare"
 
 msgctxt "#30660"
 msgid "Best trackers"
-msgstr ""
+msgstr "Bästa bevakare"
 
 msgctxt "#30661"
 msgid "Minimum set"
-msgstr ""
+msgstr "Lägsta inställningen"
 
 msgctxt "#30662"
 msgid "Remove original trackers from torrent"
-msgstr ""
+msgstr "Ta bort originalbevakare från torrent"
 
 msgctxt "#30663"
 msgid "Show episodes on release day (w/o delay)"
-msgstr ""
+msgstr "Visa avsnitt vid utgivningsdagen (utan fördröjning)"
