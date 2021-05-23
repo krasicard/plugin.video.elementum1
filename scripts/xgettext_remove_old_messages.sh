@@ -12,18 +12,16 @@ while read -r line; do rg -q -g '!*.po' -g '!*.pot' $line . || echo $line; done 
 
 while read -r line; do rg -q -g '!*.po' -g '!*.pot' $line ../elementum || echo $line; done < orphaned_ids.pot > not_found_ids.pot
 
-find resources/ -name "*.po*" |
-while read -r file
+while read -r line
 do
-    while read -r line
-    do
-        sed -i "/$line/,+3d" "$file"
-    done < not_found_ids.pot
-done
+    sed -i "/$line/,+3d" resources/language/messages.pot
+done < not_found_ids.pot
 
-# TODO: https://stackoverflow.com/questions/10435926/how-to-automatcially-remove-unused-gettext-strings/26469640
-# after cleaning pot file we can use msgattrib to clean po files
-# msgattrib --set-obsolete --ignore-file=messages.pot -o messages.po messages.po
-# msgattrib --no-obsolete -o messages.po messages.po
+# from https://stackoverflow.com/questions/10435926/how-to-automatcially-remove-unused-gettext-strings/26469640
+for file in resources/language/*/*.po
+do
+    msgattrib --no-wrap --set-obsolete --ignore-file=resources/language/messages.pot -o "$file" "$file"
+    msgattrib --no-wrap --no-obsolete -o "$file" "$file"
+done
 
 rm -f ids.pot orphaned_ids.pot not_found_ids.pot

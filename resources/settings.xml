@@ -177,9 +177,9 @@
 
         <setting label="30592" type="lsep" />
         <setting id="seed_forever" label="30593" type="bool" default="false" />
-        <setting id="share_ratio_limit" label="30051" type="number" default="200" />
-        <setting id="seed_time_ratio_limit" label="30052" type="number" default="700" />
-        <setting id="seed_time_limit" label="30053" type="number" default="24" />
+        <setting id="share_ratio_limit" label="30051" type="number" default="200" visible="eq(-1,false)" />
+        <setting id="seed_time_ratio_limit" label="30052" type="number" default="700" visible="eq(-2,false)" />
+        <setting id="seed_time_limit" label="30053" type="number" default="24" visible="eq(-3,false)" />
 
         <setting label="30594" type="lsep" />
         <setting id="disable_dht" label="30050" type="bool" default="false" />

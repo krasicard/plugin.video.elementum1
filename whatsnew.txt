@@ -7,6 +7,15 @@
     - Source is open, so you can fork everything.
     - Some bug fixes or updates can come, to keep things working and have the latest versions.
 
+[B][COLOR red]0.1.77[/COLOR][/B]
+    - All the kudos for go to @antonsoroko and @Dim0N22 for their commitments.
+    - New Web UI (hosted at :65220/web)!
+    - Fixed hang issue when shutting down Kodi.
+    - New setting to allow showing episodes aired today.
+    - New settings to managing additional trackers for added torrents.
+    - New functionality to assign custom torrent for specific items (triggered by context.elementum plugin).
+    - Small fixes.
+
 [B][COLOR red]0.1.76[/COLOR][/B]
     - Fixed creation of repository.elementum.
     - Changes to information constructors for movie/show/episode.

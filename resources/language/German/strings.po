@@ -28,19 +28,19 @@ msgid "Download path"
 msgstr ""
 
 msgctxt "#30004"
-msgid "Max upload rate (kB/s)"
+msgid "Max upload rate, kB/s"
 msgstr "Max Upload Geschwindigkeit (kB/s)"
 
 msgctxt "#30005"
-msgid "Max download rate (kB/s)"
+msgid "Max download rate, kB/s"
 msgstr "Max Download Geschwindigkeit (kB/s)"
 
 msgctxt "#30006"
-msgid "Listen port min"
+msgid "Listen port, min"
 msgstr "Eingehender Port min"
 
 msgctxt "#30007"
-msgid "Listen port max"
+msgid "Listen port, max"
 msgstr "Eingehender Port max"
 
 msgctxt "#30008"
@@ -72,15 +72,15 @@ msgid "Advanced"
 msgstr "Fortgeschritten"
 
 msgctxt "#30016"
-msgid "Custom provider timeout"
+msgid "Redefine providers timeout"
 msgstr "Benutzerdefiniertes Zeitlimit für Provider"
 
 msgctxt "#30017"
-msgid "Enabled (use at your own risk)"
+msgid "Enabled (might lead to slow speed)"
 msgstr "Aktiviert (auf eigene Gefahr)"
 
 msgctxt "#30018"
-msgid "Timeout in seconds"
+msgid "Timeout, seconds"
 msgstr "Zeitlimit in Sekunden"
 
 msgctxt "#30019"
@@ -88,7 +88,7 @@ msgid "Maintenance"
 msgstr "Instandhaltung"
 
 msgctxt "#30021"
-msgid "Results per page"
+msgid "Elements per page"
 msgstr "Resultate pro Seite"
 
 msgctxt "#30022"
@@ -116,7 +116,7 @@ msgid "Download after play was stopped"
 msgstr ""
 
 msgctxt "#30029"
-msgid "Session saving frequency (seconds)"
+msgid "Session saving frequency, seconds"
 msgstr "Intervall für Speichern der Sitzung (Sekunden)"
 
 msgctxt "#30030"
@@ -124,7 +124,7 @@ msgid "Overlay status vertical offset"
 msgstr "Status Anzeige vertikale Anpassung"
 
 msgctxt "#30031"
-msgid "Disable providers failing health check"
+msgid "Disable providers that failed health check"
 msgstr "Deaktiviere Provider ohne Verbindung"
 
 msgctxt "#30032"
@@ -204,15 +204,15 @@ msgid "Disable DHT"
 msgstr "DHT Deaktivieren"
 
 msgctxt "#30051"
-msgid "Share ratio limit (percent)"
+msgid "Share ratio limit, percentage"
 msgstr "Teile Ratio-Limit (Prozent)"
 
 msgctxt "#30052"
-msgid "Seed time ratio limit (percent)"
+msgid "Seed time ratio limit, percentage"
 msgstr "Ratio-Limit für Seeds (Prozent)"
 
 msgctxt "#30053"
-msgid "Seed time limit (hours)"
+msgid "Seed time limit, hours"
 msgstr "Zeit-Limit für Seed (Stunden)"
 
 msgctxt "#30054"
@@ -232,11 +232,11 @@ msgid "Username"
 msgstr "Benutzername"
 
 msgctxt "#30059"
-msgid "Library update delay on startup (seconds)"
+msgid "Library update delay on startup, seconds"
 msgstr "Update der Bibliothek beim Start verzögern (Sekunden)"
 
 msgctxt "#30060"
-msgid "Library update frequency (hours)"
+msgid "Library update frequency, hours"
 msgstr ""
 
 msgctxt "#30063"
@@ -328,7 +328,7 @@ msgid "Enable tuned storage settings"
 msgstr ""
 
 msgctxt "#30088"
-msgid "Initial buffering timeout (seconds)"
+msgid "Initial buffering timeout, seconds"
 msgstr ""
 
 msgctxt "#30089"
@@ -344,7 +344,7 @@ msgid "Outgoing interfaces"
 msgstr ""
 
 msgctxt "#30092"
-msgid "Use default fanart"
+msgid "Use fallback fanart if fanart wasn't found"
 msgstr ""
 
 msgctxt "#30093"
@@ -858,7 +858,7 @@ msgid "Use memory"
 msgstr ""
 
 msgctxt "#30318"
-msgid "Memory size to use for each torrent (Mb)"
+msgid "Memory size to use for each torrent, Mb"
 msgstr ""
 
 msgctxt "#30319"
@@ -1054,7 +1054,7 @@ msgid "Caching"
 msgstr ""
 
 msgctxt "#30388"
-msgid "Cache selected streams"
+msgid "Cache stream selection"
 msgstr ""
 
 msgctxt "#30389"
@@ -1402,11 +1402,11 @@ msgid "Create NFO files for TV Show scrapers"
 msgstr ""
 
 msgctxt "#30485"
-msgid "Concurrent connections limit"
+msgid "Concurrent connections limit per second"
 msgstr ""
 
 msgctxt "#30486"
-msgid "Automatic concurrent connections limit"
+msgid "Automatic concurrent connections limit per second"
 msgstr ""
 
 msgctxt "#30487"
@@ -1442,11 +1442,11 @@ msgid "Use Proxy for torrent downloading"
 msgstr ""
 
 msgctxt "#30495"
-msgid "Use internal DNS resolver"
+msgid "Use built-in DNS resolver"
 msgstr ""
 
 msgctxt "#30496"
-msgid "Turn off if you use Tor addresses, or you want to pass resolve to local network settings"
+msgid "Turn off if you use Tor addresses, or you want to use DNS settings from OS"
 msgstr ""
 
 msgctxt "#30498"
@@ -1462,7 +1462,7 @@ msgid "Automatically adjust buffer size[CR]for heavy torrents"
 msgstr ""
 
 msgctxt "#30502"
-msgid "Adjust buffer according to Kodi advancedsettings, if set"
+msgid "Adjust buffer according to Kodi advancedsettings.xml, if set"
 msgstr ""
 
 msgctxt "#30503"
@@ -1479,22 +1479,6 @@ msgstr ""
 
 msgctxt "#30506"
 msgid "Enable libtorrent logging"
-msgstr ""
-
-msgctxt "#30507"
-msgid "Magnet trackers"
-msgstr ""
-
-msgctxt "#30508"
-msgid "Leave as is"
-msgstr ""
-
-msgctxt "#30509"
-msgid "Remove all"
-msgstr ""
-
-msgctxt "#30510"
-msgid "Add retrackers"
 msgstr ""
 
 msgctxt "#30511"
@@ -1550,7 +1534,7 @@ msgid "Minimum file size for Movies, MB"
 msgstr ""
 
 msgctxt "#30524"
-msgid "Minimum file size for Shows, per minute, MB"
+msgid "Minimum file size for Shows, MB per minute"
 msgstr ""
 
 msgctxt "#30525"
@@ -1614,7 +1598,7 @@ msgid "Automatic Subtitles Search"
 msgstr ""
 
 msgctxt "#30542"
-msgid "Disabled if subtitles available in player"
+msgid "Disable if subtitles are available in player"
 msgstr ""
 
 msgctxt "#30543"
@@ -1642,7 +1626,7 @@ msgid "Find in overall"
 msgstr ""
 
 msgctxt "#30549"
-msgid "Number of results to find"
+msgid "Search is successful when found N results"
 msgstr ""
 
 msgctxt "#30550"
@@ -1698,7 +1682,7 @@ msgid "Open directory with Kodi file browser"
 msgstr ""
 
 msgctxt "#30563"
-msgid "Synchronize frequency of Trakt (minutes)"
+msgid "Synchronize frequency of Trakt, minutes"
 msgstr ""
 
 msgctxt "#30564"
@@ -1734,7 +1718,7 @@ msgid "* All seasons"
 msgstr ""
 
 msgctxt "#30572"
-msgid "Log response body"
+msgid "Log server's response body"
 msgstr ""
 
 msgctxt "#30573"
@@ -1754,11 +1738,11 @@ msgid "Trakt authentication needs to be updated!"
 msgstr ""
 
 msgctxt "#30577"
-msgid "End of file Buffer size (MB)"
+msgid "End of file Buffer size, MB"
 msgstr ""
 
 msgctxt "#30578"
-msgid "Beginning of file Buffer size (MB)"
+msgid "Beginning of file Buffer size, MB"
 msgstr ""
 
 msgctxt "#30579"
@@ -1806,7 +1790,7 @@ msgid "Torrents autoload on plugin startup"
 msgstr ""
 
 msgctxt "#30591"
-msgid "Connection limits"
+msgid "Limits for connections"
 msgstr ""
 
 msgctxt "#30592"
@@ -1814,7 +1798,7 @@ msgid "Seeding"
 msgstr ""
 
 msgctxt "#30593"
-msgid "Seed forever (unless disk space needed)"
+msgid "Seed forever"
 msgstr ""
 
 msgctxt "#30594"
@@ -1826,7 +1810,7 @@ msgid "Miscellaneous"
 msgstr ""
 
 msgctxt "#30597"
-msgid "Cache size (MB)"
+msgid "Cache size, MB"
 msgstr ""
 
 msgctxt "#30598"
@@ -1846,7 +1830,7 @@ msgid "Enable synchronization while playback"
 msgstr ""
 
 msgctxt "#30602"
-msgid "Retry plugin requests after timeout (seconds)"
+msgid "Retry requests to plugin after timeout, seconds"
 msgstr ""
 
 msgctxt "#30603"
@@ -1858,7 +1842,7 @@ msgid "Clean all history"
 msgstr ""
 
 msgctxt "#30605"
-msgid "Cache downloaded torrent files after searches"
+msgid "Cache downloaded torrent files after search"
 msgstr ""
 
 msgctxt "#30606"
@@ -1878,7 +1862,7 @@ msgid "Automatically start next episode if available"
 msgstr ""
 
 msgctxt "#30610"
-msgid "Magnet resolve timeout (seconds)"
+msgid "Magnet resolve timeout, seconds"
 msgstr ""
 
 msgctxt "#30611"
@@ -2065,22 +2049,30 @@ msgctxt "#30656"
 msgid "All files"
 msgstr ""
 
-#~ msgctxt "#30001"
-#~ msgid "Download path (not FAT32)"
-#~ msgstr "Download Pfad (nicht FAT32)"
+msgctxt "#30657"
+msgid "Disable LSD"
+msgstr ""
 
-#~ msgctxt "#30025"
-#~ msgid "Limit rates after buffering only"
-#~ msgstr "Limitiere die Geschwindigkeit erst nach dem Buffern"
+msgctxt "#30658"
+msgid "Add extra trackers"
+msgstr ""
 
-#~ msgctxt "#30028"
-#~ msgid "Background handling of torrents"
-#~ msgstr "Verwalte Torrents im Hintergrund"
+msgctxt "#30659"
+msgid "All known trackers"
+msgstr ""
 
-#~ msgctxt "#30103"
-#~ msgid "Unable to find Elementum binary"
-#~ msgstr "Kann Elementum Binärdatei nicht finden"
+msgctxt "#30660"
+msgid "Best trackers"
+msgstr ""
 
-#~ msgctxt "#30021"
-#~ msgid "Enable pagination"
-#~ msgstr "Seitenweise Darstellung aktivieren"
+msgctxt "#30661"
+msgid "Minimum set"
+msgstr ""
+
+msgctxt "#30662"
+msgid "Remove original trackers from torrent"
+msgstr ""
+
+msgctxt "#30663"
+msgid "Show episodes on release day (w/o delay)"
+msgstr ""
