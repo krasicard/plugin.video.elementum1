@@ -1739,7 +1739,7 @@ msgstr "Trakt-autentisering måste uppdateras!"
 
 msgctxt "#30577"
 msgid "End of file Buffer size, MB"
-msgstr "Slut på filbuffertstorlek, MB"
+msgstr "Slutet på filbuffertstorlek, MB"
 
 msgctxt "#30578"
 msgid "Beginning of file Buffer size, MB"
