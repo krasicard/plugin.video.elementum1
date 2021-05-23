@@ -209,7 +209,7 @@ msgstr "Gräns för delningskvot, procent"
 
 msgctxt "#30052"
 msgid "Seed time ratio limit, percentage"
-msgstr "Kvotgräns för delningstid (procent)"
+msgstr "Kvotgräns för delningstid, procent"
 
 msgctxt "#30053"
 msgid "Seed time limit, hours"
