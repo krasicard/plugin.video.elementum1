@@ -1,3 +1,38 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+
+@NIkonDSL
+elgatito
+/
+plugin.video.elementum
+forked from scakemyer/plugin.video.quasar
+34
+335321
+Code
+Issues
+43
+Pull requests
+1
+Actions
+Projects
+Wiki
+Security
+Insights
+plugin.video.elementum/resources/language/Ukrainian/strings.po
+@antonsoroko
+antonsoroko Update Ukrainian translation (#763)
+…
+Latest commit 774e868 2 days ago
+ History
+ 3 contributors
+@elgatito@antonsoroko@NIkonDSL
+2075 lines (1561 sloc)  45 KB
+
 # Kodi Media Center language file
 # Addon Name: Elementum
 # Addon id: plugin.video.elementum
@@ -1332,7 +1367,7 @@ msgstr ""
 
 msgctxt "#30467"
 msgid "Cache"
-msgstr ""
+msgstr "Кеш"
 
 msgctxt "#30468"
 msgid "Clear TMDB cache"
@@ -1344,7 +1379,7 @@ msgstr ""
 
 msgctxt "#30470"
 msgid "Clear the cache"
-msgstr ""
+msgstr "Видалити кеш"
 
 msgctxt "#30471"
 msgid "Are you sure you want to do it?"
@@ -1356,7 +1391,7 @@ msgstr ""
 
 msgctxt "#30473"
 msgid "Select network interface"
-msgstr ""
+msgstr "Обрати мережевий інтерфейс"
 
 msgctxt "#30474"
 msgid "Network interfaces"
@@ -1368,15 +1403,15 @@ msgstr ""
 
 msgctxt "#30476"
 msgid "Select language"
-msgstr ""
+msgstr "Обрати мову"
 
 msgctxt "#30477"
 msgid "Original"
-msgstr ""
+msgstr "Мовою орігіналу"
 
 msgctxt "#30478"
 msgid "Searching"
-msgstr ""
+msgstr "Виконується пошук"
 
 msgctxt "#30480"
 msgid "Run Kodi library update after add/delete"
@@ -1384,11 +1419,11 @@ msgstr ""
 
 msgctxt "#30481"
 msgid "Automatically"
-msgstr ""
+msgstr "Автоматично"
 
 msgctxt "#30482"
 msgid "Ask"
-msgstr ""
+msgstr "Запитати"
 
 msgctxt "#30483"
 msgid "Create NFO files for Movie scrapers"
@@ -1448,7 +1483,7 @@ msgstr ""
 
 msgctxt "#30498"
 msgid "Reset this path to '/'"
-msgstr ""
+msgstr "Скинути цей шлях на '/'"
 
 msgctxt "#30499"
 msgid "Automatically adjust memory size[CR]for heavy torrents, if possible"
@@ -1484,15 +1519,15 @@ msgstr ""
 
 msgctxt "#30512"
 msgid "Default"
-msgstr ""
+msgstr "За замовченням"
 
 msgctxt "#30513"
 msgid "Minimal memory"
-msgstr ""
+msgstr "Мінімум пам'яти"
 
 msgctxt "#30514"
 msgid "High speed"
-msgstr ""
+msgstr "Висока швидкість"
 
 msgctxt "#30515"
 msgid "Load torrents from torrents folder paused"
@@ -1504,7 +1539,7 @@ msgstr ""
 
 msgctxt "#30517"
 msgid "In Kodi library"
-msgstr ""
+msgstr "В теці Kodi"
 
 msgctxt "#30518"
 msgid "Use libtorrent deadlines"
@@ -1544,7 +1579,7 @@ msgstr ""
 
 msgctxt "#30527"
 msgid "Donate"
-msgstr ""
+msgstr "Пожертвувати"
 
 msgctxt "#30528"
 msgid "Automatically load first found subtitles"
@@ -1556,11 +1591,11 @@ msgstr ""
 
 msgctxt "#30530"
 msgid "Delete autoloaded subtitles on player stop"
-msgstr ""
+msgstr "Видалити завантажені субтітри"
 
 msgctxt "#30531"
 msgid "Download all files from torrent"
-msgstr ""
+msgstr "Завантажити усі файли торента"
 
 msgctxt "#30532"
 msgid "Stop Downloading all files"
@@ -1576,7 +1611,7 @@ msgstr ""
 
 msgctxt "#30537"
 msgid "Torrents history"
-msgstr ""
+msgstr "Історяя торентів"
 
 msgctxt "#30538"
 msgid "Use torrents history?"
@@ -1584,11 +1619,11 @@ msgstr ""
 
 msgctxt "#30539"
 msgid "Store N torrents in history"
-msgstr ""
+msgstr "Зберігати у усторії, торренти"
 
 msgctxt "#30540"
 msgid "Subtitles"
-msgstr ""
+msgstr "Субтітри"
 
 msgctxt "#30541"
 msgid "Automatic Subtitles Search"
@@ -1600,11 +1635,11 @@ msgstr ""
 
 msgctxt "#30543"
 msgid "Subtitles included in torrent"
-msgstr ""
+msgstr "Субтітри у торрент файлі"
 
 msgctxt "#30544"
 msgid "Automatic Scrape"
-msgstr ""
+msgstr "Автоматичний пошук"
 
 msgctxt "#30545"
 msgid "Automatic scraping allows to scrape connected providers[CR]to find new movies, if there are results,"
@@ -1612,7 +1647,7 @@ msgstr ""
 
 msgctxt "#30546"
 msgid "Strategy"
-msgstr ""
+msgstr "Стратегія пошука"
 
 msgctxt "#30547"
 msgid "Find in each provider"
@@ -1620,7 +1655,7 @@ msgstr ""
 
 msgctxt "#30548"
 msgid "Find in overall"
-msgstr ""
+msgstr "Пошук поміж усіх"
 
 msgctxt "#30549"
 msgid "Search is successful when found N results"
@@ -1628,11 +1663,11 @@ msgstr ""
 
 msgctxt "#30550"
 msgid "What to search"
-msgstr ""
+msgstr "Що шукати"
 
 msgctxt "#30551"
 msgid "How to search"
-msgstr ""
+msgstr "Як шукати"
 
 msgctxt "#30552"
 msgid "Search each N hours"
@@ -1640,11 +1675,11 @@ msgstr ""
 
 msgctxt "#30553"
 msgid "Find 4K resolution"
-msgstr ""
+msgstr "Шукати 4K"
 
 msgctxt "#30554"
 msgid "Find 1080p resolution"
-msgstr ""
+msgstr "Шукати 1080p"
 
 msgctxt "#30555"
 msgid "and movie passes checks for number of results[CR]movie can be added to the library."
@@ -1660,15 +1695,15 @@ msgstr ""
 
 msgctxt "#30558"
 msgid "Latest available movies"
-msgstr ""
+msgstr "Останні доступні фільми"
 
 msgctxt "#30559"
 msgid "Skip searching for installed providers"
-msgstr ""
+msgstr "Не питати встановлення пошукових провайдерів"
 
 msgctxt "#30560"
 msgid "Files: %s"
-msgstr ""
+msgstr "Файли: %s"
 
 msgctxt "#30561"
 msgid "Interval between requests, seconds"
@@ -1692,7 +1727,7 @@ msgstr ""
 
 msgctxt "#30566"
 msgid "Lists"
-msgstr ""
+msgstr "Пареліки"
 
 msgctxt "#30567"
 msgid "Show \"All seasons\" in shows"
@@ -1700,19 +1735,19 @@ msgstr ""
 
 msgctxt "#30568"
 msgid "Seasons order"
-msgstr ""
+msgstr "Лад сезонів"
 
 msgctxt "#30569"
 msgid "Ascending"
-msgstr ""
+msgstr "Східно"
 
 msgctxt "#30570"
 msgid "Descending"
-msgstr ""
+msgstr "Спадно"
 
 msgctxt "#30571"
 msgid "* All seasons"
-msgstr ""
+msgstr "* Усі сезони"
 
 msgctxt "#30572"
 msgid "Log server's response body"
@@ -1728,11 +1763,11 @@ msgstr ""
 
 msgctxt "#30575"
 msgid "Timeout, seconds"
-msgstr ""
+msgstr "Тайм-аут, сек"
 
 msgctxt "#30576"
 msgid "Trakt authentication needs to be updated!"
-msgstr ""
+msgstr "Авторизацію користувача Trakt потрібно відновити!"
 
 msgctxt "#30577"
 msgid "End of file Buffer size, MB"
@@ -1744,7 +1779,7 @@ msgstr ""
 
 msgctxt "#30579"
 msgid "Settings"
-msgstr ""
+msgstr "Налаштування"
 
 msgctxt "#30580"
 msgid "Custom Trakt API Client ID"
@@ -1756,11 +1791,11 @@ msgstr ""
 
 msgctxt "#30582"
 msgid "Settings for %s provider"
-msgstr ""
+msgstr "Налаштування провайдера %s"
 
 msgctxt "#30583"
 msgid "Resolving magnet link"
-msgstr ""
+msgstr "Пошук magnet посилання..."
 
 msgctxt "#30585"
 msgid "Enable library integration with Kodi"
@@ -1776,11 +1811,11 @@ msgstr ""
 
 msgctxt "#30588"
 msgid "Pre-Play Buffering"
-msgstr ""
+msgstr "Буферізація поперед переглядом"
 
 msgctxt "#30589"
 msgid "Speed limiting"
-msgstr ""
+msgstr "Лімітування швидкості"
 
 msgctxt "#30590"
 msgid "Torrents autoload on plugin startup"
@@ -1788,27 +1823,27 @@ msgstr ""
 
 msgctxt "#30591"
 msgid "Limits for connections"
-msgstr ""
+msgstr "Лімітування підключень"
 
 msgctxt "#30592"
 msgid "Seeding"
-msgstr ""
+msgstr "Сидирування"
 
 msgctxt "#30593"
 msgid "Seed forever"
-msgstr ""
+msgstr "Сидирувати завжди"
 
 msgctxt "#30594"
 msgid "Network"
-msgstr ""
+msgstr "Мережа"
 
 msgctxt "#30595"
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Різне"
 
 msgctxt "#30597"
 msgid "Cache size, MB"
-msgstr ""
+msgstr "Розмір кеша, МБ"
 
 msgctxt "#30598"
 msgid "Enable caching if using File storage and have speed problems.[CR]Will use more memory, but can improve the speed."
@@ -1832,11 +1867,11 @@ msgstr ""
 
 msgctxt "#30603"
 msgid "Addon Startup"
-msgstr ""
+msgstr "Налаштквання запуска"
 
 msgctxt "#30604"
 msgid "Clean all history"
-msgstr ""
+msgstr "Видалити історію"
 
 msgctxt "#30605"
 msgid "Cache downloaded torrent files after search"
@@ -1852,23 +1887,23 @@ msgstr ""
 
 msgctxt "#30608"
 msgid "Match found in your active torrents, play it?[CR]%s"
-msgstr ""
+msgstr "Знайдено співпадання у ваших торентах, грати його?[CR]%s"
 
 msgctxt "#30609"
 msgid "Automatically start next episode if available"
-msgstr ""
+msgstr "Автоматично обирати наступну серію, якщо доступно"
 
 msgctxt "#30610"
 msgid "Magnet resolve timeout, seconds"
-msgstr ""
+msgstr "Тайм-аут пошука Magnet посилання, сек"
 
 msgctxt "#30611"
 msgid "Application platform type"
-msgstr ""
+msgstr "Тип платформи для додатка"
 
 msgctxt "#30612"
 msgid "Select file to download"
-msgstr ""
+msgstr "Оберить файл для завантаження"
 
 msgctxt "#30613"
 msgid "... for movie"
@@ -1948,11 +1983,11 @@ msgstr "Відтворюється"
 
 msgctxt "#30632"
 msgid "Yes (%s seconds)"
-msgstr "Так, %s сек"
+msgstr "Так (%s сек)"
 
 msgctxt "#30633"
 msgid "No (%s seconds)"
-msgstr "Ні, %s сек"
+msgstr "Ні (%s сек)"
 
 msgctxt "#30634"
 msgid "Log level"
@@ -1976,7 +2011,7 @@ msgstr ""
 
 msgctxt "#30639"
 msgid "Show Specials in season listings"
-msgstr ""
+msgstr "Показати Specials у переліках сезонів"
 
 msgctxt "#30640"
 msgid "Bitrate"
@@ -2016,7 +2051,7 @@ msgstr "Авторизація"
 
 msgctxt "#30649"
 msgid "To authorize addon for Trakt.tv you need to:[CR]1. Open [B]%s[/B][CR]2. Enter code: [B]%s[/B][CR]3. Wait for notification from Elementum."
-msgstr ""
+msgstr "Для авторизации доповнення на Trakt.tv вам потрібно:[CR]1. Відкрити [B]%s[/B][CR]2. Ввести код: [B]%s[/B][CR]3. Почекати на повідомлення від Elementum."
 
 msgctxt "#30650"
 msgid "Successfully authorized for Trakt.tv"
@@ -2048,28 +2083,40 @@ msgstr "Усі файли"
 
 msgctxt "#30657"
 msgid "Disable LSD"
-msgstr ""
+msgstr "Відключвти LSD"
 
 msgctxt "#30658"
 msgid "Add extra trackers"
-msgstr ""
+msgstr "Додавати доп. трекери"
 
 msgctxt "#30659"
 msgid "All known trackers"
-msgstr ""
+msgstr "Усі відомі трекери"
 
 msgctxt "#30660"
 msgid "Best trackers"
-msgstr ""
+msgstr "Кращі трекери"
 
 msgctxt "#30661"
 msgid "Minimum set"
-msgstr ""
+msgstr "Мінімальний набір"
 
 msgctxt "#30662"
 msgid "Remove original trackers from torrent"
-msgstr ""
+msgstr "Видаляти автентичні трекери з торента"
 
 msgctxt "#30663"
 msgid "Show episodes on release day (w/o delay)"
-msgstr ""
+msgstr "Показывать эпизоды в день релиза (без задержки)"
+
+msgctxt "#30664"
+msgid "Modify trackers in torrent"
+msgstr "Змінювати трекери в торенті"
+
+msgctxt "#30665"
+msgid "At the time of adding"
+msgstr "В мить додавання"
+
+msgctxt "#30666"
+msgid "Every time"
+msgstr "Каждого разу"
