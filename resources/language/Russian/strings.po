@@ -2073,3 +2073,15 @@ msgstr "Удалять оригинальные трекеры из торрен
 msgctxt "#30663"
 msgid "Show episodes on release day (w/o delay)"
 msgstr "Показывать эпизоды в день релиза (без задержки)"
+
+msgctxt "#30664"
+msgid "Modify trackers in torrent"
+msgstr "Модифицировать трекеры в торренте"
+
+msgctxt "#30665"
+msgid "At the time of adding"
+msgstr "Во момент добавлении"
+
+msgctxt "#30666"
+msgid "Every time"
+msgstr "Каждый раз"
