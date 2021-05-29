@@ -210,6 +210,7 @@
         <setting type="text" label="30504" enable="false" />
         <setting id="remove_original_trackers" label="30662" type="bool" default="false" />
         <setting id="add_extra_trackers" label="30658" type="enum" lvalues="30635|30659|30660|30661" default="1" />
+        <setting id="modify_trackers_strategy" label="30664" type="enum" lvalues="30665|30666" default="0" />
         <setting id="use_libtorrent_logging" label="30506" type="bool" default="false" />
         <setting id="libtorrent_profile" label="30511" type="enum" lvalues="30512|30513|30514" default="0" />
         <!-- <setting id="use_libtorrent_deadline" label="30518" type="bool" default="true" /> -->
