@@ -1331,7 +1331,7 @@ msgstr "Rensa sökhistorik"
 
 msgctxt "#30466"
 msgid "Clear the database"
-msgstr "Rensa databas"
+msgstr "Rensa databasen"
 
 msgctxt "#30467"
 msgid "Cache"
@@ -1347,7 +1347,7 @@ msgstr "Rensa Trakt-cache"
 
 msgctxt "#30470"
 msgid "Clear the cache"
-msgstr "Rensa cache"
+msgstr "Rensa cachen"
 
 msgctxt "#30471"
 msgid "Are you sure you want to do it?"
