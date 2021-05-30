@@ -979,11 +979,11 @@ msgstr "Synkronisera objekt från användarlistor till Kodi-biblioteket"
 
 msgctxt "#30366"
 msgid "Sync watched states from Trakt into Kodi library"
-msgstr "Synkronisera sedda tillstånd från Trakt till Kodi-biblioteket"
+msgstr "Synkronisera sedda-tillstånd från Trakt till Kodi-biblioteket"
 
 msgctxt "#30367"
 msgid "Sync back Kodi watched states into Trakt"
-msgstr "Synkronisera tillbaka Kodi sedda tillstånd till Trakt"
+msgstr "Synkronisera tillbaka Kodi sedda-tillstånd till Trakt"
 
 msgctxt "#30369"
 msgid "Disable Upload"
@@ -1847,7 +1847,7 @@ msgstr "Cacha hämtade torrentfiler efter sökning"
 
 msgctxt "#30606"
 msgid "Show watched state for torrent's files"
-msgstr "Visa sedda tillstånd för torrentfiler"
+msgstr "Visa sedda-tillstånd för torrentfiler"
 
 msgctxt "#30607"
 msgid "Use earliest release date as basic for searching"
