@@ -979,11 +979,11 @@ msgstr "Synkronisera objekt från användarlistor till Kodi-biblioteket"
 
 msgctxt "#30366"
 msgid "Sync watched states from Trakt into Kodi library"
-msgstr "Synkronisera sedda-tillstånd från Trakt till Kodi-biblioteket"
+msgstr "Synkronisera sedda tillstånd från Trakt till Kodi-biblioteket"
 
 msgctxt "#30367"
 msgid "Sync back Kodi watched states into Trakt"
-msgstr "Synkronisera tillbaka Kodi sedda-tillstånd till Trakt"
+msgstr "Synkronisera tillbaka Kodi sedda tillstånd till Trakt"
 
 msgctxt "#30369"
 msgid "Disable Upload"
@@ -1271,7 +1271,7 @@ msgstr "Ta bort från Trakt när serie tas bort från Kodi-biblioteket"
 
 msgctxt "#30451"
 msgid "Torrent files path"
-msgstr "Torrent-filsökväg"
+msgstr "Torrentfilsökväg"
 
 msgctxt "#30452"
 msgid "Reset all paths"
@@ -1331,7 +1331,7 @@ msgstr "Rensa sökhistorik"
 
 msgctxt "#30466"
 msgid "Clear the database"
-msgstr "Rensa databasen"
+msgstr "Rensa databas"
 
 msgctxt "#30467"
 msgid "Cache"
@@ -1347,7 +1347,7 @@ msgstr "Rensa Trakt-cache"
 
 msgctxt "#30470"
 msgid "Clear the cache"
-msgstr "Rensa cachen"
+msgstr "Rensa cache"
 
 msgctxt "#30471"
 msgid "Are you sure you want to do it?"
@@ -1847,7 +1847,7 @@ msgstr "Cacha hämtade torrentfiler efter sökning"
 
 msgctxt "#30606"
 msgid "Show watched state for torrent's files"
-msgstr "Visa sedda-status för torrentfiler"
+msgstr "Visa sedda tillstånd för torrentfiler"
 
 msgctxt "#30607"
 msgid "Use earliest release date as basic for searching"
