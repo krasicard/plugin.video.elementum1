@@ -19,6 +19,7 @@ export interface ITorrent {
   name: string;
   download_rate: number;
   id: string;
+  added_time: number;
   peers: number;
   peers_total: number;
   ratio: number;

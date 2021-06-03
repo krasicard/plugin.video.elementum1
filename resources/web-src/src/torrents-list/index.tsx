@@ -12,12 +12,12 @@ interface ITorrentListProps {
   onSetActiveTorrents: React.Dispatch<React.SetStateAction<ITorrent[]>>;
 }
 
-type LodashSortDirection = 'asc' | 'desc' | undefined;
+type LodashSortOrder = 'asc' | 'desc' | undefined;
 
 interface State {
   column: keyof ITorrent | null;
   data: ITorrent[];
-  direction: LodashSortDirection;
+  order: LodashSortOrder;
 }
 
 type Action = { type: 'CHANGE_SORT'; column: keyof ITorrent } | { type: 'UPDATE_TORRENTS'; torrents: ITorrent[] };
@@ -25,86 +25,94 @@ type Action = { type: 'CHANGE_SORT'; column: keyof ITorrent } | { type: 'UPDATE_
 const initialState: State = {
   column: null,
   data: [],
-  direction: undefined,
+  order: undefined,
 };
 
 function sortReducer(state: State, action: Action): State {
+  const orderByColumn = (torrents: ITorrent[], column: string, order: NonNullable<LodashSortOrder>) =>
+    orderBy(torrents, [column, 'added_time'], [order, 'asc']);
+
   switch (action.type) {
     case 'CHANGE_SORT': {
-      let newDirection: NonNullable<LodashSortDirection>;
+      let newDirection: LodashSortOrder;
+      let { column } = action;
+
       if (state.column === action.column) {
-        newDirection = state.direction === 'asc' ? 'desc' : 'asc';
+        // Cycle sort order: ascending -> descending -> default (sort by the default field) -> ascending
+        switch (state.order) {
+          case 'asc':
+            newDirection = 'desc';
+            break;
+          case 'desc':
+            column = 'added_time';
+            newDirection = 'asc';
+            break;
+          case undefined:
+            newDirection = 'asc';
+            break;
+        }
       } else {
         newDirection = 'asc';
       }
 
       return {
         ...state,
-        column: action.column,
-        data: orderBy(state.data, [action.column, 'name'], [newDirection, 'asc']),
-        direction: newDirection,
+        column,
+        data: orderByColumn(state.data, column, newDirection),
+        order: newDirection,
       };
     }
-    case 'UPDATE_TORRENTS':
+    case 'UPDATE_TORRENTS': {
+      const { torrents } = action;
       return {
         ...state,
-        data:
-          state.column && state.direction ? orderBy(action.torrents, [state.column, 'name'], [state.direction, 'asc']) : action.torrents,
+        data: state.column && state.order ? orderByColumn(torrents, state.column, state.order) : torrents,
       };
-    default:
-      throw new Error();
+    }
   }
 }
 
-const getSemanticSortDirection = (lodashSortDirection: LodashSortDirection): StrictTableHeaderCellProps['sorted'] =>
-  lodashSortDirection === 'asc' ? 'ascending' : 'descending';
-
 const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrents, onSetActiveTorrents }: ITorrentListProps) => {
   const [state, dispatch] = useReducer(sortReducer, initialState);
-  const { column, data, direction } = state;
+  const { column, data, order } = state;
 
   useEffect(() => {
     dispatch({ type: 'UPDATE_TORRENTS', torrents });
   }, [torrents]);
+
+  const getSortOrder = (columnName: keyof ITorrent): StrictTableHeaderCellProps['sorted'] => {
+    if (column !== columnName) return undefined;
+
+    switch (order) {
+      case 'asc':
+        return 'ascending';
+      case 'desc':
+        return 'descending';
+      case undefined:
+        return undefined;
+    }
+  };
+
+  const changeColumnSortOrder = (columnName: keyof ITorrent) => dispatch({ type: 'CHANGE_SORT', column: columnName });
 
   return (
     <>
       <Table compact="very" size="small" stackable fixed singleLine selectable sortable>
         <Table.Header className="mobile-hidden">
           <Table.Row>
-            <Table.HeaderCell
-              width="11"
-              sorted={column === 'name' ? getSemanticSortDirection(direction) : undefined}
-              onClick={() => dispatch({ type: 'CHANGE_SORT', column: 'name' })}
-            >
+            <Table.HeaderCell width="11" sorted={getSortOrder('name')} onClick={() => changeColumnSortOrder('name')}>
               Name
             </Table.HeaderCell>
-            <Table.HeaderCell
-              width="4"
-              sorted={column === 'size_bytes' ? getSemanticSortDirection(direction) : undefined}
-              onClick={() => dispatch({ type: 'CHANGE_SORT', column: 'size_bytes' })}
-            >
+            <Table.HeaderCell width="4" sorted={getSortOrder('size_bytes')} onClick={() => changeColumnSortOrder('size_bytes')}>
               Size / Status
             </Table.HeaderCell>
-            <Table.HeaderCell
-              width="5"
-              sorted={column === 'ratio' ? getSemanticSortDirection(direction) : undefined}
-              onClick={() => dispatch({ type: 'CHANGE_SORT', column: 'ratio' })}
-            >
+            <Table.HeaderCell width="5" sorted={getSortOrder('ratio')} onClick={() => changeColumnSortOrder('ratio')}>
               Ratios
             </Table.HeaderCell>
-            <Table.HeaderCell
-              width="5"
-              sorted={column === 'download_rate' ? getSemanticSortDirection(direction) : undefined}
-              onClick={() => dispatch({ type: 'CHANGE_SORT', column: 'download_rate' })}
-            >
+            <Table.HeaderCell width="5" sorted={getSortOrder('download_rate')} onClick={() => changeColumnSortOrder('download_rate')}>
               Rates
             </Table.HeaderCell>
-            <Table.HeaderCell
-              width="5"
-              sorted={column === 'seeders' ? getSemanticSortDirection(direction) : undefined}
-              onClick={() => dispatch({ type: 'CHANGE_SORT', column: 'seeders' })}
-            >
+            <Table.HeaderCell width="5" sorted={getSortOrder('seeders')} onClick={() => changeColumnSortOrder('seeders')}>
               Seeds / Peers
             </Table.HeaderCell>
             <Table.HeaderCell width="3" />
