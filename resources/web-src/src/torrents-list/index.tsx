@@ -15,12 +15,12 @@ interface ITorrentListProps {
 type LodashSortDirection = 'asc' | 'desc' | undefined;
 
 interface State {
-  column: string | null;
+  column: keyof ITorrent | null;
   data: ITorrent[];
   direction: LodashSortDirection;
 }
 
-type Action = { type: 'CHANGE_SORT'; column: string } | { type: 'UPDATE_TORRENTS'; torrents: ITorrent[] };
+type Action = { type: 'CHANGE_SORT'; column: keyof ITorrent } | { type: 'UPDATE_TORRENTS'; torrents: ITorrent[] };
 
 const initialState: State = {
   column: null,
@@ -81,8 +81,8 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrents, onSetAct
             </Table.HeaderCell>
             <Table.HeaderCell
               width="4"
-              sorted={column === 'size' ? getSemanticSortDirection(direction) : undefined}
-              onClick={() => dispatch({ type: 'CHANGE_SORT', column: 'size' })}
+              sorted={column === 'size_bytes' ? getSemanticSortDirection(direction) : undefined}
+              onClick={() => dispatch({ type: 'CHANGE_SORT', column: 'size_bytes' })}
             >
               Size / Status
             </Table.HeaderCell>
