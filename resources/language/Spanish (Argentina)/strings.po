@@ -2032,44 +2032,56 @@ msgstr "Desautorización en Trakt.tv exitosa"
 
 msgctxt "#30653"
 msgid "Which files to download"
-msgstr ""
+msgstr "Archivos que se van a descargar"
 
 msgctxt "#30654"
 msgid "Only playback file"
-msgstr ""
+msgstr "Sólo reproducir archivo"
 
 msgctxt "#30655"
 msgid "Season files"
-msgstr ""
+msgstr "Archivos de temporada"
 
 msgctxt "#30656"
 msgid "All files"
-msgstr ""
+msgstr "Todos los archivos"
 
 msgctxt "#30657"
 msgid "Disable LSD"
-msgstr ""
+msgstr "Desactivar LSD"
 
 msgctxt "#30658"
 msgid "Add extra trackers"
-msgstr ""
+msgstr "Agregar trackers extra"
 
 msgctxt "#30659"
 msgid "All known trackers"
-msgstr ""
+msgstr "Todos los trackers conocidos"
 
 msgctxt "#30660"
 msgid "Best trackers"
-msgstr ""
+msgstr "Mejores trackers"
 
 msgctxt "#30661"
 msgid "Minimum set"
-msgstr ""
+msgstr "Set mínimo"
 
 msgctxt "#30662"
 msgid "Remove original trackers from torrent"
-msgstr ""
+msgstr "Eliminar trackers originales de torrent"
 
 msgctxt "#30663"
 msgid "Show episodes on release day (w/o delay)"
-msgstr ""
+msgstr "Mostrar episodios en el día de su emisión (sin demora)"
+
+msgctxt "#30664"
+msgid "Modify trackers in torrent"
+msgstr "Modificar trackers en torrent"
+
+msgctxt "#30665"
+msgid "At the time of adding"
+msgstr "Cuando se agrega"
+
+msgctxt "#30666"
+msgid "Every time"
+msgstr "Siempre"
