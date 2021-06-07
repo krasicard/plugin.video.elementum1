@@ -2076,3 +2076,23 @@ msgstr "Ta bort originalbevakare från torrent"
 msgctxt "#30663"
 msgid "Show episodes on release day (w/o delay)"
 msgstr "Visa avsnitt vid utgivningsdagen (utan fördröjning)"
+
+msgctxt "#30664"
+msgid "Modify trackers in torrent"
+msgstr ""
+
+msgctxt "#30665"
+msgid "At the time of adding"
+msgstr ""
+
+msgctxt "#30666"
+msgid "Every time"
+msgstr ""
+
+msgctxt "#30667"
+msgid "Mark as watched in Trakt"
+msgstr ""
+
+msgctxt "#30668"
+msgid "Mark as unwatched in Trakt"
+msgstr ""

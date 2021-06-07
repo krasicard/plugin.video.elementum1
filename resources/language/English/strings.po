@@ -2084,3 +2084,11 @@ msgstr ""
 msgctxt "#30666"
 msgid "Every time"
 msgstr ""
+
+msgctxt "#30667"
+msgid "Mark as watched in Trakt"
+msgstr ""
+
+msgctxt "#30668"
+msgid "Mark as unwatched in Trakt"
+msgstr ""

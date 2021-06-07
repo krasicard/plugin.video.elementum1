@@ -2085,3 +2085,11 @@ msgstr "Cuando se agrega"
 msgctxt "#30666"
 msgid "Every time"
 msgstr "Siempre"
+
+msgctxt "#30667"
+msgid "Mark as watched in Trakt"
+msgstr ""
+
+msgctxt "#30668"
+msgid "Mark as unwatched in Trakt"
+msgstr ""

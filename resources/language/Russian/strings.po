@@ -2085,3 +2085,11 @@ msgstr "Во момент добавлении"
 msgctxt "#30666"
 msgid "Every time"
 msgstr "Каждый раз"
+
+msgctxt "#30667"
+msgid "Mark as watched in Trakt"
+msgstr "Отмет. просм. в Trakt"
+
+msgctxt "#30668"
+msgid "Mark as unwatched in Trakt"
+msgstr "Отмет. непросм. в Trakt"
