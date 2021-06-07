@@ -711,6 +711,10 @@ msgctxt "#30278"
 msgid "%s removed from library, do you want to clean it?[CR]You can later use Kodi's 'Clean library' feature instead."
 msgstr "%s eltávolítva a könyvtárából. Szeretné megtisztítani a könytárat most?[CR]Később tudja használni a Kodi 'Könyvtár megtisztítása' funkcióját helyette."
 
+msgctxt "#30279"
+msgid "Video %s was previously removed from library.[CR]Force adding?"
+msgstr ""
+
 msgctxt "#30282"
 msgid "Nothing left to remove from Elementum"
 msgstr "Nem maradt más eltávolítható a Elementumból"
