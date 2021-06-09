@@ -1157,6 +1157,10 @@ msgctxt "#30416"
 msgid "Percents of playback to mark as watched"
 msgstr "Postotak reprodukcije za označavanje kao odgledanog"
 
+msgctxt "#30417"
+msgid "Use Network name as Studio for shows"
+msgstr ""
+
 msgctxt "#30421"
 msgid "Load torrents from torrents folder on startup"
 msgstr "Učitaj torrente iz mape torrenta pri pokretanju"

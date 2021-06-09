@@ -387,6 +387,7 @@
         <!-- TMDB -->
         <setting label="30039" type="lsep" />
         <setting id="tmdb_api_key" label="30040" type="text" default="" />
+        <setting id="tmdb_show_use_network_as_studio" label="30417" type="bool" default="true" />
 
         <!-- Connectivity -->
         <setting label="30408" type="lsep" />
