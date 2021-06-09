@@ -1156,7 +1156,7 @@ msgstr "Процент просмотра для отметки просмотр
 
 msgctxt "#30417"
 msgid "Use Network name as Studio for shows"
-msgstr ""
+msgstr "Использовать имя телесети как имя студии для шоу"
 
 msgctxt "#30421"
 msgid "Load torrents from torrents folder on startup"
