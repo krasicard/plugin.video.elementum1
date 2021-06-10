@@ -1159,7 +1159,7 @@ msgid "Percents of playback to mark as watched"
 msgstr ""
 
 msgctxt "#30417"
-msgid "Use Network name as Studio for shows"
+msgid "Use name of production company as Studio for shows"
 msgstr ""
 
 msgctxt "#30421"
