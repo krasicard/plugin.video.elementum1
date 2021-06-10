@@ -710,9 +710,13 @@ msgctxt "#30278"
 msgid "%s removed from library, do you want to clean it?[CR]You can later use Kodi's 'Clean library' feature instead."
 msgstr "%s видалений з бібліотеки, хочете пересканувати її?[CR]Ви можете запустити 'Очистити бібліотеку' в Kodi пізже"
 
+msgctxt "#30279"
+msgid "Video %s was previously removed from library.[CR]Force adding?"
+msgstr "Видиво %s вже було видалено з теці.[CR]Додати знов?"
+
 msgctxt "#30282"
 msgid "Nothing left to remove from Elementum"
-msgstr "Ничого видаляти з Elementum"
+msgstr "Нічого видаляти з Elementum"
 
 msgctxt "#30283"
 msgid "Merge to library"
@@ -980,7 +984,7 @@ msgstr "Синхронізувати Переглянуте"
 
 msgctxt "#30367"
 msgid "Sync back Kodi watched states into Trakt"
-msgstr ""
+msgstr "Відновити Trakt статуси для переглянутого"
 
 msgctxt "#30369"
 msgid "Disable Upload"
@@ -1012,11 +1016,11 @@ msgstr "Обирати розмір пам'яті автоматично"
 
 msgctxt "#30377"
 msgid "Size is chosen automatically, based on[CR]physical amount of memory"
-msgstr "Розмір обраний автоматично"
+msgstr "Розмір обрано автоматично выдповідно до доступної пам'яті"
 
 msgctxt "#30378"
 msgid "Allow memory usage"
-msgstr "Дозволяти використування пам'яті"
+msgstr "Дозволяти використовання пам'яті"
 
 msgctxt "#30379"
 msgid "Minimum - 40MB, Default - 8%, Maximum - 15%"
@@ -1152,11 +1156,11 @@ msgstr "Наступна сторінка (%s)"
 
 msgctxt "#30416"
 msgid "Percents of playback to mark as watched"
-msgstr ""
+msgstr "Скільки переглянути для маркування як перелянуте, %"
 
 msgctxt "#30421"
 msgid "Load torrents from torrents folder on startup"
-msgstr ""
+msgstr "Завантажити торенти з теці торентів після старту"
 
 msgctxt "#30422"
 msgid "Popular lists"
@@ -1252,19 +1256,19 @@ msgstr "Обраний Мій Список, Серіали"
 
 msgctxt "#30447"
 msgid "Add to Trakt, when movie is added to Kodi library"
-msgstr ""
+msgstr "Додати до Trakt коли Фільм додано в теку Kodi"
 
 msgctxt "#30448"
 msgid "Add to Trakt, when show is added to Kodi library"
-msgstr ""
+msgstr "Додати до Trakt коли Серіал додано в теку Kodi"
 
 msgctxt "#30449"
 msgid "Remove from Trakt, when movie is deleted from Kodi library"
-msgstr ""
+msgstr "Видалити з Trakt коли Фільм видалено з теці Kodi"
 
 msgctxt "#30450"
 msgid "Remove from Trakt, when show is deleted from Kodi library"
-msgstr ""
+msgstr "Видалити з Trakt коли Серіал видалено з теці Kodi"
 
 msgctxt "#30451"
 msgid "Torrent files path"
@@ -1292,7 +1296,7 @@ msgstr ""
 
 msgctxt "#30457"
 msgid "Uploading file to pastebin"
-msgstr "Завантажуємо файл на pastebin"
+msgstr "Відвантажуємо файл на pastebin"
 
 msgctxt "#30458"
 msgid "Deleted movies"
@@ -1300,7 +1304,7 @@ msgstr "Усунуті, Фільми"
 
 msgctxt "#30459"
 msgid "Deleted shows"
-msgstr "Усунуті, серіали"
+msgstr "Усунуті, Серіали"
 
 msgctxt "#30460"
 msgid "Database"
@@ -1376,7 +1380,7 @@ msgstr "Мовою орігіналу"
 
 msgctxt "#30478"
 msgid "Searching"
-msgstr "Виконується пошук"
+msgstr "Шукаю"
 
 msgctxt "#30480"
 msgid "Run Kodi library update after add/delete"
@@ -1432,11 +1436,11 @@ msgstr "Використовувати проксі для завантажен�
 
 msgctxt "#30493"
 msgid "Use Proxy for trackers"
-msgstr ""
+msgstr "Викорустовувати Proxy для трекерів"
 
 msgctxt "#30494"
 msgid "Use Proxy for torrent downloading"
-msgstr ""
+msgstr "Викорустовувати Proxy для завантаження торентів"
 
 msgctxt "#30495"
 msgid "Use built-in DNS resolver"
@@ -1508,7 +1512,7 @@ msgstr "В бібліотеці Kodi"
 
 msgctxt "#30518"
 msgid "Use libtorrent deadlines"
-msgstr ""
+msgstr "Використовувати кінцееві терміни libtorrent"
 
 msgctxt "#30519"
 msgid "Use libtorrent pause/resume trick for added torrents"
