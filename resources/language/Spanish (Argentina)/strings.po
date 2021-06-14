@@ -1164,7 +1164,7 @@ msgstr ""
 
 msgctxt "#30418"
 msgid "Show number of unwatched episodes in Shows/Seasons"
-msgstr ""
+msgstr "Mostrar cantidad episodios no vistos en Series/Temporadas"
 
 msgctxt "#30421"
 msgid "Load torrents from torrents folder on startup"
@@ -2100,8 +2100,8 @@ msgstr "Siempre"
 
 msgctxt "#30667"
 msgid "Mark as watched in Trakt"
-msgstr ""
+msgstr "Marcar como visto en Trakt"
 
 msgctxt "#30668"
 msgid "Mark as unwatched in Trakt"
-msgstr ""
+msgstr "Marcar como no visto en Trakt"
