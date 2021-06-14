@@ -713,6 +713,10 @@ msgctxt "#30278"
 msgid "%s removed from library, do you want to clean it?[CR]You can later use Kodi's 'Clean library' feature instead."
 msgstr "%s togs bort från biblioteket, vill du rensa den?[CR]Du kan senare använda Kodis \"Ren bibliotek\"-funktion istället."
 
+msgctxt "#30279"
+msgid "Video %s was previously removed from library.[CR]Force adding?"
+msgstr ""
+
 msgctxt "#30282"
 msgid "Nothing left to remove from Elementum"
 msgstr "Inget kvar att ta bort från Elementum"
@@ -2080,3 +2084,23 @@ msgstr "Ta bort originalbevakare från torrent"
 msgctxt "#30663"
 msgid "Show episodes on release day (w/o delay)"
 msgstr "Visa avsnitt vid utgivningsdagen (utan fördröjning)"
+
+msgctxt "#30664"
+msgid "Modify trackers in torrent"
+msgstr ""
+
+msgctxt "#30665"
+msgid "At the time of adding"
+msgstr ""
+
+msgctxt "#30666"
+msgid "Every time"
+msgstr ""
+
+msgctxt "#30667"
+msgid "Mark as watched in Trakt"
+msgstr ""
+
+msgctxt "#30668"
+msgid "Mark as unwatched in Trakt"
+msgstr ""

@@ -711,6 +711,10 @@ msgctxt "#30278"
 msgid "%s removed from library, do you want to clean it?[CR]You can later use Kodi's 'Clean library' feature instead."
 msgstr "%s eltávolítva a könyvtárából. Szeretné megtisztítani a könytárat most?[CR]Később tudja használni a Kodi 'Könyvtár megtisztítása' funkcióját helyette."
 
+msgctxt "#30279"
+msgid "Video %s was previously removed from library.[CR]Force adding?"
+msgstr ""
+
 msgctxt "#30282"
 msgid "Nothing left to remove from Elementum"
 msgstr "Nem maradt más eltávolítható a Elementumból"
@@ -2077,4 +2081,24 @@ msgstr ""
 
 msgctxt "#30663"
 msgid "Show episodes on release day (w/o delay)"
+msgstr ""
+
+msgctxt "#30664"
+msgid "Modify trackers in torrent"
+msgstr ""
+
+msgctxt "#30665"
+msgid "At the time of adding"
+msgstr ""
+
+msgctxt "#30666"
+msgid "Every time"
+msgstr ""
+
+msgctxt "#30667"
+msgid "Mark as watched in Trakt"
+msgstr ""
+
+msgctxt "#30668"
+msgid "Mark as unwatched in Trakt"
 msgstr ""
