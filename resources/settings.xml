@@ -142,6 +142,7 @@
         <setting id="seasons_order" label="30568" type="enum" lvalues="30569|30570" default="0" />
         <setting id="seasons_specials" label="30639" type="bool" default="true" />
         <setting id="tmdb_show_use_prod_company_as_studio" label="30417" type="bool" default="false" />
+        <setting id="show_unwatched_episoded_number" label="30418" type="bool" default="true" />
 
         <setting id="viewmode_movies" label="30034" type="number" default="" />
         <setting id="viewmode_tvshows" label="30035" type="number" default="" />
