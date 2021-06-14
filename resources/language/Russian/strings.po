@@ -1162,6 +1162,10 @@ msgctxt "#30417"
 msgid "Use name of production company as Studio for shows"
 msgstr "Использовать имя продюсерской компании как имя студии для шоу"
 
+msgctxt "#30418"
+msgid "Show number of unwatched episodes in Shows/Seasons"
+msgstr "Показывать количество непросмотренных серий в Сериале/Сезоне"
+
 msgctxt "#30421"
 msgid "Load torrents from torrents folder on startup"
 msgstr "Добавлять торренты из папки torrents при запуске"
