@@ -1169,6 +1169,10 @@ msgctxt "#30418"
 msgid "Show number of unwatched episodes in Shows/Seasons"
 msgstr ""
 
+msgctxt "#30419"
+msgid "Allow Kodi to change artworks (experimental)"
+msgstr ""
+
 msgctxt "#30421"
 msgid "Load torrents from torrents folder on startup"
 msgstr "Učitaj torrente iz mape torrenta pri pokretanju"
