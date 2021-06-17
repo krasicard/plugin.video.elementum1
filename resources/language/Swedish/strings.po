@@ -713,6 +713,10 @@ msgctxt "#30278"
 msgid "%s removed from library, do you want to clean it?[CR]You can later use Kodi's 'Clean library' feature instead."
 msgstr "%s togs bort från biblioteket, vill du rensa den?[CR]Du kan senare använda Kodis \"Ren bibliotek\"-funktion istället."
 
+msgctxt "#30279"
+msgid "Video %s was previously removed from library.[CR]Force adding?"
+msgstr ""
+
 msgctxt "#30282"
 msgid "Nothing left to remove from Elementum"
 msgstr "Inget kvar att ta bort från Elementum"
@@ -1157,6 +1161,14 @@ msgctxt "#30416"
 msgid "Percents of playback to mark as watched"
 msgstr "Procent av uppspelning för att markera som sedda"
 
+msgctxt "#30417"
+msgid "Use name of production company as Studio for shows"
+msgstr ""
+
+msgctxt "#30418"
+msgid "Show number of unwatched episodes in Shows/Seasons"
+msgstr ""
+
 msgctxt "#30421"
 msgid "Load torrents from torrents folder on startup"
 msgstr "Läs in torrenter från torrentmappen vid start"
@@ -1271,7 +1283,7 @@ msgstr "Ta bort från Trakt när serie tas bort från Kodi-biblioteket"
 
 msgctxt "#30451"
 msgid "Torrent files path"
-msgstr "Torrent-filsökväg"
+msgstr "Torrentfilsökväg"
 
 msgctxt "#30452"
 msgid "Reset all paths"
@@ -1847,7 +1859,7 @@ msgstr "Cacha hämtade torrentfiler efter sökning"
 
 msgctxt "#30606"
 msgid "Show watched state for torrent's files"
-msgstr "Visa sedda-status för torrentfiler"
+msgstr "Visa sedda-tillstånd för torrentfiler"
 
 msgctxt "#30607"
 msgid "Use earliest release date as basic for searching"
@@ -2076,3 +2088,23 @@ msgstr "Ta bort originalbevakare från torrent"
 msgctxt "#30663"
 msgid "Show episodes on release day (w/o delay)"
 msgstr "Visa avsnitt vid utgivningsdagen (utan fördröjning)"
+
+msgctxt "#30664"
+msgid "Modify trackers in torrent"
+msgstr ""
+
+msgctxt "#30665"
+msgid "At the time of adding"
+msgstr ""
+
+msgctxt "#30666"
+msgid "Every time"
+msgstr ""
+
+msgctxt "#30667"
+msgid "Mark as watched in Trakt"
+msgstr ""
+
+msgctxt "#30668"
+msgid "Mark as unwatched in Trakt"
+msgstr ""

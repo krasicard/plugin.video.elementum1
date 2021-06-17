@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, Image, Modal, Form, Label, Input, Button } from 'semantic-ui-react';
+import { Menu, Image, Modal, Form, Label, Input, Button, Dropdown } from 'semantic-ui-react';
 import { saveRefreshRate, getRefreshRate } from '../Services/settings';
 import logo from '../static/logo.png';
 
@@ -12,12 +12,26 @@ const HeaderMenu = (): JSX.Element => {
     window.location.reload();
   };
 
+  const StartAll = () => {
+    void fetch('/torrents/resume');
+  };
+
+  const PauseAll = () => {
+    void fetch('/torrents/pause');
+  };
+
   return (
-    <Menu borderless color="green" style={{ border: 'none' }}>
+    <Menu borderless style={{ border: 'none' }}>
       <Menu.Item header as="a" href="/web">
         <Image size="mini" src={logo} />
         Elementum
       </Menu.Item>
+      <Dropdown item text="Torrents">
+        <Dropdown.Menu>
+          <Dropdown.Item icon="download" text="Start all" onClick={StartAll} />
+          <Dropdown.Item icon="pause" text="Pause all" onClick={PauseAll} />
+        </Dropdown.Menu>
+      </Dropdown>
       <Modal trigger={<Menu.Item position="right">Settings</Menu.Item>} closeIcon>
         <Modal.Header content="Settings" />
         <Modal.Content>

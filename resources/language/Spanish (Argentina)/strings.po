@@ -710,6 +710,10 @@ msgctxt "#30278"
 msgid "%s removed from library, do you want to clean it?[CR]You can later use Kodi's 'Clean library' feature instead."
 msgstr "%s removido de la Colección ¿Quiere limpiarla?[CR]Luego puede utilizar la función 'Limpiar Colección' de Kodi."
 
+msgctxt "#30279"
+msgid "Video %s was previously removed from library.[CR]Force adding?"
+msgstr ""
+
 msgctxt "#30282"
 msgid "Nothing left to remove from Elementum"
 msgstr "No queda nada que eliminar de Elementum"
@@ -1153,6 +1157,14 @@ msgstr "Página siguiente (%s)"
 msgctxt "#30416"
 msgid "Percents of playback to mark as watched"
 msgstr "% de reproducción para marcar como ya visto"
+
+msgctxt "#30417"
+msgid "Use name of production company as Studio for shows"
+msgstr ""
+
+msgctxt "#30418"
+msgid "Show number of unwatched episodes in Shows/Seasons"
+msgstr "Mostrar cantidad episodios no vistos en Series/Temporadas"
 
 msgctxt "#30421"
 msgid "Load torrents from torrents folder on startup"
@@ -2032,44 +2044,64 @@ msgstr "Desautorización en Trakt.tv exitosa"
 
 msgctxt "#30653"
 msgid "Which files to download"
-msgstr ""
+msgstr "Archivos que se van a descargar"
 
 msgctxt "#30654"
 msgid "Only playback file"
-msgstr ""
+msgstr "Sólo reproducir archivo"
 
 msgctxt "#30655"
 msgid "Season files"
-msgstr ""
+msgstr "Archivos de temporada"
 
 msgctxt "#30656"
 msgid "All files"
-msgstr ""
+msgstr "Todos los archivos"
 
 msgctxt "#30657"
 msgid "Disable LSD"
-msgstr ""
+msgstr "Desactivar LSD"
 
 msgctxt "#30658"
 msgid "Add extra trackers"
-msgstr ""
+msgstr "Agregar trackers extra"
 
 msgctxt "#30659"
 msgid "All known trackers"
-msgstr ""
+msgstr "Todos los trackers conocidos"
 
 msgctxt "#30660"
 msgid "Best trackers"
-msgstr ""
+msgstr "Mejores trackers"
 
 msgctxt "#30661"
 msgid "Minimum set"
-msgstr ""
+msgstr "Set mínimo"
 
 msgctxt "#30662"
 msgid "Remove original trackers from torrent"
-msgstr ""
+msgstr "Eliminar trackers originales de torrent"
 
 msgctxt "#30663"
 msgid "Show episodes on release day (w/o delay)"
-msgstr ""
+msgstr "Mostrar episodios en el día de su emisión (sin demora)"
+
+msgctxt "#30664"
+msgid "Modify trackers in torrent"
+msgstr "Modificar trackers en torrent"
+
+msgctxt "#30665"
+msgid "At the time of adding"
+msgstr "Cuando se agrega"
+
+msgctxt "#30666"
+msgid "Every time"
+msgstr "Siempre"
+
+msgctxt "#30667"
+msgid "Mark as watched in Trakt"
+msgstr "Marcar como visto en Trakt"
+
+msgctxt "#30668"
+msgid "Mark as unwatched in Trakt"
+msgstr "Marcar como no visto en Trakt"

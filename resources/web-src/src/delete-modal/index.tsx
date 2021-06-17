@@ -3,20 +3,18 @@ import { Button, Checkbox, Message, Modal, Popup } from 'semantic-ui-react';
 import { ITorrent } from '../dataStructure';
 
 interface ITorrentListProps {
-  torrent: ITorrent | undefined;
+  torrents: ITorrent[];
 }
 
-const DeleteTorrentModal = ({ torrent }: ITorrentListProps): JSX.Element => {
+const DeleteTorrentModal = ({ torrents }: ITorrentListProps): JSX.Element => {
   const [open, setOpen] = useState(false);
   const [deleteFiles, setDeleteFiles] = useState(false);
-  const hasSelectedTorrent = torrent !== undefined;
+  const hasSelectedTorrent = torrents.length > 0;
 
   // TODO: handle response
   // TODO: update list after executing fetch
   function deleteSelectedTorrent() {
-    if (torrent) {
-      void fetch(`/torrents/delete/${torrent.id}?files=${deleteFiles}`);
-    }
+    torrents.map((t) => fetch(`/torrents/delete/${t.id}?files=${deleteFiles}`));
     setOpen(false);
   }
 
@@ -38,11 +36,26 @@ const DeleteTorrentModal = ({ torrent }: ITorrentListProps): JSX.Element => {
         />
       }
     >
-      <Modal.Header>Delete {torrent?.name}</Modal.Header>
+      <Modal.Header>{torrents.length === 1 ? `Delete ${torrents[0].name}` : `Delete ${torrents.length} torrents?`} </Modal.Header>
       <Modal.Content>
         <Modal.Description>
-          Are you sure you want to delete <b>{torrent?.name}</b>?
-          <br />
+          Are you sure you want to delete
+          {torrents.length === 1 ? (
+            <>
+              <b> {torrents[0].name}</b>?
+            </>
+          ) : (
+            <>
+              <> these {torrents.length} torrents?</>
+              <ol>
+                {torrents.map((t) => (
+                  <li>
+                    <b>{t.name}</b>
+                  </li>
+                ))}
+              </ol>
+            </>
+          )}
           <Message negative>
             <Checkbox label="Also delete files" onChange={(e, data) => setDeleteFiles(data.checked ?? false)} />
           </Message>

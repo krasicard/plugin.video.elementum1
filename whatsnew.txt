@@ -7,6 +7,14 @@
     - Source is open, so you can fork everything.
     - Some bug fixes or updates can come, to keep things working and have the latest versions.
 
+[B][COLOR red]0.1.78[/COLOR][/B]
+    - Fixed storing file/memory storage for torrents, downloaded from context plugin.
+    - Fixed seed forever option handling. (thanks to @antonsoroko)
+    - More changes to Web UI. (thanks to @Dim0N22)
+    - Fixed Darwin-x64 compilation.
+    - Added support for Trakt Hidden items (thanks to @antonsoroko)
+    - Fixed removal of Movies/Shows from Kodi library.
+
 [B][COLOR red]0.1.77[/COLOR][/B]
     - All the kudos for go to @antonsoroko and @Dim0N22 for their commitments.
     - New Web UI (hosted at :65220/web)!

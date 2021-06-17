@@ -710,6 +710,10 @@ msgctxt "#30278"
 msgid "%s removed from library, do you want to clean it?[CR]You can later use Kodi's 'Clean library' feature instead."
 msgstr "%s[CR]удален из библиотеки, хотите пересканировать её?[CR]Вы можете запустить 'Очистить библиотеку' в Kodi позже"
 
+msgctxt "#30279"
+msgid "Video %s was previously removed from library.[CR]Force adding?"
+msgstr "Видео %s было ранее удалено из библиотеки.[CR]Добавить принудительно?"
+
 msgctxt "#30282"
 msgid "Nothing left to remove from Elementum"
 msgstr "Нечего удалять из Elementum"
@@ -1153,6 +1157,14 @@ msgstr "Следующая страница (%s)"
 msgctxt "#30416"
 msgid "Percents of playback to mark as watched"
 msgstr "Процент просмотра для отметки просмотренным"
+
+msgctxt "#30417"
+msgid "Use name of production company as Studio for shows"
+msgstr "Использовать имя продюсерской компании как имя студии для шоу"
+
+msgctxt "#30418"
+msgid "Show number of unwatched episodes in Shows/Seasons"
+msgstr "Показывать количество непросмотренных серий в Сериале/Сезоне"
 
 msgctxt "#30421"
 msgid "Load torrents from torrents folder on startup"
@@ -2080,8 +2092,16 @@ msgstr "Модифицировать трекеры в торренте"
 
 msgctxt "#30665"
 msgid "At the time of adding"
-msgstr "Во момент добавлении"
+msgstr "В момент добавления"
 
 msgctxt "#30666"
 msgid "Every time"
 msgstr "Каждый раз"
+
+msgctxt "#30667"
+msgid "Mark as watched in Trakt"
+msgstr "Отмет. просм. в Trakt"
+
+msgctxt "#30668"
+msgid "Mark as unwatched in Trakt"
+msgstr "Отмет. непросм. в Trakt"

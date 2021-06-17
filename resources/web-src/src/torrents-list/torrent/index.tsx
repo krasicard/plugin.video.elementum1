@@ -16,11 +16,11 @@ import { ITorrent, StatusCode } from '../../dataStructure';
 
 interface ITorrentListItemProps {
   torrent: ITorrent;
-  isClicked: boolean;
-  onClick: (torrent: ITorrent | undefined) => void;
+  isSelected: boolean;
+  onSetActiveTorrents: React.Dispatch<React.SetStateAction<ITorrent[]>>;
 }
 
-const TorrentListItem = ({ torrent, isClicked, onClick }: ITorrentListItemProps): JSX.Element => {
+const TorrentListItem = ({ torrent, isSelected, onSetActiveTorrents }: ITorrentListItemProps): JSX.Element => {
   const isActive = torrent.status_code !== StatusCode.StatusFinished && torrent.status_code !== StatusCode.StatusPaused;
 
   const onResumePause = async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>, data: ButtonProps) => {
@@ -36,9 +36,30 @@ const TorrentListItem = ({ torrent, isClicked, onClick }: ITorrentListItemProps)
     await fetch(`/playuri?resume=${torrent.id}`);
   };
 
+  /**
+   * Select a torrent from the torrent list.
+   * By default it sets active torrents to the last clicked torrent element,
+   * but it also supports multiselect using Ctrl-key. In this case normal rules apply:
+   * if a torrent wasn't previously selected - add it to the list of selected torrents,
+   * otherwise - remove it from the list.
+   */
+  const onClick = (event: React.MouseEvent) => {
+    if (!event.ctrlKey) {
+      onSetActiveTorrents(isSelected ? [] : [torrent]);
+    } else {
+      onSetActiveTorrents((activeTorrents) => {
+        const activeTorrentIndex = activeTorrents.findIndex((t) => t.id === torrent.id);
+        if (activeTorrentIndex === -1) {
+          return [...activeTorrents, torrent];
+        }
+        return activeTorrents.filter((_, i) => i !== activeTorrentIndex);
+      });
+    }
+  };
+
   return (
     <>
-      <Table.Row onClick={() => onClick(isClicked ? undefined : torrent)} active={isClicked}>
+      <Table.Row onClick={onClick} active={isSelected}>
         <Table.Cell>
           <span title={torrent.name}>{torrent.name}</span>
           <Progress percent={torrent.progress} title={`${torrent.progress.toFixed(2)}%`} autoSuccess indicating={isActive} size="tiny" />

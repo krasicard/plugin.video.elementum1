@@ -1,5 +1,6 @@
-import React, { FC } from 'react';
-import { Table } from 'semantic-ui-react';
+import React, { FC, useEffect, useReducer } from 'react';
+import { StrictTableHeaderCellProps, Table } from 'semantic-ui-react';
+import { orderBy } from 'lodash-es';
 import DeleteTorrentModal from '../delete-modal';
 import UploadTorrentModal from '../upload-modal';
 import TorrentListItem from './torrent';
@@ -7,38 +8,137 @@ import { ITorrent } from '../dataStructure';
 
 interface ITorrentListProps {
   torrents: ITorrent[];
-  activeTorrent: ITorrent | undefined;
-  onSetActiveTorrent: (_torrentId: ITorrent | undefined) => void;
+  activeTorrents: ITorrent[];
+  onSetActiveTorrents: React.Dispatch<React.SetStateAction<ITorrent[]>>;
 }
 
-const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrent, onSetActiveTorrent }: ITorrentListProps) => (
-  <>
-    <Table compact="very" size="small" stackable fixed singleLine selectable>
-      <Table.Header className="mobile-hidden">
-        <Table.Row>
-          <Table.HeaderCell width="11">Name</Table.HeaderCell>
-          <Table.HeaderCell width="4">Size / Status</Table.HeaderCell>
-          <Table.HeaderCell width="5">Ratios</Table.HeaderCell>
-          <Table.HeaderCell width="5">Rates</Table.HeaderCell>
-          <Table.HeaderCell width="5">Seeds / Peers</Table.HeaderCell>
-          <Table.HeaderCell width="3" />
-        </Table.Row>
-      </Table.Header>
-      <Table.Body>
-        {torrents.map((t) => (
-          <TorrentListItem key={t.id} torrent={t} onClick={onSetActiveTorrent} isClicked={activeTorrent?.id === t.id} />
-        ))}
-      </Table.Body>
-      <Table.Footer fullWidth>
-        <Table.Row>
-          <Table.HeaderCell colSpan={11}>
-            <UploadTorrentModal />
-            <DeleteTorrentModal torrent={activeTorrent} />
-          </Table.HeaderCell>
-        </Table.Row>
-      </Table.Footer>
-    </Table>
-  </>
-);
+type LodashSortOrder = 'asc' | 'desc' | undefined;
+
+interface State {
+  column: keyof ITorrent | null;
+  data: ITorrent[];
+  order: LodashSortOrder;
+}
+
+type Action = { type: 'CHANGE_SORT'; column: keyof ITorrent } | { type: 'UPDATE_TORRENTS'; torrents: ITorrent[] };
+
+const initialState: State = {
+  column: null,
+  data: [],
+  order: undefined,
+};
+
+function sortReducer(state: State, action: Action): State {
+  const orderByColumn = (torrents: ITorrent[], column: string, order: NonNullable<LodashSortOrder>) =>
+    orderBy(torrents, [column, 'added_time'], [order, 'asc']);
+
+  switch (action.type) {
+    case 'CHANGE_SORT': {
+      let newDirection: LodashSortOrder;
+      let { column } = action;
+
+      if (state.column === action.column) {
+        // Cycle sort order: ascending -> descending -> default (sort by the default field) -> ascending
+        switch (state.order) {
+          case 'asc':
+            newDirection = 'desc';
+            break;
+          case 'desc':
+            column = 'added_time';
+            newDirection = 'asc';
+            break;
+          case undefined:
+            newDirection = 'asc';
+            break;
+        }
+      } else {
+        newDirection = 'asc';
+      }
+
+      return {
+        ...state,
+        column,
+        data: orderByColumn(state.data, column, newDirection),
+        order: newDirection,
+      };
+    }
+    case 'UPDATE_TORRENTS': {
+      const { torrents } = action;
+      return {
+        ...state,
+        data: state.column && state.order ? orderByColumn(torrents, state.column, state.order) : torrents,
+      };
+    }
+  }
+}
+
+const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrents, onSetActiveTorrents }: ITorrentListProps) => {
+  const [state, dispatch] = useReducer(sortReducer, initialState);
+  const { column, data, order } = state;
+
+  useEffect(() => {
+    dispatch({ type: 'UPDATE_TORRENTS', torrents });
+  }, [torrents]);
+
+  const getSortOrder = (columnName: keyof ITorrent): StrictTableHeaderCellProps['sorted'] => {
+    if (column !== columnName) return undefined;
+
+    switch (order) {
+      case 'asc':
+        return 'ascending';
+      case 'desc':
+        return 'descending';
+      case undefined:
+        return undefined;
+    }
+  };
+
+  const changeColumnSortOrder = (columnName: keyof ITorrent) => dispatch({ type: 'CHANGE_SORT', column: columnName });
+
+  return (
+    <>
+      <Table compact="very" size="small" stackable fixed singleLine selectable sortable>
+        <Table.Header className="mobile-hidden">
+          <Table.Row>
+            <Table.HeaderCell width="11" sorted={getSortOrder('name')} onClick={() => changeColumnSortOrder('name')}>
+              Name
+            </Table.HeaderCell>
+            <Table.HeaderCell width="4" sorted={getSortOrder('size_bytes')} onClick={() => changeColumnSortOrder('size_bytes')}>
+              Size / Status
+            </Table.HeaderCell>
+            <Table.HeaderCell width="5" sorted={getSortOrder('ratio')} onClick={() => changeColumnSortOrder('ratio')}>
+              Ratios
+            </Table.HeaderCell>
+            <Table.HeaderCell width="5" sorted={getSortOrder('download_rate')} onClick={() => changeColumnSortOrder('download_rate')}>
+              Rates
+            </Table.HeaderCell>
+            <Table.HeaderCell width="5" sorted={getSortOrder('seeders')} onClick={() => changeColumnSortOrder('seeders')}>
+              Seeds / Peers
+            </Table.HeaderCell>
+            <Table.HeaderCell width="3" />
+          </Table.Row>
+        </Table.Header>
+        <Table.Body>
+          {data.map((t) => (
+            <TorrentListItem
+              key={t.id}
+              torrent={t}
+              onSetActiveTorrents={onSetActiveTorrents}
+              isSelected={activeTorrents.some((at) => at.id === t.id)}
+            />
+          ))}
+        </Table.Body>
+        <Table.Footer fullWidth>
+          <Table.Row>
+            <Table.HeaderCell colSpan={11}>
+              <UploadTorrentModal />
+              <DeleteTorrentModal torrents={activeTorrents} />
+            </Table.HeaderCell>
+          </Table.Row>
+        </Table.Footer>
+      </Table>
+    </>
+  );
+};
 
 export default TorrentList;

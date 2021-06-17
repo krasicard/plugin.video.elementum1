@@ -19,6 +19,7 @@ export interface ITorrent {
   name: string;
   download_rate: number;
   id: string;
+  added_time: number;
   peers: number;
   peers_total: number;
   ratio: number;
@@ -28,6 +29,7 @@ export interface ITorrent {
   seeders_total: number;
   seeding_time: string;
   size: string;
+  size_bytes: number;
   time_ratio: number;
   upload_rate: number;
   total_download: number;

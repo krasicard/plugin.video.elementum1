@@ -718,6 +718,10 @@ msgctxt "#30278"
 msgid "%s removed from library, do you want to clean it?[CR]You can later use Kodi's 'Clean library' feature instead."
 msgstr "%s retiré de la librairie, voulez-vous la mettre à jour ?[CR]Vous pouvez utiliser ultérieurement la fonction Kodi de mise à jour."
 
+msgctxt "#30279"
+msgid "Video %s was previously removed from library.[CR]Force adding?"
+msgstr ""
+
 msgctxt "#30282"
 msgid "Nothing left to remove from Elementum"
 msgstr "Rien de plus à supprimer dans Elementum"
@@ -1161,6 +1165,14 @@ msgstr ""
 
 msgctxt "#30416"
 msgid "Percents of playback to mark as watched"
+msgstr ""
+
+msgctxt "#30417"
+msgid "Use name of production company as Studio for shows"
+msgstr ""
+
+msgctxt "#30418"
+msgid "Show number of unwatched episodes in Shows/Seasons"
 msgstr ""
 
 msgctxt "#30421"
@@ -2081,4 +2093,24 @@ msgstr ""
 
 msgctxt "#30663"
 msgid "Show episodes on release day (w/o delay)"
+msgstr ""
+
+msgctxt "#30664"
+msgid "Modify trackers in torrent"
+msgstr ""
+
+msgctxt "#30665"
+msgid "At the time of adding"
+msgstr ""
+
+msgctxt "#30666"
+msgid "Every time"
+msgstr ""
+
+msgctxt "#30667"
+msgid "Mark as watched in Trakt"
+msgstr ""
+
+msgctxt "#30668"
+msgid "Mark as unwatched in Trakt"
 msgstr ""
