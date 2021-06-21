@@ -1171,7 +1171,7 @@ msgid "Show number of unwatched episodes in Shows/Seasons"
 msgstr ""
 
 msgctxt "#30419"
-msgid "Allow Kodi to change artworks (experimental)"
+msgid "Allow Kodi to change artworks for non-library items (use at your own risk)"
 msgstr ""
 
 msgctxt "#30421"

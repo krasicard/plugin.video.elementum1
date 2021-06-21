@@ -1167,8 +1167,8 @@ msgid "Show number of unwatched episodes in Shows/Seasons"
 msgstr "Показывать количество непросмотренных серий в Сериале/Сезоне"
 
 msgctxt "#30419"
-msgid "Allow Kodi to change artworks (experimental)"
-msgstr "Разрешить Kodi изменять иллюстрации (экспериментальная ф-ция)"
+msgid "Allow Kodi to change artworks for non-library items (use at your own risk)"
+msgstr "Разреш. Kodi изм. изображения для видео не в библиотеке (используйте на свой страх и риск)"
 
 msgctxt "#30421"
 msgid "Load torrents from torrents folder on startup"
