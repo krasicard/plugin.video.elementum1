@@ -2092,16 +2092,16 @@ msgstr "Змінювати трекери в торенті"
 
 msgctxt "#30665"
 msgid "At the time of adding"
-msgstr "В мить додавання"
+msgstr "Як щойно додано"
 
 msgctxt "#30666"
 msgid "Every time"
-msgstr "Каждого разу"
+msgstr "Кожного разу"
 
 msgctxt "#30667"
 msgid "Mark as watched in Trakt"
-msgstr ""
+msgstr "Позначати як переглянуте в Trakt"
 
 msgctxt "#30668"
 msgid "Mark as unwatched in Trakt"
-msgstr ""
+msgstr "Позначати як непереглянуте в Trakt"
