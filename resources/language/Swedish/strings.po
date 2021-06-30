@@ -511,7 +511,7 @@ msgstr "Mest röstade"
 
 msgctxt "#30213"
 msgid "IMDB Top 250"
-msgstr ""
+msgstr "IMDB Top 250"
 
 msgctxt "#30214"
 msgid "Movies"
@@ -631,7 +631,7 @@ msgstr "Mest förväntade"
 
 msgctxt "#30251"
 msgid "Box Office"
-msgstr ""
+msgstr "Biljettkontor"
 
 msgctxt "#30252"
 msgid "Add to library"
@@ -715,7 +715,7 @@ msgstr "%s togs bort från biblioteket, vill du rensa den?[CR]Du kan senare anv�
 
 msgctxt "#30279"
 msgid "Video %s was previously removed from library.[CR]Force adding?"
-msgstr ""
+msgstr "Videon %s togs tidigare bort från biblioteket.[CR]Tvinga tilläggning?"
 
 msgctxt "#30282"
 msgid "Nothing left to remove from Elementum"
@@ -1163,11 +1163,11 @@ msgstr "Procent av uppspelning för att markera som sedda"
 
 msgctxt "#30417"
 msgid "Use name of production company as Studio for shows"
-msgstr ""
+msgstr "Använd namn på produktionsföretag som studio för serier"
 
 msgctxt "#30418"
 msgid "Show number of unwatched episodes in Shows/Seasons"
-msgstr ""
+msgstr "Visa antal osedda avsnitt i serier/säsonger"
 
 msgctxt "#30421"
 msgid "Load torrents from torrents folder on startup"
@@ -1731,7 +1731,7 @@ msgstr "* Alla säsonger"
 
 msgctxt "#30572"
 msgid "Log server's response body"
-msgstr "Loggserverens svarstext"
+msgstr "Loggserverns svarstext"
 
 msgctxt "#30573"
 msgid "Select file to play"
@@ -2091,20 +2091,20 @@ msgstr "Visa avsnitt vid utgivningsdagen (utan fördröjning)"
 
 msgctxt "#30664"
 msgid "Modify trackers in torrent"
-msgstr ""
+msgstr "Ändra bevakare för torrent"
 
 msgctxt "#30665"
 msgid "At the time of adding"
-msgstr ""
+msgstr "Vid tidpunkten för tilläggning"
 
 msgctxt "#30666"
 msgid "Every time"
-msgstr ""
+msgstr "Varje gång"
 
 msgctxt "#30667"
 msgid "Mark as watched in Trakt"
-msgstr ""
+msgstr "Markera som sedd i Trakt"
 
 msgctxt "#30668"
 msgid "Mark as unwatched in Trakt"
-msgstr ""
+msgstr "Markera som osedd i Trakt"
