@@ -23,7 +23,7 @@ Supported platforms
 - Linux 32/64 bits (starting Ubuntu 15.04)
 - Linux ARM (armv6, armv7, armv8/arm64)
 - OS X 32/64 bits
-- Android ARM (4.4.x, and later), x86, x64, ARM, ARM64
+- Android ARM (for 4.4.x use [0.1.41](https://github.com/elgatito/plugin.video.elementum/releases/tag/v0.1.41), for 5+ use the latest build), x86, x64, ARM, ARM64
 
 Minimum supported Kodi version: 16 (Jarvis)
 
