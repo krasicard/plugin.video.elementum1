@@ -20,7 +20,9 @@ interface State {
   order: LodashSortOrder;
 }
 
-type Action = { type: 'CHANGE_SORT'; column: keyof ITorrent } | { type: 'UPDATE_TORRENTS'; torrents: ITorrent[] };
+type Action =
+  | { type: 'CHANGE_SORT'; column: keyof ITorrent }
+  | { type: 'UPDATE_TORRENTS'; torrents: ITorrent[]; onSetActiveTorrents: React.Dispatch<React.SetStateAction<ITorrent[]>> };
 
 const initialState: State = {
   column: null,
@@ -63,7 +65,8 @@ function sortReducer(state: State, action: Action): State {
       };
     }
     case 'UPDATE_TORRENTS': {
-      const { torrents } = action;
+      const { torrents, onSetActiveTorrents } = action;
+      onSetActiveTorrents((activeTorrents) => activeTorrents.flatMap((at) => torrents.find((t) => t.id === at.id) ?? []));
       return {
         ...state,
         data: state.column && state.order ? orderByColumn(torrents, state.column, state.order) : torrents,
@@ -77,8 +80,8 @@ const TorrentList: FC<ITorrentListProps> = ({ torrents, activeTorrents, onSetAct
   const { column, data, order } = state;
 
   useEffect(() => {
-    dispatch({ type: 'UPDATE_TORRENTS', torrents });
-  }, [torrents]);
+    dispatch({ type: 'UPDATE_TORRENTS', torrents, onSetActiveTorrents });
+  }, [torrents, onSetActiveTorrents]);
 
   const getSortOrder = (columnName: keyof ITorrent): StrictTableHeaderCellProps['sorted'] => {
     if (column !== columnName) return undefined;
