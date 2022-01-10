@@ -32,8 +32,8 @@
 				<posy>315</posy>
 				<width>270</width>
 				<height>70</height>
-				<radiowidth>110</radiowidth>
-				<radioheight>50</radioheight>
+				<radiowidth>100</radiowidth>
+				<radioheight>40</radioheight>
 				<visible>true</visible>
 				<colordiffuse>FFFFFFFF</colordiffuse>
 				<wrapmultiline>true</wrapmultiline>
@@ -56,8 +56,8 @@
 				<posy>395</posy>
 				<width>270</width>
 				<height>70</height>
-				<radiowidth>110</radiowidth>
-				<radioheight>50</radioheight>
+				<radiowidth>100</radiowidth>
+				<radioheight>40</radioheight>
 				<visible>true</visible>
 				<colordiffuse>FFFFFFFF</colordiffuse>
 				<wrapmultiline>true</wrapmultiline>
