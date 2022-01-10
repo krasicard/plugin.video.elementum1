@@ -10,16 +10,16 @@
 				<posx>240</posx>
 				<posy>205</posy>
 				<width>800</width>
-				<height>310</height>
+				<height>350</height>
 				<texture colordiffuse="F0F0F0F0">AddonWindow/black.png</texture>
 			</control>
 			<control type="button" id="32500">
 				<!-- Close button -->
 				<posx>981</posx>
-				<posy>222</posy>
+				<posy>224</posy>
 				<width>32</width>
 				<height>32</height>
-				<texturefocus colordiffuse="button_focus">Button/close.png</texturefocus>
+				<texturefocus colordiffuse="FF6C6C6C">Button/close.png</texturefocus>
 				<texturenofocus colordiffuse="EEFFFFFF">Button/close.png</texturenofocus>
 				<onup>32508</onup>
 				<ondown>32501</ondown>
@@ -30,8 +30,10 @@
 				<!-- Radio Button URL -->
 				<posx>760</posx>
 				<posy>315</posy>
-				<width>280</width>
-				<height>80</height>
+				<width>270</width>
+				<height>70</height>
+				<radiowidth>110</radiowidth>
+				<radioheight>50</radioheight>
 				<visible>true</visible>
 				<colordiffuse>FFFFFFFF</colordiffuse>
 				<wrapmultiline>true</wrapmultiline>
@@ -51,9 +53,11 @@
 			<control type="radiobutton" id="32502">
 				<!-- Radio Button file path -->
 				<posx>760</posx>
-				<posy>375</posy>
-				<width>280</width>
-				<height>80</height>
+				<posy>395</posy>
+				<width>270</width>
+				<height>70</height>
+				<radiowidth>110</radiowidth>
+				<radioheight>50</radioheight>
 				<visible>true</visible>
 				<colordiffuse>FFFFFFFF</colordiffuse>
 				<wrapmultiline>true</wrapmultiline>
@@ -73,9 +77,9 @@
 			<control type="button" id="32508">
 				<!-- OK button -->
 				<posx>760</posx>
-				<posy>435</posy>
-				<width>280</width>
-				<height>80</height>
+				<posy>475</posy>
+				<width>270</width>
+				<height>70</height>
 				<visible>true</visible>
 				<colordiffuse>FFFFFFFF</colordiffuse>
 				<wrapmultiline>true</wrapmultiline>
@@ -107,7 +111,7 @@
 			</control>
 			<control type="label" id="32504">
 				<!-- Option 1 Insert URL label -->
-				<posx>280</posx>
+				<posx>275</posx>
 				<posy>280</posy>
 				<width>500</width>
 				<height>30</height>
@@ -121,25 +125,26 @@
 			</control>
 			<control type="button" id="32505">
 				<!-- Option 1 Insert URL box -->
-				<posx>260</posx>
+				<posx>250</posx>
 				<posy>315</posy>
 				<width>500</width>
-				<height>80</height>
+				<height>70</height>
 				<visible>String.Contains(Control.GetLabel(32501),*)</visible>
 				<colordiffuse>FFFFFFFF</colordiffuse>
 				<wrapmultiline>false</wrapmultiline>
 				<font>font14</font>
-				<textcolor>FFB2D4F5</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<focusedcolor>FFFFFFFF</focusedcolor>
 				<disabledcolor>80FFFFFF</disabledcolor>
 				<invalidcolor>FFFFFFFF</invalidcolor>
+				<textoffsetx>25</textoffsetx>
 				<align>left</align>
 				<aligny>center</aligny>
 				<onright>32508</onright>
 			</control>
 			<control type="label" id="32506">
 				<!-- Option 2 File path label -->
-				<posx>280</posx>
+				<posx>275</posx>
 				<posy>280</posy>
 				<width>500</width>
 				<height>30</height>
@@ -153,18 +158,19 @@
 			</control>
 			<control type="button" id="32507">
 				<!-- Option 2 File path box -->
-				<posx>260</posx>
+				<posx>250</posx>
 				<posy>315</posy>
 				<width>500</width>
-				<height>80</height>
+				<height>70</height>
 				<visible>String.Contains(Control.GetLabel(32502),*)</visible>
 				<colordiffuse>FFFFFFFF</colordiffuse>
 				<wrapmultiline>false</wrapmultiline>
 				<font>font14</font>
-				<textcolor>FFB2D4F5</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<focusedcolor>FFFFFFFF</focusedcolor>
 				<disabledcolor>80FFFFFF</disabledcolor>
 				<invalidcolor>FFFFFFFF</invalidcolor>
+				<textoffsetx>25</textoffsetx>
 				<align>left</align>
 				<aligny>center</aligny>
 				<onright>32508</onright>
