@@ -24,7 +24,7 @@
 				<posy>205</posy>
 				<width>800</width>
 				<height>350</height>
-				<texture colordiffuse="fa0a0a0a">AddonWindow/white.png</texture>
+				<texture colordiffuse="fa000000">AddonWindow/white.png</texture>
 			</control>
 			<control type="button" id="32500">
 				<!-- Close button -->
