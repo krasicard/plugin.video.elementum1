@@ -712,7 +712,7 @@ msgstr "%s removido de la Colección ¿Quiere limpiarla?[CR]Luego puede utilizar
 
 msgctxt "#30279"
 msgid "Video %s was previously removed from library.[CR]Force adding?"
-msgstr ""
+msgstr "Video %s se eliminó anteriormente de Colección.[CR]¿Forzar adición?"
 
 msgctxt "#30282"
 msgid "Nothing left to remove from Elementum"
@@ -1160,7 +1160,7 @@ msgstr "% de reproducción para marcar como ya visto"
 
 msgctxt "#30417"
 msgid "Use name of production company as Studio for shows"
-msgstr ""
+msgstr "Usar nombre de compañía productora como Studio en shows"
 
 msgctxt "#30418"
 msgid "Show number of unwatched episodes in Shows/Seasons"
@@ -2108,32 +2108,32 @@ msgstr "Marcar como no visto en Trakt"
 
 msgctxt "#30669"
 msgid "Delay addon startup, seconds"
-msgstr ""
+msgstr "Retraso de inicio del addon, en segundos"
 
 msgctxt "#30670"
 msgid "Downloading required binary file for '%s'"
-msgstr ""
+msgstr "Descargando archivo binario requerido para '%s'"
 
 msgctxt "#30671"
 msgid "List of Opennic DNS IPs"
-msgstr ""
+msgstr "Lista de IPs de DNS de Opennic"
 
 msgctxt "#30672"
 msgid "Compact database"
-msgstr ""
+msgstr "Compactar base de datos"
 
 msgctxt "#30673"
 msgid "Compact cache database"
-msgstr ""
+msgstr "Compactar base de datos de cache"
 
 msgctxt "#30674"
 msgid "Database was compacted"
-msgstr ""
+msgstr "La base de datos fue compactada"
 
 msgctxt "#30675"
 msgid "Remote host login"
-msgstr ""
+msgstr "Login de host remoto"
 
 msgctxt "#30676"
 msgid "Remote host password"
-msgstr ""
+msgstr "Contraseña de host remoto"
