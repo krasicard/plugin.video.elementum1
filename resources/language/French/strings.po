@@ -25,7 +25,7 @@ msgstr "Général"
 
 msgctxt "#30001"
 msgid "Download path"
-msgstr "Dossier téléchagements"
+msgstr "Dossier téléchargements"
 
 msgctxt "#30004"
 msgid "Max upload rate, kB/s"
@@ -283,7 +283,7 @@ msgstr "Remplacer le “user agent” (fortement déconseillé)"
 
 msgctxt "#30075"
 msgid "Default advisable (acceptable)"
-msgstr ""
+msgstr "Valeur par défaut conseillée (acceptable)"
 
 msgctxt "#30076"
 msgid "libtorrent (Rasterbar) 1.1.0"
@@ -361,7 +361,7 @@ msgstr "Désactiver la fenêtre d’avancement en fond de tâche"
 # Interface
 msgctxt "#30100"
 msgid "Elementum has crashed, restarting..."
-msgstr "Plantage de Elementum, redémarrage..."
+msgstr "Elementum a planté, redémarrage..."
 
 msgctxt "#30102"
 msgid "This add-on can only be run from within Elementum"
