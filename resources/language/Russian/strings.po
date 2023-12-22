@@ -342,7 +342,7 @@ msgstr "Исходящие интерфейсы"
 
 msgctxt "#30092"
 msgid "Use fallback fanart if fanart wasn't found"
-msgstr "Использовать фанарт по умолчанию"
+msgstr "Использовать резервный фанарт, если фанарт не был найден"
 
 msgctxt "#30093"
 msgid "Disable notification sound"
