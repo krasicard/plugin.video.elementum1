@@ -976,7 +976,7 @@ msgstr "Синхронизировать Список просмотра из Tr
 
 msgctxt "#30365"
 msgid "Sync items from user lists into Kodi library"
-msgstr "Синхронизировать Мой Список из Trakt в библиотеку"
+msgstr "Синхронизировать Мои Списки из Trakt в библиотеку"
 
 msgctxt "#30366"
 msgid "Sync watched states from Trakt into Kodi library"
