@@ -1579,7 +1579,7 @@ msgid "Stop Downloading all files"
 msgstr "Зупинити завантаження усіх файлів"
 
 msgctxt "#30535"
-msgid "Continue playback from [[B]%s[/B]?"
+msgid "Continue playback from [B]%s[/B]?"
 msgstr "Продовжити відтворення від [B]%s[/B]?"
 
 msgctxt "#30536"
