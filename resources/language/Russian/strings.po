@@ -419,11 +419,11 @@ msgstr "Опрос трекеров..."
 
 msgctxt "#30119"
 msgid "ID of selected userlist for movies"
-msgstr ""
+msgstr "ID выбранного Мой Список, Фильмы"
 
 msgctxt "#30120"
 msgid "ID of selected userlist for shows"
-msgstr ""
+msgstr "ID выбранного Мой Список, Сериалы"
 
 msgctxt "#30141"
 msgid "Please support Elementum development by visiting[CR]https://elementum.surge.sh/donate/ or https://elementumorg.github.io/donate/"
