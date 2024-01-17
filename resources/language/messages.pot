@@ -423,6 +423,14 @@ msgctxt "#30118"
 msgid "Scraping trackers..."
 msgstr ""
 
+msgctxt "#30119"
+msgid "ID of selected userlist for movies"
+msgstr ""
+
+msgctxt "#30120"
+msgid "ID of selected userlist for shows"
+msgstr ""
+
 msgctxt "#30141"
 msgid "Please support Elementum development by visiting[CR]https://elementum.surge.sh/donate/ or https://elementumorg.github.io/donate/"
 msgstr ""
