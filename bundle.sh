@@ -28,7 +28,7 @@ Parameters available:
 -p | --platform - Optional. Specific platform, otherwise all platforms would be used for bundling.
 -b | --binaries - Required. Folder with binaries (should have folders inside, like android_x64, linux_arm64).
 -s | --suffix - Optional. Suffix to add to a zip file.
--t | --target - Optiona. Where to copy result zip file.
+-t | --target - Optional. Where to copy result zip file.
 
 EOD
 }
@@ -79,14 +79,16 @@ fi
 if [ -z "${PLATFORM}" ]; then
     echo "## Using all platform files"
     ZIPFILE="plugin.video.elementum-${VERSION}${SUFFIX}.zip"
-else 
+else
     echo "## Using ${PLATFORM} platform files"
     ZIPFILE="plugin.video.elementum-${VERSION}.${PLATFORM}${SUFFIX}.zip"
 fi
 
-if [ -z "${PLATFORM}" ]; then
+if [ -z "${TARGET}" ]; then
     ZIPPATH="${PWD}/${ZIPFILE}"
-else 
+else
+    [[ ! -d "${TARGET}" ]] && mkdir -p "${TARGET}"
+    TARGET=$(readlink -f "${TARGET}") # make path absolute
     ZIPPATH="${TARGET}/${ZIPFILE}"
 fi
 
@@ -100,13 +102,13 @@ fi
 (cd .. && zip -r ${ZIPPATH} ${ADDON} "${ZIPIGNORE[@]}" -x "${ADDON}/resources/bin/*" )
 if [ -z "${PLATFORM}" ]; then
     echo "## Copying binaries from ${BINARIES} to ${PWD}/resources/bin/"
-    cp -rf ${BINARIES} ${PWD}/resources/bin/ 
+    cp -rf ${BINARIES} ${PWD}/resources/bin/
 
     version_update
 
     echo "## Adding binaries from resources/bin/ into ${ZIPPATH}"
     (cd .. && zip -r -g ${ZIPPATH} ${ADDON}/resources/bin/ "${ZIPIGNORE[@]}")
-else 
+else
     echo "## Copying binaries from ${BINARIES} to ${PWD}/resources/bin/"
     cp -rf ${BINARIES}/${PLATFORM} ${PWD}/resources/bin/
 
