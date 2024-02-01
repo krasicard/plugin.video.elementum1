@@ -92,6 +92,14 @@ else
     ZIPPATH="${TARGET}/${ZIPFILE}"
 fi
 
+echo "## Geting platform_detect library"
+wget https://github.com/ElementumOrg/platform_detect/archive/master.zip && \
+unzip master.zip && \
+cp -rf platform_detect-master/python resources/site-packages/platform_detect && \
+cp -rf platform_detect-master/libraries resources/site-packages/platform_detect/ && \
+rm -rf platform_detect-master && \
+rm master.zip
+
 echo
 echo "## Creating ${ZIPPATH} archive file"
 if [[ -f "${ZIPPATH}" ]]; then
@@ -109,7 +117,7 @@ if [ -z "${PLATFORM}" ]; then
     echo "## Adding binaries from resources/bin/ into ${ZIPPATH}"
     (cd .. && zip -r -g ${ZIPPATH} ${ADDON}/resources/bin/ "${ZIPIGNORE[@]}")
 else
-    echo "## Copying binaries from ${BINARIES} to ${PWD}/resources/bin/"
+    echo "## Copying binaries from ${BINARIES}/${PLATFORM} to ${PWD}/resources/bin/"
     cp -rf ${BINARIES}/${PLATFORM} ${PWD}/resources/bin/
 
     version_update
