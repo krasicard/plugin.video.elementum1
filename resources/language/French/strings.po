@@ -2198,3 +2198,7 @@ msgstr "Supprimer les séries de la base de données Elementum"
 msgctxt "#30687"
 msgid "In Elementum library"
 msgstr "Dans la librairie Elementum"
+
+msgctxt "#30688"
+msgid "Skip searching for installed Elementum repository"
+msgstr ""

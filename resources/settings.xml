@@ -4,6 +4,8 @@
         <!-- Startup -->
         <setting label="30603" type="lsep" />
         <setting id="greeting_enabled" label="30587" type="bool" default="true" />
+        <setting id="skip_burst_search" label="30559" type="bool" default="false" />
+        <setting id="skip_repository_search" label="30688" type="bool" default="false" />
         <setting id="startup_delay" label="30669" type="slider" option="int" range="0,1,180" default="0" />
         <setting id="preload_timeout" label="30602" type="slider" option="int" range="1,1,120" default="1" />
         <setting id="binary_platform" label="30611" type="select" values="Auto|android_arm|android_arm64|android_x86|android_x64|linux_armv6|linux_armv7|linux_armv7_softfp|linux_arm64|linux_x86|linux_x64|darwin_x86|darwin_x64|windows_x86|windows_x64" default="Auto" />
@@ -248,17 +250,17 @@
         <setting id="trakt_sync_added_shows_list_name"     type="text" label="30446" default="" enable="false" />
         <setting id="trakt_sync_added_shows_list"          type="number" label="30120" default="" enable="false" />
 
-        <setting id="trakt_sync_removed_movies"            type="bool" label="30449" default="true" />
         <setting id="trakt_sync_removed_movies_back"       type="bool" label="30678" default="true" />
-        <setting id="trakt_sync_removed_movies_location"   type="enum" label="30442" lvalues="30257|30254|30436" default="0" enable="eq(-2,true)" />
-        <setting                                           type="action" label="30441" action="RunPlugin(plugin://plugin.video.elementum/trakt/select_list/removed/movies)" enable="eq(-2,2)" />
+        <setting id="trakt_sync_removed_movies"            type="bool" label="30449" default="true" />
+        <setting id="trakt_sync_removed_movies_location"   type="enum" label="30442" lvalues="30257|30254|30436" default="0" enable="eq(-1,true)" />
+        <setting                                           type="action" label="30441" action="RunPlugin(plugin://plugin.video.elementum/trakt/select_list/removed/movies)" enable="eq(-1,2)" />
         <setting id="trakt_sync_removed_movies_list_name"  type="text" label="30443" default="" enable="false" />
         <setting id="trakt_sync_removed_movies_list"       type="number" label="30119" default="" enable="false" />
 
-        <setting id="trakt_sync_removed_shows"             type="bool" label="30450" default="true" />
         <setting id="trakt_sync_removed_shows_back"        type="bool" label="30679" default="true" />
-        <setting id="trakt_sync_removed_shows_location"    type="enum" label="30445" lvalues="30257|30254|30436" default="0" enable="eq(-2,true)" />
-        <setting                                           type="action" label="30444" action="RunPlugin(plugin://plugin.video.elementum/trakt/select_list/removed/shows)" enable="eq(-2,2)" />
+        <setting id="trakt_sync_removed_shows"             type="bool" label="30450" default="true" />
+        <setting id="trakt_sync_removed_shows_location"    type="enum" label="30445" lvalues="30257|30254|30436" default="0" enable="eq(-1,true)" />
+        <setting                                           type="action" label="30444" action="RunPlugin(plugin://plugin.video.elementum/trakt/select_list/removed/shows)" enable="eq(-1,2)" />
         <setting id="trakt_sync_removed_shows_list_name"   type="text" label="30446" default="" enable="false" />
         <setting id="trakt_sync_removed_shows_list"        type="number" label="30120" default="" enable="false" />
 
@@ -305,7 +307,6 @@
 
         <!-- Providers -->
         <setting label="30239" type="lsep" />
-        <setting id="skip_burst_search" label="30559" type="bool" default="false" />
         <setting id="provider_disable_failing" label="30031" type="bool" default="false" />
         <setting id="provider_allowed_failures" label="30032" type="slider" option="int" range="0,1,10" default="3" />
 

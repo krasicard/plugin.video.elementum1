@@ -2189,3 +2189,7 @@ msgstr "Удалить сериалы из базы Elementum"
 msgctxt "#30687"
 msgid "In Elementum library"
 msgstr "В библиотеке Elementum"
+
+msgctxt "#30688"
+msgid "Skip searching for installed Elementum repository"
+msgstr "Не спрашивать установку репозитория Elementum"

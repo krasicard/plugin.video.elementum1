@@ -2188,3 +2188,7 @@ msgstr ""
 msgctxt "#30687"
 msgid "In Elementum library"
 msgstr ""
+
+msgctxt "#30688"
+msgid "Skip searching for installed Elementum repository"
+msgstr ""
