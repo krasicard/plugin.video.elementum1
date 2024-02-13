@@ -146,7 +146,7 @@ msgstr "Вид по умолчанию, Сезоны"
 
 msgctxt "#30037"
 msgid "Default view for Episodes"
-msgstr "Вид по умолчанию, Эпизоды"
+msgstr "Вид по умолчанию, Серии"
 
 msgctxt "#30038"
 msgid "Prefer use of original title"
@@ -588,7 +588,7 @@ msgstr "Новинки сериалов"
 
 msgctxt "#30238"
 msgid "Recent Episodes"
-msgstr "Новые эпизоды"
+msgstr "Новые серии"
 
 msgctxt "#30239"
 msgid "Providers"
@@ -736,7 +736,7 @@ msgstr "Показывать невышедшие сезоны"
 
 msgctxt "#30285"
 msgid "Show unaired episodes"
-msgstr "Показывать невышедшие эпизоды"
+msgstr "Показывать невышедшие серии"
 
 msgctxt "#30286"
 msgid "%s merged to library, do you want to rescan it?[CR]You can later use Kodi's 'Update library' feature instead."
@@ -1204,7 +1204,7 @@ msgstr "Цвет названия серии"
 
 msgctxt "#30428"
 msgid "Hide unaired episodes"
-msgstr "Скрыть невышедшие эпизоды"
+msgstr "Скрыть невышедшие серии"
 
 msgctxt "#30429"
 msgid "Sort shows in the list"
@@ -1492,7 +1492,7 @@ msgstr "Находится в файле USERDATA/plugin.video.elementum/libtorr
 
 msgctxt "#30505"
 msgid "Add episode number to the title"
-msgstr "Добавлять номер эпизода в название"
+msgstr "Добавлять номер серии в название"
 
 msgctxt "#30506"
 msgid "Enable libtorrent logging"
@@ -2092,7 +2092,7 @@ msgstr "Удалять оригинальные трекеры из торрен
 
 msgctxt "#30663"
 msgid "Show episodes on release day (w/o delay)"
-msgstr "Показывать эпизоды в день релиза (без задержки)"
+msgstr "Показывать серии в день релиза (без задержки)"
 
 msgctxt "#30664"
 msgid "Modify trackers in torrent"
@@ -2164,7 +2164,7 @@ msgstr "Удалить дубликаты Elementum из библиотеки"
 
 msgctxt "#30681"
 msgid "[B]Found duplicates in Kodi library:[/B][CR]Movies: [B]%s[/B], Shows: [B]%s[/B], Episodes: [B]%s[/B][CR]Proceed?"
-msgstr "[B]Найдены дубликаты в библиотеке Kodi[/B][CR]Фильмы: [B]%s[/B], Сериалы: [B]%s[/B], Эпизоды: [B]%s[/B][CR]Продолжить?"
+msgstr "[B]Найдены дубликаты в библиотеке Kodi[/B][CR]Фильмы: [B]%s[/B], Сериалы: [B]%s[/B], Серии: [B]%s[/B][CR]Продолжить?"
 
 msgctxt "#30682"
 msgid "No duplicates were found in Kodi library"
@@ -2176,7 +2176,7 @@ msgstr "Начинаем удаление дубликатов в библиот
 
 msgctxt "#30684"
 msgid "Removed Movies: %s, Shows: %s, Episodes: %s"
-msgstr "Удалено Фильмов: %s, Сериалов: %s, Эпизодов: %s"
+msgstr "Удалено Фильмов: %s, Сериалов: %s, Серий: %s"
 
 msgctxt "#30685"
 msgid "Remove movies from Elementum database"
