@@ -2197,3 +2197,7 @@ msgstr ""
 msgctxt "#30688"
 msgid "Skip searching for installed Elementum repository"
 msgstr ""
+
+msgctxt "#30435"
+msgid "Hide watched"
+msgstr ""

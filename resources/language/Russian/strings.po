@@ -2193,3 +2193,7 @@ msgstr "В библиотеке Elementum"
 msgctxt "#30688"
 msgid "Skip searching for installed Elementum repository"
 msgstr "Не спрашивать установку репозитория Elementum"
+
+msgctxt "#30435"
+msgid "Hide watched"
+msgstr "Скрывать просмотренное"
