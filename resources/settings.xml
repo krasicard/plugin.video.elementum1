@@ -318,12 +318,16 @@
     </category>
     <!-- Proxy -->
     <category label="30008">
-    <setting label="30490" type="lsep" />
+        <!-- Internal DNS client -->
+        <setting label="30689" type="lsep" />
         <setting id="internal_dns_enabled" label="30495" type="bool" default="false" />
         <setting id="internal_dns_help" label="30496" type="text" enable="false" />
         <setting id="internal_dns_skip_ipv6" label="30536" type="bool" default="true" />
-        <setting id="internal_dns_opennic" label="30671" type="text" default="163.172.168.171, 152.70.189.130, 167.86.112.174" enable="eq(-3,true)" />
-
+        <setting id="internal_dns_order" label="30690" type="enum" values="Quad9 > Google > Cloudflare|Google > Cloudflare > Quad9|Cloudflare > Quad9 > Google" default="0" />
+        <setting id="internal_dns_opennic" label="30671" type="text" default="163.172.168.171, 152.70.189.130, 167.86.112.174" enable="eq(-4,true)" />
+    
+        <!-- Internal proxy -->
+        <setting label="30490" type="lsep" />
         <setting id="internal_proxy_enabled" label="30487" type="bool" default="false" />
         <setting id="internal_proxy_logging" label="30489" type="bool" default="false" />
         <setting id="internal_proxy_logging_body" label="30572" type="bool" default="false" />
