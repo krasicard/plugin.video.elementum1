@@ -2201,3 +2201,7 @@ msgstr ""
 msgctxt "#30690"
 msgid "Order of DNS-over-HTTPS services to use"
 msgstr ""
+
+msgctxt "#30691"
+msgid "Hide watched"
+msgstr ""

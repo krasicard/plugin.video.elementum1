@@ -2201,3 +2201,7 @@ msgstr "Встроенный DNS клиент"
 msgctxt "#30690"
 msgid "Order of DNS-over-HTTPS services to use"
 msgstr "Порядок использования сервисов DNS-over-HTTPS"
+
+msgctxt "#30691"
+msgid "Hide watched"
+msgstr "Скрывать просмотренное"
