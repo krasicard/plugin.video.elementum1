@@ -1575,10 +1575,6 @@ msgctxt "#30525"
 msgid "Automatically start downloading next episode"
 msgstr "Automatski pokreni preuzimanje sljedeće epizode"
 
-msgctxt "#30526"
-msgid "Use english title as 'original' for Anime search"
-msgstr "Koristi engleski naslov kao 'izvorni' za Anime pretragu"
-
 msgctxt "#30527"
 msgid "Donate"
 msgstr "Donirajte"

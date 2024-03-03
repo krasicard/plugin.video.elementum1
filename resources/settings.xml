@@ -285,7 +285,6 @@
         <!-- Searching -->
         <setting label="30478" type="lsep" />
         <setting id="use_original_title" type="bool" label="30038" default="false" />
-        <setting id="use_anime_en_title" type="bool" label="30526" default="true" />
         <setting id="use_lowest_release_date" type="bool" label="30607" default="true" />
 
         <setting label="30522" type="lsep" />

@@ -1558,10 +1558,6 @@ msgctxt "#30525"
 msgid "Automatically start downloading next episode"
 msgstr "Comenzar a descargar automáticamente siguiente episodio"
 
-msgctxt "#30526"
-msgid "Use english title as 'original' for Anime search"
-msgstr "Usar título en inglés como 'original' para búsquedas de Anime"
-
 msgctxt "#30527"
 msgid "Donate"
 msgstr "Donar"
