@@ -123,6 +123,7 @@
 
         <setting label="30566" type="lsep" />
         <setting id="results_per_page" label="30021" type="slider" option="int" range="3,1,50" default="9" />
+        <setting id="use_original_title" type="bool" label="30038" default="false" />
         <setting id="default_fanart" label="30092" type="bool" default="true" />
         <setting id="use_fanart_tv" label="30491" type="bool" default="false" />
         <setting id="seasons_all" label="30567" type="bool" default="true" />
@@ -284,7 +285,6 @@
     <category label="30239">
         <!-- Searching -->
         <setting label="30478" type="lsep" />
-        <setting id="use_original_title" type="bool" label="30038" default="false" />
         <setting id="use_anime_en_title" type="bool" label="30526" default="true" />
         <setting id="use_lowest_release_date" type="bool" label="30607" default="true" />
 
