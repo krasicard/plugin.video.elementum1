@@ -1558,10 +1558,6 @@ msgctxt "#30525"
 msgid "Automatically start downloading next episode"
 msgstr "Автоматически начинать загрузку следующей серии"
 
-msgctxt "#30526"
-msgid "Use english title as 'original' for Anime search"
-msgstr "Использовать английское название для поиска Аниме"
-
 msgctxt "#30527"
 msgid "Donate"
 msgstr "Пожертвовать"
@@ -2205,3 +2201,23 @@ msgstr "Порядок использования сервисов DNS-over-HTTP
 msgctxt "#30691"
 msgid "Hide watched"
 msgstr "Скрывать просмотренное"
+
+msgctxt "#30692"
+msgid "TMDB images quality (affects Kodi performance)"
+msgstr "Качество изображений TMDB (влияет на производительность Kodi)"
+
+msgctxt "#30693"
+msgid "Original"
+msgstr "Исходное"
+
+msgctxt "#30694"
+msgid "High"
+msgstr "Высокое"
+
+msgctxt "#30695"
+msgid "Medium"
+msgstr "Среднее"
+
+msgctxt "#30696"
+msgid "Low"
+msgstr "Низкое"

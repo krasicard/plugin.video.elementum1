@@ -1575,10 +1575,6 @@ msgctxt "#30525"
 msgid "Automatically start downloading next episode"
 msgstr "Automatski pokreni preuzimanje sljedeće epizode"
 
-msgctxt "#30526"
-msgid "Use english title as 'original' for Anime search"
-msgstr "Koristi engleski naslov kao 'izvorni' za Anime pretragu"
-
 msgctxt "#30527"
 msgid "Donate"
 msgstr "Donirajte"
@@ -2221,4 +2217,24 @@ msgstr ""
 
 msgctxt "#30691"
 msgid "Hide watched"
+msgstr ""
+
+msgctxt "#30692"
+msgid "TMDB images quality (affects Kodi performance)"
+msgstr ""
+
+msgctxt "#30693"
+msgid "Original"
+msgstr ""
+
+msgctxt "#30694"
+msgid "High"
+msgstr ""
+
+msgctxt "#30695"
+msgid "Medium"
+msgstr ""
+
+msgctxt "#30696"
+msgid "Low"
 msgstr ""
