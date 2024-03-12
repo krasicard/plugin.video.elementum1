@@ -2225,3 +2225,7 @@ msgstr ""
 msgctxt "#30696"
 msgid "Low"
 msgstr ""
+
+msgctxt "#30697"
+msgid "If there is no localized artwork, then use English ones"
+msgstr ""
