@@ -286,7 +286,7 @@
     <category label="30239">
         <!-- Searching -->
         <setting label="30478" type="lsep" />
-        <setting id="use_lowest_release_date" type="bool" label="30607" default="true" />
+        <setting id="provider_use_lowest_release_date" type="bool" label="30607" default="true" />
 
         <setting label="30522" type="lsep" />
         <setting id="min_candidate_size" label="30523" type="slider" option="int" range="0,1,1000" default="100" />
