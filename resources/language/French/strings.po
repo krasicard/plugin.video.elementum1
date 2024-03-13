@@ -2230,3 +2230,11 @@ msgstr ""
 msgctxt "#30696"
 msgid "Low"
 msgstr ""
+
+msgctxt "#30697"
+msgid "Interface language"
+msgstr ""
+
+msgctxt "#30698"
+msgid "Kodi language"
+msgstr ""

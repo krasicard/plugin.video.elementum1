@@ -82,6 +82,8 @@
         <setting id="choose_stream_auto_show" type="bool" label="30614" default="false" />
         <setting id="choose_stream_auto_search" type="bool" label="30615" default="false" />
     </category>
+    
+    <!-- Kodi library -->
     <category label="30326">
         <!-- General -->
         <setting label="30000" type="lsep" />
@@ -111,9 +113,14 @@
         <setting id="library_nfo_movies" type="bool" label="30483" default="true" />
         <setting id="library_nfo_shows" type="bool" label="30484" default="true" />
     </category>
+
+    <!-- Appearance -->
     <category label="30033">
         <!-- Appearance -->
         <setting label="30033" type="lsep" />
+        <setting id="language" label="30697" type="text" default="" />
+            <setting type="action" label="30476" action="RunPlugin(plugin://plugin.video.elementum/cmd/select_language)" subsetting="true" />
+
         <setting id="do_not_disturb" label="30093" type="bool" default="false" />
         <setting id="enable_overlay_status" type="bool" label="30022" default="true" />
           <setting id="overlay_status_offset" type="number" label="30030" default="150" subsetting="true" enable="eq(-1,true)" />
@@ -142,6 +149,8 @@
         <setting id="viewmode_menus_movies_genres" label="30144" type="number" default="" />
         <setting id="viewmode_menus_tvshows_genres" label="30145" type="number" default="" />
     </category>
+
+    <!-- Bittorrent -->
     <category label="BitTorrent">
         <!-- BitTorrent -->
         <setting label="30588" type="lsep" />
@@ -207,6 +216,8 @@
         <!-- <setting id="use_libtorrent_deadline" label="30518" type="bool" default="true" /> -->
         <setting id="use_libtorrent_pauseresume" label="30519" type="bool" default="false" />
     </category>
+
+    <!-- Trakt -->
     <category label="30056">
         <!-- Trakt -->
         <setting label="30648" type="lsep" />
@@ -284,6 +295,8 @@
         <setting id="trakt_calendars_color_unaired" label="30440" type="text" default="deeppink" />
         <setting id="trakt_calendars_date_format" label="30434" type="text" default="yyyy-mm-dd" />
     </category>
+
+    <!-- Providers -->
     <category label="30239">
         <!-- Searching -->
         <setting label="30478" type="lsep" />
@@ -317,6 +330,7 @@
         <setting id="custom_provider_timeout_enabled" label="30017" type="bool" default="false" />
         <setting id="custom_provider_timeout" label="30018" type="slider" option="int" range="7,1,180" default="30" enable="eq(-1,true)" />
     </category>
+    
     <!-- Proxy -->
     <category label="30008">
         <!-- Internal DNS client -->
@@ -344,6 +358,8 @@
           <setting id="use_proxy_tracker" label="30493" type="bool" default="true" subsetting="true" enable="eq(-7,true)" />
           <setting id="use_proxy_download" label="30494" type="bool" default="true" subsetting="true" enable="eq(-8,true)" />
     </category>
+    
+    <!-- Subtitles -->
     <category label="30540">
         <setting label="OpenSubtitles" type="lsep" />
         <setting id="osdb_user" label="30057" type="text" default="" />
@@ -359,6 +375,8 @@
         <setting id="osdb_included_enabled" label="30010" type="bool" default="true" />
         <setting id="osdb_included_skipexists" label="30542" type="bool" default="true" />
     </category>
+
+    <!-- Additional -->
     <category label="30015">
         <!-- Database -->
         <setting label="30460" type="lsep" />

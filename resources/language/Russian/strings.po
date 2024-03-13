@@ -2222,6 +2222,14 @@ msgctxt "#30696"
 msgid "Low"
 msgstr "Низкое"
 
+msgctxt "#30697"
+msgid "Interface language"
+msgstr "Язык интерфейса"
+
+msgctxt "#30698"
+msgid "Kodi language"
+msgstr "Язык Kodi"
+
 msgctxt "#30699"
 msgid "Use earliest release date for progress and calendars"
 msgstr "Использовать самую раннюю дату выпуска для прогресса и календарей"
