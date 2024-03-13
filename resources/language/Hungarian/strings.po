@@ -2230,3 +2230,7 @@ msgstr ""
 msgctxt "#30698"
 msgid "Kodi language"
 msgstr ""
+
+msgctxt "#30699"
+msgid "Use earliest release date for progress and calendars"
+msgstr ""
