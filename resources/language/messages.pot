@@ -2232,3 +2232,7 @@ msgstr ""
 msgctxt "#30696"
 msgid "Low"
 msgstr ""
+
+msgctxt "#30698"
+msgid "Use earliest release date for progress and calendars"
+msgstr ""

@@ -2221,3 +2221,7 @@ msgstr "Среднее"
 msgctxt "#30696"
 msgid "Low"
 msgstr "Низкое"
+
+msgctxt "#30698"
+msgid "Use earliest release date for progress and calendars"
+msgstr "Использовать самую раннюю дату выпуска для прогресса и календарей"
