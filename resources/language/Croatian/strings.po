@@ -1408,7 +1408,7 @@ msgid "Select language"
 msgstr "Odaberi jezik"
 
 msgctxt "#30477"
-msgid "Original"
+msgid "Original language"
 msgstr "Izvorni"
 
 msgctxt "#30478"

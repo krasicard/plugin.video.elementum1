@@ -1391,7 +1391,7 @@ msgid "Select language"
 msgstr "Seleccionar idioma"
 
 msgctxt "#30477"
-msgid "Original"
+msgid "Original language"
 msgstr "Original"
 
 msgctxt "#30478"

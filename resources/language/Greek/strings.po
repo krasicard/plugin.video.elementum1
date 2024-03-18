@@ -1394,7 +1394,7 @@ msgid "Select language"
 msgstr "Επιλογή γλώσσας"
 
 msgctxt "#30477"
-msgid "Original"
+msgid "Original language"
 msgstr "Αρχική"
 
 msgctxt "#30478"
