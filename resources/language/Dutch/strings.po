@@ -148,10 +148,6 @@ msgctxt "#30037"
 msgid "Default view for Episodes"
 msgstr "Standaardweergave voor afleveringen"
 
-msgctxt "#30038"
-msgid "Prefer use of original title"
-msgstr "Voorkeur voor gebruik originele titel"
-
 msgctxt "#30039"
 msgid "TheMovieDB"
 msgstr "TheMovieDB"

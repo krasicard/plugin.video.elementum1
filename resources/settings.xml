@@ -129,7 +129,6 @@
 
         <setting label="30566" type="lsep" />
         <setting id="results_per_page" label="30021" type="slider" option="int" range="3,1,50" default="9" />
-        <setting id="use_original_title" type="bool" label="30038" default="false" />
         <setting id="default_fanart" label="30092" type="bool" default="true" />
         <setting id="use_fanart_tv" label="30491" type="bool" default="false" />
         <setting id="tmdb_images_quality" label="30692" type="enum" lvalues="30693|30694|30695|30696" default="1" />

@@ -147,10 +147,6 @@ msgctxt "#30037"
 msgid "Default view for Episodes"
 msgstr "Jaksojen oletusnäkymä"
 
-msgctxt "#30038"
-msgid "Prefer use of original title"
-msgstr "Käytä alkuperäisiä nimiä"
-
 msgctxt "#30039"
 msgid "TheMovieDB"
 msgstr "TheMovieDB"

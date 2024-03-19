@@ -151,10 +151,6 @@ msgctxt "#30037"
 msgid "Default view for Episodes"
 msgstr "Afișare implicită pentru Episoade"
 
-msgctxt "#30038"
-msgid "Prefer use of original title"
-msgstr "Preferă titlul original"
-
 msgctxt "#30039"
 msgid "TheMovieDB"
 msgstr "TheMovieDB"

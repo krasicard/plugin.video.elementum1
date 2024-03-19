@@ -148,10 +148,6 @@ msgctxt "#30037"
 msgid "Default view for Episodes"
 msgstr "Вигляд за замовчуванням для епізодів"
 
-msgctxt "#30038"
-msgid "Prefer use of original title"
-msgstr "Лише оригінальні назви"
-
 msgctxt "#30039"
 msgid "TheMovieDB"
 msgstr "TheMovieDB"

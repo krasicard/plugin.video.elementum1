@@ -165,10 +165,6 @@ msgctxt "#30037"
 msgid "Default view for Episodes"
 msgstr "Zadani prikaz za epizode"
 
-msgctxt "#30038"
-msgid "Prefer use of original title"
-msgstr "Preferiraj korištenje izvornog naziva"
-
 msgctxt "#30039"
 msgid "TheMovieDB"
 msgstr "TheMovieDB"

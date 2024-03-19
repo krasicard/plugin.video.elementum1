@@ -150,10 +150,6 @@ msgctxt "#30037"
 msgid "Default view for Episodes"
 msgstr "Προεπιλεγμένη εμφάνιση για Επεισόδια"
 
-msgctxt "#30038"
-msgid "Prefer use of original title"
-msgstr "Προτίμηση του πρωτότυπου τίτλου"
-
 msgctxt "#30039"
 msgid "TheMovieDB"
 msgstr "TheMovieDB"
