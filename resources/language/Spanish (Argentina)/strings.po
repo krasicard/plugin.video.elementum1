@@ -1463,7 +1463,7 @@ msgid "Use built-in DNS resolver"
 msgstr "Usar resolver DNS interno"
 
 msgctxt "#30496"
-msgid "Turn off if you use Tor addresses, or you want to use DNS settings from OS"
+msgid "Turn off if you use Tor addresses, or you want to use DNS settings [CR]from OS"
 msgstr "Desactive si usa direcciones Tor o si desea delegar resolución de nombre a red local"
 
 msgctxt "#30498"
@@ -1783,7 +1783,7 @@ msgid "Enable library integration with Kodi"
 msgstr "Activar integración Colección con Kodi"
 
 msgctxt "#30586"
-msgid "If disabled - Elementum will not get/insert items[CR]to Kodi library and skip[CR]watched management with Kodi."
+msgid "If disabled - Elementum will not get/insert items to Kodi library [CR]and skip watched management with Kodi."
 msgstr "Si inactivo Elementum no obtendrá/insertará items[CR]en Colección Kodi y evitará[CR]manejo de estado Visto con Kodi"
 
 msgctxt "#30587"

@@ -1463,8 +1463,8 @@ msgid "Use built-in DNS resolver"
 msgstr "Использовать встроенный DNS клиент"
 
 msgctxt "#30496"
-msgid "Turn off if you use Tor addresses, or you want to use DNS settings from OS"
-msgstr "Отключите, если используете адреса Tor или хотите использовать настройки DNS из ОС"
+msgid "Turn off if you use Tor addresses, or you want to use DNS settings [CR]from OS"
+msgstr "Отключите, если используете адреса Tor или хотите [CR]использовать настройки DNS из ОС"
 
 msgctxt "#30498"
 msgid "Reset this path to '/'"
@@ -1488,7 +1488,7 @@ msgstr "Использовать libtorrent.config для настроек дв�
 
 msgctxt "#30504"
 msgid "Located at USERDATA/plugin.video.elementum/libtorrent.config file[CR]Settings apply automatically. Visit https://libtorrent.org for info."
-msgstr "Находится в файле USERDATA/plugin.video.elementum/libtorrent.config[CR]Применяются автоматически. Смотри https://libtorrent.org"
+msgstr "Находится в USERDATA/plugin.video.elementum/libtorrent.config[CR]Применяются автоматически. Смотри https://libtorrent.org"
 
 msgctxt "#30505"
 msgid "Add episode number to the title"
@@ -1783,8 +1783,8 @@ msgid "Enable library integration with Kodi"
 msgstr "Включить интеграцию с библиотекой Kodi"
 
 msgctxt "#30586"
-msgid "If disabled - Elementum will not get/insert items[CR]to Kodi library and skip[CR]watched management with Kodi."
-msgstr "Если выключено - Elementum не будет получать/добавлять[CR]в библиотеку Kodi и не будет управлять[CR]просмотренным в Kodi."
+msgid "If disabled - Elementum will not get/insert items to Kodi library [CR]and skip watched management with Kodi."
+msgstr "Если выключено - Elementum не будет получать/добавлять в [CR]библиотеку Kodi и не будет управлять просмотренным в Kodi."
 
 msgctxt "#30587"
 msgid "Show welcome message on start"
@@ -1828,7 +1828,7 @@ msgstr "Размер кеша, МБ"
 
 msgctxt "#30598"
 msgid "Enable caching if using File storage and have speed problems.[CR]Will use more memory, but can improve the speed."
-msgstr "Включайте кеширование если используете файлы[CR]и низкую скорость. Нужно больше памяти,[CR]но может улучшить скорость."
+msgstr "Включайте кеширование если используете файлы и низкую [CR]скорость. Нужно больше памяти, но может улучшить скорость."
 
 msgctxt "#30599"
 msgid "Enable Kodi library synchronization"
