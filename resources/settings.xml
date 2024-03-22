@@ -19,14 +19,14 @@
         <!-- Storage -->
         <setting label="30327" type="lsep" />
         <setting id="download_storage" type="enum" label="30315" lvalues="30316|30317" default="1" />
-          <setting id="auto_memory_size" label="30376" type="bool" default="true" />
+          <setting id="auto_memory_size" label="30376" type="bool" default="true" visible="eq(-1,1)" />
           <setting type="text" label="30377" enable="false" visible="eq(-2,1)" />
 
-          <setting id="auto_memory_size_strategy" type="enum" label="30378" lvalues="30380|30381|30382" default="1" enable="eq(-2,true)" />
+          <setting id="auto_memory_size_strategy" type="enum" label="30378" lvalues="30380|30381|30382" default="1" enable="eq(-2,true)" visible="eq(-3,1)" />
           <setting type="text" label="30379" enable="false" visible="eq(-4,1)" />
 
-          <setting id="memory_size" label="30318" type="number" default="100" enable="eq(-4,false)" />
-          <setting id="auto_adjust_memory_size" label="30499" type="bool" default="true" />
+          <setting id="memory_size" label="30318" type="number" default="100" enable="eq(-4,false)" visible="eq(-5,1)" />
+          <setting id="auto_adjust_memory_size" label="30499" type="bool" default="true" visible="eq(-6,1)" />
 
           <setting type="text" label="30348" enable="false" visible="eq(-7,0)" />
           <setting type="text" label="30349" enable="false" visible="eq(-8,1)" />
