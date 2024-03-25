@@ -1,5 +1,5 @@
 
-[![Build Status](https://gitlab.com/elgatito/plugin.video.elementum/badges/master/pipeline.svg?ignore_skipped=true)
+[![Build Status](https://gitlab.com/elgatito/plugin.video.elementum/badges/master/pipeline.svg?ignore_skipped=true)](https://gitlab.com/elgatito/plugin.video.elementum/-/pipelines)
 [![Join the chat at https://gitter.im/ElementumApp/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ElementumApp/Lobby)
 
 
