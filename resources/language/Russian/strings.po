@@ -2240,4 +2240,4 @@ msgstr "Английский | en"
 
 msgctxt "#30702"
 msgid "Reached daily limit for subtitles downloads"
-msgstr "Достигнут дневной лимит на загрузку субтитров без авторизации"
+msgstr "Достигнут дневной лимит на загрузку субтитров"
