@@ -2244,5 +2244,5 @@ msgid "Exceeded daily allowed subtitles downloads"
 msgstr ""
 
 msgctxt "#30703"
-msgid "Can be used by Burst (see its settings) or for debugging"
+msgid "Can be used by search providers or for debugging"
 msgstr ""
