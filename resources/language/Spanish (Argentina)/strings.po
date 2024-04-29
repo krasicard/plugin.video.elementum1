@@ -2239,5 +2239,5 @@ msgid "English | en"
 msgstr ""
 
 msgctxt "#30702"
-msgid "Reached daily limit for subtitles downloads without login"
+msgid "Reached daily limit for subtitles downloads"
 msgstr ""
