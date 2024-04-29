@@ -98,7 +98,7 @@ msgstr "Выбирать ссылку автоматически"
 
 msgctxt "#30025"
 msgid "Limit rates after initial buffering only"
-msgstr "Ограничить скорость после начала просмотра"
+msgstr "Ограничить скорость после начальной буферизации"
 
 msgctxt "#30026"
 msgid "Library path"
@@ -2241,3 +2241,7 @@ msgstr "Английский | en"
 msgctxt "#30702"
 msgid "Reached daily limit for subtitles downloads"
 msgstr "Достигнут дневной лимит на загрузку субтитров"
+
+msgctxt "#30703"
+msgid "Can be used by search providers or for debugging"
+msgstr "Может исп. поисковыми провайдерами или для отладки"

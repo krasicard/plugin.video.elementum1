@@ -2244,3 +2244,7 @@ msgstr ""
 msgctxt "#30702"
 msgid "Reached daily limit for subtitles downloads"
 msgstr ""
+
+msgctxt "#30703"
+msgid "Can be used by search providers or for debugging"
+msgstr ""
