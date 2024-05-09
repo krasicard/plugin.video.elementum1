@@ -2190,10 +2190,6 @@ msgctxt "#30689"
 msgid "Internal DNS client"
 msgstr "Встроенный DNS клиент"
 
-msgctxt "#30690"
-msgid "DNS-over-HTTPS services to use"
-msgstr "Используемые DNS-over-HTTPS сервисы"
-
 msgctxt "#30691"
 msgid "Hide watched"
 msgstr "Скрывать просмотренное"
