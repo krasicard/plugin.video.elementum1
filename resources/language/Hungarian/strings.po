@@ -2240,9 +2240,17 @@ msgid "English | en"
 msgstr ""
 
 msgctxt "#30702"
-msgid "Exceeded daily allowed subtitles downloads"
+msgid "Reached daily limit for subtitles downloads"
 msgstr ""
 
 msgctxt "#30703"
 msgid "Can be used by search providers or for debugging"
+msgstr ""
+
+msgctxt "#30704"
+msgid "TMDB API Key check failed, cannot use TMDB service"
+msgstr ""
+
+msgctxt "#30705"
+msgid "TMDB API accessibility check failed, cannot use TMDB service"
 msgstr ""
