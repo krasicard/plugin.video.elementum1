@@ -8,7 +8,9 @@
     - Some bug fixes or updates can come, to keep things working and have the latest versions.
 
 [B][COLOR red]0.1.103[/COLOR][/B]
-    - Maintenance release. Python 3.12 compatibility, Internal DNS rewritten.
+    - Python 3.12 compatibility
+    - Internal DNS rewritten, can be used to unblock TMDB in some CIS countries
+    - Added backup TMDB API endpoint to unblock TMDB in India
 
 [B][COLOR red]0.1.100-0.1.102[/COLOR][/B]
     - Many changes around caching and parsing speed to make browsing faster.
