@@ -2262,3 +2262,7 @@ msgstr ""
 msgctxt "#30708"
 msgid "qBittorrent 4.6.4"
 msgstr ""
+
+msgctxt "#30709"
+msgid "Open [B]%s[/B]"
+msgstr ""
