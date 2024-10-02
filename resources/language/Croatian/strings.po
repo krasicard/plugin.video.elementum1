@@ -2282,3 +2282,7 @@ msgstr ""
 msgctxt "#30709"
 msgid "Open [B]%s[/B]"
 msgstr ""
+
+msgctxt "#30710"
+msgid "BitTorrent ports"
+msgstr ""

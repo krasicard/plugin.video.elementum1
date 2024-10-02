@@ -2265,3 +2265,7 @@ msgstr ""
 msgctxt "#30709"
 msgid "Open [B]%s[/B]"
 msgstr "Открыть [B]%s[/B]"
+
+msgctxt "#30710"
+msgid "BitTorrent ports"
+msgstr "BitTorrent порты"
