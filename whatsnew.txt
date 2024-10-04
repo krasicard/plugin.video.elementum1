@@ -10,7 +10,6 @@
 [B][COLOR red]0.1.104[/COLOR][/B]
     - Sync playback progress from Kodi Library's items to Elementum's menu items. (Thanks to @burekas7 and @antonsoroko)
     - Fix startup issue in Flatpak version of Kodi in Linux. (Thanks to @simpledork47 and @antonsoroko)
-    - Fix absence of new episodes in Library when Trakt is not authorized. (Thanks to @AndroG77 and @susobaco)
     - Add "Open Show" to context menu for progress and calendar views.
     - Prefer Romaji titles for anime. Add Credits to TMDB Season. Set Trailer in all TMDB video types. Don't overwrite OriginalLanguage title with AlternativeTitles.
     - Update BitTorrent peer IDs and user agents.
