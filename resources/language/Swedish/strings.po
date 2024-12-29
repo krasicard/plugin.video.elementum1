@@ -414,7 +414,7 @@ msgstr "Löser torrentfiler..."
 
 msgctxt "#30118"
 msgid "Scraping trackers..."
-msgstr "Skrapar bevakare..."
+msgstr "Skrapar spårare..."
 
 msgctxt "#30119"
 msgid "ID of selected userlist for movies"
@@ -1451,7 +1451,7 @@ msgstr "Använd proxy för att hämta .torrent-filer"
 
 msgctxt "#30493"
 msgid "Use Proxy for trackers"
-msgstr "Använd proxy för bevakare"
+msgstr "Använd proxy för spårare"
 
 msgctxt "#30494"
 msgid "Use Proxy for torrent downloading"
@@ -2067,15 +2067,15 @@ msgstr "Inaktivera LSD"
 
 msgctxt "#30658"
 msgid "Add extra trackers"
-msgstr "Lägg till extra bevakare"
+msgstr "Lägg till extra spårare"
 
 msgctxt "#30659"
 msgid "All known trackers"
-msgstr "Alla kända bevakare"
+msgstr "Alla kända spårare"
 
 msgctxt "#30660"
 msgid "Best trackers"
-msgstr "Bästa bevakare"
+msgstr "Bästa spårare"
 
 msgctxt "#30661"
 msgid "Minimum set"
@@ -2083,7 +2083,7 @@ msgstr "Lägsta inställningen"
 
 msgctxt "#30662"
 msgid "Remove original trackers from torrent"
-msgstr "Ta bort originalbevakare från torrent"
+msgstr "Ta bort originalspårare från torrent"
 
 msgctxt "#30663"
 msgid "Show episodes on release day (w/o delay)"
@@ -2091,7 +2091,7 @@ msgstr "Visa avsnitt vid utgivningsdagen (utan fördröjning)"
 
 msgctxt "#30664"
 msgid "Modify trackers in torrent"
-msgstr "Ändra bevakare för torrent"
+msgstr "Ändra spårare för torrent"
 
 msgctxt "#30665"
 msgid "At the time of adding"
