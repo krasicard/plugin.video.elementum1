@@ -365,8 +365,8 @@ msgid "Unable to find Elementum binary[CR]Required platform:"
 msgstr "Det gick inte att hitta Elementum-binär[CR]Nödvändig plattform:"
 
 msgctxt "#30104"
-msgid "Insert file or "
-msgstr "Infoga fil eller "
+msgid "Insert file or URL"
+msgstr "Infoga fil eller URL"
 
 msgctxt "#30105"
 msgid "URL"
