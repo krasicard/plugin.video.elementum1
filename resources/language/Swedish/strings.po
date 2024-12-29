@@ -369,8 +369,8 @@ msgid "Insert file or "
 msgstr "Infoga fil eller "
 
 msgctxt "#30105"
-msgid ""
-msgstr ""
+msgid "URL"
+msgstr "URL"
 
 msgctxt "#30106"
 msgid "File"
