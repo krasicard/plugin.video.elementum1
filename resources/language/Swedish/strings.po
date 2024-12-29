@@ -365,12 +365,12 @@ msgid "Unable to find Elementum binary[CR]Required platform:"
 msgstr "Det gick inte att hitta Elementum-binär[CR]Nödvändig plattform:"
 
 msgctxt "#30104"
-msgid "Insert file or URL"
-msgstr "Infoga fil eller URL"
+msgid "Insert file or "
+msgstr "Infoga fil eller "
 
 msgctxt "#30105"
-msgid "URL"
-msgstr "URL"
+msgid ""
+msgstr ""
 
 msgctxt "#30106"
 msgid "File"
@@ -1299,7 +1299,7 @@ msgstr "Överför/felsökning/bunt (med kodi.log) till pastebin"
 
 msgctxt "#30454"
 msgid "Paste url:[CR]%s"
-msgstr "Klistra in url:[CR]%s"
+msgstr "Klistra in URL:[CR]%s"
 
 msgctxt "#30455"
 msgid "Logging"
