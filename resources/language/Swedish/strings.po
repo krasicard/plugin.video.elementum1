@@ -1063,15 +1063,15 @@ msgstr "Cachning"
 
 msgctxt "#30388"
 msgid "Cache stream selection"
-msgstr "Cacha valda strömmar"
+msgstr "Cachelagra valda strömmar"
 
 msgctxt "#30389"
 msgid "Cache stream search results"
-msgstr "Cacha sökresultat för ström"
+msgstr "Cachelagra sökresultat för ström"
 
 msgctxt "#30390"
 msgid "Cache search results duration, seconds"
-msgstr "Cacha sökresultatets längd, sekunder"
+msgstr "Cachelagra sökresultatets längd, sekunder"
 
 msgctxt "#30393"
 msgid "Status"
@@ -1855,7 +1855,7 @@ msgstr "Rensa all historik"
 
 msgctxt "#30605"
 msgid "Cache downloaded torrent files after search"
-msgstr "Cacha hämtade torrentfiler efter sökning"
+msgstr "Cachelagra hämtade torrentfiler efter sökning"
 
 msgctxt "#30606"
 msgid "Show watched state for torrent's files"
