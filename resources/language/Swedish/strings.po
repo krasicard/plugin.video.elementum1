@@ -1059,7 +1059,7 @@ msgstr "Inaktivera dialogrutan för bakgrundsförlopp vid uppspelning"
 
 msgctxt "#30387"
 msgid "Caching"
-msgstr "Cachning"
+msgstr "Cachelagring"
 
 msgctxt "#30388"
 msgid "Cache stream selection"
@@ -1395,7 +1395,7 @@ msgstr "Ursprunglig"
 
 msgctxt "#30478"
 msgid "Searching"
-msgstr "Söker"
+msgstr "Sökning"
 
 msgctxt "#30480"
 msgid "Run Kodi library update after add/delete"
