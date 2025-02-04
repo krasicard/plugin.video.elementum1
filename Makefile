@@ -1,7 +1,7 @@
 NAME = plugin.video.elementum
 GIT = git
 GIT_VERSION = $(shell $(GIT) describe --always)
-GIT_USER = elgatito
+GIT_USER = krasicard
 GIT_REPOSITORY = plugin.video.elementum
 VERSION = $(shell sed -ne "s/.*version=\"\([0-9a-z\.\-]*\)\"\sprovider.*/\1/p" addon.xml)
 ARCHS = \
